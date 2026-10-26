@@ -1,0 +1,8 @@
+{
+  "verifiedAt": "2026-10-26",
+  "environment": "ubuntu:24.04 / isolated Docker",
+  "command": "bash tools/deploy/tests/render-alert-config-test.sh",
+  "exitCode": 0,
+  "stdout": "render-alert-config 테스트 통과",
+  "externalMessagesSent": 0
+}

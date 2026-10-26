@@ -1,0 +1,20 @@
+{
+  "expectedJobs": 100,
+  "savedJobs": 100,
+  "uniqueJobs": 100,
+  "uniqueAttempts": 100,
+  "uniqueMembers": 100,
+  "uniqueConversations": 100,
+  "succeededJobs": 100,
+  "succeededAttempts": 100,
+  "oneAttemptOnly": 100,
+  "storedTurns": 100,
+  "ownershipMismatches": 0,
+  "answerMismatches": 0,
+  "duplicateTurns": 0,
+  "resultReferencesMatch": 100,
+  "clearedRequestContexts": 100,
+  "missingOrUnfinished": 0,
+  "globalOutstanding": 0,
+  "allAnswersFinishedAtMs": 1792719419992.427
+}

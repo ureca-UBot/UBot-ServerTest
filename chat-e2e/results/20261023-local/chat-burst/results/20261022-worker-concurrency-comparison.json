@@ -1,0 +1,98 @@
+{
+  "baseline": "20261022-local-real.json",
+  "increasedConcurrency": "20261022-local-worker16.json",
+  "workerConcurrency": {
+    "before": 4,
+    "after": 16
+  },
+  "llmConcurrencyLimit": {
+    "before": 4,
+    "after": 16
+  },
+  "sameCasesAndOrder": true,
+  "sameMembers": true,
+  "baselineOutcome": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "worker16Outcome": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "baselinePassed": true,
+  "worker16Passed": true,
+  "comparisons": {
+    "totalCompletionMs": {
+      "baselineMs": 273094.205,
+      "worker16Ms": 133419.057,
+      "reductionMs": 139675.148,
+      "reductionPercent": 51.15,
+      "speedup": 2.047
+    },
+    "llmEndToEndP50Ms": {
+      "baselineMs": 137810.218,
+      "worker16Ms": 70660.589,
+      "reductionMs": 67149.629,
+      "reductionPercent": 48.73,
+      "speedup": 1.95
+    },
+    "llmEndToEndP95Ms": {
+      "baselineMs": 258727.426,
+      "worker16Ms": 128532.62,
+      "reductionMs": 130194.806,
+      "reductionPercent": 50.32,
+      "speedup": 2.013
+    },
+    "llmEndToEndMaxMs": {
+      "baselineMs": 273077.205,
+      "worker16Ms": 133388.057,
+      "reductionMs": 139689.148,
+      "reductionPercent": 51.15,
+      "speedup": 2.047
+    },
+    "llmQueueP95Ms": {
+      "baselineMs": 254202.151,
+      "worker16Ms": 121957.225,
+      "reductionMs": 132244.926,
+      "reductionPercent": 52.02,
+      "speedup": 2.084
+    },
+    "llmExecutionP95Ms": {
+      "baselineMs": 1939.954,
+      "worker16Ms": 3785.537,
+      "reductionMs": -1845.583,
+      "reductionPercent": -95.14,
+      "speedup": 0.512
+    },
+    "cacheEndToEndP95Ms": {
+      "baselineMs": 263321.663,
+      "worker16Ms": 125765.947,
+      "reductionMs": 137555.716,
+      "reductionPercent": 52.24,
+      "speedup": 2.094
+    },
+    "cacheExecutionP95Ms": {
+      "baselineMs": 53.085,
+      "worker16Ms": 65.102,
+      "reductionMs": -12.017,
+      "reductionPercent": -22.64,
+      "speedup": 0.815
+    }
+  },
+  "notes": [
+    "Times use server DB finished_at, not polling observation.",
+    "End-to-end is POST start through the recorded server finished_at; network response delivery and UI rendering are excluded.",
+    "Execution includes real embedding, FAQ search, guards, judgment and answer-model work.",
+    "Client 1500-VU load generator, BE, DB, Redis and GPU models share the local machine.",
+    "Worker concurrency 16, queue expiry 10m, execution expiry 180s; FAQ semantic cache enabled.",
+    "No application source changes, threshold relaxation, output substitution, or fake vectors.",
+    "Repeated on the retained dedicated DB with the same accounts, exact case order and new conversations.",
+    "The vLLM servers remain warm from the previous run. This is one measurement per concurrency, not repeated randomized trials.",
+    "LLM_MAX_CONCURRENT was not explicitly set; its existing default follows worker concurrency (4 -> 16).",
+    "The original 4-worker report is preserved unchanged."
+  ]
+}

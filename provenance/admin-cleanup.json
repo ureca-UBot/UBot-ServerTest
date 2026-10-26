@@ -1,0 +1,9 @@
+{
+  "verifiedAt": "2026-10-26T11:12:45.132Z",
+  "userId": 24231,
+  "loginHttpStatus": 401,
+  "loginCode": "USER-002",
+  "roleRevoked": true,
+  "softDeleted": true,
+  "refreshTokensRemoved": true
+}

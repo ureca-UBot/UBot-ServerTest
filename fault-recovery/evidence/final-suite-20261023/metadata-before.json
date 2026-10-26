@@ -1,0 +1,2856 @@
+{
+  "capturedAt": "2026-10-23T01:30:18.280Z",
+  "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+  "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+  "runtimeSourceManifestSha256": "b33284f020a3aedcd75917220ad8f95cb249d718b3cdc965686d28ef72cac42f",
+  "runtimeSources": [
+    {
+      "path": "src/main/java/com/ubot/UbotBeApplication.java",
+      "sha256": "bbb5cc89db7bd2e493a9b875edde4b53e2ec1a58c3ec526b250dc0c1c96aabd6"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/controller/AddonServiceController.java",
+      "sha256": "ca7677984f7c478244810b69cf339897c458fd3c9cf76415a059a0f99e029b09"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/controller/AdminAddonServiceController.java",
+      "sha256": "0224fb2a86f977f604256fa1c400fbebb5d0692c364a59dc6067d7a39acefb6f"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/dto/request/AdminAddonServiceCreateRequestDto.java",
+      "sha256": "21713c5426c483fe65f251a3a2b886a0fb3b6edcbf7b37b44e2824904b53d2a6"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/dto/request/AdminAddonServiceUpdateRequestDto.java",
+      "sha256": "0d9d9fcdc6b9e8503b129bf42f141bfc2c4f98259071e299131323d62acba6a6"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/dto/response/AddonServiceResponseDto.java",
+      "sha256": "41450953f16a038c1422b0989d866f8c0b2abf1fe55c2a47e41a8d20d40b0b0f"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/dto/response/AdminAddonServiceResponseDto.java",
+      "sha256": "b8e8219083ad903273e4d8b8d25624929695ec7a64c29d1e4d1c6281fc64de1c"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/entity/AddonService.java",
+      "sha256": "9c453132289b610b5f90d6653fbd96102c64a7c299aaba9f71d378687d3758b7"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/exception/AddonServiceErrorCode.java",
+      "sha256": "53523c45245bc5e7114d961bbb14a31b05883d068f124d7d58b70e16d983e64d"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/exception/AddonServiceException.java",
+      "sha256": "e98fcda6eaa7bf50d152d17114047800fcf270eadb1112b1cbe9f46de4eab41e"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/repository/AddonServiceRepository.java",
+      "sha256": "9ca8c4584b78b21af662edc27b35e21842bfd9a7d5b85add496da9b4705096ce"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/service/AddonCatalogService.java",
+      "sha256": "2cf687b0750cc1bfce4eb5ff7879ea92a30295198d550c7d3a2c11fb13dbbc64"
+    },
+    {
+      "path": "src/main/java/com/ubot/addon/service/AdminAddonService.java",
+      "sha256": "b917f99c8d1ce516c29f5643afa432a5324d52d1371f645b03de3c56da35d8a2"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/config/AiEngine.java",
+      "sha256": "6466c8f459f5d3764eee4826618216e1d0cb780a2e0405fe964fb5f1c9a841d6"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/config/AiMode.java",
+      "sha256": "3bdf587057ee6069fb8f46f13cf43610e7881517fce63bec91b354480258ede8"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/config/AiRuntimeConfig.java",
+      "sha256": "29c9471d1a0c7bddfb310b46f1bd653f4dacd956a405da0944aa59f047a5f947"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/config/AiRuntimeProperties.java",
+      "sha256": "6259da10102ee666f7e6a78e97fd4164ff281b614a9b647636b482426522a68d"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/AiAnswer.java",
+      "sha256": "3543c09c4559acae9de6c6c888f4c2f1c342b83f38e8266abc26ad99a71c0ab3"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/AnswerMaterials.java",
+      "sha256": "284f42259f92b1f07291b2d7641d9a1604af03b9f9a99c6110ec473451847692"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/ContextSection.java",
+      "sha256": "742fd75da82bd4b73e61b8d5554e9b2d56a04374f50de713c030953f920fd1bd"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/ConversationTurn.java",
+      "sha256": "3008c8516512b0ccfd2de9bc854f4373edf1bc1bea3da60b4d334a9b20008b3b"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/Location.java",
+      "sha256": "d041ba0ec05f12535d3a281bbf3977df4864f005b3d1eff41c53a6bbe05fff59"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/OutputGuardResult.java",
+      "sha256": "5dc8dbcb878719275822871321fb54e3b08002520b7c4befd66d2000ab93dd5a"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/StoreMapResult.java",
+      "sha256": "7f7c18b6d19d443e81d98c779f1a7b8ec0ce1f211cc45954577dcc93b54de845"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/SubQuestionFaqs.java",
+      "sha256": "46f8a49de3530075c75853d8cabae77b77531616b0a4558f18d50809472bef88"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/UserDataCards.java",
+      "sha256": "7226aa0ec977f000af7185c28c8ba7c819408777152005fde3dffa8608ccbb2a"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/dto/UserDataSummary.java",
+      "sha256": "ae8d3b0111e6711abd36d95734aac30da08f1a6a0f8ad6c8e72dbcb011338bb1"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/progress/AnswerProgress.java",
+      "sha256": "1e739a9ea1cf169f3991a6c92ab0531634456efe1dd80968fa5425c066a406ad"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/service/AiOutputGuardService.java",
+      "sha256": "12ff2e5feac84172e8b2a5de06a77f9fc2340690725df6615224fa6025cd9794"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/service/AiService.java",
+      "sha256": "8ed84f99832bd01eb7ef1bcd6104e3155f8517c3a8f4571cb0b9f51baf149787"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/service/FaqGapCandidateSelector.java",
+      "sha256": "3b015ae442a8b7c259bb9de6bf0be12e96e5a135644f1a102506c8198e4f245c"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/AiTool.java",
+      "sha256": "4f91791e7d2b265b66a581541eb58299225fb7a38fec230c0af0ada846b5fc9e"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/AiToolRegistry.java",
+      "sha256": "bca15bf626ac58639a3716486c3d2196a91f6e6c5148092d1a81c41845608724"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/NearbyStoreSearcher.java",
+      "sha256": "b6841e010ab3e7354f409612f52495c385fb0d34de3caa0c89fddf8a69ed6d18"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/StoreSearchRecorder.java",
+      "sha256": "79a983c2e7203cb8fe9e814857067c4f56e1a7729c7ef38bc908ddf3786b640e"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/StoreTools.java",
+      "sha256": "58184e26a155b0c813893860d6a1daa02e9b4dc245fc24e9985cb4151dab2e41"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/UserDataCardSelector.java",
+      "sha256": "8d2b799d84e6741c368bf7eba20e3b159e06364c1a0e48b094947fc02099a6b3"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/UserDataRecorder.java",
+      "sha256": "e068e7fb89b2d0979d4a94368c13895bc01607b7993eece0d39c46881f57ab33"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/UserDataSummarizer.java",
+      "sha256": "eb3e13a72cd6ed505ca2f91f77b98413083b24087c7cf2c486403e1abc631ae8"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/UserDataTools.java",
+      "sha256": "6bf1f33f0eeead29d0f44dacf5fae97e4d3ca5b195fca091704812ef354220b8"
+    },
+    {
+      "path": "src/main/java/com/ubot/ai/tool/UserRecordClaims.java",
+      "sha256": "2e029bc46c27bef40c6df812aba89617ae959fa12d379c8a28c2c73e0c9ba109"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/config/CustomUserDetails.java",
+      "sha256": "cbf89cf72ca5e0738417bcb8e4b1a3f1c5bc876b395d95f2d81b83251afbab7f"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/config/JwtAccessDeniedHandler.java",
+      "sha256": "eb63f26f06549ce485e4785a5264393a773bd84881c1ea065108e38cd913656c"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/config/JwtAuthenticationEntryPoint.java",
+      "sha256": "8cbb3cad788adf72aa03171aef2e28d03b7780fd58119860b9fa8a1851e4b71a"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/config/JwtAuthenticationFilter.java",
+      "sha256": "41e676b00ab7a4ac9e0179598e18601ee0320d2f45ee8bc9658fee285195bf34"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/config/SecurityConfig.java",
+      "sha256": "34bef4f7bda8ffda83415e11de1d33a1cd300a547f9210a80eabdac0947bff2e"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/controller/AuthController.java",
+      "sha256": "8fffca6e9ea9ed6b460f1e84cdc62de36c2c0d3284a1ce8bff518038b072c2f4"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/dto/request/LoginRequestDto.java",
+      "sha256": "371a4a03e0acc46f01b382e21c1ec514377dcb76ea2966efa1679dac5edf563e"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/dto/request/RefreshTokenRequestDto.java",
+      "sha256": "d0d70d9bee29d737674db97ce93c850e5498d988d31d1ae6a5a91d6014dc3d6c"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/dto/request/SignupRequestDto.java",
+      "sha256": "14dd8c412cd9524065be5c3b94e9b0dd4200e898dc76e1bab15084de06708dea"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/dto/response/LoginResponseDto.java",
+      "sha256": "01d5ee289b3e76ff449635e4656f917d2877867ed3ec91defb9b8d793aa3f81f"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/entity/RefreshToken.java",
+      "sha256": "53309142416afde715d4c90bb371bb72c691f4907489567f694df91630b35136"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/exception/AuthErrorCode.java",
+      "sha256": "b96a8a6697e516a4aae016e12295a45f8573ae6ccf2e808e1f2dca680436fa72"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/exception/AuthException.java",
+      "sha256": "64ad8c05eef3bda9085040017ee708c2d826856222d20367a997bd9d40b913a8"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/exception/JwtErrorCode.java",
+      "sha256": "c083d547d5ca172333843789ded26a23d065de2f13892c61bbe2520121b7971d"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/exception/MyJwtException.java",
+      "sha256": "ca5a75b1177770d840966ebb4f0a7e6e970d46811ab507218813cc8f0dfa6410"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/repository/RefreshTokenRepository.java",
+      "sha256": "554a2df4b89542bb641e664705567c3c38f22d9d1e09ca464132abf5cb19286e"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/service/AccessTokenRevocationService.java",
+      "sha256": "1f51f6a584b08842d06a7bb0d9369e67ba992f9b95718dc3b872ce10852ad4f5"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/service/AuthService.java",
+      "sha256": "20f003d90a79946b14b321d2d0c91101756974a71817cc29425b7b990aa0d0ad"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/service/LoginAttemptService.java",
+      "sha256": "e09aead783557cc387f5dca65f03259bb344423ea5a8bce9986c45e05c9dcfb0"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/service/RefreshTokenService.java",
+      "sha256": "c5ca7c0a216d3c6061701a35c2cb328b134ee89d6fed979ba557b659d6128d8f"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/util/JwtUtil.java",
+      "sha256": "d152d886f8952fa7206ab75071632c8841bc91d29d167d3caeea1870f9add1f6"
+    },
+    {
+      "path": "src/main/java/com/ubot/auth/util/RefreshTokenGenerator.java",
+      "sha256": "2cace42a8cfef179f578906afd94bc58c776c2c3d0b6e583f34f121ceae80732"
+    },
+    {
+      "path": "src/main/java/com/ubot/billing/controller/BillingController.java",
+      "sha256": "e4a75bb7c6485c829ea238699fc2c7ca2d4590cb6f96d2dd37cb0a52074632eb"
+    },
+    {
+      "path": "src/main/java/com/ubot/billing/dto/response/BillingRecordResponseDto.java",
+      "sha256": "cfe596c41c871f7143850af1e21ad0427b612b71022be6df55c2a1caa8a7684b"
+    },
+    {
+      "path": "src/main/java/com/ubot/billing/entity/BillingRecord.java",
+      "sha256": "e29546b36e0b4f10b20a827c0f0a443506e12242e03556232419b7c4efda00d3"
+    },
+    {
+      "path": "src/main/java/com/ubot/billing/enums/PaymentMethod.java",
+      "sha256": "70eea4adbf76cdd909bd738663801fe7e3932e7e054c2c6af6ec80bd5c0132fe"
+    },
+    {
+      "path": "src/main/java/com/ubot/billing/enums/PaymentStatus.java",
+      "sha256": "ec3b781445d8bb663e8c8bb928ef109ed320f69d3901c29635518ac0b0ab3680"
+    },
+    {
+      "path": "src/main/java/com/ubot/billing/repository/BillingRecordRepository.java",
+      "sha256": "15cd0203d37a8c616abd2486505693bbbbc6fa28229809e7b2d2db84bab4949e"
+    },
+    {
+      "path": "src/main/java/com/ubot/billing/service/BillingService.java",
+      "sha256": "b5f7dd2e386574d1351c4e88aad9fbbc8f3598da8555ff1192fd6a25c45236cc"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/controller/AdminBundleProductController.java",
+      "sha256": "745c401c50e868f23567a0c9c7b077eb480296580eccf99eb1d9b953ea24403e"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/controller/BundleProductController.java",
+      "sha256": "042be0a1afe0cd0d2818f259c0a5a5a4320d051d6060255d394e61c6967af3e3"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/dto/request/AdminBundleProductCreateRequestDto.java",
+      "sha256": "5ea31cdba8584689918add57701dc620b10851e857c38d88b75fac5906ffce1a"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/dto/request/AdminBundleProductUpdateRequestDto.java",
+      "sha256": "91448ef69e42fa49dddc5a25c4d5db51705fef51d98d282bce08ac776088b238"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/dto/response/AdminBundleProductResponseDto.java",
+      "sha256": "7b426252c31347be2dc04aabcc95dc1b37c4ea748250658f5f67251b9aa344a9"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/dto/response/BundleProductResponseDto.java",
+      "sha256": "1ca2d006d5f21f66bcab6a39749f9add06b279a16247ca718da574174dd42f74"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/entity/BundleProduct.java",
+      "sha256": "7277e35daab4514440d3c19f82761f77f523cae9744897556a05e46b7f64ed80"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/exception/BundleProductErrorCode.java",
+      "sha256": "49b260f184ffa327fb0636dd61ca5173d79d7ae49411b7a69ae76dd005e79c47"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/exception/BundleProductException.java",
+      "sha256": "06506610d0a00944a1ef70f2bf1530bb178609304d87c1efb2f115910d31ba51"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/repository/BundleProductRepository.java",
+      "sha256": "db182d36268c8e517e43b7f1aa2ac36b673d836ba2ad44285ab5d01ef7017a73"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/service/AdminBundleProductService.java",
+      "sha256": "f2ca65c3184bf5ea7348ccb623f3ea0f0690d28c771be82313af854aa47bed77"
+    },
+    {
+      "path": "src/main/java/com/ubot/bundle/service/BundleProductService.java",
+      "sha256": "53449f10b0dabf0118c4b85431236c03b299d3d18d514431780d95f8f23b1dca"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/config/GeoIpConfig.java",
+      "sha256": "3b41f30a99f5994b5a8ed3c30cc05d8d92f7b9c136285215c7516f1e09a66925"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/config/KiwiConfig.java",
+      "sha256": "c52295dc56e470c3d077d477aef483b1650bfe54c9aa94ca9213b3cb338a3181"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/context/ChatContext.java",
+      "sha256": "866854e1b851bfb355dd3f809307f4bd1cdc0d64269296d9cfc170ea49f9bd3d"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/context/ChatContextCollector.java",
+      "sha256": "5e500f6dccda98ea4567205a4f053e27a15637c87f5783d39ec2c83cf67c64e9"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/context/GeneralIntentHandler.java",
+      "sha256": "c33ee5c95f6f41620804c1dfda4943428d43541277c3f8814d995615503a5d1c"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/context/IntentHandler.java",
+      "sha256": "827492e6c11ea6cdf849c3e5b2e593e3a6bffb309b3fc465b83d465498f3b9d8"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/context/StoreIntentHandler.java",
+      "sha256": "9415f93ad88d078f8a20475eb4bd96e5f88e4c7e0b56107aa20140346d1ee706"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/context/UserIntentHandler.java",
+      "sha256": "9ade1d0c54c31cbc1ac5d16ce425a6fdcfb8d25ee4299e4e94fa862d1c027f69"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/controller/ChatController.java",
+      "sha256": "b1c70956039d497709b20bf8883186594d68bf9700e78997d91e4bf34d96a6ff"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/dto/request/ChatRequestDto.java",
+      "sha256": "2313cc702ff9589360cd852b5bbf5a8b95a8a00f7ddab89e5b0bae856f538b32"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/dto/request/ChatResearchRequestDto.java",
+      "sha256": "9e492790dd04eb39d2ff27c0a1081e77e3881102b6ed16643e3331557974439e"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/dto/response/ChatStoreDto.java",
+      "sha256": "a4ee39dad9c1a6d6b8cbfa4a91504976a4ba784253fb76c45ce0d12564017705"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/entity/AnswerAttemptsHistory.java",
+      "sha256": "4b4e69c41e8a8111cccc4d191578b140adc453945b832c5bb73436a5351d794f"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/entity/QuestionLog.java",
+      "sha256": "1803f8bd339b0ab2912039819742a3fb1e0742478c4f549d20a3c9898634ba8e"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/entity/converter/AnswerAttemptErrorCodeConverter.java",
+      "sha256": "b3d19204a3c52c8e27ff2fb56283f363e7de5f4d92021f70ab8a73bb1f0b874d"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/exception/ChatErrorCode.java",
+      "sha256": "37990cb7ac81c32efead8b666cc2c39467188e4d2b8a03c9663344bdf3231a46"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/exception/ChatException.java",
+      "sha256": "bf19deedd71be41656ba310e6fd7adc323ef1b789891bff5586c796d0ece40ad"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/controller/ChatJobCancellationController.java",
+      "sha256": "171e3c82a371f5c122948155bbd10668d25389a5c1f400b16bd9e535af74f8cc"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/dto/ChatJobResult.java",
+      "sha256": "acaa868aa2a11d607215c07b7aa96981cf49ebd6afc97047b67fe363be70cbde"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/dto/ChatRequestContext.java",
+      "sha256": "fd267ecb0685ca2d0810ef3f7052e303d317e9edc0c0b2bcc9f6efb7b4496113"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/dto/response/ChatJobCancellationResponseDto.java",
+      "sha256": "e1f7bbfb410ee80f2a3b6606264bba58be81080e3d8e2002f86435d9d93ea7ed"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/dto/response/ChatJobStatusResponseDto.java",
+      "sha256": "4ce95a927e8d6f7778ac3c6af1f08b806185f54351049b01225c056af077749d"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/dto/response/ChatJobSubmissionResponseDto.java",
+      "sha256": "3f4c58852b047ff125c76906cd76002f9f3a441f3086a99652f2a1093ad6f35e"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/entity/ChatJob.java",
+      "sha256": "6f7f32d387c6b28d102fa32d68800e54b402538e10a0e415b16f585386d23895"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/entity/ChatJobStatus.java",
+      "sha256": "122e28dcdca384853f6c3ec0ddd6f2258bab57ecaa7b7b39298700b448a954d2"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/repository/ChatJobQueueRepository.java",
+      "sha256": "84ec82775c3267f1f172991cc27b08fe23a5168c389cd0c345d2527ca544a021"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/repository/ChatJobRepository.java",
+      "sha256": "82410f88c123ff8b38159940d2e2f78a28fd09ed876515a3cc80157e9d672978"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/service/ChatJobCancellationService.java",
+      "sha256": "fe45ee23d54636fa04f9ba381dbe0f1ff86dc6864770f8d90ed1db3bdf82a4c9"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/service/ChatJobCompletionService.java",
+      "sha256": "e8e55af90a97636355167749f05c1db0c1d1dbcdb42788602ec410ccb0391f67"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/service/ChatJobQueryService.java",
+      "sha256": "4e48fd7edd247f088484d870450de9fff93acc0275ea40d3b29d17430c4dfe80"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/service/ChatJobReadExecutor.java",
+      "sha256": "7d9fa8ee8f11fb3edd4fb514c1a92c45cd71e9822062e776ac9bc2b64fdcef5e"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/service/ChatSubmissionService.java",
+      "sha256": "3cc7f1aaeb8a145a1f0c80860c2c136d4a38281e223c5073c0fa461bb083e46a"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/stream/ChatJobCancellationPublisher.java",
+      "sha256": "a6ec5ec1180320b1ae59991a2e4bfee6e5585e91d2d3104af453f2134cb8437d"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/stream/ChatJobCancellationSubscriber.java",
+      "sha256": "a43bbf8ae799028e23da823d212d8578945fe7d45e3b853bf7388dfb27d63297"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/stream/ChatJobMessage.java",
+      "sha256": "eeb8626fc1cd15e2ecab1fb904c25e32cb4427453c67652d5afc17ab4ebccf8e"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/stream/ChatJobResultStore.java",
+      "sha256": "6750f2e6f8769d3e708dfbc7f8962bbf834badbea6b3575f5337f8c2dfb587b6"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/stream/ChatJobStream.java",
+      "sha256": "ffcda0e69127f67d40d74aa20e2d6f896005acb1090e40495218cbd167a02966"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/stream/PendingChatJob.java",
+      "sha256": "bcaaabfbaaa1229edd1b9018c8997a5278371183be4d45318b3660e319775534"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/stream/ReceivedChatJob.java",
+      "sha256": "b7ecc22e05ba82111fc13f11910f4f0704d7099414e642abe2ba220ba3d0aa5c"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/worker/ChatJobWorker.java",
+      "sha256": "0c89e3c0a3aa87a26f5d05d9c67b95f38cbaa5848aff710a05c6b5a066cec3d9"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/worker/ChatWorkerConfig.java",
+      "sha256": "add0980a4fd142cb96e7bae787f69d55acfd6947dd6f31356fbb591ab06bfdd1"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/job/worker/ChatWorkerProperties.java",
+      "sha256": "2b1633b5f0ac581d45a1aef03993a6b0dea138f429f029c30f45e8585c3a051a"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/repository/AnswerAttemptsHistoryRepository.java",
+      "sha256": "84218d2b602cba24ad7a95f1cc0f2da7b0757fba0e79c0343065a48babd01e75"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/repository/ConversationTurnRepository.java",
+      "sha256": "5f674b61ff3bac6d1237e7588259668830e245bcd74c2cf85ad4812919908f9e"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/repository/QuestionLogRepository.java",
+      "sha256": "05d7a8f0a8717332e21faf6cc8218d354a9452e77eb8378e851d332f160ee49a"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatAnswerProcessor.java",
+      "sha256": "adfa208bcc3b97f801d209b73f549601822f463d685035434cb9cc800090dad0"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatAnswerResult.java",
+      "sha256": "3b51b44f34f92437fefbb2c575b5abaf1cdf0a9ea0530be8c8e48531aa7c231f"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatAttemptsService.java",
+      "sha256": "b95e454c66f67d543cf57b46010bf36646cac545db1fca8cd1c0651991c4c151"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatInputGuardService.java",
+      "sha256": "916263c2b26b2fe796489c3e76783b31f2f0955dd71b46b757903a56f68ddf19"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatJobOutcome.java",
+      "sha256": "8466748ad59a645d815224eedc711aff8325d494ee4d8cf0da0bc42ac5cee87f"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatJobProcessor.java",
+      "sha256": "9b5f73f4a457d6c06a47d0b05c2d34b050661bb87bd6b51d1be02bd9bf603b85"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatPromptInjectionService.java",
+      "sha256": "3cdfd5af55526897bff446c5b47ca5b0afdff448edac28b61edec388cddaa2eb"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/ChatService.java",
+      "sha256": "41c529de3d3101a4ab8708c1bf3d8b361d9495b7319ed6279068155db812a83a"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/CommonFaqMerger.java",
+      "sha256": "72d46c16833b078c1541cb9a01a95dd5db634ce3ead4b5a8d41ba8454b877de2"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/FaqEnglishVocabularyEvents.java",
+      "sha256": "f93355c1f10ad9422d10ef64c1739cbd4fd0bf819b5b3b3be989ce467dce866e"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/MorphologyException.java",
+      "sha256": "f1235b4108d5f90479f372c1cbf15383c253a562b5783e59d03cccd9fa8b1a30"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/MultiTurnDetector.java",
+      "sha256": "f10aa7d11a6a5b33cb64e9ab068a0cb16c19739a987357f5e6244a5be5902d65"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/OriginalQuestionSplitter.java",
+      "sha256": "a36096404a4c41eeec89040aa332900066cfe01d1c6c5e66b2f70e4c9ce0ec76"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/QuestionLogService.java",
+      "sha256": "a03c94c657ad64215f4e755907742aaaa271f96378c1a01b7157045ea87ba16b"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/QuestionMorphology.java",
+      "sha256": "1b8a172ae41e71232e40f22c1e4d42a950afda805c6b508f3f9f3fd107b6d649"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/QuestionRequirementMatcher.java",
+      "sha256": "023f741b3552beb92209e95d61641a10c10e1b20904858d4e3645c5a90b0c1e3"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/QuestionRouter.java",
+      "sha256": "a357623fec82254e16e33828b51cb23c6aec61d63f5158673a47cdf93b2a35e8"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/SubQuestionEnglishPolicy.java",
+      "sha256": "472259d3f303e177e457a024f781c2f0c087ed351ceed7411d471907dfb8d847"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/SubQuestionGuard.java",
+      "sha256": "561fac288335dc08eef021980f44087f975708273e2c46dfae120136182d44d9"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/SubQuestionPlan.java",
+      "sha256": "5a53b11cef2185dff1986d7ada0ba096b5574d8d03962b7021aaf8e7733f62c7"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/service/SubQuestionPlanner.java",
+      "sha256": "bee0b167528e3a04de98892708eadae54e98f276d4118c6ebad6445aa4d581ac"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/util/ClientIpResolver.java",
+      "sha256": "4cc408c287f94a8c83374a9b827ea88e773422de1f186d884744a88ff60bf3c2"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/util/IpRegionResolver.java",
+      "sha256": "cede4fb31c3c5de68ab23b9b4f4c1a52393bdeee6ac67309f8465fce004fce28"
+    },
+    {
+      "path": "src/main/java/com/ubot/chat/util/PersonalInfoMasker.java",
+      "sha256": "e5a5befe45e5f9bbe651ffa28ef8c8d5ad71e5bce8b49ea2301ad68401a25f53"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/ApiResponse.java",
+      "sha256": "894b3de211e0d5a378285beb8090cf8ae7b81e66c3ab99cd593618bd5d82eadb"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/ErrorCode.java",
+      "sha256": "020e83f9c22c1efa692744d657b45baedfe5450b5d417d5582d3b4819b090164"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/GlobalException.java",
+      "sha256": "2f9f9fa6fe9c61d538848aec0565aa492bf4751d24f3dbeb30d4ea05c9e53fbe"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/GlobalExceptionHandler.java",
+      "sha256": "3ac4baf96f27c9da898d8743d9df2f9d02e9046a0e5a6a3497bba147fec82027"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/OpenApiConfig.java",
+      "sha256": "a257d6999d4c9f0860962a0fe5bbd4d2e7e6d69e7370ac499e916207fc81e8f5"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/PageResponseDto.java",
+      "sha256": "0c214e8a8f8302540bf50b3b4a6c673ef3917ecf40a7f42b85aaf605be99c31e"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/SchedulerConfig.java",
+      "sha256": "a4ec29b4265a04f9dafbcc969557ade16dcd8ab176b67cadf356a12e0dc6eba4"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/dto/request/ProductStatusUpdateRequestDto.java",
+      "sha256": "62981f267127da074ae18369bb2cae863af394ebc2fea0d2ebf4eac2055893a9"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/dto/response/AdminMetadataResponseDto.java",
+      "sha256": "369717d4f736b531a21a24f7caa6f6962033fdaa62e499d2e2d917fc418e5fc6"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/entity/AdminManagedEntity.java",
+      "sha256": "c78a3349fd44e866d4c2ee6aa055b23dd17c58331e76cc6e29efd20b504b094f"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/entity/BusinessEntity.java",
+      "sha256": "a09441c2e2987ddd004f63a1be39f39f13fa7a6f1a62eab8009c992cd5b83523"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/enums/MasterStatus.java",
+      "sha256": "090aa4421b3861139184863bd9a5c930b08893a246859f47a55095d1ecee3361"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/exception/CommonErrorCode.java",
+      "sha256": "b47c8e9ce303b564572da5b3a18ad5d9af86eb9071518b0152add5385e6f0868"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/manual/api-response.md",
+      "sha256": "5c380873e5177dd18bd7bcef313b0c6ed8cf1455e699499f5809842997b5cfd3"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/manual/exception.md",
+      "sha256": "d9ccad9ec6d8ea86e782f47bc139fb3acc81fa1fe8d18db341007cb33e0b215d"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/repository/ProductSpecification.java",
+      "sha256": "1d189cd0cc3da51d05e7fdd5fec891c108552f7fb08b3610479b0517033a21f7"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/repository/ProductSubscriptionRepository.java",
+      "sha256": "3e3c93dfd9736833047b0a40b469276da90ec765a44d7c522989203af2a5f6c8"
+    },
+    {
+      "path": "src/main/java/com/ubot/common/repository/ProductWriteSupport.java",
+      "sha256": "815ad18feb6af83ce31c69e103657ba8b661366d3ca8f8f845a47267c7a884d2"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/controller/ContractController.java",
+      "sha256": "73be38b47f6f951796cadddc4864994f525b5eb47811b528aedfba564300f766"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/dto/response/InstallmentResponseDto.java",
+      "sha256": "02e9bc41b3347a8541f560475127a1a8fb1345e5e80048891e2f6c9a98d93232"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/dto/response/SubscriptionContractResponseDto.java",
+      "sha256": "a082a53fbb09c32704a9f049cef57bdb55d6990b2ce5a02e24295b322f4528b2"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/entity/SubscriptionContract.java",
+      "sha256": "978ec2b146817ea06804743eb7ad29ea65d95281208dc6fec6eac876753e7c64"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/enums/ContractStatus.java",
+      "sha256": "5ccbb62fb22e33715a0e3ff63001c4d80b0ed8e2ac2333050dc2e14e59fa203b"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/enums/ContractType.java",
+      "sha256": "7bb0c3e9bc5b41ca620e7d153904d2e96e61611626440455951461b1630bf742"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/enums/InstallmentStatus.java",
+      "sha256": "a5db7a70c9bc924402b096503379b71bd69f30a59d8aa83abf954d973cc6ae66"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/repository/SubscriptionContractRepository.java",
+      "sha256": "459a5115dc0c1a9a0a791696f7a111b3d2f16dc7738dc841d20e6028c6d00d6b"
+    },
+    {
+      "path": "src/main/java/com/ubot/contract/service/ContractService.java",
+      "sha256": "7c9f5f4f27cba7b48d1c673f8a4a2a01dcc75fb3a74c28127526d6e42635ef7e"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/controller/ConversationController.java",
+      "sha256": "8063b97393760ed922201d08d97b83708ee32154ff6cf02e77479559f8c00214"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/controller/ConversationFaqSelectionController.java",
+      "sha256": "bc0baa5b8a7350ed68463a08545d2bfb23aba0f7157aa677827417d0905b3eb0"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/dto/request/FaqSelectionRequestDto.java",
+      "sha256": "1a6a19ce3f888cef8b78a37e8defa2ebba8b2f2871730c45cc653bd42cd6baa1"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/dto/response/ConversationMessageResponseDto.java",
+      "sha256": "acf21fcce7f69eca27218bed92b0726bea0d24f825a44a27ea54f87e15228f82"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/dto/response/ConversationResponseDto.java",
+      "sha256": "b66735bde54d4990b09c76dc7e148f9473c1b2ab55b5a34e602ec77f57ef84e4"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/dto/response/FaqSelectionResponseDto.java",
+      "sha256": "cdf44b8b5ab08d680908d9c3892debfc7f9e2ca51173448e27e0594038c92426"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/entity/Conversation.java",
+      "sha256": "9ad9d94274ae3943b3750d98ec76ed48c8a9b0adbdad3d8ce26109e931850392"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/entity/ConversationFaqSelection.java",
+      "sha256": "c12c7de722f34864f3dd2721d441757adf98fd56f4327eb8505c0133e3ee7f2b"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/enums/ConversationType.java",
+      "sha256": "dce3ef662341b9c96b909f4e273ec50e75dc0d68f7f40717e83032ccba95b36f"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/exception/ConversationErrorCode.java",
+      "sha256": "25f31de5dd9515d13b423b3480bf2e0fb1101f6f4cc1dd8081439ec7906c31e4"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/exception/ConversationException.java",
+      "sha256": "152b09777194255c88da0cc9588d0ed20897a068c2e53763a09c2a4d1315c581"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/repository/ConversationFaqSelectionRepository.java",
+      "sha256": "7bd8e120874ced090627ff5852d7733f0014872b149906cf09cc85460030f53d"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/repository/ConversationRepository.java",
+      "sha256": "8967b4755690998b73da464809a5efe1f4324bba19ce5c13138350291e871db4"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/service/ConversationFaqSelectionService.java",
+      "sha256": "1bdd11ec42006e7918316cc28a58db33a61760aa27d423746ab798669ad5c6a7"
+    },
+    {
+      "path": "src/main/java/com/ubot/conversation/service/ConversationService.java",
+      "sha256": "79a80b2fa9fec01a2131beae543974d9ca2848ca85a52b77ea43c10221036941"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/controller/AdminCounselController.java",
+      "sha256": "62cbf49c51ec1325d2dab2a155aee23814a5354d27965f0848c0b05bd51ba852"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/controller/AdminSafetySentenceController.java",
+      "sha256": "22a2e108a64d9d0a3f1985612866bf38b7e7f9318d12b5017f2c83e982c73f49"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/request/SafetyEvaluationRequestDto.java",
+      "sha256": "e0ac370e88a1c0c11a9617a09b3c94b2e8aeb4b8f3b79fd4415900e14405ccd0"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/request/SafetySentenceCreateRequestDto.java",
+      "sha256": "fa9d4df268c5855c30168d2bcfb6ec65bd0fd9da304e0a622ceec44dd07f17f9"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/request/SafetySentenceIndexRequestDto.java",
+      "sha256": "7f2fbfaface799194a45d1a89199471e27574acb738911f32e9399b6abae44eb"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/request/SafetySentenceUpdateRequestDto.java",
+      "sha256": "8239a1d33cae4ff6a4b3fa23c7f09cbb51d34aea5532c59ae90a5a0e507654e5"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/response/SafetyEvaluationResponseDto.java",
+      "sha256": "18c1e2f1fcf8fa63db0a02e158cdad3c281b1170daf5df896982185fbb979f03"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/response/SafetyEventResponseDto.java",
+      "sha256": "79de17c053920d00a4ca08ca0b1dafb7568340caa6adbe008c6947ea48cbd0ff"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/response/SafetyEventsResponseDto.java",
+      "sha256": "36a7de1329910493f9d369e54534743552f08dbbbe0aa42c27c99d60a3852911"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/response/SafetySentenceResponseDto.java",
+      "sha256": "5dd106ec494fc19fd5347a455a51d346ec7dca180ad6522ee72b17c3cb843e08"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/response/SafetySentencesResponseDto.java",
+      "sha256": "b788aeb4198e1abac3cd24dbfe5a9d738089ffad0c98d3422509342fb6c17f84"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/dto/response/SafetySummaryResponseDto.java",
+      "sha256": "2180774fb2df8f4d5fde42505e496c268d7ab0c37b3ecb8ff89e78c9d4199ec1"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/repository/AdminCounselRepository.java",
+      "sha256": "49c1d59ef25b26130c05e5b85fef48af87647c1cfb788fe51101cf422b1c20cf"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/service/AdminCounselService.java",
+      "sha256": "bdcf105da9ef9e26dd4b7847d12a69df70df2793ad7818f97b48e0294edbbd64"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/admin/service/AdminSafetySentenceService.java",
+      "sha256": "fcbfe704395f98bf20528b22b9d399881bd77044be4d1290670a385a84a15184"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/auth/model/Caller.java",
+      "sha256": "66a7fda3aab2b6385e1dbf5e0851723dd0849fe153509072b98465111a6496e1"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/common/CounselExceptionHandler.java",
+      "sha256": "80f25509d3b19fec0a0a0a1129b7049e3db3eae1537ba627e82bb7b749e0a615"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/common/config/CounselConfiguration.java",
+      "sha256": "f8dd1195a8461f37d493c1b94343a791428ef01ccc06bde9492982efaeac851e"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/common/config/CounselIndexSchedulerConfiguration.java",
+      "sha256": "014c7387eeb03470d5ede0aecd3720bdc0fbd18a24ac643d619c07720d42901f"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/common/config/CounselMaintenanceScheduler.java",
+      "sha256": "3555fa53035052cec922e8a257a547a9b4a66bb006d54325d278ba8afeb78bb1"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/common/config/CounselProperties.java",
+      "sha256": "ef25602fefd24ee67a704051c0aef04581872531d9af334394fa4acb8b224ac7"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/common/exception/CounselErrorCode.java",
+      "sha256": "30bc161f5c5c2f3a070a7c7f07222238adb2689162cb23c3d22d9cd24894874a"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/common/exception/CounselException.java",
+      "sha256": "3d4714d32c270ea02f98a77cc45d3e41239354c8a042c4f85540b196ffaca351"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/history/controller/ConversationTimelineController.java",
+      "sha256": "5914c2d9922caf0744ffb251bbaf9fe6d49da8d19f8fa080f9e535e0f7a45723"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/history/dto/response/ConversationTimelinePageResponseDto.java",
+      "sha256": "3b4405ebf371c534cd8dff1711885860054787da9f482e874bbd177f58b80632"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/history/dto/response/ConversationTimelineResponseDto.java",
+      "sha256": "b175d1fef276f717e86280b4397326e96214fd09baa5d27e37abc90f424c66c8"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/history/model/TimelineCursor.java",
+      "sha256": "721c8b5ebc210ed2f6127f49580edb6e779d09940e877308202ce1d695721413"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/history/repository/ConversationTimelineRepository.java",
+      "sha256": "7093d3e60ea354176ee17e808b7b1dadee86d0b0684722011b806736d43b21fc"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/history/service/ConversationTimelineService.java",
+      "sha256": "b78d0345ce420516f8141dbfb25bd341725bb28a3f33b9c7a1b781585ce87641"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/controller/MessageController.java",
+      "sha256": "c2caabeb47519a18563c6f8ee5717bdc69ca1ee62a1af57ce5525547c77edfa3"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/dto/request/SendMessageRequestDto.java",
+      "sha256": "343dc839626146af787ea5decc3f910ee6cf4c9c1e1c7da0df9bd5a7dbfcc718"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/dto/response/MessageReceiptResponseDto.java",
+      "sha256": "a70a0ba9f3b738d53cc2aeb0510373412b527e5a077f46ead16c3fb27fe747b1"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/dto/response/MessageResponseDto.java",
+      "sha256": "31142a6d29fd7e512c28860b81e5676cb03208b477c78c65ce5d911a10cef122"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/entity/Message.java",
+      "sha256": "a3d3bf05b61127462083e17bec6aa7f208fea59d52adbc8f9a0557a766f1a7a7"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/repository/MessageRepository.java",
+      "sha256": "485a248ed25edfeace8e5c0d572a308c527905f96e9e1648cc5a94489171a168"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/service/MessageRateLimitService.java",
+      "sha256": "17d0beb36cf2ba5d9a0d802a67be57e82fc4366afad82978825d96e389824b8c"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/message/service/MessageService.java",
+      "sha256": "401876554404cdfce1dc9654c3717c1abe0bc3f22f32e7ee4e2a6f1051ea79a6"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/client/EmbeddingClient.java",
+      "sha256": "57643a694c78a864978bbe8232c94f206ee5afd851704e1fb6725007bda04867"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/client/WorkerEmbeddingTransport.java",
+      "sha256": "67c50425a66b123c7160df106f3abac0eb3cb67de13ce901eb3dedb30a24ba1e"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/config/CounselSeedConfiguration.java",
+      "sha256": "10959c4d73553e7b53ae87a0f6c448742f276f14c63bc9f69fb963c73823ca14"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/config/WorkerEmbeddingConfiguration.java",
+      "sha256": "10bed4aecfb0db3f2dadc8602cf68eec9496b9edac508bd82e4763c89f959262"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/entity/SafetySentence.java",
+      "sha256": "548fa41969fb1ff77d9ccbad49fbe34d4bea575aad88ed31b541ce64d3a3509e"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/model/GuardDecision.java",
+      "sha256": "995f7e17ea36d762962f7b37ad4c23649ceac6cd1562fe2c467aa56d338eb2e0"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/repository/SafetyRepository.java",
+      "sha256": "1f1159b4ac8b4bb27183b42c6ab9778b49d9ea4597c709826d7359c7c099c584"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/repository/SafetySentenceRepository.java",
+      "sha256": "43b14da51a1e8e89fe559c3ce6d4e745c326827d6841c6cfbfd836e2c4b05bc5"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/service/SafetyGuardService.java",
+      "sha256": "3c9b92b4e6ba3695e6f58d650fc667cc80fceea005f6685ce733ed0a91f88337"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/service/SafetyProfileService.java",
+      "sha256": "4f100d98cb53a305f84a7034ac517d1a9d940d75b26c4b42ce11199ace6dd522"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/safety/util/SafetyTextNormalizer.java",
+      "sha256": "b3c4b00054208f8e06dce12cfdb1c75bb9c2d4280d59b3bd611698c838df5627"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/controller/SessionController.java",
+      "sha256": "1d9f29c31a5d6bba835103b0c8467f214c0f3e26beda90374e6aa31b390ace3d"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/dto/request/AvailabilityRequestDto.java",
+      "sha256": "df6a51283a77601451b762d61b5abc835a18dd9de34e2298be43be66549fbfd9"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/dto/request/HandoffRequestDto.java",
+      "sha256": "0685f17586be97e5d6bf74b95e22e15c4f5a93d0dfb230e659cae0e2e049cb19"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/dto/response/AvailabilityResponseDto.java",
+      "sha256": "de497e4cd1da9356f2e3596da1b4c629abc2423b19459328dbaa5737b6831814"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/dto/response/HistoryMessageResponseDto.java",
+      "sha256": "3a76cf0ee41c0357ec5445387204fb0d6794a1fa5928531e67a25cf76364703b"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/dto/response/SessionResponseDto.java",
+      "sha256": "b0a7f098a70186f7c2687d679328f7184d168e7b5be8c3dd272fa10172876dec"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/entity/Session.java",
+      "sha256": "7b5674fe8d89b63e783680e3fdfa57f0eb6c960d29047ef95a051b66b9d40662"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/repository/HistoryRepository.java",
+      "sha256": "a844bc4cf5a628ecc6a1a5529f46f6f70d9f6c7bed59f9add8e9917bed8c9f66"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/repository/SessionRepository.java",
+      "sha256": "dcc2b9d63ede8b7e8a3b55cc7d20086ad6ddc24eede730664de754deeffba572"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/service/HandoffHistoryService.java",
+      "sha256": "bec3a7cce3173b56596318c82195af93cd6d67cf8ea68c49417d56b501f13d9d"
+    },
+    {
+      "path": "src/main/java/com/ubot/counsel/session/service/SessionService.java",
+      "sha256": "e7d64ca70de14eaa66a07976b7302aa028ee61987a9fc1ffafc909ecac133257"
+    },
+    {
+      "path": "src/main/java/com/ubot/direction/client/KakaoDirectionsClient.java",
+      "sha256": "b1a7c5d302d44ede0fccc309b7b606264e3e1e04e57c4564ad87a61ed4f17f07"
+    },
+    {
+      "path": "src/main/java/com/ubot/direction/dto/DirectionsMode.java",
+      "sha256": "da67ee7a4a40b3b7b19401e5f9ef2e9cd9d1f79fc11194cfa0b64813ea453439"
+    },
+    {
+      "path": "src/main/java/com/ubot/direction/dto/DirectionsResponseDto.java",
+      "sha256": "93a99ed3eed074136f36dc9b301a23d14ef2029c5a7a3211409563a15112e5a4"
+    },
+    {
+      "path": "src/main/java/com/ubot/direction/exception/DirectionsErrorCode.java",
+      "sha256": "d92a70b6882d847b8aff6eb19438dd47c8b052055cc4c4503f644c3bf74ab44d"
+    },
+    {
+      "path": "src/main/java/com/ubot/direction/exception/DirectionsException.java",
+      "sha256": "1a8ab5a5117cec373caa7784f869aa32ff2bc4f91129faf24fbb6d98eb245e80"
+    },
+    {
+      "path": "src/main/java/com/ubot/direction/service/DirectionsService.java",
+      "sha256": "584cde1e8290f5243badb9552c7b35d62eacc900009dcc676a2fd06888ddd2a9"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/backfill/EmbeddingBackfillRunConfig.java",
+      "sha256": "8b5955c65fa735649cb95d244dd3e16695c81d78044e34f495e2d2d7d5e430a9"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/backfill/EmbeddingBackfillRunner.java",
+      "sha256": "eb6f28add4b569a947908a492815a72768d48d4bdf44568fab31064f0b9095af"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/client/EmbeddingClient.java",
+      "sha256": "caa925302c9f4748973809d24941b887a0c26f46ae73cb7ed25bb23a0ad0102e"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/client/EmbeddingVectors.java",
+      "sha256": "b47a0776fa181893c7716bb7896d6467570b8c684ef7bf0164916deb55b5e673"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/client/MeteredEmbeddingClient.java",
+      "sha256": "cce96133274b3f20891b667df4235916e4a4e6cc9318d2c3a699032a7023d37d"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/client/OllamaEmbeddingClient.java",
+      "sha256": "524e2d5e2d9ecc757d9000e5c68bad132d68c071baa70257703be3c8747fe5d9"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/client/OpenAiCompatibleEmbeddingClient.java",
+      "sha256": "0b04599758a52145ce659dc777be83cf6f00f6fdbe20b23bdf76341f1eeadf38"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/config/CounselEmbeddingWorkerConfig.java",
+      "sha256": "fd1c3eb6717fdbe1e2b4868cf5f4d467a24f5f25e8fd67ff505d3978b42a1711"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/config/EmbeddingClientFactory.java",
+      "sha256": "c8f7797ec0161fa594ee9e2c9f6be9071f2bbc665bf5f4253216116e8e2894c3"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/config/EmbeddingConfig.java",
+      "sha256": "85df79a501639ebce7f2d4c5ef96ea20353ea24e39be00dbb645a2323cb5322f"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/exception/EmbeddingErrorCode.java",
+      "sha256": "340c609e63ead0a0de4d2fa45bd017fdba9e0ff204a767df39d0b47d4037b3e4"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/exception/EmbeddingException.java",
+      "sha256": "4ef21d7955b000190d63236e43d33d8839c0f9ce4919c28fcc8573e67990af9a"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/metrics/EmbeddingBacklogMetrics.java",
+      "sha256": "ac929637acc6c7259d272ce5f53e8c8d98e11afcb86ea916dba7b0d3f21b24e5"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/repository/EmbeddingProfileRepository.java",
+      "sha256": "68f896f5805513d37ab83260e4063e5b38806e7300d002270fce279d43a7fbad"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/service/EmbeddingProfileService.java",
+      "sha256": "c625bd52b1b9f0ceeb9afbb7687b78331dc5008033f912f69f184125cb220ab6"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/service/EmbeddingService.java",
+      "sha256": "eeaf9b48b8554807197e6e67d099fc012af5ea4328edc832ede61765aafb72e5"
+    },
+    {
+      "path": "src/main/java/com/ubot/embedding/worker/CounselEmbeddingWorker.java",
+      "sha256": "a7e9ad12a3593d965a64fce8885579263df0c1e0d884ba540811e126047974a8"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/cache/FaqCacheDecision.java",
+      "sha256": "47a47628d91fb25893be689ab4671bea7139f81f4ee5568dd88df9aae7909389"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/cache/FaqCacheProperties.java",
+      "sha256": "0fd533e51ba943a94fd33c3708c3adf221078c5de917edf7f5f1b86cb2061605"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/cache/FaqSemanticCacheService.java",
+      "sha256": "fe2a4d6b8067b9bbb597f95f750c71320a2eca6288896bf3cad70c0e8c17d1c2"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/controller/AdminFaqController.java",
+      "sha256": "2245ceeb25e12be40df260fbf3acbbdd075e5141665648284d063fc4abe2257c"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/request/FaqCategoryCreateRequestDto.java",
+      "sha256": "5a50d59e0b95045eeca5b89d303b8448fd5011a4ec2b5c1c1bb4371af0e27b5c"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/request/FaqCategoryUpdateRequestDto.java",
+      "sha256": "6f23ac6aa8f9c902084f0b36ae26ad0c83c16010b80834ab242236d678c44b69"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/request/FaqCreateRequestDto.java",
+      "sha256": "0fff92b0cc6f899caaa8965e03f61421dcbd7d9247ab03c779f48b35b325aa92"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/request/FaqRestoreRequestDto.java",
+      "sha256": "80e9152840a31d83b7dafe4bd7a0a7653ffc7656f96cfd0531039e25f3017bca"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/request/FaqUpdateRequestDto.java",
+      "sha256": "f933b6cfb8dd7b261b0ecc05a008e9f5389e2b370f70cfc14a90a89aff28ad78"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/response/FaqCategoryResponseDto.java",
+      "sha256": "a56a5267bfaf0c8b2c0e6bea9353183033cb891a8ffcd44f79f5b504b1d6974a"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/response/FaqLogResponseDto.java",
+      "sha256": "4fa4f63946f5c1aa900a8ccb1fff2782168f8ea3b274aeba4b7ecf378ea1029d"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/response/FaqResponseDto.java",
+      "sha256": "5906704e91e6f6f496cf8c9a1dfea56728f9777cdd860124f8f85a280a28414c"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/response/FaqSearchResponseDto.java",
+      "sha256": "c076afe822303625310ef2aa56b5d9d85766366d721a0dbe75e6f349d13331cc"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/dto/response/OldFaqResponseDto.java",
+      "sha256": "b3d08097486508960597ca726c348d4dc20cfe94614602859e2e28a967e9384f"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/entity/Faq.java",
+      "sha256": "f2637e8f64909071c189bf86512cc1efff9ddca835167248db3fdbecbe6afc46"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/entity/FaqCategory.java",
+      "sha256": "715e1c25d99b16f702b50528a703ca9da28ad0d3c04188c14094718be7f5f0ac"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/entity/FaqLog.java",
+      "sha256": "fa3f9cb08c229c22b1a034cfebe062069555c3c99435fc45be37dfea6073aa3c"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/entity/FaqQuestionVariant.java",
+      "sha256": "b214c11d9c1aef909fec3369f1d20728d33963d260fbedc52090cf16e3bc3d87"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/entity/OldFaq.java",
+      "sha256": "46ef5d1a3288d49d2f7da965a0addb2e84290eb3862cb7e0ecda5d088ad394c4"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/entity/id/OldFaqId.java",
+      "sha256": "bd55566ec43f77666e3aa9ac2323198cfd26c60a7ecb09e90862878bcd08cd25"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/enums/FaqVectorType.java",
+      "sha256": "4f5d84c2c2e38fe64d8970adc42d23958153e5698101453fcd908c53b74d2842"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/enums/Intent.java",
+      "sha256": "b8143f5f07a1cbbe2f8f6b26bdb82cfcf7953a305ef4a4a732909d5522d3464a"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/exception/FaqErrorCode.java",
+      "sha256": "0675eb92aa166edfee577f143b0eb6d728744e8c13c9d9300189c24ca0263029"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/exception/FaqException.java",
+      "sha256": "ae35fb543b81170be8da7ccf9ab86a9e4d8ff55fe5a88559dc938fc4299548ef"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/repository/FaqCategoryRepository.java",
+      "sha256": "d5bb5f4343767c3b385223bcf529c69301d99a2efc1a4a4d76f3adabe09531e0"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/repository/FaqLogRepository.java",
+      "sha256": "e9c533349e17303abcdba363c8d37eefff0585461803c97012ebfdde6fff4450"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/repository/FaqQuestionVariantRepository.java",
+      "sha256": "8ded66c9b9bb7bc06d5cf1d534fa4c3e2c496149bf87dfd4f45917aab1f432dd"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/repository/FaqRepository.java",
+      "sha256": "dc5c713c2cbc315109c4c1a72d870fdded6d19ceabac079fb07355af6b5e16f2"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/repository/FaqVectorRepository.java",
+      "sha256": "faba17a30ea96b1e396a4c0c9e3e4b6bdfcf9f974ff25bf53a246a05b189946c"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/repository/OldFaqRepository.java",
+      "sha256": "2485cdd1437eaef4b1e909224f3aefb9e8095dbac4c721d01c4ddaceb5ea7836"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/DenseFaqCandidates.java",
+      "sha256": "251afc44af90d3bf600e4fb1bd24f7a34382a61fc9eef342d03f25bb285a4ace"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/FaqRetrievalConfig.java",
+      "sha256": "5e0362654a1f5db41fb7d789e114e6f7afffee06c9a334c227dd3caddd302c39"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/FaqRetrievalProperties.java",
+      "sha256": "915e94d1ed91de205def13716744e9ee62e04d7812550b2132d48cb075a7bdcd"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/FaqRetrievalService.java",
+      "sha256": "5e8278400408d91b08750e4dd9e45fe0c636ac0074df4fae5d5ce8c4e418b9c3"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/FaqSentenceFilterService.java",
+      "sha256": "613acb9b5cedd8296dd803e9aac8b9995a8bc49aa8b58e7765c33fa4e7038c7f"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/RetrievalOutcome.java",
+      "sha256": "320586544df55400262c979b03443832f5b251e33887af0630a634d1c57cad39"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/rerank/FaqRerankService.java",
+      "sha256": "4f6f0dc6bc0fd5b35a95ede4773fc7f18b8410e1332109b58613ee0e6fc0f78e"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/rerank/HttpRerankerClient.java",
+      "sha256": "296b0cdca43524ec030586a8813bde8a3506a4417584fc945238b47effefd292"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/rerank/RerankCallGuard.java",
+      "sha256": "c0fb3a6fd0bbb240ddd8d80c1b47abb2dbca8c7ca56094e20aa3dd5f3dc05d6d"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/rerank/RerankException.java",
+      "sha256": "d8c57c155d7e074f9e647f1440e3410ea935a2a00b7ad2eb1bd18913270c264f"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/rerank/RerankSkippedException.java",
+      "sha256": "64ee0218655772e2cc5d944a9e36ce023bae62db8e3a818830b49b4c1b958808"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/rerank/RerankedFaq.java",
+      "sha256": "987fea59d7140607ba37747b12562b4837eeda8636e864c0a1f5bcc3f24a821b"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/retrieval/rerank/RerankerClient.java",
+      "sha256": "92c3785ef5f2b7610f0fd29d1b144292cda2357c3b24db47244ad89329f1f492"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/FaqCategoryService.java",
+      "sha256": "1257824a4f2e0a0bb103f93559eddfc55767318793ca4ce7969a74b88792c46f"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/FaqChangedEvent.java",
+      "sha256": "841f6c9c77ca7c4db46f133784cda1c304d4ee169ba945efe41bcda0f53242e6"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/FaqEmbeddingBackfillService.java",
+      "sha256": "5e3cbdab341fc953979a39e4d81ce61b0756a3f711d1d160aa42b733d0d8a33f"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/FaqLogService.java",
+      "sha256": "7ccb158c340e3579c29319c61e36ddd70431492013e8e37b961de3b344dfb0f2"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/FaqService.java",
+      "sha256": "aa38e26c55288a87c6d63690a6558f66b735fd7ce6d131d67162222c93c9d20c"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/FaqSimilarQuestionService.java",
+      "sha256": "d995defe3d650687c21ac7db3ee67d6df7c9bdaae48ccd1ec7052508b1d748c1"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/FaqVectorService.java",
+      "sha256": "09e3e251b98011c5ac7e2710eadb8341467a346ba46624af3978382ce8a9e5ab"
+    },
+    {
+      "path": "src/main/java/com/ubot/faq/service/OldFaqService.java",
+      "sha256": "15ffb4eca9f27b76c34daa407c20bcf344c2301df010d411def8df52860a354d"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/controller/AdminForbiddenWordController.java",
+      "sha256": "62d29e77e1c6d171f941de6ff3b8e24bfd5d10929dd05206a15a3e75ed5bef07"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/dto/request/ForbiddenWordCreateRequestDto.java",
+      "sha256": "e0fa73e913f11bc096e25d93062c1d0bf71cbac1dcd2143fca05990888ef0fbc"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/dto/request/ForbiddenWordStatusUpdateRequestDto.java",
+      "sha256": "c4c7f0db87f47b36ae385132bc9324df8b5d1e02a71a64f35f4ee13f84c76ee3"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/dto/request/ForbiddenWordUpdateRequestDto.java",
+      "sha256": "5a918b2909897119f6858fa929d43b92ecb1361320e786690545a78441fbe53e"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/dto/response/ForbiddenWordResponseDto.java",
+      "sha256": "d921d6bc81a0536d1c8502360de63d6ed2cb43a1676ed21de94bca7df32a0fd6"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/entity/ForbiddenWord.java",
+      "sha256": "368b8cf5f4b1dd8f46d19efc5fe2de85178c4d0483d3630494879124e32aebcb"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/enums/ForbiddenWordStatus.java",
+      "sha256": "33b79c2ebe46750c4febeb8c508a966d8677311a87dd8115811504644d81c72e"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/exception/ForbiddenWordErrorCode.java",
+      "sha256": "57b04b31d84fe3cf56eb6d24978d69b8e40c55b82409fec66b266eb02d889279"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/exception/ForbiddenWordException.java",
+      "sha256": "b43fa8b978c4e45488800e0ad82f09b118d27d90925da2d15f1e9750b0bc24d9"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/repository/ForbiddenWordRepository.java",
+      "sha256": "3e93b31bbe5a7a19beea4f3cd26389c6a4067b0be371eb95c8e6027613388b23"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/service/ForbiddenWordChangedEvent.java",
+      "sha256": "16eac83bd27e8a31d22a708ad29b1f83c49dd310f8d37729251cb2c6c6855cbb"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/service/ForbiddenWordFilterService.java",
+      "sha256": "0b58e97f8e1961770355aac3094f16437f0dab9f876a548fdde7d432414e7a13"
+    },
+    {
+      "path": "src/main/java/com/ubot/forbiddenword/service/ForbiddenWordService.java",
+      "sha256": "317404949cbd797eaa6f628e00b5df812d0099c6d9574af1b3fa18312259349f"
+    },
+    {
+      "path": "src/main/java/com/ubot/global/config/AppRole.java",
+      "sha256": "54a658e1fb8dfcaeb6d7d894f53ac001307b0826043674d06472cb6b82ed9f5a"
+    },
+    {
+      "path": "src/main/java/com/ubot/global/config/ClockConfig.java",
+      "sha256": "8e779ee9484c0d57028e1ce229d871a23a8a38ee1e547914c38b8f430eab3dba"
+    },
+    {
+      "path": "src/main/java/com/ubot/global/config/WorkerActuatorOnlyFilter.java",
+      "sha256": "8bcb1c56b508d65a7896dcb166e13f252884c971c8692db4d618732c06a383da"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/controller/AdminGuestChatSettingsController.java",
+      "sha256": "3e9c922eacba6ea8154a53324c38f657cbbcefeb0a9f11a48d90419fdca31bc5"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/dto/request/GuestChatSettingsUpdateRequestDto.java",
+      "sha256": "f95c145d3b5e42f95ee74915157477b4f137966bcd5c890b348e273c9bc02938"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/dto/response/GuestChatSettingsResponseDto.java",
+      "sha256": "4fb7a0c330a7cf1e776f40fabdd5768404458bd7c3618519b7db7957da03c6e2"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/entity/GuestChatSettings.java",
+      "sha256": "f8eb05562fe26f73c47f9bc2e64c507fce9ce9d885aaa5406bae16de3bf26f7e"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/repository/GuestChatSettingsRepository.java",
+      "sha256": "c0f0bff1adc6ae6bfabb1d6af0356b52f471281af57900c1c00e394079c0e8c7"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/service/GuestChatSettingsService.java",
+      "sha256": "6dd0e77b9c817d6fe271886faf1f8599d8817013c2307c94b222cb77ffde0bc7"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/session/GuestConversationService.java",
+      "sha256": "0c4d41bf6aaf3f2b45943ac0d291817b82785fd785acd6d87e3d47194acf373f"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/session/GuestSessionService.java",
+      "sha256": "739f52c3c9a62554abb97c4ae0da71d091d2d93941a7d84e43765a2e972a51e6"
+    },
+    {
+      "path": "src/main/java/com/ubot/guest/session/GuestSessionState.java",
+      "sha256": "2afe0d158e72c4a1dbf226baae655b3e9c80a98567ad9bd40bbd830ceb59d5c8"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/controller/AdminInquiryController.java",
+      "sha256": "da2b35da1c4e4a4f045a362ecaec8eeec213240fb92f1f2949be69d476c6f117"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/controller/InquiryController.java",
+      "sha256": "2d2fa971a33564390917af0689d4f2b1726fefd840d27e74ec752ac0705d2039"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/dto/request/InquiryCreateRequest.java",
+      "sha256": "fac16af25661eb419cfa7a9bdb9659b46ac02fe2f02297975d96e5b905edb7ef"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/dto/request/InquiryReplyRequest.java",
+      "sha256": "565ea1ba18c2ea89e6ee2330f172c400e848a9fcfd75dca1ed9ec742953f54a8"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/dto/request/InquiryUpdateRequest.java",
+      "sha256": "9dcbe62cbedd1ee97cce66e482f2a39e3a12f09b1b06245c4a3cf634e4bfaf50"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/dto/response/AdminInquiryResponse.java",
+      "sha256": "cf6833ee7359d28e95b7bcbd0f5e33aec25e370b00318b6be725d782cc92c9f2"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/dto/response/InquiryResponse.java",
+      "sha256": "566cc22a185d89d0c481489f4fd35bf5c469de44e81d46ac3c155ae6600b6938"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/entity/Inquiry.java",
+      "sha256": "1ac6ae7f0c29dd7b6564dfe0c21a8d6bde30415db1948427d828a1c2c9797d5b"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/enums/InquiryStatus.java",
+      "sha256": "cb0f53992d4e18408d8d6d0868a27aa9a909a76359645fe4eb6122181c5fb9c5"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/exception/InquiryErrorCode.java",
+      "sha256": "26bfab986e947167be2ecbb118c6fda3a18852cf03f5c6f07a8bff54a034ddae"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/exception/InquiryException.java",
+      "sha256": "741f8e6d3c1d135913b8ad9a4f1346cc69139873728c1e5493baeaf2649b911b"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/repository/InquiryRepository.java",
+      "sha256": "fdd6eb00286298efda6d9a9cdf22c9055522df06ef7724cb04accb33ea9be743"
+    },
+    {
+      "path": "src/main/java/com/ubot/inquiry/service/InquiryService.java",
+      "sha256": "ab165dfc3b7fcf7ffdc8768eca9519a822f0fc5f7c74fc246ececc371ad6687d"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/client/LlmClient.java",
+      "sha256": "5122978d6804e4e53e2dcf8431b252561be7e9309b1d69e1adeac403065c1fd0"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/client/LlmRecovery.java",
+      "sha256": "ec3e277c8b0d4e3c6d091549dde7232e114c6c00194e840f098d908fd2ff0a83"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/client/OllamaClient.java",
+      "sha256": "864312c09fbca86d00a50edf47dbeac0388b42637d3d3fc3df303244fb3566bd"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/client/OpenAiCompatibleLlmClient.java",
+      "sha256": "03943ef4f2797f1f1174f178575c95584d45050170ca18db17f26cbb1afd93a6"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/config/LlmClientFactory.java",
+      "sha256": "ec8ecaa77ba25505e9560a92b2f1098de429ce3afe4b65e015d244408a8aaa79"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/config/LlmConfig.java",
+      "sha256": "7dfa4162994bbd44df6eeb425e9dc0259c71da0c9e9baaf2934795c26a573828"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/dto/request/LlmMessageRequestDto.java",
+      "sha256": "d800545e326792a29ae0c43327f33ceeb8323b219a29a3a310418077292074e1"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/dto/request/LlmRequestDto.java",
+      "sha256": "284f3693e5b29ebc9a7a9d09a2f2ffd0a86bb688da3bd77ee4eb191eab27d8c7"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/dto/response/LlmResponseDto.java",
+      "sha256": "e73e1942aa26f10c4038e1c40c865c85c8a23869084b35e3a7204c21e8886adf"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/enums/LlmMessageRole.java",
+      "sha256": "eb1bae39f305c8ed4d27a34a97e33f9ef5ad31976a81956d656a4151efee2722"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/exception/LlmErrorCode.java",
+      "sha256": "de3606c06d512f0bdc3c9d16febca82f1c620ae3b07de53f89870d6b0d9c9ead"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/exception/LlmException.java",
+      "sha256": "0bfb095b88fa0457a099aa1e494f64afbe6bb632cb0061955881784372cfaeee"
+    },
+    {
+      "path": "src/main/java/com/ubot/llm/service/LlmService.java",
+      "sha256": "7283abe56b39c996ec0b694355547a45bdfd124dabbaf6c7ef83198f8b7e2d1b"
+    },
+    {
+      "path": "src/main/java/com/ubot/location/client/KakaoLocalClient.java",
+      "sha256": "a0cae068a6c45df1e55a159bf2b7bf5e0563678a23e41faf7bf9f1f97bea5f64"
+    },
+    {
+      "path": "src/main/java/com/ubot/location/controller/LocationController.java",
+      "sha256": "c0891f91d31c3656ef217ad281519fd16d7daf952f1980308d404b016f718a10"
+    },
+    {
+      "path": "src/main/java/com/ubot/location/dto/LocationSearchResponse.java",
+      "sha256": "8539cb431699551ad09cd81e9878f38fdca0d2835413964a5f4346e8466b7b16"
+    },
+    {
+      "path": "src/main/java/com/ubot/location/service/LocationService.java",
+      "sha256": "2b006d0f41664e21c61b8bc1e801e2e28888494de0037b29419f73b713d8580f"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/config/AiReviewProperties.java",
+      "sha256": "f11aeb39a6e7f225557defc23f5712a591077b0cbb7160e5b980778d6119461a"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/config/FaqMonitoringConfiguration.java",
+      "sha256": "33afcd14380a69115c1187dbe1e993ff96ef13a0069839e2bf48048e18462f5e"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/controller/AiReviewController.java",
+      "sha256": "62006d59f3b547da51baeb67f8710ed5bc2b7b166e4ba83bd319256b1d1283e7"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/controller/FaqMonitoringController.java",
+      "sha256": "e0fcdb3fb28622a582d9afcd412514a7844515bff9249f5598923e3ebd0157c8"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/UnansweredQuestionSummary.java",
+      "sha256": "0e09f542657cc0fab6bd6897e7546856b8fe73f291125348d85795be989254c2"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/CooccurringFaqItem.java",
+      "sha256": "e7d9226d11d1c650a2b970a919ea2182f020d17e0086f4c67e83bfad81129e2f"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqBasicInfo.java",
+      "sha256": "2702614be1b043ce79d51203d0043fd1ec766067824630b3d5213265d6aaea39"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqSimilaritySummary.java",
+      "sha256": "03b143ed8a2d58cf96b13b0654b108349b8681538599918ae2b1f0bd130ab87d"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqTop1Summary.java",
+      "sha256": "f709dbad5d5bb8cc2ab206adcf66830dd7b6914947630dcd37d4429ab045fc56"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqTopGapSummary.java",
+      "sha256": "f29ac059b3e3848bb2efbc0ac72d31333d30f3a089e10dd3949c085027d11d0f"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqTrendWindow.java",
+      "sha256": "4b15a763328d9e08384aff18696080efc8c1c1bbed69b96f40ba9aae2a728245"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqUsageTrend.java",
+      "sha256": "b4cdea30c730b86347047a67c5905da63b4415bcf2432ff4b7d04cc94cb5c3fd"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqUsageTrendPeriod.java",
+      "sha256": "3d2361888e03e948a1afd0538e2e239fbbe353d23b6ca5f438bfc845229b46c9"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/detail/FaqUsageTrendPoint.java",
+      "sha256": "e7c3f4bd78f2d0bbbed0bcfda39d3c5923fada50757ddaf5bcd0a8e908b08af3"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/DuplicateCandidateAssessment.java",
+      "sha256": "23ee7e923836a516b9fd20599a26c95becb6666c9cd6ea559fda36296f86226d"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/DuplicateReviewResult.java",
+      "sha256": "85a606d204b9518b5e7d5d3b38d1c88f9627df1fad26db2c0251b2448b433d20"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/DuplicateSuspectedAssessment.java",
+      "sha256": "1d34b10db6687d705b304bc9e9c704c63fa8e6cfbf27108352443fe76ba808b8"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/FaqDuplicateCandidate.java",
+      "sha256": "42959452fc8edab53d53e4fd0efd0e9b1c0cf50a1cf4b10f25d7ae16b8dfb4bf"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/FaqDuplicateEvidence.java",
+      "sha256": "8f5d25c47a3d428e33a1d35933745847c3687f201a0f20f1bc362d395d5744ec"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/FaqImprovementItem.java",
+      "sha256": "bcb90d4ff3259a25c5d67f43980406191d9908ca74be2d9ef139ca27f2cc02cc"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/FaqImprovementType.java",
+      "sha256": "0878a4703fcbe9e54fa9eea62923cdb7002605c8493fe1fb43eda352bfcd6944"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/FaqLowRagQualityQuestion.java",
+      "sha256": "7bd0fa7ca4814bc2880e8b5996e7941870593d22aa0a7057c5b595dcff49f855"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/LowRagQualityQuestionAssessment.java",
+      "sha256": "ec7ef72bce468007e0acb9ba5771a62a57b2fe4ce7f2cc63d88ecad6ec67acb4"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/LowRagQualityRepresentativeAssessment.java",
+      "sha256": "42a90870b39bcb85b1f88d53b68317f7b2507d105081ec44e526aaadccfeb017"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/improvelayer/LowRagQualityVariantAssessment.java",
+      "sha256": "a4283c68bd048e74b26330b8367df201c832d283a60c1e3221f339af3920454a"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/similaritylayer/FaqSimilarityByIntent.java",
+      "sha256": "82accb9d10f1f226dc8c4d7b660344df96a08a92e18f3333fb8082d636bdbfcd"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/similaritylayer/FaqSimilarityItem.java",
+      "sha256": "129e3f52e37a47c3c1a253d4dd6b19fd1562839f04f21bcde620b5f2e6145ff4"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/similaritylayer/FaqSimilarityRanking.java",
+      "sha256": "d8f16a93001f69819f24718bc69b4f9e32a67cd45ecf680570b15b176193dd81"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/usagelayer/FaqUsageByIntent.java",
+      "sha256": "3d22dc576b92746e33cb42af0877d5c4648e24208b4ef10d7ea767373f714426"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/usagelayer/FaqUsageItem.java",
+      "sha256": "8efd6c9827c95496b0f86714de421f150a65d1a3d07ff45020f350d36095618e"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/model/usagelayer/FaqUsageRanking.java",
+      "sha256": "2229ab58bda9ec3f6f2c9c853a288999a51b33bdd990b0a6cd6f66495337111c"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/request/DuplicateSuspectedReviewRequest.java",
+      "sha256": "f04864b8f4676c7e836f3dcd7c9a2841ea42ff9d0afbf1c612b60080d8f64539"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/request/FaqImprovementExclusionRequest.java",
+      "sha256": "93a8b374dd0f78bf1ad421ef81d00eec7326bbb3062a1a0471313b1d8ab39771"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/response/AiReviewResponse.java",
+      "sha256": "0c7db52cb049b408517d1ccda8dd3915e6b2f9211793a8084015540ca2652ee0"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/response/FaqDetailResponse.java",
+      "sha256": "fa47a3425f376613a3ab110a617ed4b6adb6c9c8f4566d73dc943e3f4b2da7a3"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/response/FaqImprovementExclusionHistoryResponse.java",
+      "sha256": "64d69f29f2bc8d3734dad8a10e25e9331c54f7cdea664a6afefc28f46830e5b9"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/response/FaqImprovementExclusionResponse.java",
+      "sha256": "a5c7bf24023a0cc32fc2187c8d6d5c6541a7f3129c0a0fbe806c394f521d8101"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/response/FaqImprovementResponse.java",
+      "sha256": "865df44c66a0ea6e858e9f6434954f52cdb8e90b69e8ff6854f8910f2bf21230"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/dto/response/FaqMonitoringResponse.java",
+      "sha256": "26bfd3cc60198591db2b41c53535e485c99f9e3a8893f52bf500fa9f1cced50c"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/entity/FaqImprovementExclusion.java",
+      "sha256": "b87dd7ad3868f539a5d653c12ca789ccb0c102796dd17e38b4372de703fb7af0"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/format/DuplicateSuspectedReviewFormat.java",
+      "sha256": "6b87b4db34b95be8f3fab21ab08b1ddc2728030f9661a258114e3a68c55f445e"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/format/LowRagQualityReviewFormat.java",
+      "sha256": "ac76212b5f45d4f90c1e531a45e51d779e60f791582b8b07a2c95e20044d7b57"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/repository/FaqImprovementExclusionRepository.java",
+      "sha256": "63657831d87fe31b08d8c6bcea627bd38fa1c222b246729fcdf325a932e5361f"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/repository/FaqImprovementSearchCriteria.java",
+      "sha256": "d84e84cae164ce18e772dccd12b87f810749ce86d5b6401ca8718c779b0e19c8"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/repository/FaqMonitoringDetailQueryRepository.java",
+      "sha256": "ab885412a965dc3cc0bc474b9e69bca7adc2f005b6e703608902da2c65d8eb68"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/repository/FaqMonitoringImprovementQueryRepository.java",
+      "sha256": "54ded7803d4fd3f711510f622fd35945837fe9a19c80da4dce1d08f40029f681"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/repository/FaqMonitoringRankingQueryRepository.java",
+      "sha256": "a0eeb4b3bbfd078bf17dfe58c78d9a35224b554f2d542236d4dc261cc12a424c"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/service/AiReviewLlmService.java",
+      "sha256": "34db786a25c6ad315f0bfdc88cc77a49813c20207acf84bd6663cbfa491393a1"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/service/AiReviewService.java",
+      "sha256": "40ea53d45083cbff93f0a210f937d042b84cc4f97ff909e6ac6ffba8f2dfac13"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/faqmonitoring/service/FaqMonitoringService.java",
+      "sha256": "6f3daea7f7f8f4036b9528116dd64fe541a9acd45c5a09abc55c7192ce301269"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/PrometheusQueryClient.java",
+      "sha256": "d4d195997a0520f0cdb3fd279b4fa9a165ffbd82bd18e36e7861fe1380ee5664"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/ServiceMonitoringRange.java",
+      "sha256": "a6a2d4eacda14b3297efc34c62390e158e0b21f2834e967bc220c11987502406"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/controller/ServiceOperationMonitoringController.java",
+      "sha256": "03534a9e0462bea596b5ef1ece34f956ddbd79b3051d91e33dde24e3d456aeed"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/dto/EndpointMonitoringResponse.java",
+      "sha256": "d9b5aa9d754c8fcfa30cb21bcfc3f5ba37e77e66481badc94423de185d7e5ffd"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/dto/MetricPoint.java",
+      "sha256": "26cc9c2d410bc07825a511673d8dfb59086c1dc044fa497f94abb11a700201b3"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/dto/ServiceMonitoringOverviewResponse.java",
+      "sha256": "a552eeedace0caa88b2b497cfdcfeaf08fc145519c1b572678e17833fb0292c8"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/exception/OperationMonitoringErrorCode.java",
+      "sha256": "7d5b8ce8b9de99428c1ae18f91e267672128cc02f308f7d0d390d9dc037305c3"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/exception/OperationMonitoringException.java",
+      "sha256": "40676012a0d7a61910cccb34a250667f24b140d4a4fe03ff19443d7787b60555"
+    },
+    {
+      "path": "src/main/java/com/ubot/monitoring/operationmonitoring/service/ServiceOperationMonitoringService.java",
+      "sha256": "bb191e33a5e8f7accc6b58779955d53678808979ce91c7f0c141efefb1fdb10d"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/controller/AdminNoticeController.java",
+      "sha256": "ac728927c3b0e3ab3dadd1ae52d07d6afcb0005c5fdb3a8d9a80b4c85eb69151"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/controller/NoticeController.java",
+      "sha256": "adcc7ad0cdcee5484b709d603d867c875e9583b4ad0a98a3ea4f1cb646098f64"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/dto/request/AdminNoticeRequestDto.java",
+      "sha256": "d9000f96980703322c987884362ee31cc2239956a7a98999b128a69e41600748"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/dto/response/AdminNoticeResponseDto.java",
+      "sha256": "91f04cd0fbc09ee8b714b1a6feee17a851dc6371963d6d02a41dda8a0a20f51b"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/dto/response/NoticeBannerResponseDto.java",
+      "sha256": "a0a368bb2800fe431452494a38f111cb4a78b2b201890092e839f66ce6002fc8"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/dto/response/NoticeResponseDto.java",
+      "sha256": "2b647467261dec097b0e30cf8e0654c46a54d3d296e4b4fd27b7b64b3963ddda"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/dto/response/NoticeSummaryResponseDto.java",
+      "sha256": "36db4925560f4e07281dfdc6350d7fc91f27287f87e0158b420e7a06faba1360"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/entity/Notice.java",
+      "sha256": "53de18468c5bd1b96b3d09321685196245c51e61f191913d82fa1c398840da25"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/enums/NoticeType.java",
+      "sha256": "6df553e36282bb5286d6f95a24f719adb6810f10a7bd92ce5072071254236b64"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/exception/NoticeErrorCode.java",
+      "sha256": "a8baed41ab475ce684eebf930603617d07f0f1c4cc07b6d34081ec9e5b631421"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/exception/NoticeException.java",
+      "sha256": "560bef1c0a44d1c27866416feac73b4305d2470ab7e49e32818a9042bc282378"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/repository/NoticeRepository.java",
+      "sha256": "9a93de9c3e62ef681c6127c4dc78d9ab0fbfa592f9e545345af930134d03fc18"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/repository/NoticeSpecification.java",
+      "sha256": "eb7b3b4d1ec6e8f1367ad1b39586edf7d88cffc5f43dbbc2da6541060391a476"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/service/AdminNoticeService.java",
+      "sha256": "f5d09098125c0bcef164fa2723a520557ad710cacc64be89f99e211761849d05"
+    },
+    {
+      "path": "src/main/java/com/ubot/notice/service/NoticeService.java",
+      "sha256": "d1ef983cb93c40592804fc2850fc1f00f12d398cee11a1ba2293007c27604b70"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/controller/NotificationController.java",
+      "sha256": "5ef1bb69d4365a2107f2834f31562e5f5a98c4b467da497d15257044c9e16b42"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/dto/response/NotificationResponseDto.java",
+      "sha256": "6bee34464039c5cfaa379a067c871f5e82795c4a68915b348f89f495b88d3b2c"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/dto/response/ReadAllResponseDto.java",
+      "sha256": "6bf08678e75aa4879b5b5374cc7b06bafb651d50f3451b410406d133813bf44e"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/dto/response/UnreadCountResponseDto.java",
+      "sha256": "28bb13ff97fa8b9af8d4cb0068c20b06749d4f8e9e31b8c662c94696c75b3a6d"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/entity/Notification.java",
+      "sha256": "88a97eceef0fac91744705f28dfa4c77d6cc0fd61793696d7c71acb1f99179ab"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/enums/DataUsageStage.java",
+      "sha256": "c5816fa0d812ac1dd82ccddc6cddee41768a56119a9ff158c62b7e1b3ce1dae3"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/enums/DateReminderStage.java",
+      "sha256": "51a037c884d181cc2ac061a8c3e6df0bea007954582f0511fdcd73bc0ffd7dc3"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/enums/NotificationType.java",
+      "sha256": "f56ccdb90dd50b62cf7cff48a8b1eeb8d921bd86b877799ee5050b64ab62605c"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/enums/ReservationReminderStage.java",
+      "sha256": "6937cff391ff58969e53de6d892cc630c0f03542258d5d547420bc4c34488f59"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/exception/NotificationErrorCode.java",
+      "sha256": "2723f8063b396919a06e1f2aca115c99541484b4f762373a21228a86e2378268"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/exception/NotificationException.java",
+      "sha256": "1455a1691e1b0d57187acfbf9427a8e3cddae01e4a9c4cb71d5eb198e83bc765"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/reminder/BillingReminderService.java",
+      "sha256": "3dc418f1c7dfc8460f9d654a0fe4cece1048e6c09d3353850642cc5a027a2682"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/reminder/ContractReminderService.java",
+      "sha256": "d56ddfdb9096b7b4c2ab7c925ca1095135aa6dbd7b09818724da9e3fe4b4f39a"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/reminder/DataUsageReminderService.java",
+      "sha256": "048fe500416724eee3b261adeb88fc64d08f90e16520b988570b26a11dbe6744"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/reminder/NotificationReminderScheduler.java",
+      "sha256": "c00eafe7c2693b76cc25c99ffa682e3d3a28807ba1dd8ca63d5a38b8d5f8a4f6"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/reminder/ReservationReminderService.java",
+      "sha256": "5443411ddc714154e1e7af1ec3f834ba514f8009c4fc848418550968ba15fe0c"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/reminder/RoamingReminderService.java",
+      "sha256": "d0cfafefd1af81eb3cf5015ca0c459b72d0644c61865c9945e22b41d4f111152"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/repository/NotificationRepository.java",
+      "sha256": "3c334b07b098609f8e711aa76434569b65b06603724a8a1d3d1295363190dfd1"
+    },
+    {
+      "path": "src/main/java/com/ubot/notification/service/NotificationService.java",
+      "sha256": "837749df0167a0227d4884b2857673f1b90225d6a6263855ea55169ae33d8dfe"
+    },
+    {
+      "path": "src/main/java/com/ubot/outbox/OutboxEventHandler.java",
+      "sha256": "49880644452c1ecd7ab4ae328e910d5bcc5f476906dc96cebee66ad44b7db811"
+    },
+    {
+      "path": "src/main/java/com/ubot/outbox/OutboxEventRepository.java",
+      "sha256": "44a3efe9f3ba39ede6bb3aa9b23a45205fa17f98edf4dcee97cb0e1ee4e9830c"
+    },
+    {
+      "path": "src/main/java/com/ubot/outbox/OutboxEventType.java",
+      "sha256": "eb915c60ddd592b9ce869128a263937c00936113d903ebd5c49810d2a546a3bc"
+    },
+    {
+      "path": "src/main/java/com/ubot/outbox/OutboxWorker.java",
+      "sha256": "7ec5e1e16d74fe147915c663809da9da54fbc5d99c1216f91069a5b60e225de7"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/controller/AdminPlanController.java",
+      "sha256": "3f4cef05d55e370cfdc739053046b05d85d5dd613d87ab98b25b9f1a9c05e3d5"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/controller/PlanController.java",
+      "sha256": "fdca861cd3ed1b2252f24d98a57e9a0ee71e1cec6c5c6c6001e00fe6ac85ee6d"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/dto/request/AdminPlanCreateRequestDto.java",
+      "sha256": "f0fa679a122f8a2eb54bcf1eaf12817836458e908a411d4f96bf3d193551dc19"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/dto/request/AdminPlanStatusUpdateRequestDto.java",
+      "sha256": "7be6925b50ed6814122234edb5e2f036519f08f1ac710b0ad1e8861f8c78b97a"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/dto/request/AdminPlanUpdateRequestDto.java",
+      "sha256": "fca4c5e99f1e6400a71d06cc1ae647e549c9bb14d1609e9a81abbf0bdadf5d61"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/dto/response/AdminPlanResponseDto.java",
+      "sha256": "fe45a5afe92fe706aaaeb3537554fc5fe422697eb81248a2f180a6b94fed07a3"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/dto/response/PlanDetailResponseDto.java",
+      "sha256": "1bf9cf2738128fbc3020b22d7355f75eda07fd4d33d09edfb8ceefa01dc23c01"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/dto/response/PlanSummaryResponseDto.java",
+      "sha256": "b5487424b7131f2d62288494f0852bf9e52e04315da57d0971f610f7594e505f"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/entity/Plan.java",
+      "sha256": "25e4d7250aa6522bf47a57ce0655245b25d6907dbb4a7d0b46a72526cad10640"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/enums/NetworkType.java",
+      "sha256": "c7f767cdd64f6b87d34f507aefb9eab3f221d658c5b0a0ca1a3f74a07c121a6f"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/enums/PlanTargetGroup.java",
+      "sha256": "7afbe3a2d0f1527e8a004358e6dbdb5f6c9f650235a6c12b564aac0d02194c17"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/exception/PlanErrorCode.java",
+      "sha256": "cbc594c89fa6f697a959362d9ecc39d738064c549e8e0364922dd70026013b25"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/exception/PlanException.java",
+      "sha256": "5c2b803945724afa6eb6523fa098a8892b6d60d70202a515cc34c846ba3f864a"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/repository/PlanRepository.java",
+      "sha256": "7b01feff3fd07a7c9134ac2d199c0aaf2bba764042f2136562e62b0479cd685c"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/service/AdminPlanService.java",
+      "sha256": "9e47ad842ef08f6ec282b3e50fe0232c02d9aa8a7a2b7f77dbfd3f746c0ddd0a"
+    },
+    {
+      "path": "src/main/java/com/ubot/plan/service/PlanService.java",
+      "sha256": "948b95b649c189abe9a6ac0a67234f3ce8c5a27f37f03b71b96a19fefc36a61f"
+    },
+    {
+      "path": "src/main/java/com/ubot/prompt/exception/PromptErrorCode.java",
+      "sha256": "a7b5a07b8afb2fe828e0a23f1171cd277790f16c0f8e94f0441e312ee1a84e86"
+    },
+    {
+      "path": "src/main/java/com/ubot/prompt/exception/PromptException.java",
+      "sha256": "9c69c27a143d29bd7db20076130e2be43517133d47a0ef067fb5b3f280d21d81"
+    },
+    {
+      "path": "src/main/java/com/ubot/prompt/format/FaqAnswerFormat.java",
+      "sha256": "522f95b2d0810a278fdc264b6f99b486ff9c0df1edba96bef21f98a8f99aa9e0"
+    },
+    {
+      "path": "src/main/java/com/ubot/prompt/format/SubQuestionFormat.java",
+      "sha256": "c596d819f78055ed5fc34a6d29b3092f2c7653a6f6036fe1cccd0015fd37ee2a"
+    },
+    {
+      "path": "src/main/java/com/ubot/prompt/service/PromptService.java",
+      "sha256": "eeb4679b06e79daa7c8a195cd4cd07c8e65b1651a3706129e630890b3e1e2acc"
+    },
+    {
+      "path": "src/main/java/com/ubot/prompt/service/SubQuestionPromptService.java",
+      "sha256": "b6c88cb7eb68e095ee3e094fb774e87ee5a3d919eaa75f5e5f9c4cca0ebb34db"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/controller/RankingController.java",
+      "sha256": "f8a670ffdd06a3e8a7352a679baf15d95e10dca76538e1395c61277875bc5caa"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/dto/model/PopularRankingItem.java",
+      "sha256": "321cb0e7e8db53e356f1196cd373f8586dddebec43e1343f092570a65a360cd2"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/dto/model/PopularRankingSnapshot.java",
+      "sha256": "2ae90e410a49dda79e1f8544ea3e57a8863415c95412774861ba906cfd133c3c"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/dto/model/RankingRedisKey.java",
+      "sha256": "bec71756d3176e1b01c2109b1ad81ce761383fc39b6542280703ccf48874d4bc"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/dto/model/RankingSnapshot.java",
+      "sha256": "44de14878afabca8afa58d2ac4775ce0e47cdbacc2dff1eefd2e4c9015bf0d3c"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/dto/model/TrendRankingItem.java",
+      "sha256": "bf934c53f245a0b6b8ef3c8904904f8224cee2f721cf549c7edddb738c3f516c"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/dto/model/TrendRankingSnapshot.java",
+      "sha256": "4507d464ef21db34fa0523d145694e5a4328110395db2b1dc27859ac0f3671b9"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/dto/response/RankingResponseDto.java",
+      "sha256": "d9b1ee4147ca3b039233589688716d0817760c3f8b96be182798d48e84051f9a"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/entity/RegionalTrendRankingPolicy.java",
+      "sha256": "a7e6b22b4579740a82b9741780e6f1394adae5586d7f20987c5cb2e145915742"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/enums/RegionSido.java",
+      "sha256": "725775745124519973758fabaa7555d13afd0bb2372a866ec5a4f22f71c88183"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/repository/RankingQueryRepository.java",
+      "sha256": "d5cba6495a6bfa5cfafb0b7ff7e5ba23a049e339755bd52d6126338abf83589a"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/repository/RankingRedisRepository.java",
+      "sha256": "69c6424c4d17c5cfea2752ebc82420872a6ea21e5f2f901be7a8ea9377bee566"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/repository/RegionalTrendRankingPolicyRepository.java",
+      "sha256": "4be230a832f4712778122a7ea3d4692dc9ca05a4e90dd3556271b45ee11bec9c"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/scheduler/RankingScheduler.java",
+      "sha256": "406440ff66d5f18b8e1db7535aac6d47107a0fde48f3eff4ea1cfce75e069406"
+    },
+    {
+      "path": "src/main/java/com/ubot/ranking/service/RankingService.java",
+      "sha256": "18e4cdec1946e5ff07d56090392e55a2caf84ff065b226f63ba4a2a022c303fb"
+    },
+    {
+      "path": "src/main/java/com/ubot/redis/config/RedisConfig.java",
+      "sha256": "cc7ee6af426935c785f489e71904a9f61c622e226eb242fbf46b37467445ba5c"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/controller/AdminReservationController.java",
+      "sha256": "58a24ff67365cb82b4828215e2d9f752566dbd0d429dc1d541ffe924b933535e"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/controller/ReservationController.java",
+      "sha256": "2eedaf71a30df63ee9331cb3aef9fff4fe3495fecf9348a57acde6469d3379f5"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/dto/request/ReservationCreateRequestDto.java",
+      "sha256": "c6edcd1ca5f80b09ca6ff3514ff04ec0c06939a77e58cf647c9cd126f8d6bb74"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/dto/request/ReservationStatusUpdateRequestDto.java",
+      "sha256": "e3c1b24c0230daf313e6216ebc4acdc2c883e994bcc77820f43ddff22d644010"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/dto/response/ReservationResponseDto.java",
+      "sha256": "bb677a50b41bf6146a54a4b70efe8159fa2bd5473b56dce5446545b1f8e50a4b"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/dto/response/ReservationSlotResponseDto.java",
+      "sha256": "85f0fb12519124f779440bc3d5e3929e2ed02a311cc413af2f6189d61700527e"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/entity/StoreReservation.java",
+      "sha256": "23d5318f02120af7b66aed5882340a307c7bb55c051cd91dd637d5491b0080bd"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/enums/ReservationPurpose.java",
+      "sha256": "9fecc35a46df5b0fab9cb1f0f67fa6891fb1e4a1e8777945acffdb76f4baa184"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/enums/ReservationStatus.java",
+      "sha256": "1c10b473312dba1100d1382f2927058cdebd92c9755ba647fda05966418b030d"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/exception/ReservationErrorCode.java",
+      "sha256": "28e6dead57bf83b45224b4a80c6b22af446e59b8204681f440c6402340c0caaf"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/exception/ReservationException.java",
+      "sha256": "9c37ac6bb4797fb402d67822201af9dbbf3c68a85102957bb99a144c4a077d18"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/repository/StoreReservationRepository.java",
+      "sha256": "c27cd96cbead506b0bf09345ba29ec0e0f3871934264a4eecdcfd50ffe4190a6"
+    },
+    {
+      "path": "src/main/java/com/ubot/reservation/service/ReservationService.java",
+      "sha256": "39aa9e6e8f357030a49a60b3bed10c2cf7e010ec956fb793ce4401de73a46ebf"
+    },
+    {
+      "path": "src/main/java/com/ubot/retention/scheduler/DataRetentionScheduler.java",
+      "sha256": "f6fe6c0881cd931835edb1e0a5c4e9b7cceb97568803ff60429fc76f6c7b7077"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/controller/AdminRoamingProductController.java",
+      "sha256": "3b8749386dafbcdf49ebb7dc2200aeeca342a7862e3e5904c995355b4dcd9793"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/controller/RoamingProductController.java",
+      "sha256": "ff41571cb1c5283f87b0cefeb26f317c5f48c754f262b78e5c10d1514a2b8b21"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/dto/request/AdminRoamingProductCreateRequestDto.java",
+      "sha256": "d4c77090f5cd297010f956a73b84ae9cc6009b2919df3ba0477c2cdaa75b5ce6"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/dto/request/AdminRoamingProductUpdateRequestDto.java",
+      "sha256": "10f38b664d473fee297d32b733ebc2df4818cdd1dcf85a7d25e2a371b7abc254"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/dto/response/AdminRoamingProductResponseDto.java",
+      "sha256": "dc2d3a74d814938720d49284e4bfc59cf43038b1d2e9bb14486645e4f9ce7de1"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/dto/response/RoamingProductResponseDto.java",
+      "sha256": "1a8f2137a8d11dbea20e89bc1cae5fcd2aca9dd144455fd010d68c796c7b3d9c"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/entity/RoamingProduct.java",
+      "sha256": "e56a5a2c69cf9554df513c92b97125a1f721ea25d20e41c1d0d6c6f3d41a760b"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/exception/RoamingProductErrorCode.java",
+      "sha256": "8bff0964900a8ac0d03c6d9844ea01ec91a6c0d17f15841ff2bf46b61f5a6b45"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/exception/RoamingProductException.java",
+      "sha256": "2860e0b409794be0c4ab6110fc570dbd93d429cd4e4f4b13004e0d0866cce72a"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/repository/RoamingProductRepository.java",
+      "sha256": "d919d2933715ab0b75810a1d208faea01b5c596f586debbd6b90f56e0404562f"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/service/AdminRoamingProductService.java",
+      "sha256": "3ed27e70f0bca04a29636d4547180993977aeb6d489f7f62715a26e5ac921fd9"
+    },
+    {
+      "path": "src/main/java/com/ubot/roaming/service/RoamingCatalogService.java",
+      "sha256": "c0f1dc909357bcfae1e4b81c7c0f6e50a5b3007fb893eb9f9f94cddd0538a520"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/controller/AdminStoreController.java",
+      "sha256": "38f84a2e90bda3705c948e8d10460b1e8e5820f7b6fe40ea1562983c3fd17770"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/controller/StoreController.java",
+      "sha256": "72522d8776ad377d50a187c6f3ee2345ddd6d722fb020c53489aede2e69fb929"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/MapClusterResponseDto.java",
+      "sha256": "8c5e950ebdc41e2b23818a061d6800d2f3136e7b29148f1b6535173c33f7777b"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/MapStoreResponseDto.java",
+      "sha256": "5c0c9c3ce2d88ecfe5cddff527a22ab5a94a132b921514cf7120d82dbbdea96c"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/NearbyStoreResponseDto.java",
+      "sha256": "dda05f32b827b7b09a50af9398ece3f8dbf7cf5a775b7276beca53085450ee26"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/StoreDetailResponseDto.java",
+      "sha256": "87e996265c9bd97768fb726cb39f5a06d10bc6d2ef9ffa986083d8dfb822f225"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/StoreListResponseDto.java",
+      "sha256": "f6fa776edbce724b396f16e83ab9d3aab0699e15d7224affa02e3cc436f2f36d"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/request/AdminStoreCreateRequestDto.java",
+      "sha256": "e2f726e2d8627b17dd113bb4179bfca5da9482402a999c5b9e70706482ed3677"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/request/AdminStoreUpdateRequestDto.java",
+      "sha256": "0a38093fc9b147221d5312817a192d8d2e4f40cb0501f8fe063fff1ead8da96d"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/dto/response/AdminStoreResponseDto.java",
+      "sha256": "1c6ed376ff244312e7a228b66f0d383bb5619e6044913cca9f4c933c61dffa63"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/entity/ServiceType.java",
+      "sha256": "a191bc425dfb9cde6caec965e5f8e04076cbd50dba017e48cd35a37ea68d5e02"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/entity/Store.java",
+      "sha256": "85a154bdd6b68be2c587c36f605ab81dfc679407bb3ab026bba55bf8cc538189"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/exception/StoreErrorCode.java",
+      "sha256": "73ad484cb6f3a2facc44b7dab28618e30391cbed194d401553e694fbdeb95c0e"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/exception/StoreException.java",
+      "sha256": "6ede887719d85474602948d84c28492a05482efebc183be5f8bf12c98afef5ca"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/repository/AdminStoreSpecification.java",
+      "sha256": "8212f1e997186468096a061fd328b8aa0b11dec70779140fcab977851f7cbb22"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/repository/ServiceTypeJpaRepository.java",
+      "sha256": "c0fdc104e0845cb864b057046971d392a0aaad18ace9c498c4b8bb1aff2b211b"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/repository/StoreJpaRepository.java",
+      "sha256": "950abae552fe38961635793548cd520433fb45e1094d673b37d7681d532bb6db"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/repository/StoreRepository.java",
+      "sha256": "338ea46ddd4e2a1ead22ac43e50ce62d412097f774f7e719be6d9f999ccaddd3"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/service/AdminStoreService.java",
+      "sha256": "42dff289af2be60bbd85b286198ecd786228e0bf53666d9889292ebb47f04ae0"
+    },
+    {
+      "path": "src/main/java/com/ubot/store/service/StoreService.java",
+      "sha256": "f31e7edb49ebf75cc773369a0a1b98a2f9cd565eeb09bca6b31f84ec2f49036e"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/controller/SubscriptionController.java",
+      "sha256": "79f491befc4b91051d895c345933eb211ba54bf039842890faad2a9c7b2c06cb"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/dto/response/SubscriptionAddonResponseDto.java",
+      "sha256": "3931f7919cfbdbf480df0c5f13e820247f16fa3daa86627290f726236caee825"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/dto/response/SubscriptionBundleResponseDto.java",
+      "sha256": "f1dd0d07cb584fab7718be894191f53d5499fc110767414d590db3a7aac0d096"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/dto/response/SubscriptionResponseDto.java",
+      "sha256": "f676d52dafd24ca50243ef24a2b6c6d8e82d9acd20a2b85ef33163e30512f3f0"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/dto/response/SubscriptionRoamingResponseDto.java",
+      "sha256": "47dc73daf7773bd1e231935c4cf62f9ad73289c04bd33119679239d0f58b20be"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/entity/Subscription.java",
+      "sha256": "b4619d9c97da8f65ef7708a4abfa0b8b5dc9bd88837ce33a554bb2e9a6b530f5"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/entity/SubscriptionAddon.java",
+      "sha256": "77c40cf784ad2c9e285baaa6706ed7e1cc66903810bfc0e3b1e278c064c3415b"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/entity/SubscriptionBundle.java",
+      "sha256": "00b0396e1b07866cf778d9a7f1823f654de995ff9bd58fd2748cc91d0525571a"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/entity/SubscriptionRoaming.java",
+      "sha256": "beefd31ee1fd18b3f14750f0021ed2625df8f7bc7ade8d9438382ec9c3c8b1fe"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/enums/SimStatus.java",
+      "sha256": "b56324849de6ec3fa7a7c7600dc4be90f8fc1e9b90be9203bada14c19da02f39"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/enums/SimType.java",
+      "sha256": "4b526665cb8733aa18c0a94f094f6bd2f7e60a522db672be8d23da13124889ea"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/enums/SubscriptionAddonStatus.java",
+      "sha256": "ce59c963d0121f3dd1024272cda239460531a2f971684048f95b881791ab2745"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/enums/SubscriptionBundleStatus.java",
+      "sha256": "aa7e28b2baf88495758e309ed6d7f39c00b6ced5a70d8bd6e35d32767af6377e"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/enums/SubscriptionRoamingStatus.java",
+      "sha256": "9e7b515a42cb821ca6bc7a4d2cbc620c5e4b0040a4169828ac371f9660613144"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/enums/SubscriptionStatus.java",
+      "sha256": "47b97b5474ca89b5b01136f5c296584b802233fb5f30a5e9de1c550b2ea14f23"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/exception/SubscriptionErrorCode.java",
+      "sha256": "a8124d6c188aed64ae4e4b475db48a96c12665c1bd5ca9d92f3579828df3b6db"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/exception/SubscriptionException.java",
+      "sha256": "8c2d0b75a9cce9afef59bbf5c7564fade98c117623f91d6042d6f07300a17cf2"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/repository/SubscriptionAddonRepository.java",
+      "sha256": "68902177dc22d0be4a30c1a6cc23f649cf0f31f841f7324cc414f1f8be675c9f"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/repository/SubscriptionBundleRepository.java",
+      "sha256": "a03b93202766dfdd405e37a71fc76215038031abd37aad2d99840c1840c89add"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/repository/SubscriptionRepository.java",
+      "sha256": "aad091141bafbd0b746dd268f478de65bf2d4a897e7b48e31b062ba9663bd7ea"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/repository/SubscriptionRoamingRepository.java",
+      "sha256": "17672596181181b6ba5e7a0549d617457ab27f7bd3c489b207b6ce265c89c2bb"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/service/SubscriptionAccessService.java",
+      "sha256": "a240371db590353078ef095a2c74d64c83d2f204edb6b63fdc6e8569612a35fe"
+    },
+    {
+      "path": "src/main/java/com/ubot/subscription/service/SubscriptionService.java",
+      "sha256": "b1cf8cd081a096281e9cdcb01558b78045b1442fd02d63bad9d2adbfdeb61104"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/controller/AdminUnansweredGroupController.java",
+      "sha256": "35f3bda80abf7f0ad236a1d98ea83ab6f1be5cc8665ccb3219bafac83b105999"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/dto/UnansweredCandidate.java",
+      "sha256": "415740b66b04c42934dc2510065fbb80d9d7242d86f475268491ef8cc48c29e1"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/dto/request/UnansweredGroupFaqCreateRequestDto.java",
+      "sha256": "461aff839e5f119c62f82d395dcc63b219ed358dccc8abb85e663d16d737321f"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/dto/request/UnansweredGroupStatusUpdateRequestDto.java",
+      "sha256": "970a294e46360a73b1d2d1b2c1a087bfaacbc9fa4e6009b34318a04f90589739"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/dto/response/UnansweredGroupDetailResponseDto.java",
+      "sha256": "7a8115b938514609133947dde511bc12e7d9f11ab83e1ae28bc5c50675509f29"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/dto/response/UnansweredGroupResponseDto.java",
+      "sha256": "c17c9c591d41ad2403a423ada4f8eaecd34fd09e2390f513544268ce26018d52"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/dto/response/UnansweredQuestionResponseDto.java",
+      "sha256": "ff6c8953c140e6eccb280852efe822724edc9df58c25657b94afa96e8aeb904c"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/dto/response/UnansweredReverificationResponseDto.java",
+      "sha256": "c35f850aa6b58c15befcc8b4b4c5a80db042bc8139fb6801045142fa0bd3993a"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/entity/UnansweredQuestion.java",
+      "sha256": "166e31262274cd036b12b31583bf15830fc54f347ae1baf0226d52c65cd1fcc2"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/entity/UnansweredQuestionGroup.java",
+      "sha256": "3272e1a1901f6b3690f762f970f3c8bf0a9d53bde5dd4fcdf31bda8cefa06550"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/enums/UnansweredGroupStatus.java",
+      "sha256": "379cc27a7728bda9936ff60e39b28162fd121ebc8064802fca0d077b531c40e1"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/enums/UnansweredReason.java",
+      "sha256": "431f33cc02dbecb6e71b5f7e5b869f293fced5a3de88a6eb926174771dc18df7"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/enums/UnansweredSource.java",
+      "sha256": "8f3caa7117f660eaaa65896b40911722ebb70c8904580ad597ffbda25e3034f1"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/exception/UnansweredErrorCode.java",
+      "sha256": "2746e965015766a6a16c56ae83a4b48988c183648374e973bdaecaa464523390"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/exception/UnansweredException.java",
+      "sha256": "e1268e97f74ba0e65c051af1e7deedfc69a027b5d6bbcc2dd1170d24d5f85944"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/repository/UnansweredGroupNamingRepository.java",
+      "sha256": "5f9f3dc5f04c0cace73341b0611b539250eeec8175cd5e5faff8190eaade28fe"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/repository/UnansweredQuestionGroupRepository.java",
+      "sha256": "923f5bd23bccfe723855b695e23cc8637455e3254e91c6cb073813c804691c1d"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/repository/UnansweredQuestionRepository.java",
+      "sha256": "e7e78c00a001d7f5930e355f08ac2e54d052b151820d9d0a1a8b62ee5130d2b0"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/repository/UnansweredQuestionVectorRepository.java",
+      "sha256": "659f42b2653a62dae704c80c9c9faefc607b4a2a81e6ea8b8e1746822cd4bbc6"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/repository/UnansweredReverifyRepository.java",
+      "sha256": "ac5e0580aba78f00de4510365ff3b4c83d8fac8896e6f174e2b40a585f2a252b"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/scheduler/UnansweredGroupNamingScheduler.java",
+      "sha256": "fb23f47d15772bc2a36ad0c06806537757aeda8f3c6494e0bfb49a9ece2a6cf8"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/service/RejectedQuestionDuplicateChecker.java",
+      "sha256": "fa07790984564bf40f1f1ef1700a5c855121087522095c77f79e8583feb21ea2"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/service/UnansweredEmbeddingBackfillService.java",
+      "sha256": "5bc3586b58f403d003d9de4d7ffa23f0ae324303ad1a3cc58e2b6286a1009f4d"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/service/UnansweredGroupNamingService.java",
+      "sha256": "bb98e402ea4a6a0140d185ae6b82e864a0c5be6a84794c5908655916a7282e05"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/service/UnansweredGroupService.java",
+      "sha256": "a09b032676c0d8e680d85e31d2ab12e0c9c0739681e3db5941566b45313f31e0"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/service/UnansweredOutboxHandler.java",
+      "sha256": "91f8cc66d760df935c6f09815ae9154113ab514b4c9df4ef6d00e645fe894664"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/service/UnansweredQuestionService.java",
+      "sha256": "6c2dc52327f96514ebab2a6fa10b25b0eafd89c1383f2db53d278840d3506362"
+    },
+    {
+      "path": "src/main/java/com/ubot/unanswered/service/UnansweredReverifyHandler.java",
+      "sha256": "a38e7d4254df38bc81d0732fdc1e30730bbc70e3243702695d9565698477fd29"
+    },
+    {
+      "path": "src/main/java/com/ubot/usage/controller/UsageController.java",
+      "sha256": "a93b4c2936e57370d5e30e270bc7b54fdb99327887cfeebe2c22ce7a10ef049c"
+    },
+    {
+      "path": "src/main/java/com/ubot/usage/dto/response/UsageAllowanceResponseDto.java",
+      "sha256": "e7fc2d094a0cf6c1b60ecf8476a3efde82161fa3e4826a717ca7a3bfc968c6a4"
+    },
+    {
+      "path": "src/main/java/com/ubot/usage/dto/response/UsageRecordResponseDto.java",
+      "sha256": "b1ef4275c467074899b4e9bd0cccbd732a353ca9054d5bfd4f82833377ae94dd"
+    },
+    {
+      "path": "src/main/java/com/ubot/usage/entity/UsageRecord.java",
+      "sha256": "7f250c284fcfdda68677118b836e62bf89c7a2983f54ed1b01f9022e82b0148b"
+    },
+    {
+      "path": "src/main/java/com/ubot/usage/repository/DataUsageTarget.java",
+      "sha256": "a05bf7ced4b9639ea799498d3e8a829a784105613f513d83b492ed1c5900edaf"
+    },
+    {
+      "path": "src/main/java/com/ubot/usage/repository/UsageRecordRepository.java",
+      "sha256": "c2ce4add36d169149ab766b70f061b4eb8f196bd28a9993367864658bbd91cc9"
+    },
+    {
+      "path": "src/main/java/com/ubot/usage/service/UsageService.java",
+      "sha256": "9f54ee364a2b0d51aee28a8916cd92d8d38a1f7b1ab79e07a1d032214b946c4c"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/controller/UserController.java",
+      "sha256": "05674adf18750f6590ddd2f6d182dd55600bf2ddf8d32102bb1d509bc905188b"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/dto/request/UserUpdateRequestDto.java",
+      "sha256": "3b631517a8f8ddf9d4b8bc29b78596bdd451f46f52f27c2d2528230b88dc5f3f"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/dto/response/UserResponseDto.java",
+      "sha256": "f6507426ea2ffba3b32e8d8c4305457ac0c8cc1e42cfa77e8f308a1c302d1644"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/entity/User.java",
+      "sha256": "bddadd693aab62c8a2d241ce6c3638b352a6f8a73e4ee9299d89b50e1e2794a5"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/enums/Gender.java",
+      "sha256": "b596dc7ed84bff69646b863f515af739e7ce3cebe60f67f6c53641c406aedcf1"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/enums/UserRole.java",
+      "sha256": "7ea8598a032aa8d788524fe35638e6de66237a170c102b1680155a8f4d739ef7"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/exception/UserErrorCode.java",
+      "sha256": "6bef211c5b0c56906331f2cd6e3ef4b606a12eba02f68a8ae1ba3f6a2a2cbc7b"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/exception/UserException.java",
+      "sha256": "5d39bf97fb3a7a03bdf1127996bfe6cea6a12d92b2f17b3f738740c23dec2128"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/repository/UserRepository.java",
+      "sha256": "5831cc0f7dcd44d9cae84ed59128c5092caf0202111c2545b0d6af78382e56ce"
+    },
+    {
+      "path": "src/main/java/com/ubot/user/service/UserService.java",
+      "sha256": "ecba0238ff2aac117aa20771517e38d1cb09cc9dce9500fea8172818a37b54c3"
+    },
+    {
+      "path": "src/main/resources/application-local.yml",
+      "sha256": "f0ec037bddf55ccaced38954768c3d8e692971eaf49fe9df7a5220cac8206eb5"
+    },
+    {
+      "path": "src/main/resources/application-prod.yml",
+      "sha256": "44c440880b69b42dce3296e80de1041a3100433f6636c92fed94801bb62f95fa"
+    },
+    {
+      "path": "src/main/resources/application-test.yml",
+      "sha256": "c61d764e55bdc7c86e10c7ff43d9079485451479f9b3e7f7eb05f130e021e4d0"
+    },
+    {
+      "path": "src/main/resources/application.yml",
+      "sha256": "53d0f65c29c82a254e43141a202b283225ddf31b7cd52c9c2cba0a68cdff95ec"
+    },
+    {
+      "path": "src/main/resources/db/migration/R__purge_expired_data.sql",
+      "sha256": "ca4db694fd3fbddb75a9e98f4920dbc1e0eafe7932b3525a2193243cd8779597"
+    },
+    {
+      "path": "src/main/resources/db/migration/V10__create_refresh_tokens_and_alter_faq_category.sql",
+      "sha256": "4aeba4736ac2ae2144e254bc8709fa0e3a451cd82dcfe590675c23962b2aac12"
+    },
+    {
+      "path": "src/main/resources/db/migration/V11__add_soft_delete_to_faq_category_and_service_types.sql",
+      "sha256": "b88ef32a1b09f8da484c00155bf481f4b072c132d7505b1ce382f5c7736b968c"
+    },
+    {
+      "path": "src/main/resources/db/migration/V12__create_answer_attempts_history.sql",
+      "sha256": "b78b76e3a2c7394b9bf2441b43dd4815ce2828fbecada0178063fd18ae33c0a0"
+    },
+    {
+      "path": "src/main/resources/db/migration/V13__add_intent_to_faq_and_old_faq.sql",
+      "sha256": "7f99c6b964989af9dea054b047390bd8d5bb37c1ecbf5e32a623ed3ff73d9eb3"
+    },
+    {
+      "path": "src/main/resources/db/migration/V14__create_forbidden_words_table.sql",
+      "sha256": "3a5ec612b01b319932bf7f24f8b1a3822a08f5e228b8d71b8a8ebb851f46fdcd"
+    },
+    {
+      "path": "src/main/resources/db/migration/V15__create_unanswered_question_tables.sql",
+      "sha256": "f5287dcdc0d8cd3d1e56acc920fe9bc675906621e3e0a11deb3b77a8a02f2ce9"
+    },
+    {
+      "path": "src/main/resources/db/migration/V16__add_ranking_columns_to_question_log.sql",
+      "sha256": "65664885d74c8d0ae728a241d062de98303fc0c838b52dba1317057984712f05"
+    },
+    {
+      "path": "src/main/resources/db/migration/V17__add_resolved_faq_id_to_unanswered_question_groups.sql",
+      "sha256": "8c968c4bc93a9c34718c85a0716f0228901a7ff1540d06eae03810382c266795"
+    },
+    {
+      "path": "src/main/resources/db/migration/V18__add_regional_trend_ranking.sql",
+      "sha256": "af841a9852aca3590cfbc259214dd9e58317a5242ff5cc3bed7bb97f6af46d17"
+    },
+    {
+      "path": "src/main/resources/db/migration/V19__create_conversations_and_guest_chat_settings.sql",
+      "sha256": "5f06fce72ae99d4525d5149201077aeb5adf7424a671b2727d83bcebc922a1ac"
+    },
+    {
+      "path": "src/main/resources/db/migration/V1__enable_pgvector_extension.sql",
+      "sha256": "67d664a66e215bbb24bb21fd2697d9d07025e4f75f2bcd3bc6964df457f63b82"
+    },
+    {
+      "path": "src/main/resources/db/migration/V20__add_research_columns_to_answer_attempts_history.sql",
+      "sha256": "38051ed571db2af026e969a4ca1e021ef352703219d6964560a72c8229a34abf"
+    },
+    {
+      "path": "src/main/resources/db/migration/V21__strengthen_conversation_owner_constraints.sql",
+      "sha256": "16b032d26a2820b98bdecfde48a6b5c3e501f19978fd5b040da2e4dbe4daf35c"
+    },
+    {
+      "path": "src/main/resources/db/migration/V22__create_store_reservations_and_notifications.sql",
+      "sha256": "ad2a2e0a2c6013bc8e81796756fa22280e517c142569593b1f364c996b2ba458"
+    },
+    {
+      "path": "src/main/resources/db/migration/V23__create_embedding_profile_tables.sql",
+      "sha256": "579e77be97650898696f7eefa0245c4ad8e02a5d0fd2174e1557f2e0e0a0f9a8"
+    },
+    {
+      "path": "src/main/resources/db/migration/V24__create_product_tables.sql",
+      "sha256": "42448c059b7095cace74b63db075b3be066fd11f444bc0e8632ad8fa3abf5887"
+    },
+    {
+      "path": "src/main/resources/db/migration/V25__drop_legacy_vector_columns.sql",
+      "sha256": "f978820ae741b96bc96dbf1e6cbb5a67dab17aa0ca16de8d6d8cc2945758e1b4"
+    },
+    {
+      "path": "src/main/resources/db/migration/V26__create_subscription_tables.sql",
+      "sha256": "3bb11acef2036a1e932e7e8a9a678d3994856c2e6196bb60dc70abea7ea301db"
+    },
+    {
+      "path": "src/main/resources/db/migration/V27__create_notices_table.sql",
+      "sha256": "39c857335dcfa2add82dc02851840642bf334ae9ac75c4a586fed945a0f80ab3"
+    },
+    {
+      "path": "src/main/resources/db/migration/V28__apply_data_retention_policy.sql",
+      "sha256": "c913c50cb94260d582a87de1b38b7e24ed803136a3249b0bdbb65d5d517d07c6"
+    },
+    {
+      "path": "src/main/resources/db/migration/V29__add_refresh_token_rotation_columns.sql",
+      "sha256": "f2e94ce77de2f48bbff54b106c32422848d4d2930deda67f132e8f31cb9aa80c"
+    },
+    {
+      "path": "src/main/resources/db/migration/V2__enable_postgis_extension.sql",
+      "sha256": "901f07cd83a7b6d337a952cd4dfed159329952f24461027246ad952b8f86103f"
+    },
+    {
+      "path": "src/main/resources/db/migration/V30__extend_notification_types.sql",
+      "sha256": "16c40730cbd64c57e05438b25c44d952639791cb19494a1c3112c4249e0ebf87"
+    },
+    {
+      "path": "src/main/resources/db/migration/V31__create_chat_jobs.sql",
+      "sha256": "13fff54d2ea4acc3730ba73bbb84848b2afc798bd266e3d20b9d90e1388316fd"
+    },
+    {
+      "path": "src/main/resources/db/migration/V32__create_faq_question_variants.sql",
+      "sha256": "66f4e9597f473b3878c00dae31aa8ab72869ce7da1ad71f4ed22c537506850e5"
+    },
+    {
+      "path": "src/main/resources/db/migration/V33__persist_chat_job_payload_and_lease.sql",
+      "sha256": "576a971fbc359b9e392ab2d779617d9fccd78e678307646bb02003738b853fe4"
+    },
+    {
+      "path": "src/main/resources/db/migration/V34__add_llm_abstain_unanswered_reason.sql",
+      "sha256": "2e39281af82e8dd4bda642aaf55fc23144ec9b7d299e6b50922b25d0cab7204c"
+    },
+    {
+      "path": "src/main/resources/db/migration/V35__add_sub_question_columns.sql",
+      "sha256": "e4eae8d769d707c82a82a1fcdab9176322c6e0242c1bec30a74b85a821cd6e5f"
+    },
+    {
+      "path": "src/main/resources/db/migration/V36__add_unanswered_question_source.sql",
+      "sha256": "64d00b8a43d28d8f2beeeb9d8d50552890c5a8ee91bed4910dcf087061017688"
+    },
+    {
+      "path": "src/main/resources/db/migration/V37__create_outbox_events.sql",
+      "sha256": "3c6d0ac9ff2a6a7d7eb9d5cb96ace07bad7364b6009ca70c3fe6d03ee0c7f54b"
+    },
+    {
+      "path": "src/main/resources/db/migration/V38__create_customer_inquiries.sql",
+      "sha256": "664459230215a11c762683d9eb5a2cb828b9e0528a516fd2579ae5dad36e6e42"
+    },
+    {
+      "path": "src/main/resources/db/migration/V39__integrate_counsel_domain.sql",
+      "sha256": "1b254847a6c58a86b94d24b56d34712884638c7946cd7f347e0043955a410aaf"
+    },
+    {
+      "path": "src/main/resources/db/migration/V3__create_faq_tables.sql",
+      "sha256": "c5468b95e2b902f95e74ec760f95c8abdb61b5652e15d2ea0d319faabb95e62b"
+    },
+    {
+      "path": "src/main/resources/db/migration/V40__add_deleted_at_to_conversations.sql",
+      "sha256": "29620409d2f76c5ddd8e39069ada8369f65421f292cef61b0e66aadb3b476a12"
+    },
+    {
+      "path": "src/main/resources/db/migration/V41__add_unanswered_group_naming_columns.sql",
+      "sha256": "58d766fd34aa3c37d4b7f8456a98a9188485d8905957909165b3d43db8324561"
+    },
+    {
+      "path": "src/main/resources/db/migration/V42__create_faq_improvement_exclusions.sql",
+      "sha256": "19a41d04c837d4d047ef3ec42b343feec880b0b5e6eac6570a2cd7b62e43f224"
+    },
+    {
+      "path": "src/main/resources/db/migration/V45__create_unanswered_question_reverifications.sql",
+      "sha256": "24724d630bc6a0d2820fad19fcc3cfb86b35a0a1ce5d11cd83062cc02cf4e214"
+    },
+    {
+      "path": "src/main/resources/db/migration/V4__create_store_tables.sql",
+      "sha256": "86097f5ae6be33d59c2e318701275d06520d95fc288f5486aa1e39330cd0fc02"
+    },
+    {
+      "path": "src/main/resources/db/migration/V5__insert_store_data.sql",
+      "sha256": "a9791c17cecfc814a8ef57320422236ed5c1daf030c4f990d6a6d92855b6af91"
+    },
+    {
+      "path": "src/main/resources/db/migration/V6__set_database_timezone.sql",
+      "sha256": "e4cc5d245c77c5c8f0efc20daeb1cc4ad60d7e03877216686e94b4c4108ab895"
+    },
+    {
+      "path": "src/main/resources/db/migration/V7__rename_faq_old_to_old_faq.sql",
+      "sha256": "fc9dfaa13d96547ab85770bd55449089f2687e41610b767245ed44b8c5998030"
+    },
+    {
+      "path": "src/main/resources/db/migration/V8__alter_faq_log_and_faq_category.sql",
+      "sha256": "4005794ab77015f4749dfe817173391c5104ca4cbc5e02cd285dda59b19fa1b0"
+    },
+    {
+      "path": "src/main/resources/db/migration/V9__create_users_table.sql",
+      "sha256": "a68320802291489482e376726babce64a435e363df0070467d9f4e8aa2eb1e8e"
+    },
+    {
+      "path": "src/main/resources/geoip/GeoLite2-City.mmdb",
+      "sha256": "e14bde26ce1e4e5ac081774064747be3e0d1b29cdb29722f7d518b5aa1a0e666"
+    },
+    {
+      "path": "src/main/resources/prompts/README.md",
+      "sha256": "4d2bafee76efb79d222f3326ad733c61838f7a65377a353f8ef9461f429c47df"
+    },
+    {
+      "path": "src/main/resources/prompts/faq-system.txt",
+      "sha256": "5ecd1552a24a01b429ed62e63e9f1a73294778b31ae71d9b66c3f35c913d696c"
+    },
+    {
+      "path": "src/main/resources/prompts/faq-user.txt",
+      "sha256": "292f0099cf6bfe247d2760cfffdd18e8c72672571e24c0ee0d2f4f0a050f3e45"
+    },
+    {
+      "path": "src/main/resources/prompts/sub-question-system.txt",
+      "sha256": "37b00a840a632450c99696ed7f76cb71bf01bdffa539826a537999ad6dcec75d"
+    },
+    {
+      "path": "src/main/resources/prompts/sub-question-user.txt",
+      "sha256": "7f7b0942acb50fe7d50abc2ac792d95a03a12a817adde85dad5f870ead5d1fde"
+    },
+    {
+      "path": "src/main/resources/prompts/unanswered-group-naming-system.txt",
+      "sha256": "9f98a2841be69e8f6bb0b29d526082f4880678a089dc18aefad124f754987aeb"
+    },
+    {
+      "path": "src/main/resources/safety/safety-positive.csv",
+      "sha256": "1b8faf637d314721f26d6a56b7c30e890a959c6754b38dfce4aaef36ec9cb412"
+    },
+    {
+      "path": "src/main/resources/sql/store/count-active-service-types.sql",
+      "sha256": "b8d5eb392f0e9b70fae8b636fa46478d67a75c215ca0dbe8357f89232578d876"
+    },
+    {
+      "path": "src/main/resources/sql/store/count-stores.sql",
+      "sha256": "0c6c3753ba341dad4c5c31fa3be42c6b9c1a6f0cc99d7751c329cc14b018f280"
+    },
+    {
+      "path": "src/main/resources/sql/store/find-clusters.sql",
+      "sha256": "f3cdf2e37ca45ed0fe831eb493662524b2c2af613af5dfa0862e46bcdc35439b"
+    },
+    {
+      "path": "src/main/resources/sql/store/find-detail.sql",
+      "sha256": "3665c502b402c7fd6062006b46887eb30841212921f7d817b2458aa0c70f4706"
+    },
+    {
+      "path": "src/main/resources/sql/store/find-in-map.sql",
+      "sha256": "df594d667a2fd26f35afb771100999fc4bae9c0e51d7e9d13cbaaa0b34f285f3"
+    },
+    {
+      "path": "src/main/resources/sql/store/find-nearby.sql",
+      "sha256": "f892decc33432bc92dddbdf22863329ee201ad8696f5c1f8b52c49d5225963e0"
+    },
+    {
+      "path": "src/main/resources/sql/store/find-sidos.sql",
+      "sha256": "c43dd04fe686008a5d078122546b3c949faffa48eff6776a55daa7abb54a494e"
+    },
+    {
+      "path": "src/main/resources/sql/store/find-sigungus.sql",
+      "sha256": "04e209a444502c5121352e4f7b5c77cfb810b9c099647bf44c9b60c8ea9dc50c"
+    },
+    {
+      "path": "src/main/resources/sql/store/find-stores.sql",
+      "sha256": "87d86ab57408817466916ed7f7a4dfd845b217ca0f410f437b603294b3e63e9e"
+    }
+  ],
+  "infrastructure": [
+    {
+      "name": "ubot-feat-200-postgres-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.157281079Z",
+      "image": "sha256:988437c700782f5cf6dc940a91e74a3449d8ca86dca8eb6eb8fe631c61878e07",
+      "id": "73ae97755c24de2e20da21c00dd7ba092daa33a77496e926206fac7227185d14",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-redis-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.151232478Z",
+      "image": "sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0",
+      "id": "c9c8c403fa6cb85a73a9c48698c468f1afb77c1b360b25a79d4cacec00b9232e",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-vllm-1",
+      "running": true,
+      "startedAt": "2026-10-23T01:16:50.606572935Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-vllm-embedding-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.170622612Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "d679566be87a7c7d6ef997a131f0a30aae597ca0a3ad6c8639a0d06734cdeecb",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-chat-burst-live-postgres-1",
+      "running": true,
+      "startedAt": "2026-10-23T01:28:58.133169468Z",
+      "image": "sha256:988437c700782f5cf6dc940a91e74a3449d8ca86dca8eb6eb8fe631c61878e07",
+      "id": "b14b76b348cd55842a6f7f4f95e542bbc599117256f772194aa7b109b1681621",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    },
+    {
+      "name": "ubot-chat-burst-live-redis-1",
+      "running": true,
+      "startedAt": "2026-10-23T01:28:57.945456779Z",
+      "image": "sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0",
+      "id": "e7e747b2d488e12e7b809550e720d41911928cf509e28c46c7c44afc5906bfe5",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    }
+  ]
+}

@@ -1,0 +1,816 @@
+{
+  "version": 1,
+  "measuredAt": "2026-10-23",
+  "target": "https://u-bot.cloud/api",
+  "passed": false,
+  "reason": "캐시 대상 3건 모두 BELOW_MARGIN으로 실제 LLM 답변 경로를 사용함",
+  "scope": {
+    "syntheticMembersCreated": 10,
+    "successfulLogins": 10,
+    "preparationMs": 1461.8889,
+    "chatPosts": 20,
+    "runs": 2,
+    "membersReusedOnCalibratedRun": 10,
+    "production1500Run": false,
+    "productionConfigurationChanged": false,
+    "syntheticMembersRetained": true,
+    "accessPath": "외부 발생기 → 공개 HTTPS /api → 운영 API·Worker",
+    "evidenceAccess": "기존 AWS SSM 연결; 운영 컨테이너 로그 및 BEGIN READ ONLY SQL",
+    "model": {
+      "aiMode": "vllm",
+      "modelAlias": "ubot-chat",
+      "actualLlmAnswers": 12,
+      "mocked": false
+    }
+  },
+  "timingNotes": [
+    "submissionMs는 외부 클라이언트가 측정한 HTTP 접수·차단 응답 시간이며 답변 완료 시간이 아니다.",
+    "서버 완료 시간은 같은 DB 시계의 첫 created_at부터 마지막 finished_at까지이다. 큐 대기를 포함하고 외부 HTTP 왕복은 제외한다.",
+    "클라이언트와 서버의 절대 시각이 일치하지 않아 두 시계 사이를 빼서 정확한 종단 시간을 주장하지 않는다.",
+    "jobs.json의 관측 시간에는 수집 시작 지연·조회 주기가 포함되어 처리 시간으로 사용하지 않는다."
+  ],
+  "productionCacheSettings": {
+    "enabled": true,
+    "explicitThresholdEnvironmentOverridesObserved": false,
+    "repositoryDefaults": {
+      "minimumSimilarity": 0.95,
+      "minimumMargin": 0.15
+    },
+    "effectiveRuntimeThresholdDirectlyQueried": false,
+    "observedMissReason": "BELOW_MARGIN",
+    "observedMarginRange": [
+      0.032592058181762695,
+      0.03260558843612671
+    ]
+  },
+  "answerReadVerification": {
+    "checkedAt": "2026-10-23T02:40:26.453Z",
+    "method": "GET",
+    "requests": 8,
+    "passed": true,
+    "nonemptyAnswers": 6,
+    "rows": [
+      {
+        "caseId": 2,
+        "jobId": 45,
+        "httpStatus": 200,
+        "elapsedMs": 86.624,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "answerCharacters": 136,
+        "answerMd5": "b2309cb614a5157916f799242aecc7b5",
+        "matchesDatabase": true
+      },
+      {
+        "caseId": 9,
+        "jobId": 46,
+        "httpStatus": 200,
+        "elapsedMs": 39.899,
+        "status": "FAILED",
+        "errorCode": "CHAT-013",
+        "answerCharacters": 0,
+        "answerMd5": null,
+        "matchesDatabase": true
+      },
+      {
+        "caseId": 3,
+        "jobId": 47,
+        "httpStatus": 200,
+        "elapsedMs": 27.566,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "answerCharacters": 177,
+        "answerMd5": "c38718b4289d27b40304855b0cf83886",
+        "matchesDatabase": true
+      },
+      {
+        "caseId": 8,
+        "jobId": 49,
+        "httpStatus": 200,
+        "elapsedMs": 35.544,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "answerCharacters": 136,
+        "answerMd5": "b2309cb614a5157916f799242aecc7b5",
+        "matchesDatabase": true
+      },
+      {
+        "caseId": 7,
+        "jobId": 48,
+        "httpStatus": 200,
+        "elapsedMs": 27.738,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "answerCharacters": 177,
+        "answerMd5": "c38718b4289d27b40304855b0cf83886",
+        "matchesDatabase": true
+      },
+      {
+        "caseId": 4,
+        "jobId": 50,
+        "httpStatus": 200,
+        "elapsedMs": 33.287,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "answerCharacters": 127,
+        "answerMd5": "eb657f3f4a45e66f7aea69f5914a4670",
+        "matchesDatabase": true
+      },
+      {
+        "caseId": 10,
+        "jobId": 52,
+        "httpStatus": 200,
+        "elapsedMs": 27.667,
+        "status": "FAILED",
+        "errorCode": "CHAT-013",
+        "answerCharacters": 0,
+        "answerMd5": null,
+        "matchesDatabase": true
+      },
+      {
+        "caseId": 6,
+        "jobId": 51,
+        "httpStatus": 200,
+        "elapsedMs": 17.527,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "answerCharacters": 136,
+        "answerMd5": "b2309cb614a5157916f799242aecc7b5",
+        "matchesDatabase": true
+      }
+    ]
+  },
+  "runs": [
+    {
+      "runId": "cloud-pilot-20261023-111638",
+      "rawDirectory": "build/chat-burst/cloud-pilot-20261023-111638",
+      "startedAt": "2026-10-23T02:17:35.262Z",
+      "plannedPostAt": "2026-10-23T02:17:50.262Z",
+      "expected": {
+        "forbidden": 2,
+        "threshold": 2,
+        "cache": 3,
+        "llm": 3
+      },
+      "actual": {
+        "forbidden": 0,
+        "threshold": 4,
+        "cache": 0,
+        "llm": 6
+      },
+      "passed": false,
+      "mismatches": 5,
+      "requests": 10,
+      "httpStatuses": {
+        "202": 10
+      },
+      "errorCodes": {
+        "CHAT-013": 4
+      },
+      "k6ExitCode": 0,
+      "startSpreadMs": 1,
+      "warmConnections": false,
+      "transportErrors": {},
+      "polling": {
+        "polls": 10,
+        "refreshes": 0,
+        "errors": {}
+      },
+      "submissionMs": {
+        "p50": 190,
+        "p95": 201,
+        "max": 201,
+        "firstStartToLastResponse": 202
+      },
+      "serverTiming": {
+        "firstCreatedAtKst": "2026-10-23T11:17:50.942421",
+        "lastFinishedAtKst": "2026-10-23T11:17:55.535216",
+        "allTerminalFromFirstCreatedMs": 4592.795,
+        "acceptedJobTotalP50Ms": 3385.229,
+        "acceptedJobTotalP95Ms": 4556.213,
+        "successfulLlmTotalMaxMs": 4556.213
+      },
+      "database": {
+        "expectedJobs": 10,
+        "savedJobs": 10,
+        "succeeded": 6,
+        "expectedThresholdFailures": 4,
+        "unfinished": 0,
+        "singleAttemptJobs": 10,
+        "savedAnswers": 6,
+        "duplicateAnswers": 0,
+        "ownershipMismatches": 0
+      },
+      "fixtureAudit": {
+        "activeForbiddenCount": 1,
+        "pilotWordActive": false,
+        "cacheableGeneralFaqCount": 1,
+        "cacheQuestionTopFaq": {
+          "id": 1,
+          "cacheable": false,
+          "intent": "GENERAL",
+          "deleted": false
+        }
+      },
+      "intendedCacheDecisions": [
+        {
+          "attemptId": 40,
+          "reason": "NOT_CACHEABLE_GENERAL",
+          "score": 0.9999996125698245,
+          "margin": 0.1213518417284708
+        },
+        {
+          "attemptId": 37,
+          "reason": "NOT_CACHEABLE_GENERAL",
+          "score": 0.9999996125698245,
+          "margin": 0.1213518417284708
+        },
+        {
+          "attemptId": 42,
+          "reason": "NOT_CACHEABLE_GENERAL",
+          "score": 1,
+          "margin": 0.12133871785767414
+        }
+      ],
+      "cases": [
+        {
+          "caseId": 1,
+          "expected": "cache",
+          "actual": "llm",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 41,
+          "submissionMs": 193,
+          "errorCode": "SUCCESS",
+          "attemptId": 42,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 1479.613,
+          "executionMs": 2193.87,
+          "serverTotalMs": 3673.483,
+          "savedAnswers": 1,
+          "answerMd5": "3c38ad17e2cdf1a1b927a4e1851772b5",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 2,
+          "expected": "threshold",
+          "actual": "threshold",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 44,
+          "submissionMs": 200,
+          "errorCode": "CHAT-013",
+          "attemptId": 44,
+          "status": "FAILED",
+          "attemptCount": 1,
+          "queueMs": 3376.799,
+          "executionMs": 701.89,
+          "serverTotalMs": 4078.689,
+          "savedAnswers": 0,
+          "answerMd5": null,
+          "ownerMatched": true
+        },
+        {
+          "caseId": 3,
+          "expected": "llm",
+          "actual": "llm",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 43,
+          "submissionMs": 201,
+          "errorCode": "SUCCESS",
+          "attemptId": 43,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 1936.113,
+          "executionMs": 2620.1,
+          "serverTotalMs": 4556.213,
+          "savedAnswers": 1,
+          "answerMd5": "c38718b4289d27b40304855b0cf83886",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 4,
+          "expected": "forbidden",
+          "actual": "threshold",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 36,
+          "submissionMs": 174,
+          "errorCode": "CHAT-013",
+          "attemptId": 36,
+          "status": "FAILED",
+          "attemptCount": 1,
+          "queueMs": 665.422,
+          "executionMs": 813.427,
+          "serverTotalMs": 1478.849,
+          "savedAnswers": 0,
+          "answerMd5": null,
+          "ownerMatched": true
+        },
+        {
+          "caseId": 5,
+          "expected": "forbidden",
+          "actual": "threshold",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 35,
+          "submissionMs": 175,
+          "errorCode": "CHAT-013",
+          "attemptId": 35,
+          "status": "FAILED",
+          "attemptCount": 1,
+          "queueMs": 663.894,
+          "executionMs": 815.336,
+          "serverTotalMs": 1479.23,
+          "savedAnswers": 0,
+          "answerMd5": null,
+          "ownerMatched": true
+        },
+        {
+          "caseId": 6,
+          "expected": "llm",
+          "actual": "llm",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 38,
+          "submissionMs": 185,
+          "errorCode": "SUCCESS",
+          "attemptId": 39,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 641.806,
+          "executionMs": 3202.187,
+          "serverTotalMs": 3843.993,
+          "savedAnswers": 1,
+          "answerMd5": "c38718b4289d27b40304855b0cf83886",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 7,
+          "expected": "threshold",
+          "actual": "threshold",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 40,
+          "submissionMs": 190,
+          "errorCode": "CHAT-013",
+          "attemptId": 38,
+          "status": "FAILED",
+          "attemptCount": 1,
+          "queueMs": 647.009,
+          "executionMs": 1266.483,
+          "serverTotalMs": 1913.492,
+          "savedAnswers": 0,
+          "answerMd5": null,
+          "ownerMatched": true
+        },
+        {
+          "caseId": 8,
+          "expected": "cache",
+          "actual": "llm",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 37,
+          "submissionMs": 179,
+          "errorCode": "SUCCESS",
+          "attemptId": 37,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 663.09,
+          "executionMs": 2722.139,
+          "serverTotalMs": 3385.229,
+          "savedAnswers": 1,
+          "answerMd5": "3c38ad17e2cdf1a1b927a4e1851772b5",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 9,
+          "expected": "llm",
+          "actual": "llm",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 42,
+          "submissionMs": 194,
+          "errorCode": "SUCCESS",
+          "attemptId": 41,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 1479.377,
+          "executionMs": 2715.934,
+          "serverTotalMs": 4195.311,
+          "savedAnswers": 1,
+          "answerMd5": "c38718b4289d27b40304855b0cf83886",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 10,
+          "expected": "cache",
+          "actual": "llm",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 39,
+          "submissionMs": 192,
+          "errorCode": "SUCCESS",
+          "attemptId": 40,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 650.441,
+          "executionMs": 2717.587,
+          "serverTotalMs": 3368.028,
+          "savedAnswers": 1,
+          "answerMd5": "3c38ad17e2cdf1a1b927a4e1851772b5",
+          "ownerMatched": true
+        }
+      ],
+      "evidence": [
+        {
+          "file": "plan.json",
+          "bytes": 1588,
+          "sha256": "7471534f61b1eb5fe3468b3e47c06e949daa90a4349f8bc95f7a3a0d6a4540d9"
+        },
+        {
+          "file": "auth-summary.json",
+          "bytes": 108,
+          "sha256": "bd75bd9c845424551fade01e5ba0617e6b9a2c80bd7deb2e40926bf43fd74a71"
+        },
+        {
+          "file": "run.json",
+          "bytes": 240,
+          "sha256": "857133b84451f596fcdadf40c229014ff1e38e0cbb92129c39d9526d58c1dbf1"
+        },
+        {
+          "file": "submissions.ndjson",
+          "bytes": 2391,
+          "sha256": "97deded613b4c0ab44aed7f9cdb72aeabc29fdcfb6600bf15f45ec8d1abc814f"
+        },
+        {
+          "file": "k6-summary.json",
+          "bytes": 4784,
+          "sha256": "b761970f62a5aeda22886ddd3c605cd81731c1b01bbc4e25b9ac23975e848d1e"
+        },
+        {
+          "file": "jobs.json",
+          "bytes": 1211,
+          "sha256": "9b6659a8a67b50ec7181ba118d565fd8e5e50f0ff336848dc845fd27da0cca75"
+        },
+        {
+          "file": "report.json",
+          "bytes": 3632,
+          "sha256": "bcc57e807ff3e37577b2ac19f05c1269a53bfb2defa3284382120b0835b419d1"
+        },
+        {
+          "file": "ssm-backend-evidence-gzip.log",
+          "bytes": 11451,
+          "sha256": "7a85395d4978ba9660538bf6f802496d16e5fbd6081ac99a6e1604a21d434bd2"
+        },
+        {
+          "file": "ssm-state-audit-gzip.log",
+          "bytes": 5304,
+          "sha256": "5446a081f41401c3912f12f75c1d7e7c5bfac9ba5c235076fd6d64f1a90ae62a"
+        },
+        {
+          "file": "independent-audit.json",
+          "bytes": 6711,
+          "sha256": "147957ede9e7d40c0b6b90d39391a2a6dcd2a9684df238fcd34bd58602e80244"
+        },
+        {
+          "file": "fixture-audit.json",
+          "bytes": 208,
+          "sha256": "c02d38a74945a372d1c4a8c53e8e333ca4e6ae91ae5ce2ba8ba4550d0ff4ee83"
+        },
+        {
+          "file": "db-evidence.json",
+          "bytes": 1691,
+          "sha256": "ce59022279cd2255307db33ce73e07c4e7653ccb17d02c9fc73797346e1cdcc7"
+        }
+      ]
+    },
+    {
+      "runId": "cloud-cal-1792722993532",
+      "rawDirectory": "build/chat-burst/cloud-cal-1792722993532",
+      "startedAt": "2026-10-23T02:36:37.179Z",
+      "plannedPostAt": "2026-10-23T02:36:42.179Z",
+      "expected": {
+        "forbidden": 2,
+        "threshold": 2,
+        "cache": 3,
+        "llm": 3
+      },
+      "actual": {
+        "forbidden": 2,
+        "threshold": 2,
+        "cache": 0,
+        "llm": 6
+      },
+      "passed": false,
+      "mismatches": 3,
+      "requests": 10,
+      "httpStatuses": {
+        "202": 8,
+        "400": 2
+      },
+      "errorCodes": {
+        "FW-003": 2,
+        "CHAT-013": 2
+      },
+      "k6ExitCode": 0,
+      "startSpreadMs": 0,
+      "warmConnections": false,
+      "transportErrors": {},
+      "polling": {
+        "polls": 8,
+        "refreshes": 0,
+        "errors": {}
+      },
+      "submissionMs": {
+        "p50": 149,
+        "p95": 157,
+        "max": 157,
+        "firstStartToLastResponse": 157
+      },
+      "serverTiming": {
+        "firstCreatedAtKst": "2026-10-23T11:36:42.850699",
+        "lastFinishedAtKst": "2026-10-23T11:36:46.177914",
+        "allTerminalFromFirstCreatedMs": 3327.215,
+        "acceptedJobTotalP50Ms": 2680.596,
+        "acceptedJobTotalP95Ms": 3313.387,
+        "successfulLlmTotalMaxMs": 3204.514
+      },
+      "database": {
+        "expectedJobs": 8,
+        "savedJobs": 8,
+        "succeeded": 6,
+        "expectedThresholdFailures": 2,
+        "unfinished": 0,
+        "singleAttemptJobs": 8,
+        "savedAnswers": 6,
+        "duplicateAnswers": 0,
+        "ownershipMismatches": 0
+      },
+      "fixtureAudit": {
+        "activeForbiddenCount": 1,
+        "pilotWordActive": true,
+        "cacheableGeneralFaqCount": 1,
+        "cacheQuestionTopFaq": {
+          "id": 10,
+          "cacheable": true,
+          "intent": "GENERAL",
+          "deleted": false
+        }
+      },
+      "intendedCacheDecisions": [
+        {
+          "attemptId": 45,
+          "reason": "BELOW_MARGIN",
+          "score": 1,
+          "margin": 0.03260558843612671
+        },
+        {
+          "attemptId": 48,
+          "reason": "BELOW_MARGIN",
+          "score": 0.9999990463256836,
+          "margin": 0.032592058181762695
+        },
+        {
+          "attemptId": 51,
+          "reason": "BELOW_MARGIN",
+          "score": 1,
+          "margin": 0.03260558843612671
+        }
+      ],
+      "cases": [
+        {
+          "caseId": 1,
+          "expected": "forbidden",
+          "actual": "forbidden",
+          "matched": true,
+          "httpStatus": 400,
+          "jobId": null,
+          "submissionMs": 106,
+          "errorCode": "FW-003"
+        },
+        {
+          "caseId": 2,
+          "expected": "cache",
+          "actual": "llm",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 45,
+          "submissionMs": 144,
+          "errorCode": "SUCCESS",
+          "attemptId": 45,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 300.642,
+          "executionMs": 2351.959,
+          "serverTotalMs": 2652.601,
+          "savedAnswers": 1,
+          "answerMd5": "b2309cb614a5157916f799242aecc7b5",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 3,
+          "expected": "llm",
+          "actual": "llm",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 47,
+          "submissionMs": 149,
+          "errorCode": "SUCCESS",
+          "attemptId": 47,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 314.717,
+          "executionMs": 2836.251,
+          "serverTotalMs": 3150.968,
+          "savedAnswers": 1,
+          "answerMd5": "c38718b4289d27b40304855b0cf83886",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 4,
+          "expected": "llm",
+          "actual": "llm",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 50,
+          "submissionMs": 150,
+          "errorCode": "SUCCESS",
+          "attemptId": 49,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 303.339,
+          "executionMs": 2377.257,
+          "serverTotalMs": 2680.596,
+          "savedAnswers": 1,
+          "answerMd5": "eb657f3f4a45e66f7aea69f5914a4670",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 5,
+          "expected": "forbidden",
+          "actual": "forbidden",
+          "matched": true,
+          "httpStatus": 400,
+          "jobId": null,
+          "submissionMs": 115,
+          "errorCode": "FW-003"
+        },
+        {
+          "caseId": 6,
+          "expected": "cache",
+          "actual": "llm",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 51,
+          "submissionMs": 157,
+          "errorCode": "SUCCESS",
+          "attemptId": 51,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 1114.765,
+          "executionMs": 2089.749,
+          "serverTotalMs": 3204.514,
+          "savedAnswers": 1,
+          "answerMd5": "b2309cb614a5157916f799242aecc7b5",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 7,
+          "expected": "llm",
+          "actual": "llm",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 48,
+          "submissionMs": 152,
+          "errorCode": "SUCCESS",
+          "attemptId": 50,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 312.412,
+          "executionMs": 2830.729,
+          "serverTotalMs": 3143.141,
+          "savedAnswers": 1,
+          "answerMd5": "c38718b4289d27b40304855b0cf83886",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 8,
+          "expected": "cache",
+          "actual": "llm",
+          "matched": false,
+          "httpStatus": 202,
+          "jobId": 49,
+          "submissionMs": 152,
+          "errorCode": "SUCCESS",
+          "attemptId": 48,
+          "status": "SUCCEEDED",
+          "attemptCount": 1,
+          "queueMs": 314.651,
+          "executionMs": 2319.792,
+          "serverTotalMs": 2634.443,
+          "savedAnswers": 1,
+          "answerMd5": "b2309cb614a5157916f799242aecc7b5",
+          "ownerMatched": true
+        },
+        {
+          "caseId": 9,
+          "expected": "threshold",
+          "actual": "threshold",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 46,
+          "submissionMs": 148,
+          "errorCode": "CHAT-013",
+          "attemptId": 46,
+          "status": "FAILED",
+          "attemptCount": 1,
+          "queueMs": 302.622,
+          "executionMs": 799.313,
+          "serverTotalMs": 1101.935,
+          "savedAnswers": 0,
+          "answerMd5": null,
+          "ownerMatched": true
+        },
+        {
+          "caseId": 10,
+          "expected": "threshold",
+          "actual": "threshold",
+          "matched": true,
+          "httpStatus": 202,
+          "jobId": 52,
+          "submissionMs": 153,
+          "errorCode": "CHAT-013",
+          "attemptId": 52,
+          "status": "FAILED",
+          "attemptCount": 1,
+          "queueMs": 2652.548,
+          "executionMs": 660.839,
+          "serverTotalMs": 3313.387,
+          "savedAnswers": 0,
+          "answerMd5": null,
+          "ownerMatched": true
+        }
+      ],
+      "evidence": [
+        {
+          "file": "plan.json",
+          "bytes": 1599,
+          "sha256": "2767dddb8244286390aec9b3d63dbed796fb679ac0b230d59aedce60030aad41"
+        },
+        {
+          "file": "run.json",
+          "bytes": 236,
+          "sha256": "4b64682340413f9948e9fd2770098ce3e89992fd8de840b0f20dc60841efdcc2"
+        },
+        {
+          "file": "submissions.ndjson",
+          "bytes": 2353,
+          "sha256": "5b7f399510dadf67a3ebd24d9748d3832ad1ca108e8b0c18433022a0e5180daf"
+        },
+        {
+          "file": "k6-summary.json",
+          "bytes": 4770,
+          "sha256": "589af95e5f7fe8867d3fa135bf484ef2469a9cdee615cf928817b2ee67f18226"
+        },
+        {
+          "file": "jobs.json",
+          "bytes": 990,
+          "sha256": "e746219b9fa00557bc632c7e8d66660e9e4747a8ac18b8ecdcf8694e6214b788"
+        },
+        {
+          "file": "report.json",
+          "bytes": 3644,
+          "sha256": "c2ea2abb34a60a984400ab958e8e0f34cc14c699cb09fb35184a68e0ffb70e32"
+        },
+        {
+          "file": "ssm-backend-evidence-gzip.log",
+          "bytes": 10149,
+          "sha256": "6b388f04eed7efb6ffa5bc2f157f43c996d79a8408be56ed8188ba900475a5e0"
+        },
+        {
+          "file": "ssm-state-audit-gzip.log",
+          "bytes": 4371,
+          "sha256": "c8208033e6c1c7105a9aa5647c9257146b64eb91f3a411e2f1845c2f3ef9d0db"
+        },
+        {
+          "file": "independent-audit.json",
+          "bytes": 5469,
+          "sha256": "e47bb9923bbc28f65252074e7a11ef37ae037195c0db2c76743b1ffef5424cf3"
+        },
+        {
+          "file": "fixture-audit.json",
+          "bytes": 207,
+          "sha256": "a27db6365c65efed281fe397a1cd7b8daa47074a5db2fc61031c173415cddba6"
+        },
+        {
+          "file": "db-evidence.json",
+          "bytes": 1357,
+          "sha256": "d713dbf5d21ee271de44c11c02d68291d32022c976a402effb9d2a7ff5991d27"
+        }
+      ]
+    }
+  ]
+}

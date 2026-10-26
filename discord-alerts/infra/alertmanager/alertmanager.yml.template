@@ -1,0 +1,40 @@
+# Prometheus 알림을 묶어 Discord·Slack으로 보내고, 복구되면 RESOLVED도 보냅니다.
+# 템플릿(infra/alertmanager/alertmanager.yml.template)을 tools/deploy/render-alert-config.sh가 렌더링해
+# .env에 Webhook URL을 넣은 채널만 남긴 .generated/alertmanager/alertmanager.yml을 Alertmanager가 읽습니다.
+# Webhook URL은 이 파일에 넣지 않습니다. 렌더러가 .generated/alertmanager/secrets/에 파일(권한 600)로 만들고,
+# Compose가 /run/secrets/ubot-alerts로 읽기 전용 마운트합니다.
+route:
+  receiver: ubot
+  group_by:
+    - alertname
+    - severity
+  # 처음 알림은 같은 종류를 30초 모아 한 번에, 이후 변화는 5분마다, 계속 이어지면 4시간마다 다시 보냅니다.
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+
+receivers:
+  # 채널마다 BEGIN·END 표시로 감싸 두고, 렌더러가 Webhook URL이 없는 채널 구간을 지웁니다.
+  - name: ubot
+    # BEGIN discord
+    discord_configs:
+      - webhook_url_file: /run/secrets/ubot-alerts/discord-webhook
+        send_resolved: true
+        title: >-
+          [{{ .Status | toUpper }}][{{ .CommonLabels.severity | toUpper }}] {{ .CommonLabels.alertname }}
+        message: |-
+          {{ .CommonAnnotations.summary }}
+          {{ range .Alerts }}• {{ .Annotations.description }}
+          {{ end }}Runbook: {{ .CommonAnnotations.runbook_url }}
+    # END discord
+    # BEGIN slack
+    slack_configs:
+      - api_url_file: /run/secrets/ubot-alerts/slack-webhook
+        send_resolved: true
+        title: >-
+          [{{ .Status | toUpper }}][{{ .CommonLabels.severity | toUpper }}] {{ .CommonLabels.alertname }}
+        text: |-
+          {{ .CommonAnnotations.summary }}
+          {{ range .Alerts }}• {{ .Annotations.description }}
+          {{ end }}Runbook: {{ .CommonAnnotations.runbook_url }}
+    # END slack

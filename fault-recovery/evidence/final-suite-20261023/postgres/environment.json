@@ -1,0 +1,113 @@
+{
+  "scenario": "postgres-process-crash",
+  "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+  "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+  "harnessSha256": "ce132bff30f54420906e448fdf3b153becadb1c63f894d4e724844cfd100ff49",
+  "apiUrl": "http://127.0.0.1:18080",
+  "workerUrl": "http://127.0.0.1:18081",
+  "models": [
+    {
+      "object": "list",
+      "data": [
+        {
+          "id": "ubot-chat",
+          "object": "model",
+          "created": 1792719292,
+          "owned_by": "vllm",
+          "root": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16",
+          "parent": null,
+          "max_model_len": 4096,
+          "permission": [
+            {
+              "id": "modelperm-b04895c0843dc5bc",
+              "object": "model_permission",
+              "created": 1792719292,
+              "allow_create_engine": false,
+              "allow_sampling": true,
+              "allow_logprobs": true,
+              "allow_search_indices": false,
+              "allow_view": true,
+              "allow_fine_tuning": false,
+              "organization": "*",
+              "group": null,
+              "is_blocking": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object": "list",
+      "data": [
+        {
+          "id": "ubot-embedding",
+          "object": "model",
+          "created": 1792719292,
+          "owned_by": "vllm",
+          "root": "BAAI/bge-m3",
+          "parent": null,
+          "max_model_len": 8192,
+          "permission": [
+            {
+              "id": "modelperm-b11fb8bc7fdb16e2",
+              "object": "model_permission",
+              "created": 1792719292,
+              "allow_create_engine": false,
+              "allow_sampling": true,
+              "allow_logprobs": true,
+              "allow_search_indices": false,
+              "allow_view": true,
+              "allow_fine_tuning": false,
+              "organization": "*",
+              "group": null,
+              "is_blocking": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fixture": {
+    "outstanding": 0,
+    "faqs": [
+      {
+        "id": 1,
+        "question": "통신요금 청구서를 이메일로 받으려면 어떻게 하나요?",
+        "cacheable": true
+      },
+      {
+        "id": 2,
+        "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+        "cacheable": false
+      },
+      {
+        "id": 3,
+        "question": "해외 로밍을 신청하는 방법을 알려주세요",
+        "cacheable": false
+      }
+    ]
+  },
+  "probeSha256": "6f4712509ea11395d940b01aad89e0355110aab480e3049575450608ee36048c",
+  "requireFastUnavailable": true,
+  "concurrency": 4,
+  "heartbeatTimeoutMs": 60000,
+  "recoveryIntervalMs": 15000,
+  "reclaimIdleMs": 300000,
+  "queueTimeoutMs": 600000,
+  "executionTimeoutMs": 180000,
+  "maxDeliveries": 3,
+  "syntheticMembers": 100,
+  "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+  "llmMocked": false,
+  "database": "ubot-chat-burst-live-postgres-1",
+  "redis": "ubot-chat-burst-live-redis-1",
+  "durability": {
+    "fsync": "on",
+    "synchronousCommit": "on",
+    "fullPageWrites": "on",
+    "version": "PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+    "postmasterStartedAt": "2026-10-23T10:28:58.352877+09:00",
+    "walLsn": "0/9C57560"
+  },
+  "downMilliseconds": 15000
+}

@@ -1,0 +1,47 @@
+{
+  "runId": "retest-pilot-20261026",
+  "total": 100,
+  "submitted": 100,
+  "statuses": {
+    "SUCCEEDED": 84,
+    "FAILED": 16
+  },
+  "outcomes": {
+    "ANSWERED": 84,
+    "SYSTEM_ERROR": 11,
+    "NORMAL_REJECTION": 5
+  },
+  "normalRejections": {
+    "CHAT-022": 2,
+    "CHAT-013": 3
+  },
+  "systemErrors": {
+    "LLM-003": 11
+  },
+  "errors": {
+    "LLM-003": 11,
+    "CHAT-022": 2,
+    "CHAT-013": 3
+  },
+  "byProbe": {
+    "variant": {
+      "SUCCEEDED": 43,
+      "FAILED": 7
+    },
+    "boundary": {
+      "SUCCEEDED": 41,
+      "FAILED": 9
+    }
+  },
+  "categories": 22,
+  "answerLength": {
+    "min": 30,
+    "median": 68.5,
+    "max": 399
+  },
+  "emptySuccessfulAnswers": 0,
+  "uniqueSuccessfulAnswers": 67,
+  "genericDeferralAnswers": 18,
+  "containsGenericDeferral": 20,
+  "nonTerminalEnding": 0
+}

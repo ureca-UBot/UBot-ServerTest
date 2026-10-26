@@ -1,0 +1,117 @@
+[
+  {
+    "type": "api-start-requested",
+    "at": "2026-10-23T01:32:25.152Z",
+    "pid": 42036
+  },
+  {
+    "type": "api-ready",
+    "at": "2026-10-23T01:32:44.952Z",
+    "pid": 42036
+  },
+  {
+    "type": "real-member-login-completed",
+    "at": "2026-10-23T01:32:47.294Z",
+    "count": 100
+  },
+  {
+    "type": "all-accepted-before-worker-start",
+    "at": "2026-10-23T01:32:48.261Z",
+    "count": 100,
+    "statuses": {
+      "QUEUED": 100
+    }
+  },
+  {
+    "type": "worker-start-requested",
+    "at": "2026-10-23T01:32:48.282Z",
+    "pid": 31280
+  },
+  {
+    "type": "redis-force-killed",
+    "at": "2026-10-23T01:33:10.741Z",
+    "container": "ubot-chat-burst-live-redis-1",
+    "killRequestedAt": "2026-10-23T01:33:09.821Z",
+    "exited": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 137,
+      "Error": "",
+      "StartedAt": "2026-10-23T01:28:57.945456779Z",
+      "FinishedAt": "2026-10-23T01:33:09.906544176Z"
+    },
+    "running": 4,
+    "inflightModelRequests": 4,
+    "inflightObservedAt": "2026-10-23T01:33:09.175Z",
+    "queued": 96,
+    "succeeded": 0
+  },
+  {
+    "type": "redis-restarted",
+    "at": "2026-10-23T01:33:27.196Z",
+    "restartRequestedAt": "2026-10-23T01:33:25.985Z",
+    "redisReadyAt": "2026-10-23T01:33:26.557Z",
+    "missingMessages": 100
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:33:27.457Z",
+    "statuses": {
+      "QUEUED": 96,
+      "SUCCEEDED": 4
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:33:42.567Z",
+    "statuses": {
+      "SUCCEEDED": 28,
+      "RUNNING": 4,
+      "QUEUED": 68
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:33:57.732Z",
+    "statuses": {
+      "SUCCEEDED": 60,
+      "RUNNING": 4,
+      "QUEUED": 36
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:34:12.843Z",
+    "statuses": {
+      "SUCCEEDED": 90,
+      "RUNNING": 3,
+      "QUEUED": 7
+    }
+  },
+  {
+    "type": "verification-completed",
+    "at": "2026-10-23T01:34:25.027Z",
+    "passed": true,
+    "succeeded": 100,
+    "runningAtKill": 4,
+    "duplicateTurns": 0,
+    "timingsMs": {
+      "forcedExit": 85,
+      "redisUnavailable": 16651,
+      "restartStartup": 572,
+      "redisReadyToQueueResume": 2605.361083984375,
+      "killToQueueResume": 19341.361083984375,
+      "redisReadyToApiHealthy": 909,
+      "redisReadyToWorkerHealthy": 901,
+      "redisReadyToAllAnswers": 50203.31298828125,
+      "killToAllAnswers": 66939.31298828125,
+      "restartToAllAnswers": 50775.31298828125,
+      "firstSubmissionToAllAnswers": 89465.31298828125
+    }
+  }
+]

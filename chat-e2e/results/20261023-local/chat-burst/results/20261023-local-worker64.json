@@ -1,0 +1,417 @@
+{
+  "runId": "local-real-1500-w64-20261023",
+  "target": "http://127.0.0.1:18080",
+  "realLlm": true,
+  "realEmbedding": true,
+  "fixture": "Isolated synthetic FAQ corpus (3 FAQs); real vectors and default retrieval/guard logic",
+  "total": 1500,
+  "expected": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "actual": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "passed": true,
+  "errors": {
+    "FW-003": 300,
+    "CHAT-013": 300
+  },
+  "httpStatuses": {
+    "202": 1200,
+    "400": 300
+  },
+  "transportErrors": {},
+  "mismatches": 0,
+  "startSpreadMs": 31,
+  "wallClockCompletionMs": 111295.772,
+  "llmMetrics": {
+    "answer": {
+      "calls": 451,
+      "totalSeconds": 5248.467,
+      "meanMs": 11637.4
+    },
+    "judgment": {
+      "calls": 300,
+      "totalSeconds": 1428.324,
+      "meanMs": 4761.08
+    }
+  },
+  "groups": {
+    "forbidden": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 76,
+        "p50Ms": 1085,
+        "p95Ms": 2176,
+        "p99Ms": 2263,
+        "maxMs": 2298,
+        "meanMs": 1123.633
+      },
+      "queue": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "execution": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "serverTotal": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "endToEnd": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      }
+    },
+    "threshold": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 197,
+        "p50Ms": 1408,
+        "p95Ms": 2313,
+        "p99Ms": 2410,
+        "maxMs": 2430,
+        "meanMs": 1354.257
+      },
+      "queue": {
+        "samples": 300,
+        "minMs": 1903.283,
+        "p50Ms": 52991.697,
+        "p95Ms": 98492.876,
+        "p99Ms": 102768.879,
+        "maxMs": 103775.654,
+        "meanMs": 52309.352
+      },
+      "execution": {
+        "samples": 300,
+        "minMs": 3130.213,
+        "p50Ms": 4953.054,
+        "p95Ms": 5706.214,
+        "p99Ms": 5876.95,
+        "maxMs": 5931.433,
+        "meanMs": 4898.234
+      },
+      "serverTotal": {
+        "samples": 300,
+        "minMs": 5295.798,
+        "p50Ms": 57726.25,
+        "p95Ms": 103702.807,
+        "p99Ms": 106327.158,
+        "maxMs": 106905.867,
+        "meanMs": 57207.586
+      },
+      "endToEnd": {
+        "samples": 300,
+        "minMs": 5474.726,
+        "p50Ms": 59052.774,
+        "p95Ms": 105928.883,
+        "p99Ms": 108677.016,
+        "maxMs": 109281.448,
+        "meanMs": 58478.017
+      }
+    },
+    "cache": {
+      "count": 450,
+      "submission": {
+        "samples": 450,
+        "minMs": 81,
+        "p50Ms": 1300,
+        "p95Ms": 2313,
+        "p99Ms": 2410,
+        "maxMs": 2465,
+        "meanMs": 1289.029
+      },
+      "queue": {
+        "samples": 450,
+        "minMs": 1898.723,
+        "p50Ms": 46806.551,
+        "p95Ms": 98445.499,
+        "p99Ms": 101402.84,
+        "maxMs": 103794.491,
+        "meanMs": 49217.729
+      },
+      "execution": {
+        "samples": 450,
+        "minMs": 34.383,
+        "p50Ms": 53.374,
+        "p95Ms": 752.211,
+        "p99Ms": 1049.293,
+        "maxMs": 1199.388,
+        "meanMs": 112.615
+      },
+      "serverTotal": {
+        "samples": 450,
+        "minMs": 2470.607,
+        "p50Ms": 46881.401,
+        "p95Ms": 98486.48,
+        "p99Ms": 101444.424,
+        "maxMs": 103846.497,
+        "meanMs": 49330.344
+      },
+      "endToEnd": {
+        "samples": 450,
+        "minMs": 2695.798,
+        "p50Ms": 48093.844,
+        "p95Ms": 100709.545,
+        "p99Ms": 103776.966,
+        "maxMs": 106229.912,
+        "meanMs": 50532.283
+      }
+    },
+    "llm": {
+      "count": 450,
+      "submission": {
+        "samples": 450,
+        "minMs": 160,
+        "p50Ms": 1290,
+        "p95Ms": 2329,
+        "p99Ms": 2408,
+        "maxMs": 2427,
+        "meanMs": 1290.984
+      },
+      "queue": {
+        "samples": 450,
+        "minMs": 1810.562,
+        "p50Ms": 46733.292,
+        "p95Ms": 99254.031,
+        "p99Ms": 103477.521,
+        "maxMs": 103827.825,
+        "meanMs": 49153.31
+      },
+      "execution": {
+        "samples": 450,
+        "minMs": 5029.476,
+        "p50Ms": 11939.836,
+        "p95Ms": 13311.252,
+        "p99Ms": 13773.691,
+        "maxMs": 13884.414,
+        "meanMs": 11857.975
+      },
+      "serverTotal": {
+        "samples": 450,
+        "minMs": 12793.13,
+        "p50Ms": 58413.709,
+        "p95Ms": 107943.251,
+        "p99Ms": 108857.301,
+        "maxMs": 108903.125,
+        "meanMs": 61011.285
+      },
+      "endToEnd": {
+        "samples": 450,
+        "minMs": 12965.222,
+        "p50Ms": 59576.715,
+        "p95Ms": 110204.106,
+        "p99Ms": 111220.787,
+        "maxMs": 111265.772,
+        "meanMs": 62214.441
+      }
+    }
+  },
+  "notes": [
+    "Times use server DB finished_at, not polling observation.",
+    "End-to-end is POST start through the recorded server finished_at; network response delivery and UI rendering are excluded.",
+    "Execution includes real embedding, FAQ search, guards, judgment and answer-model work.",
+    "Client 1500-VU load generator, BE, DB, Redis and GPU models share the local machine.",
+    "Worker concurrency 64, queue expiry 10m, execution expiry 180s; FAQ semantic cache enabled.",
+    "No application source changes, threshold relaxation, output substitution, or fake vectors.",
+    "Same dedicated members and exact question/group order as earlier runs; new conversations.",
+    "Dedicated DB and warm model caches are retained. One run per setting, not randomized repeated trials.",
+    "The existing default makes LLM_MAX_CONCURRENT follow worker concurrency (4 / 16 / 32 / 64).",
+    "The model-request counter includes auxiliary scheduled tasks; chat outcomes use per-job source logs and final status.",
+    "Internal HTTP retries are not measured separately.",
+    "The original 4-, 16- and 32-worker archived results remain unchanged."
+  ],
+  "measurementStartedAt": "2026-10-22T15:08:34.883Z",
+  "measurementFinishedAt": "2026-10-22T15:10:26.178Z",
+  "hardware": {
+    "docker": "16 CPUs, 25159159808 bytes memory",
+    "gpu": "NVIDIA GeForce RTX 3060, 12288 MiB",
+    "javaVersion": "21.0.11",
+    "jvmHeap": "512m initial / 2g max",
+    "backendCommit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96"
+  },
+  "models": {
+    "--model": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16",
+    "--served-model-name": "ubot-chat",
+    "--max-model-len": "4096",
+    "--gpu-memory-utilization": "0.6"
+  },
+  "environment": {
+    "startedAt": "2026-10-22T15:06:37.2866550Z",
+    "port": 18080,
+    "models": "real local vLLM chat + embedding",
+    "workerConcurrency": 64,
+    "queueLimit": "10m",
+    "executionLimit": "180s",
+    "cacheEnabled": true,
+    "isolatedDatabase": true,
+    "llmConcurrencyLimit": 64,
+    "observedWorkerActive": 63,
+    "observedLlmInUse": 13,
+    "sampledPeakWorkerActive": 63,
+    "sampledPeakLlmInUse": 13,
+    "databasePeakConcurrentJobs": 64
+  },
+  "checks": {
+    "identicalCasesAndOrder": true,
+    "sameDedicatedMembers": true,
+    "dbEvidenceRows": 1200,
+    "independentPostgresqlTimingCrosscheck": true,
+    "verifiedLlmAnswers": 450,
+    "nonemptyAnswerSamples": 3,
+    "k6ExitCode": 0,
+    "duplicates": 0,
+    "invalidEvents": 0,
+    "pollErrors": {}
+  },
+  "answerSamples": [
+    {
+      "caseId": 4,
+      "jobId": 3833,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 23,
+      "jobId": 3995,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 24,
+      "jobId": 4165,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    }
+  ],
+  "reliability": {
+    "passed": true,
+    "recorded": 1500,
+    "mismatches": 0,
+    "submissionErrors": 0,
+    "processingErrors": 0,
+    "unfinished": 0,
+    "notSent": 0,
+    "cancelled": 0,
+    "transportErrors": 0,
+    "timeouts": 0,
+    "httpTimeouts": 0,
+    "applicationTimeouts": 0,
+    "queueTimeouts": 0,
+    "workerTimeouts": 0,
+    "llmTimeouts": 0,
+    "embeddingTimeouts": 0,
+    "unclassifiedTransportTimeouts": 0,
+    "errorCodes": {
+      "FW-003": 300,
+      "CHAT-013": 300
+    },
+    "pollErrors": {},
+    "duplicates": 0,
+    "invalidEvents": 0,
+    "k6ExitCode": 0,
+    "modelRequestOutcomes": [
+      {
+        "kind": "answer",
+        "outcome": "success",
+        "count": 451
+      },
+      {
+        "kind": "judgment",
+        "outcome": "success",
+        "count": 300
+      }
+    ]
+  },
+  "vllmCounterChanges": {
+    "vllm:num_preemptions_total": 0,
+    "vllm:request_success_total": 751,
+    "vllm:generation_tokens_total": 57814
+  },
+  "gpuDuring": "NVIDIA GeForce RTX 3060, 11260 MiB, 12288 MiB, 96 %",
+  "concurrencySamples": [
+    {
+      "observedAt": "2026-10-22T15:12:04.4319004Z",
+      "metrics": {
+        "llm_concurrency_in_use": 0,
+        "chat_worker_active": 0,
+        "chat_jobs_queued": 0,
+        "llm_concurrency_limit": 64
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:12:06.5495229Z",
+      "metrics": {
+        "llm_concurrency_in_use": 0,
+        "chat_worker_active": 0,
+        "chat_jobs_queued": 0,
+        "llm_concurrency_limit": 64
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:12:08.6476051Z",
+      "metrics": {
+        "llm_concurrency_in_use": 0,
+        "chat_worker_active": 0,
+        "chat_jobs_queued": 0,
+        "llm_concurrency_limit": 64
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:12:10.7344828Z",
+      "metrics": {
+        "llm_concurrency_in_use": 0,
+        "chat_worker_active": 0,
+        "chat_jobs_queued": 0,
+        "llm_concurrency_limit": 64
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:12:12.7994909Z",
+      "metrics": {
+        "llm_concurrency_in_use": 0,
+        "chat_worker_active": 0,
+        "chat_jobs_queued": 0,
+        "llm_concurrency_limit": 64
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:12:14.8822044Z",
+      "metrics": {
+        "llm_concurrency_in_use": 0,
+        "chat_worker_active": 0,
+        "chat_jobs_queued": 0,
+        "llm_concurrency_limit": 64
+      }
+    }
+  ]
+}

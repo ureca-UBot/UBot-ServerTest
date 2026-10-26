@@ -1,0 +1,156 @@
+[
+  {
+    "type": "api-start-requested",
+    "at": "2026-10-23T01:29:18.908Z",
+    "pid": 35004
+  },
+  {
+    "type": "api-ready",
+    "at": "2026-10-23T01:29:37.445Z",
+    "pid": 35004
+  },
+  {
+    "type": "real-member-login-completed",
+    "at": "2026-10-23T01:29:39.843Z",
+    "count": 100
+  },
+  {
+    "type": "all-accepted-before-worker-start",
+    "at": "2026-10-23T01:29:40.844Z",
+    "count": 100,
+    "statuses": {
+      "QUEUED": 100
+    }
+  },
+  {
+    "type": "worker-start-requested",
+    "at": "2026-10-23T01:29:40.862Z",
+    "pid": 27916
+  },
+  {
+    "type": "worker-force-killed",
+    "at": "2026-10-23T01:30:01.287Z",
+    "pid": 27916,
+    "killRequestedAt": "2026-10-23T01:30:00.720Z",
+    "exited": {
+      "code": null,
+      "signal": "SIGKILL",
+      "at": "2026-10-23T01:30:00.836Z"
+    },
+    "running": 4,
+    "inflightModelRequests": 4,
+    "inflightObservedAt": "2026-10-23T01:30:00.718Z",
+    "queued": 96,
+    "succeeded": 0,
+    "pending": [
+      4,
+      "1792718980480-0",
+      "1792718980480-3",
+      [
+        [
+          "worker-before-crash",
+          "4"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "api-job-read-while-worker-dead",
+    "at": "2026-10-23T01:30:01.365Z",
+    "jobId": 7041,
+    "httpStatus": 200,
+    "status": "RUNNING"
+  },
+  {
+    "type": "api-job-read-while-worker-dead",
+    "at": "2026-10-23T01:30:02.403Z",
+    "jobId": 7041,
+    "httpStatus": 200,
+    "status": "RUNNING"
+  },
+  {
+    "type": "api-job-read-while-worker-dead",
+    "at": "2026-10-23T01:30:03.427Z",
+    "jobId": 7041,
+    "httpStatus": 200,
+    "status": "RUNNING"
+  },
+  {
+    "type": "api-job-read-while-worker-dead",
+    "at": "2026-10-23T01:30:04.480Z",
+    "jobId": 7041,
+    "httpStatus": 200,
+    "status": "RUNNING"
+  },
+  {
+    "type": "api-job-read-while-worker-dead",
+    "at": "2026-10-23T01:30:05.505Z",
+    "jobId": 7041,
+    "httpStatus": 200,
+    "status": "RUNNING"
+  },
+  {
+    "type": "worker-restart-requested",
+    "at": "2026-10-23T01:30:06.525Z",
+    "pid": 20820,
+    "previousPid": 27916
+  },
+  {
+    "type": "replacement-worker-ready",
+    "at": "2026-10-23T01:30:24.966Z",
+    "pid": 20820
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:30:25.234Z",
+    "statuses": {
+      "QUEUED": 92,
+      "RUNNING": 8
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:30:40.266Z",
+    "statuses": {
+      "QUEUED": 64,
+      "SUCCEEDED": 28,
+      "RUNNING": 8
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:30:55.341Z",
+    "statuses": {
+      "SUCCEEDED": 60,
+      "RUNNING": 8,
+      "QUEUED": 32
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:31:10.554Z",
+    "statuses": {
+      "SUCCEEDED": 88,
+      "RUNNING": 8,
+      "QUEUED": 4
+    }
+  },
+  {
+    "type": "verification-completed",
+    "at": "2026-10-23T01:31:34.997Z",
+    "passed": true,
+    "succeeded": 100,
+    "interrupted": 4,
+    "duplicateTurns": 0,
+    "timingsMs": {
+      "forcedExit": 116,
+      "restartStartup": 18446,
+      "killToReplacementReady": 24246,
+      "killToFirstInterruptedRestart": 83262.26489257812,
+      "killToFirstInterruptedAnswer": 85404.5419921875,
+      "killToAllAnswers": 85444.23706054688,
+      "restartToAllAnswers": 79644.23706054688,
+      "firstSubmissionToAllAnswers": 106321.23706054688
+    }
+  }
+]

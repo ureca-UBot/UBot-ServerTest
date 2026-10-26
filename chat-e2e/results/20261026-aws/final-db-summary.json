@@ -1,0 +1,42 @@
+[
+  {
+    "run": "load+retest-a3-20261026",
+    "jobs": 3000,
+    "users": 3000,
+    "attempts": 3000,
+    "answered": 2787,
+    "normal_rejections": 213,
+    "system_errors": 0,
+    "pending": 0,
+    "chat_timeouts": 0,
+    "model_unavailable": 0,
+    "unexpected_attempt_counts": 0,
+    "first_created_at": "2026-10-26T18:55:48.107265",
+    "last_finished_at": "2026-10-26T19:03:45.810615",
+    "total_p50_seconds": 238.3546655,
+    "total_p95_seconds": 444.6487583,
+    "total_max_seconds": 469.071263,
+    "queue_p95_seconds": 434.71810385,
+    "execution_p95_seconds": 21.157809249999996
+  },
+  {
+    "run": "load+retest-b-20261026",
+    "jobs": 3000,
+    "users": 3000,
+    "attempts": 3000,
+    "answered": 2879,
+    "normal_rejections": 117,
+    "system_errors": 4,
+    "pending": 0,
+    "chat_timeouts": 0,
+    "model_unavailable": 0,
+    "unexpected_attempt_counts": 0,
+    "first_created_at": "2026-10-26T19:07:46.150746",
+    "last_finished_at": "2026-10-26T19:20:38.089114",
+    "total_p50_seconds": 275.82725849999997,
+    "total_p95_seconds": 645.7349729499999,
+    "total_max_seconds": 762.982399,
+    "queue_p95_seconds": 636.2307893499998,
+    "execution_p95_seconds": 23.66586
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-23T01:31:35.194Z",
+  "processes": [
+    {
+      "pid": 35004,
+      "exitCode": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "pid": 27916,
+      "exitCode": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "pid": 20820,
+      "exitCode": null,
+      "signal": "SIGKILL"
+    }
+  ],
+  "testDataRetained": true
+}

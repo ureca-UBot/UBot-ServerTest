@@ -1,0 +1,2077 @@
+{
+  "date": "2026-10-23",
+  "scenario": "postgres-query-deadline-100-real-llm",
+  "baseline": {
+    "source": "20261023-local-postgres-crash.json",
+    "sha256": "83e69b1ff1a89e6231dfc09519b0d7892365cfb5e63f3049e312d6b0006efc0e",
+    "jarSha256": "6f2ec686584531e8974e7b69a0b7d2b1e592743f20e6cf1069472ae715f6e77f",
+    "clientObservations": {
+      "duringDatabaseDown": {
+        "count": 6,
+        "statuses": {
+          "0": 6
+        },
+        "failures": 6,
+        "p50Ms": 2001,
+        "p95Ms": 2136,
+        "maxMs": 2136
+      },
+      "afterSqlReady": {
+        "count": 89,
+        "statuses": {
+          "0": 1,
+          "200": 88
+        },
+        "failures": 1,
+        "p50Ms": 14,
+        "p95Ms": 30,
+        "maxMs": 2000
+      },
+      "afterFirstFreshSuccess": {
+        "count": 87,
+        "statuses": {
+          "200": 87
+        },
+        "failures": 0,
+        "p50Ms": 14,
+        "p95Ms": 27,
+        "maxMs": 34
+      },
+      "firstFreshSuccess": {
+        "at": "2026-10-23T00:16:59.839Z",
+        "jobId": 6481,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:16:59.856Z",
+        "elapsedMs": 17
+      },
+      "longRead": {
+        "at": "2026-10-23T00:16:38.642Z",
+        "jobId": 6481,
+        "clientTimeoutMs": 45000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:16:59.524Z",
+        "elapsedMs": 20882
+      },
+      "invalidToken": [
+        {
+          "name": "invalid-signature",
+          "at": "2026-10-23T00:16:38.642Z",
+          "expectedStatus": 401,
+          "httpStatus": 401,
+          "completedAt": "2026-10-23T00:16:39.276Z",
+          "elapsedMs": 634
+        }
+      ],
+      "clientTimeoutMs": 2000,
+      "longClientTimeoutMs": 45000
+    },
+    "timingsMs": {
+      "forcedExit": 104,
+      "databaseUnavailable": 17105,
+      "restartStartup": 1653,
+      "databaseReadyToQueueResume": 3545.282958984375,
+      "killToQueueResume": 20754.282958984375,
+      "databaseReadyToApiHealthy": 4270,
+      "databaseReadyToWorkerHealthy": 3524,
+      "databaseReadyToJobHealthy": 4667,
+      "databaseReadyToAllAnswers": 50857.06591796875,
+      "killToAllAnswers": 68066.06591796875,
+      "restartToAllAnswers": 52510.06591796875,
+      "firstSubmissionToAllAnswers": 91478.06591796875
+    }
+  },
+  "environment": {
+    "scenario": "postgres-process-crash",
+    "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+    "jarSha256": "bd6add87f2e4a8485b8d5905dfea042a69e59b7eb26ffb5f1ccc6d567f8c032a",
+    "harnessSha256": "ce132bff30f54420906e448fdf3b153becadb1c63f894d4e724844cfd100ff49",
+    "apiUrl": "http://127.0.0.1:18080",
+    "workerUrl": "http://127.0.0.1:18081",
+    "models": [
+      [
+        {
+          "id": "ubot-chat",
+          "root": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16"
+        }
+      ],
+      [
+        {
+          "id": "ubot-embedding",
+          "root": "BAAI/bge-m3"
+        }
+      ]
+    ],
+    "fixture": {
+      "outstanding": 0,
+      "faqs": [
+        {
+          "id": 1,
+          "question": "통신요금 청구서를 이메일로 받으려면 어떻게 하나요?",
+          "cacheable": true
+        },
+        {
+          "id": 2,
+          "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+          "cacheable": false
+        },
+        {
+          "id": 3,
+          "question": "해외 로밍을 신청하는 방법을 알려주세요",
+          "cacheable": false
+        }
+      ]
+    },
+    "probeSha256": "6f4712509ea11395d940b01aad89e0355110aab480e3049575450608ee36048c",
+    "requireFastUnavailable": true,
+    "concurrency": 4,
+    "heartbeatTimeoutMs": 60000,
+    "recoveryIntervalMs": 15000,
+    "reclaimIdleMs": 300000,
+    "queueTimeoutMs": 600000,
+    "executionTimeoutMs": 180000,
+    "maxDeliveries": 3,
+    "syntheticMembers": 100,
+    "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+    "llmMocked": false,
+    "database": "ubot-chat-burst-live-postgres-1",
+    "redis": "ubot-chat-burst-live-redis-1",
+    "durability": {
+      "fsync": "on",
+      "synchronousCommit": "on",
+      "fullPageWrites": "on",
+      "version": "PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+      "postmasterStartedAt": "2026-10-23T09:31:50.838718+09:00",
+      "walLsn": "0/91797B0"
+    },
+    "downMilliseconds": 15000
+  },
+  "result": {
+    "verifiedAt": "2026-10-23T00:38:45.216Z",
+    "accepted": 100,
+    "uniqueJobIds": 100,
+    "killRequestedAt": "2026-10-23T00:37:30.828Z",
+    "databaseExitedAt": "2026-10-23T00:37:30.932458784Z",
+    "restartRequestedAt": "2026-10-23T00:37:46.417Z",
+    "databaseReadyAt": "2026-10-23T00:37:48.021Z",
+    "inflightModelRequests": 4,
+    "inflightObservedAt": "2026-10-23T00:37:30.826Z",
+    "runningAtKill": 4,
+    "queuedAtKill": 96,
+    "succeededAtKill": 0,
+    "faultState": {
+      "snapshotAt": "2026-10-23T00:37:30.568Z",
+      "statuses": {
+        "QUEUED": 96,
+        "RUNNING": 4
+      },
+      "runningIds": [
+        6726,
+        6729,
+        6737,
+        6738
+      ],
+      "queuedIds": [
+        6705,
+        6706,
+        6707,
+        6708,
+        6709,
+        6710,
+        6711,
+        6712,
+        6713,
+        6714,
+        6715,
+        6716,
+        6717,
+        6718,
+        6719,
+        6720,
+        6721,
+        6722,
+        6723,
+        6724,
+        6725,
+        6727,
+        6728,
+        6730,
+        6731,
+        6732,
+        6733,
+        6734,
+        6735,
+        6736,
+        6739,
+        6740,
+        6741,
+        6742,
+        6743,
+        6744,
+        6745,
+        6746,
+        6747,
+        6748,
+        6749,
+        6750,
+        6751,
+        6752,
+        6753,
+        6754,
+        6755,
+        6756,
+        6757,
+        6758,
+        6759,
+        6760,
+        6761,
+        6762,
+        6763,
+        6764,
+        6765,
+        6766,
+        6767,
+        6768,
+        6769,
+        6770,
+        6771,
+        6772,
+        6773,
+        6774,
+        6775,
+        6776,
+        6777,
+        6778,
+        6779,
+        6780,
+        6781,
+        6782,
+        6783,
+        6784,
+        6785,
+        6786,
+        6787,
+        6788,
+        6789,
+        6790,
+        6791,
+        6792,
+        6793,
+        6794,
+        6795,
+        6796,
+        6797,
+        6798,
+        6799,
+        6800,
+        6801,
+        6802,
+        6803,
+        6804
+      ]
+    },
+    "succeeded": 100,
+    "failed": [],
+    "inFlightOutcomes": [
+      {
+        "jobId": 6726,
+        "beforeStartedAtMs": 1792715848810.019,
+        "beforeHeartbeatAtMs": 1792715848810.019,
+        "finalStartedAtMs": 1792715848810.019,
+        "finishedAtMs": 1792715871465.136,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      },
+      {
+        "jobId": 6729,
+        "beforeStartedAtMs": 1792715848810.019,
+        "beforeHeartbeatAtMs": 1792715848810.019,
+        "finalStartedAtMs": 1792715848810.019,
+        "finishedAtMs": 1792715871465.136,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      },
+      {
+        "jobId": 6737,
+        "beforeStartedAtMs": 1792715848810.019,
+        "beforeHeartbeatAtMs": 1792715848810.019,
+        "finalStartedAtMs": 1792715848810.019,
+        "finishedAtMs": 1792715871516.114,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      },
+      {
+        "jobId": 6738,
+        "beforeStartedAtMs": 1792715848810.019,
+        "beforeHeartbeatAtMs": 1792715848810.019,
+        "finalStartedAtMs": 1792715848810.019,
+        "finishedAtMs": 1792715871498.143,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      }
+    ],
+    "missingJobs": 0,
+    "unfinished": 0,
+    "duplicateTurns": 0,
+    "savedTurns": 100,
+    "emptyAnswers": 0,
+    "apiAnswers": 100,
+    "repeatedExecutions": [],
+    "executionStarts": 100,
+    "llmRouteJobs": 100,
+    "duplicateCompletionLogs": 0,
+    "uniqueCompletionLogs": 100,
+    "apiProcessStartUnchanged": true,
+    "workerProcessStartUnchanged": true,
+    "apiProbeCount": 74,
+    "apiProbeFailures": 6,
+    "workerProbeCount": 52,
+    "workerProbeFailures": 6,
+    "outageJobReads": [
+      {
+        "at": "2026-10-23T00:37:31.544Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:33.093Z",
+        "elapsedMs": 1549
+      },
+      {
+        "at": "2026-10-23T00:37:33.594Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:35.102Z",
+        "elapsedMs": 1508
+      },
+      {
+        "at": "2026-10-23T00:37:35.602Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:37.110Z",
+        "elapsedMs": 1508
+      },
+      {
+        "at": "2026-10-23T00:37:37.610Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:39.118Z",
+        "elapsedMs": 1508
+      },
+      {
+        "at": "2026-10-23T00:37:39.619Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:41.127Z",
+        "elapsedMs": 1508
+      },
+      {
+        "at": "2026-10-23T00:37:41.628Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:43.134Z",
+        "elapsedMs": 1506
+      },
+      {
+        "at": "2026-10-23T00:37:43.634Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:45.142Z",
+        "elapsedMs": 1508
+      },
+      {
+        "at": "2026-10-23T00:37:45.643Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:47.152Z",
+        "elapsedMs": 1509
+      },
+      {
+        "at": "2026-10-23T00:37:47.653Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:49.160Z",
+        "elapsedMs": 1507
+      },
+      {
+        "at": "2026-10-23T00:37:49.659Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 503,
+        "errorCode": "CHAT-025",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:51.181Z",
+        "elapsedMs": 1522
+      },
+      {
+        "at": "2026-10-23T00:37:51.686Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:51.839Z",
+        "elapsedMs": 153
+      },
+      {
+        "at": "2026-10-23T00:37:52.345Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:52.377Z",
+        "elapsedMs": 32
+      },
+      {
+        "at": "2026-10-23T00:37:52.884Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:52.914Z",
+        "elapsedMs": 30
+      },
+      {
+        "at": "2026-10-23T00:37:53.427Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:53.454Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:37:53.954Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:53.985Z",
+        "elapsedMs": 31
+      },
+      {
+        "at": "2026-10-23T00:37:54.496Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:54.534Z",
+        "elapsedMs": 38
+      },
+      {
+        "at": "2026-10-23T00:37:55.040Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:55.068Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:37:55.569Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:55.602Z",
+        "elapsedMs": 33
+      },
+      {
+        "at": "2026-10-23T00:37:56.112Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:56.140Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:37:56.641Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:56.670Z",
+        "elapsedMs": 29
+      },
+      {
+        "at": "2026-10-23T00:37:57.171Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "QUEUED",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:57.201Z",
+        "elapsedMs": 30
+      },
+      {
+        "at": "2026-10-23T00:37:57.714Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "RUNNING",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:57.747Z",
+        "elapsedMs": 33
+      },
+      {
+        "at": "2026-10-23T00:37:58.255Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "RUNNING",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:58.282Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:37:58.795Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "RUNNING",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:58.823Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:37:59.335Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "RUNNING",
+        "errorCode": "SUCCESS",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:59.364Z",
+        "elapsedMs": 29
+      },
+      {
+        "at": "2026-10-23T00:37:59.875Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:37:59.921Z",
+        "elapsedMs": 46
+      },
+      {
+        "at": "2026-10-23T00:38:00.434Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:00.464Z",
+        "elapsedMs": 30
+      },
+      {
+        "at": "2026-10-23T00:38:00.977Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:01.006Z",
+        "elapsedMs": 29
+      },
+      {
+        "at": "2026-10-23T00:38:01.518Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:01.548Z",
+        "elapsedMs": 30
+      },
+      {
+        "at": "2026-10-23T00:38:02.059Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:02.094Z",
+        "elapsedMs": 35
+      },
+      {
+        "at": "2026-10-23T00:38:02.597Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:02.627Z",
+        "elapsedMs": 30
+      },
+      {
+        "at": "2026-10-23T00:38:03.126Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:03.154Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:03.664Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:03.692Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:04.193Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:04.221Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:04.734Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:04.747Z",
+        "elapsedMs": 13
+      },
+      {
+        "at": "2026-10-23T00:38:05.248Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:05.277Z",
+        "elapsedMs": 29
+      },
+      {
+        "at": "2026-10-23T00:38:05.789Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:05.817Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:06.318Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:06.345Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:06.858Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:06.884Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:07.399Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:07.434Z",
+        "elapsedMs": 35
+      },
+      {
+        "at": "2026-10-23T00:38:07.940Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:07.974Z",
+        "elapsedMs": 34
+      },
+      {
+        "at": "2026-10-23T00:38:08.486Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:08.514Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:09.029Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:09.057Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:09.559Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:09.586Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:10.086Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:10.113Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:10.614Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:10.641Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:11.141Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:11.167Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:11.670Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:11.697Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:12.210Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:12.262Z",
+        "elapsedMs": 52
+      },
+      {
+        "at": "2026-10-23T00:38:12.766Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:12.794Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:13.304Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:13.330Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:13.834Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:13.859Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:14.362Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:14.389Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:14.889Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:14.916Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:15.419Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:15.446Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:15.951Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:15.977Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:16.480Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:16.507Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:17.021Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:17.048Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:17.563Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:17.589Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:18.090Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:18.116Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:18.618Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:18.644Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:19.146Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:19.171Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:19.674Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:19.700Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:20.215Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:20.243Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:20.758Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:20.783Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:21.289Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:21.315Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:21.817Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:21.843Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:22.355Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:22.383Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:22.895Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:22.921Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:23.425Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:23.452Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:23.957Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:23.983Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:24.483Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:24.511Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:25.012Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:25.036Z",
+        "elapsedMs": 24
+      },
+      {
+        "at": "2026-10-23T00:38:25.538Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:25.564Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:26.066Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:26.093Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:26.595Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:26.623Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:27.123Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:27.132Z",
+        "elapsedMs": 9
+      },
+      {
+        "at": "2026-10-23T00:38:27.637Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:27.663Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:28.175Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:28.200Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:28.702Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:28.728Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:29.232Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:29.258Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:29.758Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:29.783Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:30.298Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:30.323Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:30.824Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:30.849Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:31.357Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:31.383Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:31.895Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:31.921Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:32.430Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:32.456Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:32.958Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:32.983Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:33.484Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:33.511Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:34.024Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:34.052Z",
+        "elapsedMs": 28
+      },
+      {
+        "at": "2026-10-23T00:38:34.564Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:34.575Z",
+        "elapsedMs": 11
+      },
+      {
+        "at": "2026-10-23T00:38:35.078Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:35.105Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:35.618Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:35.644Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:36.147Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:36.173Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:36.675Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:36.700Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:37.203Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:37.230Z",
+        "elapsedMs": 27
+      },
+      {
+        "at": "2026-10-23T00:38:37.731Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:37.756Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:38.260Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:38.286Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:38.790Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:38.814Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:39.318Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:39.342Z",
+        "elapsedMs": 24
+      },
+      {
+        "at": "2026-10-23T00:38:39.845Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:39.871Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:40.372Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:40.396Z",
+        "elapsedMs": 24
+      },
+      {
+        "at": "2026-10-23T00:38:40.899Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:40.908Z",
+        "elapsedMs": 9
+      },
+      {
+        "at": "2026-10-23T00:38:41.411Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:41.436Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:41.936Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:41.962Z",
+        "elapsedMs": 26
+      },
+      {
+        "at": "2026-10-23T00:38:42.473Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:42.496Z",
+        "elapsedMs": 23
+      },
+      {
+        "at": "2026-10-23T00:38:43.002Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:43.027Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:43.530Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:43.554Z",
+        "elapsedMs": 24
+      },
+      {
+        "at": "2026-10-23T00:38:44.059Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:44.084Z",
+        "elapsedMs": 25
+      },
+      {
+        "at": "2026-10-23T00:38:44.590Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 200,
+        "status": "SUCCEEDED",
+        "errorCode": "SUCCESS",
+        "answerPresent": true,
+        "completedAt": "2026-10-23T00:38:44.616Z",
+        "elapsedMs": 26
+      }
+    ],
+    "longRead": {
+      "at": "2026-10-23T00:37:31.573Z",
+      "jobId": 6708,
+      "clientTimeoutMs": 45000,
+      "httpStatus": 503,
+      "errorCode": "CHAT-025",
+      "answerPresent": false,
+      "completedAt": "2026-10-23T00:37:33.093Z",
+      "elapsedMs": 1520
+    },
+    "invalidTokenChecks": [
+      {
+        "at": "2026-10-23T00:37:31.574Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 401,
+        "errorCode": "JWT-004",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:31.594Z",
+        "elapsedMs": 20,
+        "name": "invalid-signature",
+        "expectedStatus": 401
+      }
+    ],
+    "apiPid": 41568,
+    "workerPid": 38616,
+    "redisBefore": {
+      "at": "2026-10-23T00:37:30.353Z",
+      "marksPresent": 100,
+      "messagesMatched": 100,
+      "streamLength": 104,
+      "runId": "71efc6883d8efd30fc4d43a46f2eb62adba5377f",
+      "pending": [
+        4,
+        "1792715829281-0",
+        "1792715829282-0",
+        [
+          [
+            "worker",
+            "4"
+          ]
+        ]
+      ]
+    },
+    "redisAfterRestart": {
+      "at": "2026-10-23T00:37:48.895Z",
+      "marksPresent": 100,
+      "messagesMatched": 100,
+      "streamLength": 104,
+      "runId": "71efc6883d8efd30fc4d43a46f2eb62adba5377f",
+      "pending": [
+        4,
+        "1792715829281-0",
+        "1792715829282-0",
+        [
+          [
+            "worker",
+            "4"
+          ]
+        ]
+      ]
+    },
+    "databaseExitCode": 137,
+    "databaseBefore": {
+      "fsync": "on",
+      "synchronousCommit": "on",
+      "fullPageWrites": "on",
+      "version": "PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+      "postmasterStartedAt": "2026-10-23T09:31:50.838718+09:00",
+      "walLsn": "0/91797B0"
+    },
+    "databaseAfter": {
+      "postmasterStartedAt": "2026-10-23T09:37:46.729733+09:00",
+      "walLsn": "0/92D1C28",
+      "fsync": "on",
+      "synchronousCommit": "on"
+    },
+    "databaseRestartConfirmed": true,
+    "redisRunIdUnchanged": true,
+    "queuedAtKillIds": [
+      6705,
+      6706,
+      6707,
+      6708,
+      6709,
+      6710,
+      6711,
+      6712,
+      6713,
+      6714,
+      6715,
+      6716,
+      6717,
+      6718,
+      6719,
+      6720,
+      6721,
+      6722,
+      6723,
+      6724,
+      6725,
+      6727,
+      6728,
+      6730,
+      6731,
+      6732,
+      6733,
+      6734,
+      6735,
+      6736,
+      6739,
+      6740,
+      6741,
+      6742,
+      6743,
+      6744,
+      6745,
+      6746,
+      6747,
+      6748,
+      6749,
+      6750,
+      6751,
+      6752,
+      6753,
+      6754,
+      6755,
+      6756,
+      6757,
+      6758,
+      6759,
+      6760,
+      6761,
+      6762,
+      6763,
+      6764,
+      6765,
+      6766,
+      6767,
+      6768,
+      6769,
+      6770,
+      6771,
+      6772,
+      6773,
+      6774,
+      6775,
+      6776,
+      6777,
+      6778,
+      6779,
+      6780,
+      6781,
+      6782,
+      6783,
+      6784,
+      6785,
+      6786,
+      6787,
+      6788,
+      6789,
+      6790,
+      6791,
+      6792,
+      6793,
+      6794,
+      6795,
+      6796,
+      6797,
+      6798,
+      6799,
+      6800,
+      6801,
+      6802,
+      6803,
+      6804
+    ],
+    "heartbeatTakeovers": [],
+    "completionNotAcknowledged": [],
+    "republishedBatchCounts": [],
+    "redisPending": 0,
+    "timingsMs": {
+      "forcedExit": 104,
+      "databaseUnavailable": 17089,
+      "restartStartup": 1604,
+      "databaseReadyToQueueResume": 3507.383056640625,
+      "killToQueueResume": 20700.383056640625,
+      "databaseReadyToApiHealthy": 3805,
+      "databaseReadyToWorkerHealthy": 3491,
+      "databaseReadyToJobHealthy": 3818,
+      "databaseReadyToAllAnswers": 49303.20703125,
+      "killToAllAnswers": 66496.20703125,
+      "restartToAllAnswers": 50907.20703125,
+      "firstSubmissionToAllAnswers": 88646.20703125
+    },
+    "answerSamples": [
+      {
+        "jobId": 6737,
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요.",
+        "status": "SUCCEEDED"
+      },
+      {
+        "jobId": 6729,
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요.",
+        "status": "SUCCEEDED"
+      },
+      {
+        "jobId": 6726,
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요.",
+        "status": "SUCCEEDED"
+      }
+    ],
+    "passed": true,
+    "fastUnavailable": {
+      "count": 8,
+      "passed": true
+    }
+  },
+  "clientObservations": {
+    "duringDatabaseDown": {
+      "count": 8,
+      "statuses": {
+        "503": 8
+      },
+      "clientFailures": 0,
+      "p50Ms": 1508,
+      "p95Ms": 1549,
+      "maxMs": 1549
+    },
+    "afterSqlReady": {
+      "count": 101,
+      "statuses": {
+        "200": 100,
+        "503": 1
+      },
+      "clientFailures": 0,
+      "p50Ms": 27,
+      "p95Ms": 35,
+      "maxMs": 1522
+    },
+    "afterFirstFreshSuccess": {
+      "count": 99,
+      "statuses": {
+        "200": 99
+      },
+      "clientFailures": 0,
+      "p50Ms": 27,
+      "p95Ms": 35,
+      "maxMs": 52
+    },
+    "longRead": {
+      "at": "2026-10-23T00:37:31.573Z",
+      "jobId": 6708,
+      "clientTimeoutMs": 45000,
+      "httpStatus": 503,
+      "errorCode": "CHAT-025",
+      "answerPresent": false,
+      "completedAt": "2026-10-23T00:37:33.093Z",
+      "elapsedMs": 1520
+    },
+    "invalidToken": [
+      {
+        "at": "2026-10-23T00:37:31.574Z",
+        "jobId": 6708,
+        "clientTimeoutMs": 2000,
+        "httpStatus": 401,
+        "errorCode": "JWT-004",
+        "answerPresent": false,
+        "completedAt": "2026-10-23T00:37:31.594Z",
+        "elapsedMs": 20,
+        "name": "invalid-signature",
+        "expectedStatus": 401
+      }
+    ]
+  },
+  "independentAudit": {
+    "expectedJobs": 100,
+    "savedJobs": 100,
+    "uniqueJobs": 100,
+    "uniqueAttempts": 100,
+    "uniqueMembers": 100,
+    "uniqueConversations": 100,
+    "succeededJobs": 100,
+    "succeededAttempts": 100,
+    "oneAttemptOnly": 100,
+    "storedTurns": 100,
+    "ownershipMismatches": 0,
+    "answerMismatches": 0,
+    "duplicateTurns": 0,
+    "resultReferencesMatch": 100,
+    "clearedRequestContexts": 100,
+    "missingOrUnfinished": 0,
+    "globalOutstanding": 0,
+    "firstQueuedStartAtMs": 1792715871528.383,
+    "allAnswersFinishedAtMs": 1792715917324.207
+  },
+  "tests": {
+    "tests": 194,
+    "failures": 0,
+    "errors": 0,
+    "suites": [
+      {
+        "name": "인증 API 통합 테스트",
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "의도 재검색 컨트롤러 테스트",
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.controller.ChatControllerTest",
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.controller.ChatJobDatabaseOutageIntegrationTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.controller.ChatLlmIntegrationTest",
+        "tests": 39,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "게스트 채팅 통합 테스트",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.job.service.ChatJobReadExecutorTest",
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.service.ChatServiceTest",
+        "tests": 89,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "고객문의 접근 권한 테스트",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "서비스 운영 모니터링 Security 테스트",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "관리자 공지·장애 Security 테스트",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "공지·장애 조회 Security 테스트",
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "관리자 매장 Security 테스트",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "매장 API 비로그인 접근 테스트",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ]
+  },
+  "actualLlmCalls": 100,
+  "cleanup": {
+    "at": "2026-10-23T00:39:29.9507968Z",
+    "scenarioProcessesRemaining": 0,
+    "isolatedContainers": [
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-23T00:39:28.936053366Z"
+      },
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-23T00:39:28.924074145Z"
+      }
+    ],
+    "originalServicesAllRunning": true,
+    "originalServiceNames": [
+      "ubot-feat-200-postgres-1",
+      "ubot-feat-200-redis-1",
+      "ubot-feat-200-vllm-1",
+      "ubot-feat-200-vllm-embedding-1"
+    ],
+    "testDataRetained": true
+  },
+  "evidence": [
+    {
+      "name": "environment.json",
+      "sha256": "420d214f4bd3b41631e453524824acccbbee9586e830767a26ecd44f63cef625"
+    },
+    {
+      "name": "events.json",
+      "sha256": "2167ca61538969456790aaa351360dff93f4bcdf86207cdeef4b7f575da6fd36"
+    },
+    {
+      "name": "submissions.json",
+      "sha256": "50da2a59ca5b40aac2343ca3cbb2feae0caf0a792283e90b083766665f3c55bf"
+    },
+    {
+      "name": "immediately-before-kill.json",
+      "sha256": "85f0fe43966bbb1a8bf85abab89bd8ccaddb3bbe003be7d5d44694a55aebce33"
+    },
+    {
+      "name": "database-after-restart.json",
+      "sha256": "bdfeeaaa09a134c60cb544af30c0a12b56b93e8bef6c81bb042b5d25f1db0bef"
+    },
+    {
+      "name": "immediately-after-database-ready.json",
+      "sha256": "ebd83e859709e14b498abfe5b5c975885c1630bd8c2227a28b03f2f6c712ef14"
+    },
+    {
+      "name": "redis-during-database-outage.json",
+      "sha256": "fac848ec10249acb01a650a248d2f063b0ac487d147e897bb07173a5bb938e47"
+    },
+    {
+      "name": "api-final.json",
+      "sha256": "668fe1ca5fe08103bf376fc3141af7f4c503a105dac26d5f89e876c97ee64d8d"
+    },
+    {
+      "name": "db-final.json",
+      "sha256": "35cde6f6664f7131f0a2184cd2caa4eb3fe38b3a1455305369c71ef8292ba553"
+    },
+    {
+      "name": "api-health.json",
+      "sha256": "ce128858d000aa1c83c30ce0638fdeacb1e322a552e41c9d134bb569e0f3c273"
+    },
+    {
+      "name": "worker-health.json",
+      "sha256": "f5f65562905fa8496ae0cfe3f295e8a03ff0639f73d484129eb7d74876abd011"
+    },
+    {
+      "name": "outage-job-reads.json",
+      "sha256": "6ea54f3a526cfa06eaa2e040f7769b25b25b634730556b0dda47c1539701cfaa"
+    },
+    {
+      "name": "outage-long-read.json",
+      "sha256": "7f7cd5726ad14e09f98032cc9c5e2dcf7f90abd73e96d99c655bd1499fcec775"
+    },
+    {
+      "name": "outage-invalid-token.json",
+      "sha256": "086830830022d5dfed03535edf60a897ec97530b247d82e22bb56d766d8cbad3"
+    },
+    {
+      "name": "report.json",
+      "sha256": "14870120b8c2b64bccb0196943f0fc9ef46142de6f55613742ce4b416cd29a56"
+    },
+    {
+      "name": "independent-audit.sql",
+      "sha256": "aa0314f9da8e6ebae02111ae6194f6c0d7cc2ebbf0aef4c0c80e54ce7a3aeaa0"
+    },
+    {
+      "name": "independent-audit.json",
+      "sha256": "ab11caa272a569098f5e88e8a3fb5450f258deee306184ec9d609e4e53f2b839"
+    },
+    {
+      "name": "postgres-recovery.log",
+      "sha256": "75acfe1451829297bf3fa79802a04f1e336ad1a634fb064d28331b2092420619"
+    },
+    {
+      "name": "worker-after.prom",
+      "sha256": "7c6862a522e500c00ba4dd6104fa96c4de713b006c9d9bf23f72a733751843cb"
+    },
+    {
+      "name": "vllm-before.prom",
+      "sha256": "14b9a33e2f438e72b0ff71f734345f9a4e8dcc41e5631aa34fe2e4565e6099ae"
+    },
+    {
+      "name": "vllm-after.prom",
+      "sha256": "cfbf315f3633ebd6693e70adc5470d95856cd222e1d63168a2bb1014a0ebe59f"
+    },
+    {
+      "name": "cleanup.json",
+      "sha256": "42cecbbc4fbb7da91255ee4369e8179269e247f7869dc62ab65f3ae51ae83132"
+    },
+    {
+      "name": "infrastructure-cleanup.json",
+      "sha256": "9f920881e59ef0d165b463f9d83ecc1d9b9cabace9e99a50ac5f09991a24a247"
+    },
+    {
+      "name": "regression-tests.json",
+      "sha256": "a116c909081521c406b04494c754621421ce0a345f95308e82d57e3a9008569b"
+    },
+    {
+      "name": "api.log",
+      "sha256": "440e00febebedcc3541b9c19d47a6d807c4ca4ba4452c840ff4f9287e951cd9d"
+    },
+    {
+      "name": "worker.log",
+      "sha256": "817c5c2499fcf69a28b199c6fbf5f9bbe1a31d2eeed69c24e96203ff9f231989"
+    }
+  ],
+  "rawEvidenceDirectory": "build/chat-burst-live/postgres-query-fix-final-100-20261023",
+  "limitations": [
+    "로컬 단일 실행 비교이며 LLM 처리량을 개선한 변경은 아니다.",
+    "이전 HTTP 관측은 Docker 동기 실행의 스케줄링 지연을 포함한다. 수정 후는 별도 Node 관측 스레드로 분리했다.",
+    "2초 제한은 작업 GET의 DB 대기에 적용한다. actuator health나 다른 API의 전역 DB 대기 설정은 바꾸지 않았다.",
+    "JDBC 취소는 최선의 시도이며 취소에 늦게 반응하는 호출은 최대 8개로 제한한다. 용량 소진도 503으로 응답한다."
+  ]
+}

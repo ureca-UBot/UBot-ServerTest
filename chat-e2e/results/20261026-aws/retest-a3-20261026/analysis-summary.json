@@ -1,0 +1,61 @@
+{
+  "runId": "retest-a3-20261026",
+  "total": 3000,
+  "submitted": 3000,
+  "httpStatuses": {
+    "202": 3000
+  },
+  "transportErrors": {},
+  "connectionWarmupReady": 3000,
+  "uniqueJobIds": 3000,
+  "postResponseMs": {
+    "p50": 4658.0,
+    "p95": 8630.1,
+    "max": 8858
+  },
+  "postStartSpreadMs": 62,
+  "statuses": {
+    "SUCCEEDED": 2787,
+    "FAILED": 213
+  },
+  "outcomes": {
+    "ANSWERED": 2787,
+    "NORMAL_REJECTION": 213
+  },
+  "normalRejections": {
+    "CHAT-022": 34,
+    "CHAT-013": 167,
+    "LLM-006": 7,
+    "LLM-008": 2,
+    "CHAT-021": 3
+  },
+  "systemErrors": {},
+  "errors": {
+    "CHAT-022": 34,
+    "CHAT-013": 167,
+    "LLM-006": 7,
+    "LLM-008": 2,
+    "CHAT-021": 3
+  },
+  "byProbe": {
+    "variant": {
+      "SUCCEEDED": 2497,
+      "FAILED": 203
+    },
+    "boundary": {
+      "SUCCEEDED": 290,
+      "FAILED": 10
+    }
+  },
+  "categories": 77,
+  "answerLength": {
+    "min": 13,
+    "median": 88,
+    "max": 522
+  },
+  "emptySuccessfulAnswers": 0,
+  "uniqueSuccessfulAnswers": 2275,
+  "genericDeferralAnswers": 347,
+  "containsGenericDeferral": 510,
+  "nonTerminalEnding": 3
+}

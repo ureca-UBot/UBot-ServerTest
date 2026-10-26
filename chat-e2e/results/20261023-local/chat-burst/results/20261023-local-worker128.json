@@ -1,0 +1,441 @@
+{
+  "runId": "local-real-1500-w128-20261023",
+  "target": "http://127.0.0.1:18080",
+  "realLlm": true,
+  "realEmbedding": true,
+  "fixture": "Isolated synthetic FAQ corpus (3 FAQs); real vectors and default retrieval/guard logic",
+  "total": 1500,
+  "expected": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "actual": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 449,
+    "processing_error": 1
+  },
+  "passed": false,
+  "errors": {
+    "FW-003": 300,
+    "CHAT-013": 300,
+    "EM-003": 1
+  },
+  "httpStatuses": {
+    "202": 1200,
+    "400": 300
+  },
+  "transportErrors": {},
+  "mismatches": 1,
+  "startSpreadMs": 16,
+  "wallClockCompletionMs": 122375.742,
+  "llmMetrics": {
+    "answer": {
+      "calls": 449,
+      "totalSeconds": 11535.62,
+      "meanMs": 25691.805
+    },
+    "judgment": {
+      "calls": 300,
+      "totalSeconds": 3209.192,
+      "meanMs": 10697.308
+    }
+  },
+  "groups": {
+    "forbidden": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 83,
+        "p50Ms": 1311,
+        "p95Ms": 3568,
+        "p99Ms": 3701,
+        "maxMs": 3860,
+        "meanMs": 1575.62
+      },
+      "queue": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "execution": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "serverTotal": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "endToEnd": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      }
+    },
+    "threshold": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 75,
+        "p50Ms": 1355,
+        "p95Ms": 3783,
+        "p99Ms": 3887,
+        "maxMs": 3924,
+        "meanMs": 1752.92
+      },
+      "queue": {
+        "samples": 300,
+        "minMs": 787.024,
+        "p50Ms": 48689.246,
+        "p95Ms": 103026.152,
+        "p99Ms": 109246.323,
+        "maxMs": 110405.686,
+        "meanMs": 48453.94
+      },
+      "execution": {
+        "samples": 300,
+        "minMs": 4322.274,
+        "p50Ms": 11271.88,
+        "p95Ms": 12889.585,
+        "p99Ms": 13305.428,
+        "maxMs": 13431.477,
+        "meanMs": 10964.252
+      },
+      "serverTotal": {
+        "samples": 300,
+        "minMs": 5198.57,
+        "p50Ms": 59425.099,
+        "p95Ms": 113818.371,
+        "p99Ms": 115481.018,
+        "maxMs": 115836.371,
+        "meanMs": 59418.192
+      },
+      "endToEnd": {
+        "samples": 300,
+        "minMs": 5377.32,
+        "p50Ms": 60667.163,
+        "p95Ms": 117439.884,
+        "p99Ms": 119291.234,
+        "maxMs": 119685.262,
+        "meanMs": 61033.192
+      }
+    },
+    "cache": {
+      "count": 450,
+      "submission": {
+        "samples": 450,
+        "minMs": 74,
+        "p50Ms": 1713,
+        "p95Ms": 3801,
+        "p99Ms": 3883,
+        "maxMs": 3932,
+        "meanMs": 1957.251
+      },
+      "queue": {
+        "samples": 450,
+        "minMs": 761.073,
+        "p50Ms": 53833.738,
+        "p95Ms": 104098.191,
+        "p99Ms": 109239.482,
+        "maxMs": 110546.925,
+        "meanMs": 53727.986
+      },
+      "execution": {
+        "samples": 450,
+        "minMs": 37.759,
+        "p50Ms": 61.691,
+        "p95Ms": 1476.153,
+        "p99Ms": 1833.148,
+        "maxMs": 2121.203,
+        "meanMs": 248.865
+      },
+      "serverTotal": {
+        "samples": 450,
+        "minMs": 1726.08,
+        "p50Ms": 53918.084,
+        "p95Ms": 104159.282,
+        "p99Ms": 109285.139,
+        "maxMs": 110617.162,
+        "meanMs": 53976.851
+      },
+      "endToEnd": {
+        "samples": 450,
+        "minMs": 1784.107,
+        "p50Ms": 55413.328,
+        "p95Ms": 107826.524,
+        "p99Ms": 113082.632,
+        "maxMs": 114471.421,
+        "meanMs": 55794.686
+      }
+    },
+    "llm": {
+      "count": 449,
+      "submission": {
+        "samples": 449,
+        "minMs": 72,
+        "p50Ms": 1345,
+        "p95Ms": 3780,
+        "p99Ms": 3892,
+        "maxMs": 3949,
+        "meanMs": 1743.637
+      },
+      "queue": {
+        "samples": 449,
+        "minMs": 762.01,
+        "p50Ms": 47022.653,
+        "p95Ms": 103739.722,
+        "p99Ms": 110408.647,
+        "maxMs": 110551.845,
+        "meanMs": 48152.859
+      },
+      "execution": {
+        "samples": 449,
+        "minMs": 7883.866,
+        "p50Ms": 27352.904,
+        "p95Ms": 30458.744,
+        "p99Ms": 30777.885,
+        "maxMs": 31088.525,
+        "meanMs": 26038.752
+      },
+      "serverTotal": {
+        "samples": 449,
+        "minMs": 24284.356,
+        "p50Ms": 75169.996,
+        "p95Ms": 118233.408,
+        "p99Ms": 118469.257,
+        "maxMs": 118518.383,
+        "meanMs": 74191.611
+      },
+      "endToEnd": {
+        "samples": 449,
+        "minMs": 24407.111,
+        "p50Ms": 76403.906,
+        "p95Ms": 121872.639,
+        "p99Ms": 122360.206,
+        "maxMs": 122363.742,
+        "meanMs": 75799.154
+      }
+    }
+  },
+  "notes": [
+    "Times use server DB finished_at, not polling observation.",
+    "End-to-end is POST start through the recorded server finished_at; network response delivery and UI rendering are excluded.",
+    "Execution includes real embedding, FAQ search, guards, judgment and answer-model work.",
+    "Client 1500-VU load generator, BE, DB, Redis and GPU models share the local machine.",
+    "Worker concurrency 128, queue expiry 10m, execution expiry 180s; FAQ semantic cache enabled.",
+    "No application source changes, threshold relaxation, output substitution, or fake vectors.",
+    "Same dedicated members and exact question/group order as earlier runs; new conversations.",
+    "Retained dedicated DB and warm model server caches. One run per setting, not randomized repeated trials.",
+    "LLM concurrency follows worker concurrency by the existing default (4 / 16 / 32 / 64 / 128).",
+    "Process model counters may include auxiliary scheduled tasks; job-correlated source logs determine chat outcomes.",
+    "Internal HTTP retries are not measured separately.",
+    "Previous 4-, 16-, 32- and 64-worker archives remain unchanged."
+  ],
+  "measurementStartedAt": "2026-10-22T15:18:23.130Z",
+  "measurementFinishedAt": "2026-10-22T15:20:25.505Z",
+  "hardware": {
+    "docker": "16 CPUs, 25159159808 bytes memory",
+    "gpu": "NVIDIA GeForce RTX 3060, 12288 MiB",
+    "javaVersion": "21.0.11",
+    "jvmHeap": "512m initial / 2g max",
+    "backendCommit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96"
+  },
+  "models": {
+    "--model": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16",
+    "--served-model-name": "ubot-chat",
+    "--max-model-len": "4096",
+    "--gpu-memory-utilization": "0.6"
+  },
+  "environment": {
+    "startedAt": "2026-10-22T15:16:14.4066666Z",
+    "port": 18080,
+    "models": "real local vLLM chat + embedding",
+    "workerConcurrency": 128,
+    "queueLimit": "10m",
+    "executionLimit": "180s",
+    "cacheEnabled": true,
+    "isolatedDatabase": true,
+    "llmConcurrencyLimit": 128,
+    "observedWorkerActive": 128,
+    "observedLlmInUse": 126,
+    "sampledPeakWorkerActive": 128,
+    "sampledPeakLlmInUse": 128,
+    "databasePeakConcurrentJobs": 128
+  },
+  "checks": {
+    "identicalCasesAndOrder": true,
+    "sameDedicatedMembers": true,
+    "dbEvidenceRows": 1200,
+    "independentPostgresqlTimingCrosscheck": true,
+    "verifiedLlmAnswers": 449,
+    "nonemptyAnswerSamples": 3,
+    "k6ExitCode": 0,
+    "duplicates": 0,
+    "invalidEvents": 0,
+    "pollErrors": {}
+  },
+  "answerSamples": [
+    {
+      "caseId": 4,
+      "jobId": 5016,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 23,
+      "jobId": 5654,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 24,
+      "jobId": 5043,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    }
+  ],
+  "reliability": {
+    "passed": false,
+    "recorded": 1500,
+    "mismatches": 1,
+    "submissionErrors": 0,
+    "processingErrors": 1,
+    "unfinished": 0,
+    "notSent": 0,
+    "cancelled": 0,
+    "transportErrors": 0,
+    "timeouts": 1,
+    "httpTimeouts": 0,
+    "applicationTimeouts": 1,
+    "queueTimeouts": 0,
+    "workerTimeouts": 0,
+    "llmTimeouts": 0,
+    "embeddingTimeouts": 1,
+    "unclassifiedTransportTimeouts": 0,
+    "errorCodes": {
+      "FW-003": 300,
+      "CHAT-013": 300,
+      "EM-003": 1
+    },
+    "pollErrors": {},
+    "duplicates": 0,
+    "invalidEvents": 0,
+    "k6ExitCode": 0,
+    "modelRequestOutcomes": [
+      {
+        "kind": "answer",
+        "outcome": "success",
+        "count": 449
+      },
+      {
+        "kind": "judgment",
+        "outcome": "success",
+        "count": 300
+      }
+    ],
+    "timeoutCountBasis": "Final API error codes, not confirmed network deadline breaches",
+    "unconfirmedEmbeddingDeadlineBreaches": 1
+  },
+  "vllmCounterChanges": {
+    "vllm:num_preemptions_total": 0,
+    "vllm:request_success_total": 749,
+    "vllm:generation_tokens_total": 57667
+  },
+  "gpuDuring": "NVIDIA GeForce RTX 3060, 11244 MiB, 12288 MiB, 87 %",
+  "concurrencySamples": [
+    {
+      "observedAt": "2026-10-22T15:18:27.9422958Z",
+      "metrics": {
+        "llm_concurrency_limit": 128,
+        "llm_concurrency_in_use": 128,
+        "chat_worker_active": 128,
+        "chat_jobs_queued": 996
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:18:30.0399652Z",
+      "metrics": {
+        "llm_concurrency_limit": 128,
+        "llm_concurrency_in_use": 128,
+        "chat_worker_active": 128,
+        "chat_jobs_queued": 989
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:18:32.1253978Z",
+      "metrics": {
+        "llm_concurrency_limit": 128,
+        "llm_concurrency_in_use": 128,
+        "chat_worker_active": 128,
+        "chat_jobs_queued": 984
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:18:34.2168431Z",
+      "metrics": {
+        "llm_concurrency_limit": 128,
+        "llm_concurrency_in_use": 128,
+        "chat_worker_active": 128,
+        "chat_jobs_queued": 956
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:18:36.2848898Z",
+      "metrics": {
+        "llm_concurrency_limit": 128,
+        "llm_concurrency_in_use": 128,
+        "chat_worker_active": 128,
+        "chat_jobs_queued": 944
+      }
+    },
+    {
+      "observedAt": "2026-10-22T15:18:38.3637186Z",
+      "metrics": {
+        "llm_concurrency_limit": 128,
+        "llm_concurrency_in_use": 128,
+        "chat_worker_active": 128,
+        "chat_jobs_queued": 917
+      }
+    }
+  ],
+  "embeddingFailureDiagnosis": {
+    "apiErrorCode": "EM-003",
+    "configuredReadTimeoutMs": 30000,
+    "recordedTimeoutCallCount": 1,
+    "recordedTimeoutCallMeanMs": 2.1486,
+    "originalIoCausePreserved": false,
+    "actualDeadlineBreachConfirmed": false,
+    "classification": "API error-code classification only. OpenAiCompatibleEmbeddingClient maps all ResourceAccessException instances to EM-003 and discards the original cause.",
+    "failedCases": [
+      {
+        "caseId": 936,
+        "jobId": 5061,
+        "attemptId": 5061,
+        "expected": "llm",
+        "errorCode": "EM-003",
+        "executionMs": 14.2041015625
+      }
+    ]
+  }
+}

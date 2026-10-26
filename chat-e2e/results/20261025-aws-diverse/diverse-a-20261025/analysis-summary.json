@@ -1,0 +1,40 @@
+{
+  "runId": "diverse-a-20261025",
+  "total": 3000,
+  "submitted": 3000,
+  "statuses": {
+    "FAILED": 632,
+    "SUCCEEDED": 2368
+  },
+  "errors": {
+    "CHAT-013": 83,
+    "CHAT-016": 362,
+    "LLM-003": 122,
+    "CHAT-022": 53,
+    "LLM-008": 5,
+    "LLM-004": 1,
+    "LLM-006": 2,
+    "CHAT-021": 4
+  },
+  "byProbe": {
+    "variant": {
+      "FAILED": 540,
+      "SUCCEEDED": 2110
+    },
+    "boundary": {
+      "SUCCEEDED": 258,
+      "FAILED": 92
+    }
+  },
+  "categories": 77,
+  "answerLength": {
+    "min": 13,
+    "median": 62.5,
+    "max": 421
+  },
+  "emptySuccessfulAnswers": 0,
+  "uniqueSuccessfulAnswers": 1604,
+  "genericDeferralAnswers": 716,
+  "containsGenericDeferral": 866,
+  "nonTerminalEnding": 1
+}

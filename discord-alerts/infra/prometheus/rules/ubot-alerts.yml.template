@@ -1,0 +1,86 @@
+# UBot 장애 알림 규칙 v1. 이 파일을 Prometheus에 직접 넣지 않습니다.
+# Prometheus 규칙은 환경변수를 읽지 못하므로 tools/deploy/render-alert-config.sh가 .env 값으로
+# __이름__ 자리를 채워 .generated/prometheus/ubot-alerts.yml을 만듭니다.
+groups:
+  - name: ubot
+    rules:
+      - alert: UBotBackendDown
+        expr: up{job="ubot-backend"} == 0
+        for: __BACKEND_DOWN_FOR__
+        labels:
+          severity: critical
+        annotations:
+          summary: "UBot Backend 응답 없음"
+          description: "Backend가 __BACKEND_DOWN_FOR__ 넘게 Prometheus 수집에 응답하지 않습니다."
+          runbook_url: "https://github.com/ureca-UBot/UBot-BE/blob/develop/docs/runbooks/backend-down.md"
+
+      # 프로세스가 죽은 경우(up)와 떠 있지만 소비 스레드·복구 루프가 멈춘 경우(chat_worker_ready)를 함께 봅니다.
+      - alert: UBotWorkerDown
+        expr: |
+          up{job="__WORKER_JOB__"} == 0
+          or
+          chat_worker_ready{job="__WORKER_JOB__"} == 0
+        for: __WORKER_DOWN_FOR__
+        labels:
+          severity: critical
+        annotations:
+          summary: "UBot Chat Worker 비정상"
+          description: "AI Worker가 응답하지 않거나 답변 작업을 처리할 수 없는 상태가 __WORKER_DOWN_FOR__ 넘게 이어집니다."
+          runbook_url: "https://github.com/ureca-UBot/UBot-BE/blob/develop/docs/runbooks/chat-worker-down.md"
+
+      - alert: UBotPostgresDown
+        expr: |
+          up{job="postgres"} == 0
+          or
+          pg_up == 0
+        for: __DEPENDENCY_DOWN_FOR__
+        labels:
+          severity: critical
+        annotations:
+          summary: "PostgreSQL 연결 불가"
+          description: "postgres-exporter가 응답하지 않거나 PostgreSQL에 연결하지 못하는 상태가 __DEPENDENCY_DOWN_FOR__ 넘게 이어집니다."
+          runbook_url: "https://github.com/ureca-UBot/UBot-BE/blob/develop/docs/runbooks/postgres-down.md"
+
+      - alert: UBotRedisDown
+        expr: |
+          up{job="redis"} == 0
+          or
+          redis_up == 0
+        for: __DEPENDENCY_DOWN_FOR__
+        labels:
+          severity: critical
+        annotations:
+          summary: "Redis 연결 불가"
+          description: "redis-exporter가 응답하지 않거나 Redis에 연결하지 못하는 상태가 __DEPENDENCY_DOWN_FOR__ 넘게 이어집니다."
+          runbook_url: "https://github.com/ureca-UBot/UBot-BE/blob/develop/docs/runbooks/redis-down.md"
+
+      # 대기 수보다 가장 오래 기다린 작업의 대기 시간을 봅니다. 모든 Worker가 같은 DB를 보므로 max로 묶습니다.
+      - alert: UBotChatQueueStalled
+        expr: |
+          max(chat_jobs_oldest_queued_seconds) > __CHAT_QUEUE_OLDEST_SECONDS__
+        for: __CHAT_QUEUE_FOR__
+        labels:
+          severity: warning
+        annotations:
+          summary: "Chat Job 처리 지연"
+          description: "가장 오래 기다린 Chat Job의 대기 시간({{ $value | humanizeDuration }})이 __CHAT_QUEUE_OLDEST_SECONDS__초를 넘었습니다."
+          runbook_url: "https://github.com/ureca-UBot/UBot-BE/blob/develop/docs/runbooks/chat-queue-stalled.md"
+
+      # 기존 답변 생성·분류 호출만 셉니다. 가드의 호출 수·시간 초과가 채팅 알림을 희석하거나 발화하지 않게 합니다.
+      # 호출이 몇 건 안 될 때 1건 시간 초과로 비율이 크게 튀지 않도록 최소 호출 수도 함께 봅니다.
+      - alert: UBotLlmTimeoutRateHigh
+        expr: |
+          (
+            sum(increase(llm_requests_seconds_count{client="chat",outcome="timeout"}[__LLM_WINDOW__]))
+            /
+            sum(increase(llm_requests_seconds_count{client="chat"}[__LLM_WINDOW__]))
+          ) > __LLM_TIMEOUT_RATIO__
+          and
+          sum(increase(llm_requests_seconds_count{client="chat"}[__LLM_WINDOW__])) >= __LLM_MIN_CALLS__
+        for: __LLM_TIMEOUT_FOR__
+        labels:
+          severity: warning
+        annotations:
+          summary: "LLM Timeout 비율 증가"
+          description: "최근 __LLM_WINDOW__ 동안 LLM 호출의 시간 초과 비율({{ $value | humanizePercentage }})이 기준(__LLM_TIMEOUT_RATIO__)을 넘었습니다."
+          runbook_url: "https://github.com/ureca-UBot/UBot-BE/blob/develop/docs/runbooks/llm-timeout-high.md"

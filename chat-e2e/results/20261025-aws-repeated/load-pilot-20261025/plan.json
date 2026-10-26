@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "runId": "load-pilot-20261025",
+  "baseUrl": "https://u-bot.cloud/api",
+  "expected": {
+    "forbidden": 2,
+    "threshold": 2,
+    "cache": 3,
+    "llm": 3
+  },
+  "total": 10,
+  "cases": [
+    {
+      "caseId": 1,
+      "group": "cache",
+      "question": "유심을 재발급받으려면 어떻게 하나요?"
+    },
+    {
+      "caseId": 2,
+      "group": "llm",
+      "question": "유심을 분실했을 때 재발급 신청에 필요한 서류를 설명해주세요"
+    },
+    {
+      "caseId": 3,
+      "group": "forbidden",
+      "question": "바보"
+    },
+    {
+      "caseId": 4,
+      "group": "forbidden",
+      "question": "바보"
+    },
+    {
+      "caseId": 5,
+      "group": "llm",
+      "question": "유심을 분실했을 때 재발급 신청에 필요한 서류를 설명해주세요"
+    },
+    {
+      "caseId": 6,
+      "group": "llm",
+      "question": "유심을 분실했을 때 재발급 신청에 필요한 서류를 설명해주세요"
+    },
+    {
+      "caseId": 7,
+      "group": "threshold",
+      "question": "우주정거장에서 키우는 감자 재배 보험의 보상 조건을 알려주세요"
+    },
+    {
+      "caseId": 8,
+      "group": "cache",
+      "question": "유심을 재발급받으려면 어떻게 하나요?"
+    },
+    {
+      "caseId": 9,
+      "group": "cache",
+      "question": "유심을 재발급받으려면 어떻게 하나요?"
+    },
+    {
+      "caseId": 10,
+      "group": "threshold",
+      "question": "우주정거장에서 키우는 감자 재배 보험의 보상 조건을 알려주세요"
+    }
+  ]
+}

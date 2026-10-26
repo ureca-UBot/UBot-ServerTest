@@ -1,0 +1,312 @@
+{
+  "runId": "local-real-1500-w16-20261022",
+  "target": "http://127.0.0.1:18080",
+  "realLlm": true,
+  "realEmbedding": true,
+  "fixture": "Isolated synthetic FAQ corpus (3 FAQs); real vectors and default retrieval/guard logic",
+  "total": 1500,
+  "expected": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "actual": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "passed": true,
+  "errors": {
+    "FW-003": 300,
+    "CHAT-013": 300
+  },
+  "httpStatuses": {
+    "202": 1200,
+    "400": 300
+  },
+  "transportErrors": {},
+  "mismatches": 0,
+  "startSpreadMs": 31,
+  "wallClockCompletionMs": 133419.057,
+  "llmMetrics": {
+    "answer": {
+      "calls": 450,
+      "totalSeconds": 1563.346,
+      "meanMs": 3474.103
+    },
+    "judgment": {
+      "calls": 300,
+      "totalSeconds": 410.772,
+      "meanMs": 1369.241
+    },
+    "note": "Process counters include auxiliary scheduled tasks. Route-correlated SUCCEEDED jobs determine chat outcome counts."
+  },
+  "groups": {
+    "forbidden": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 54,
+        "p50Ms": 1353,
+        "p95Ms": 2707,
+        "p99Ms": 2889,
+        "maxMs": 3027,
+        "meanMs": 1359.077
+      },
+      "queue": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "execution": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "serverTotal": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "endToEnd": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      }
+    },
+    "threshold": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 161,
+        "p50Ms": 1475,
+        "p95Ms": 2961,
+        "p99Ms": 3071,
+        "maxMs": 3083,
+        "meanMs": 1550.643
+      },
+      "queue": {
+        "samples": 300,
+        "minMs": 1813.819,
+        "p50Ms": 56369.628,
+        "p95Ms": 121901.669,
+        "p99Ms": 127273.415,
+        "maxMs": 128462.1,
+        "meanMs": 60507.731
+      },
+      "execution": {
+        "samples": 300,
+        "minMs": 1009.593,
+        "p50Ms": 1447.461,
+        "p95Ms": 1629.493,
+        "p99Ms": 2120.312,
+        "maxMs": 2537.002,
+        "meanMs": 1460.267
+      },
+      "serverTotal": {
+        "samples": 300,
+        "minMs": 3906.45,
+        "p50Ms": 57830.768,
+        "p95Ms": 123357.384,
+        "p99Ms": 128618.53,
+        "maxMs": 129471.693,
+        "meanMs": 61967.997
+      },
+      "endToEnd": {
+        "samples": 300,
+        "minMs": 4033.111,
+        "p50Ms": 59201.648,
+        "p95Ms": 126214.347,
+        "p99Ms": 131663.522,
+        "maxMs": 132525.754,
+        "meanMs": 63409.409
+      }
+    },
+    "cache": {
+      "count": 450,
+      "submission": {
+        "samples": 450,
+        "minMs": 108,
+        "p50Ms": 1683,
+        "p95Ms": 2981,
+        "p99Ms": 3079,
+        "maxMs": 3098,
+        "meanMs": 1694.853
+      },
+      "queue": {
+        "samples": 450,
+        "minMs": 1826.547,
+        "p50Ms": 65861.817,
+        "p95Ms": 122827.712,
+        "p99Ms": 127188.144,
+        "maxMs": 128485.005,
+        "meanMs": 67071.03
+      },
+      "execution": {
+        "samples": 450,
+        "minMs": 30.559,
+        "p50Ms": 42.989,
+        "p95Ms": 65.102,
+        "p99Ms": 133.424,
+        "maxMs": 1126.095,
+        "meanMs": 54.886
+      },
+      "serverTotal": {
+        "samples": 450,
+        "minMs": 2715.793,
+        "p50Ms": 65923.516,
+        "p95Ms": 122880.366,
+        "p99Ms": 127226.377,
+        "maxMs": 128524.656,
+        "meanMs": 67125.916
+      },
+      "endToEnd": {
+        "samples": 450,
+        "minMs": 2813.163,
+        "p50Ms": 67508.367,
+        "p95Ms": 125765.947,
+        "p99Ms": 130273.462,
+        "maxMs": 131602.024,
+        "meanMs": 68714.804
+      }
+    },
+    "llm": {
+      "count": 450,
+      "submission": {
+        "samples": 450,
+        "minMs": 139,
+        "p50Ms": 1671,
+        "p95Ms": 2981,
+        "p99Ms": 3059,
+        "maxMs": 3082,
+        "meanMs": 1656.133
+      },
+      "queue": {
+        "samples": 450,
+        "minMs": 1812.764,
+        "p50Ms": 65526.952,
+        "p95Ms": 121957.225,
+        "p99Ms": 126543.775,
+        "maxMs": 128196.235,
+        "meanMs": 65231.29
+      },
+      "execution": {
+        "samples": 450,
+        "minMs": 2136.497,
+        "p50Ms": 3601.847,
+        "p95Ms": 3785.537,
+        "p99Ms": 4547.007,
+        "maxMs": 4598.118,
+        "meanMs": 3584.616
+      },
+      "serverTotal": {
+        "samples": 450,
+        "minMs": 6289.997,
+        "p50Ms": 69081.653,
+        "p95Ms": 125661.898,
+        "p99Ms": 129548.843,
+        "maxMs": 130332.732,
+        "meanMs": 68815.906
+      },
+      "endToEnd": {
+        "samples": 450,
+        "minMs": 6405.781,
+        "p50Ms": 70660.589,
+        "p95Ms": 128532.62,
+        "p99Ms": 132568.447,
+        "maxMs": 133388.057,
+        "meanMs": 70364.29
+      }
+    }
+  },
+  "notes": [
+    "Times use server DB finished_at, not polling observation.",
+    "End-to-end is POST start through the recorded server finished_at; network response delivery and UI rendering are excluded.",
+    "Execution includes real embedding, FAQ search, guards, judgment and answer-model work.",
+    "Client 1500-VU load generator, BE, DB, Redis and GPU models share the local machine.",
+    "Worker concurrency 16, queue expiry 10m, execution expiry 180s; FAQ semantic cache enabled.",
+    "No application source changes, threshold relaxation, output substitution, or fake vectors.",
+    "Repeated on the retained dedicated DB with the same accounts, exact case order and new conversations.",
+    "The vLLM servers remain warm from the previous run. This is one measurement per concurrency, not repeated randomized trials.",
+    "LLM_MAX_CONCURRENT was not explicitly set; its existing default follows worker concurrency (4 -> 16).",
+    "The original 4-worker report is preserved unchanged."
+  ],
+  "measurementStartedAt": "2026-10-22T14:52:11.550Z",
+  "measurementFinishedAt": "2026-10-22T14:54:24.969Z",
+  "hardware": {
+    "docker": "16 CPUs, 25159159808 bytes memory",
+    "gpu": "NVIDIA GeForce RTX 3060, 12288 MiB",
+    "javaVersion": "21.0.11",
+    "jvmHeap": "512m initial / 2g max",
+    "backendCommit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96"
+  },
+  "models": {
+    "--model": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16",
+    "--served-model-name": "ubot-chat",
+    "--max-model-len": "4096",
+    "--gpu-memory-utilization": "0.6"
+  },
+  "environment": {
+    "startedAt": "2026-10-22T14:50:03.4102136Z",
+    "port": 18080,
+    "models": "real local vLLM chat + embedding",
+    "workerConcurrency": 16,
+    "queueLimit": "10m",
+    "executionLimit": "180s",
+    "cacheEnabled": true,
+    "isolatedDatabase": true,
+    "llmConcurrencyLimit": 16,
+    "observedWorkerActive": 16,
+    "observedLlmInUse": 14
+  },
+  "checks": {
+    "identicalCasesAndOrder": true,
+    "sameDedicatedMembers": true,
+    "dbEvidenceRows": 1200,
+    "independentPostgresqlTimingCrosscheck": true,
+    "verifiedLlmAnswers": 450,
+    "nonemptyAnswerSamples": 3,
+    "k6ExitCode": 0,
+    "duplicates": 0,
+    "invalidEvents": 0,
+    "pollErrors": {}
+  },
+  "answerSamples": [
+    {
+      "caseId": 4,
+      "jobId": 1855,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 23,
+      "jobId": 1520,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 24,
+      "jobId": 2266,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    }
+  ]
+}

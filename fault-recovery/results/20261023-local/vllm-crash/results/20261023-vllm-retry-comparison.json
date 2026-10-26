@@ -1,0 +1,715 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Seoul",
+  "scenario": "vllm-auto-retry-100-real-llm",
+  "baseline": {
+    "source": "tools/perf/vllm-crash/results/20261023-local-vllm-crash.json",
+    "sha256": "0b740139f1a3fcc658cd4736a0a4f9af36614d1cb07df16ae03a8686627691c3",
+    "summary": {
+      "accepted": 100,
+      "savedJobs": 100,
+      "missingJobs": 0,
+      "succeeded": 0,
+      "failed": 100,
+      "failedExcludingTimeouts": 100,
+      "timeouts": 0,
+      "cancelled": 0,
+      "unfinished": 0,
+      "savedAnswers": 0,
+      "duplicateAnswers": 0,
+      "failedWithAnswer": 0,
+      "successWithoutAnswer": 0,
+      "ownershipMismatches": 0,
+      "apiMismatches": 0,
+      "apiMissing": 0,
+      "errors": {
+        "LLM-003": 100
+      },
+      "allOriginalJobsSucceeded": false
+    },
+    "timingsMs": {
+      "forcedExit": 625,
+      "modelUnavailable": 99878,
+      "restartToReady": 83628,
+      "killToOriginalAllTerminal": 3378.037109375,
+      "firstSubmissionToOriginalAllTerminal": 25159.037109375,
+      "readyToRecoveredAnswer": 8230.779052734375,
+      "retryToRecoveredAnswer": 4633.779052734375,
+      "killToRecoveredAnswer": 108733.77905273438
+    },
+    "api": {
+      "count": 378,
+      "statuses": {
+        "200": 378
+      },
+      "jobStatuses": {
+        "QUEUED": 4,
+        "FAILED": 374
+      },
+      "clientFailures": 0,
+      "p50Ms": 25,
+      "p95Ms": 29,
+      "maxMs": 56
+    }
+  },
+  "environment": {
+    "scenario": "vllm-process-crash-auto-retry",
+    "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+    "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+    "harnessSha256": "8a70d87bb6c0bc25c017a18875438a822ec245b8ae8f3a82e039f9d6f98925c4",
+    "modelSha256": "d93b073e76e4602a06948ef6c4cfadcabef5d8db209710e8bcd0a8873a322441",
+    "probeSha256": "3000558e0dc56aed5c4e8d7e5387fe80982c12966946d1f1f97bf9fee5ec873c",
+    "apiUrl": "http://127.0.0.1:18080",
+    "workerUrl": "http://127.0.0.1:18081",
+    "model": "ubot-feat-200-vllm-1",
+    "database": "ubot-chat-burst-live-postgres-1",
+    "redis": "ubot-chat-burst-live-redis-1",
+    "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+    "syntheticMembers": 100,
+    "concurrency": 4,
+    "heartbeatTimeoutMs": 60000,
+    "recoveryIntervalMs": 15000,
+    "reclaimIdleMs": 300000,
+    "queueTimeoutMs": 600000,
+    "executionTimeoutMs": 180000,
+    "totalTimeoutMs": 600000,
+    "modelRetryBackoffMs": 5000,
+    "manualRetryRequests": 0,
+    "downTargetMs": 15000,
+    "llmMocked": false,
+    "originalModel": {
+      "running": true,
+      "startedAt": "2026-10-23T00:46:44.669918247Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+      "restartPolicy": {
+        "Name": "unless-stopped",
+        "MaximumRetryCount": 0
+      }
+    },
+    "beforeDependencies": {
+      "databaseStartedAt": "2026-10-23T01:06:56.304438164Z",
+      "embeddingStartedAt": "2026-10-22T00:09:31.170622612Z",
+      "redisRunId": "5761c93e1f32e8323fdee3f0282811843d15d02d"
+    },
+    "models": [
+      [
+        {
+          "id": "ubot-chat",
+          "root": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16"
+        }
+      ],
+      [
+        {
+          "id": "ubot-embedding",
+          "root": "BAAI/bge-m3"
+        }
+      ]
+    ]
+  },
+  "result": {
+    "verifiedAt": "2026-10-23T01:18:45.606Z",
+    "summary": {
+      "accepted": 100,
+      "savedJobs": 100,
+      "missingJobs": 0,
+      "succeeded": 100,
+      "failed": 0,
+      "failedExcludingTimeouts": 0,
+      "timeouts": 0,
+      "cancelled": 0,
+      "unfinished": 0,
+      "savedAnswers": 100,
+      "duplicateAnswers": 0,
+      "failedWithAnswer": 0,
+      "successWithoutAnswer": 0,
+      "ownershipMismatches": 0,
+      "apiMismatches": 0,
+      "apiMissing": 0,
+      "errors": {},
+      "allOriginalJobsSucceeded": true
+    },
+    "killRequestedAt": "2026-10-23T01:16:34.493Z",
+    "modelExitedAt": "2026-10-23T01:16:34.918940435Z",
+    "restartRequestedAt": "2026-10-23T01:16:50.512Z",
+    "modelReadyAt": "2026-10-23T01:17:47.267Z",
+    "beforeStatuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    },
+    "modelRunning": 4,
+    "observedAt": "2026-10-23T01:16:34.492Z",
+    "apiPid": 34820,
+    "workerPid": 38492,
+    "originalModel": {
+      "running": true,
+      "startedAt": "2026-10-23T00:46:44.669918247Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+      "restartPolicy": {
+        "Name": "unless-stopped",
+        "MaximumRetryCount": 0
+      }
+    },
+    "afterModel": {
+      "running": true,
+      "startedAt": "2026-10-23T01:16:50.606572935Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+      "restartPolicy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      }
+    },
+    "beforeDependencies": {
+      "databaseStartedAt": "2026-10-23T01:06:56.304438164Z",
+      "embeddingStartedAt": "2026-10-22T00:09:31.170622612Z",
+      "redisRunId": "5761c93e1f32e8323fdee3f0282811843d15d02d"
+    },
+    "afterDependencies": {
+      "databaseStartedAt": "2026-10-23T01:06:56.304438164Z",
+      "embeddingStartedAt": "2026-10-22T00:09:31.170622612Z",
+      "redisRunId": "5761c93e1f32e8323fdee3f0282811843d15d02d"
+    },
+    "processStartUnchanged": true,
+    "dependenciesUnchanged": true,
+    "modelRestartConfirmed": true,
+    "originalLlmRoutes": 100,
+    "originalExecutionStarts": 100,
+    "repeatedOriginalExecutions": [],
+    "manualRetryRequests": 0,
+    "retryWaits": 60,
+    "retryWaitJobIds": [
+      6964,
+      6977,
+      6951,
+      6958
+    ],
+    "userAttemptCountUnchanged": true,
+    "queuedAtKillIds": [
+      6938,
+      6939,
+      6940,
+      6941,
+      6942,
+      6943,
+      6944,
+      6945,
+      6946,
+      6947,
+      6948,
+      6949,
+      6950,
+      6952,
+      6953,
+      6954,
+      6955,
+      6956,
+      6957,
+      6959,
+      6960,
+      6961,
+      6962,
+      6963,
+      6965,
+      6966,
+      6967,
+      6968,
+      6969,
+      6970,
+      6971,
+      6972,
+      6973,
+      6974,
+      6975,
+      6976,
+      6978,
+      6979,
+      6980,
+      6981,
+      6982,
+      6983,
+      6984,
+      6985,
+      6986,
+      6987,
+      6988,
+      6989,
+      6990,
+      6991,
+      6992,
+      6993,
+      6994,
+      6995,
+      6996,
+      6997,
+      6998,
+      6999,
+      7000,
+      7001,
+      7002,
+      7003,
+      7004,
+      7005,
+      7006,
+      7007,
+      7008,
+      7009,
+      7010,
+      7011,
+      7012,
+      7013,
+      7014,
+      7015,
+      7016,
+      7017,
+      7018,
+      7019,
+      7020,
+      7021,
+      7022,
+      7023,
+      7024,
+      7025,
+      7026,
+      7027,
+      7028,
+      7029,
+      7030,
+      7031,
+      7032,
+      7033,
+      7034,
+      7035,
+      7036,
+      7037
+    ],
+    "inFlight": [
+      {
+        "jobId": 6951,
+        "startedAtMs": 1792718192547.593,
+        "finalStartedAtMs": 1792718192547.593
+      },
+      {
+        "jobId": 6958,
+        "startedAtMs": 1792718192547.593,
+        "finalStartedAtMs": 1792718192547.593
+      },
+      {
+        "jobId": 6964,
+        "startedAtMs": 1792718192547.593,
+        "finalStartedAtMs": 1792718192547.593
+      },
+      {
+        "jobId": 6977,
+        "startedAtMs": 1792718192547.593,
+        "finalStartedAtMs": 1792718192547.593
+      }
+    ],
+    "apiDuringModelUnavailable": {
+      "count": 274,
+      "statuses": {
+        "200": 274
+      },
+      "jobStatuses": {
+        "QUEUED": 274
+      },
+      "clientFailures": 0,
+      "p50Ms": 25,
+      "p95Ms": 27,
+      "maxMs": 36
+    },
+    "apiAll": {
+      "count": 574,
+      "statuses": {
+        "200": 574
+      },
+      "jobStatuses": {
+        "QUEUED": 405,
+        "RUNNING": 7,
+        "SUCCEEDED": 162
+      },
+      "clientFailures": 0,
+      "p50Ms": 24,
+      "p95Ms": 30,
+      "maxMs": 114
+    },
+    "apiHealth": {
+      "count": 148,
+      "statuses": {
+        "200": 148
+      },
+      "jobStatuses": {},
+      "clientFailures": 0,
+      "p50Ms": 21,
+      "p95Ms": 24,
+      "maxMs": 26
+    },
+    "securityChecks": [
+      {
+        "name": "invalid-signature",
+        "expectedStatus": 401,
+        "at": "2026-10-23T01:16:35.603Z",
+        "path": "/chat/jobs/6974",
+        "httpStatus": 401,
+        "apiCode": "JWT-004",
+        "completedAt": "2026-10-23T01:16:35.621Z",
+        "elapsedMs": 18
+      },
+      {
+        "name": "other-member",
+        "expectedStatus": 404,
+        "at": "2026-10-23T01:16:35.621Z",
+        "path": "/chat/jobs/6974",
+        "httpStatus": 404,
+        "apiCode": "CHAT-020",
+        "completedAt": "2026-10-23T01:16:35.653Z",
+        "elapsedMs": 32
+      }
+    ],
+    "redisPending": 0,
+    "timingsMs": {
+      "forcedExit": 425,
+      "modelUnavailable": 72349,
+      "restartToReady": 56755,
+      "killToOriginalAllTerminal": 125575.44604492188,
+      "firstSubmissionToOriginalAllTerminal": 147959.44604492188,
+      "readyToFirstAnswer": 5913.2451171875,
+      "readyToAllAnswers": 52801.446044921875,
+      "killToFirstAnswer": 78687.2451171875,
+      "killToAllAnswers": 125575.44604492188
+    },
+    "verificationPassed": true
+  },
+  "independentAudit": {
+    "expectedJobs": 100,
+    "savedJobs": 100,
+    "uniqueJobs": 100,
+    "uniqueAttempts": 100,
+    "uniqueMembers": 100,
+    "uniqueConversations": 100,
+    "succeededJobs": 100,
+    "succeededAttempts": 100,
+    "oneAttemptOnly": 100,
+    "storedTurns": 100,
+    "ownershipMismatches": 0,
+    "answerMismatches": 0,
+    "duplicateTurns": 0,
+    "resultReferencesMatch": 100,
+    "clearedRequestContexts": 100,
+    "missingOrUnfinished": 0,
+    "globalOutstanding": 0,
+    "firstQueuedStartAtMs": 1792718273256.496,
+    "allAnswersFinishedAtMs": 1792718320068.446
+  },
+  "fixedDeadlineChecks": [
+    {
+      "jobId": 6951,
+      "deadlineAtMs": 1792718372547.593,
+      "unchanged": true,
+      "heartbeatRenewed": true
+    },
+    {
+      "jobId": 6958,
+      "deadlineAtMs": 1792718372547.593,
+      "unchanged": true,
+      "heartbeatRenewed": true
+    },
+    {
+      "jobId": 6964,
+      "deadlineAtMs": 1792718372547.593,
+      "unchanged": true,
+      "heartbeatRenewed": true
+    },
+    {
+      "jobId": 6977,
+      "deadlineAtMs": 1792718372547.593,
+      "unchanged": true,
+      "heartbeatRenewed": true
+    }
+  ],
+  "modelSuccessfulCallsAfterRestart": 100,
+  "tests": {
+    "tests": 246,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2,
+    "suites": [
+      {
+        "name": "인증 API 통합 테스트",
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.controller.ChatJobDatabaseOutageIntegrationTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.controller.ChatLlmIntegrationTest",
+        "tests": 39,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "게스트 채팅 통합 테스트",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "답변 작업 스트림·선점 통합 테스트",
+        "tests": 31,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.chat.job.controller.ChatJobCancellationControllerTest",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "답변 Worker 테스트",
+        "tests": 42,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.LlmRequestCancellationTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.OllamaClientContractTest",
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.OllamaClientHttpTest",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.OllamaClientTest",
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.OllamaClientToolCallingTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.OpenAiCompatibleLlmClientContractTest",
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.OpenAiCompatibleLlmClientHttpTest",
+        "tests": 24,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "com.ubot.llm.client.OpenAiCompatibleLlmClientLiveTest",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      },
+      {
+        "name": "com.ubot.llm.service.LlmServiceTest",
+        "tests": 36,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ]
+  },
+  "cleanup": {
+    "at": "2026-10-23T01:21:14.8607287Z",
+    "scenarioProcessesRemaining": 0,
+    "isolatedContainers": [
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-23T01:21:13.642340531Z"
+      },
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-23T01:21:13.593963321Z"
+      }
+    ],
+    "originalServicesAllRunning": true,
+    "originalServiceNames": [
+      "ubot-feat-200-postgres-1",
+      "ubot-feat-200-redis-1",
+      "ubot-feat-200-vllm-1",
+      "ubot-feat-200-vllm-embedding-1"
+    ],
+    "modelRestartPolicy": "unless-stopped",
+    "testDataRetained": true
+  },
+  "finalModelRestored": {
+    "running": true,
+    "startedAt": "2026-10-23T01:16:50.606572935Z",
+    "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+    "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+    "restartPolicy": {
+      "Name": "unless-stopped",
+      "MaximumRetryCount": 0
+    }
+  },
+  "rawEvidenceDirectory": "build/chat-burst-live/vllm-retry-100-20261023",
+  "evidence": [
+    {
+      "name": "environment.json",
+      "sha256": "ea80d8dab3bd5a992169bb536f7fc7918ebfb72863ed3e7a29ac97d54938c129"
+    },
+    {
+      "name": "events.json",
+      "sha256": "c8ee88d20f2739c8b1ed92b5e40bd9590a709a37a50c04ac85986efa4b299112"
+    },
+    {
+      "name": "submissions.json",
+      "sha256": "265882333effdb9550433bf4255881ce4fcdcd37fdaf04a7ca110e6c699a794a"
+    },
+    {
+      "name": "immediately-before-kill.json",
+      "sha256": "b0e3b641bbee597f273566847b29445a2c4d7746a2aca9b678ee7416eebf064d"
+    },
+    {
+      "name": "database-before-model-restart.json",
+      "sha256": "a91fd97cc29a717cf309e0c0fa52e1da96f07740db2955368cc9acd17ac83815"
+    },
+    {
+      "name": "db-final.json",
+      "sha256": "f8359393150d5a342000d281b26fca665e5903bd7da1e5087bd6a0e7a74422cd"
+    },
+    {
+      "name": "db-snapshots.json",
+      "sha256": "244403b6bc11ec93ce6a1be17a199c1969c56002ad9ea5a03412344d35cdf8df"
+    },
+    {
+      "name": "api-final.json",
+      "sha256": "0a8dc75616fe307953c4c3bc29f0a7cd812e8a37df25f92f782dbb6564f0b7da"
+    },
+    {
+      "name": "api-job-reads.json",
+      "sha256": "2ed300e0b44ab1a9053a9d4e1bb5dcfb1e15993557188aa4c6a6796efc58203e"
+    },
+    {
+      "name": "api-health.json",
+      "sha256": "043902e3ccc0c079efc76d8e1331b5028064fc0a6c86e89bcbf8d72ecd65500b"
+    },
+    {
+      "name": "model-health.json",
+      "sha256": "113757c599c5345b068faaad53a063a8c24be1b9ee87fb65ab35f0df14215f9a"
+    },
+    {
+      "name": "security-checks.json",
+      "sha256": "ca7dee0118356989485fc0770b6f990add7dfefd596373f5387a581db08a5cf5"
+    },
+    {
+      "name": "report.json",
+      "sha256": "fb761ab5761870b0a30a35bcd59a94f523e01259b80852ae765ac5814446dcde"
+    },
+    {
+      "name": "independent-audit.sql",
+      "sha256": "90b10ff99d62e13968070948321d20392b5291cb22938dbd27703dfd2d0dc764"
+    },
+    {
+      "name": "independent-audit.json",
+      "sha256": "b38d7961e7b680bc4387278f23ed683456abefe0d7bba8c84b3193bbe2997e14"
+    },
+    {
+      "name": "vllm-restart.log",
+      "sha256": "405a7987542550d5148cc16c85043e42db18d72fcdfbc595bb171454d38b0915"
+    },
+    {
+      "name": "vllm-before.prom",
+      "sha256": "cd61569977afe75ea4587c6f6df090e4229a39478de59a26b0b9ce80ab448d49"
+    },
+    {
+      "name": "vllm-immediately-before-kill.prom",
+      "sha256": "4a05629c022ffae8ab8904dcb9c3106775764a406976bbceea5f4464f44e14bd"
+    },
+    {
+      "name": "vllm-ready.prom",
+      "sha256": "20931a743a6360f58f93e00d29b283050134a8ea122cfd46fb4316bd576cc4e4"
+    },
+    {
+      "name": "vllm-after-recovery.prom",
+      "sha256": "7c29ee78bb3045ddfd4319de019ce61eeb3638c1f679a3259959947e47974d52"
+    },
+    {
+      "name": "api-before.prom",
+      "sha256": "c646bad6c8ba944a9379a63bd4bc988e700f68d5733a0becd48ad4a16116c67b"
+    },
+    {
+      "name": "api-after.prom",
+      "sha256": "7b3177e17ed7c574bfa733dc6a0215bbd016e934f4f202bb4965a205e4d1e396"
+    },
+    {
+      "name": "worker-before.prom",
+      "sha256": "f13757eabe985533028950a99936e388f489c661753a70c73f84a3ddb880e3a8"
+    },
+    {
+      "name": "worker-after.prom",
+      "sha256": "94e6a11a9086487686869c27e4ac17037a9f2d249452a48601ce4c18dffa8a29"
+    },
+    {
+      "name": "model-restored.json",
+      "sha256": "270041d689e79dab68a6926666651dec68af9d43368748fa46f1b4cb3e04a869"
+    },
+    {
+      "name": "cleanup.json",
+      "sha256": "19be8434c9d44ec09810189ea01ee7ae355473b31ad06425cbbf7761b46ad575"
+    },
+    {
+      "name": "infrastructure-cleanup.json",
+      "sha256": "de3d43a182228473043cfe9b7563195df25e5fcad313ed7fd57ee798bb9e93cc"
+    },
+    {
+      "name": "regression-tests.json",
+      "sha256": "e3ea716811ae1933a295abd272bd250ef3f25ca3a42f878f4af85957c7600b48"
+    },
+    {
+      "name": "api.log",
+      "sha256": "efff84324dc962c493f1e140556699c365e7e32b79c58ab42c18929b8b5b2f67"
+    },
+    {
+      "name": "worker.log",
+      "sha256": "33bc08cca92ab6340f3ac5a898089d908e8b0e0f3ea67796ea821f28d281d113"
+    }
+  ],
+  "limitations": [
+    "로컬 각 1회 실행이며 모델 재초기화 시간 차이를 애플리케이션 성능 향상으로 해석하지 않는다.",
+    "수정 전 원래 100건은 모두 실패했고 별도 사용자 재시도 1건만 성공했다. 수정 후에는 사용자 재시도 없이 원래 100건이 성공했다.",
+    "기한 만료·취소·4xx·도구 중복 방지는 테스트에서 검증하고 실제 장애 실험은 동일 SIGKILL·재기동 조건으로 수행했다."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+  "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+  "harnessSha256": "7d649e30555507877e60ddd2283b3365ccbf042d828cefab92e26877b873520b",
+  "apiUrl": "http://127.0.0.1:18080",
+  "workerUrl": "http://127.0.0.1:18081",
+  "models": [
+    {
+      "object": "list",
+      "data": [
+        {
+          "id": "ubot-chat",
+          "object": "model",
+          "created": 1792718958,
+          "owned_by": "vllm",
+          "root": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16",
+          "parent": null,
+          "max_model_len": 4096,
+          "permission": [
+            {
+              "id": "modelperm-ad888213aec5ccd6",
+              "object": "model_permission",
+              "created": 1792718958,
+              "allow_create_engine": false,
+              "allow_sampling": true,
+              "allow_logprobs": true,
+              "allow_search_indices": false,
+              "allow_view": true,
+              "allow_fine_tuning": false,
+              "organization": "*",
+              "group": null,
+              "is_blocking": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object": "list",
+      "data": [
+        {
+          "id": "ubot-embedding",
+          "object": "model",
+          "created": 1792718958,
+          "owned_by": "vllm",
+          "root": "BAAI/bge-m3",
+          "parent": null,
+          "max_model_len": 8192,
+          "permission": [
+            {
+              "id": "modelperm-a2765466a77ab9e6",
+              "object": "model_permission",
+              "created": 1792718958,
+              "allow_create_engine": false,
+              "allow_sampling": true,
+              "allow_logprobs": true,
+              "allow_search_indices": false,
+              "allow_view": true,
+              "allow_fine_tuning": false,
+              "organization": "*",
+              "group": null,
+              "is_blocking": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fixture": {
+    "outstanding": 0,
+    "faqs": [
+      {
+        "id": 1,
+        "question": "통신요금 청구서를 이메일로 받으려면 어떻게 하나요?",
+        "cacheable": true
+      },
+      {
+        "id": 2,
+        "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+        "cacheable": false
+      },
+      {
+        "id": 3,
+        "question": "해외 로밍을 신청하는 방법을 알려주세요",
+        "cacheable": false
+      }
+    ]
+  },
+  "concurrency": 4,
+  "heartbeatTimeoutMs": 60000,
+  "recoveryIntervalMs": 15000,
+  "reclaimIdleMs": 300000,
+  "queueTimeoutMs": 600000,
+  "executionTimeoutMs": 180000,
+  "maxDeliveries": 3,
+  "syntheticMembers": 100,
+  "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+  "llmMocked": false,
+  "database": "ubot-chat-burst-live-postgres-1",
+  "redis": "ubot-chat-burst-live-redis-1"
+}

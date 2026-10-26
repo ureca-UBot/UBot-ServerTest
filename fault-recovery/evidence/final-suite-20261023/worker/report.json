@@ -1,0 +1,118 @@
+{
+  "verifiedAt": "2026-10-23T01:31:34.996Z",
+  "accepted": 100,
+  "uniqueJobIds": 100,
+  "killRequestedAt": "2026-10-23T01:30:00.720Z",
+  "processExitedAt": "2026-10-23T01:30:00.836Z",
+  "restartRequestedAt": "2026-10-23T01:30:06.520Z",
+  "workerReadyAt": "2026-10-23T01:30:24.966Z",
+  "inflightModelRequests": 4,
+  "inflightObservedAt": "2026-10-23T01:30:00.718Z",
+  "interrupted": 4,
+  "queuedAtKill": 96,
+  "succeededAtKill": 0,
+  "succeeded": 100,
+  "failed": [],
+  "recovered": [
+    {
+      "jobId": 7041,
+      "beforeStartedAtMs": 1792718999815.4,
+      "beforeHeartbeatAtMs": 1792718999815.4,
+      "recoveredStartedAtMs": 1792719083993.639,
+      "finishedAtMs": 1792719086164.237,
+      "status": "SUCCEEDED",
+      "leaseChanged": true
+    },
+    {
+      "jobId": 7056,
+      "beforeStartedAtMs": 1792718999815.4,
+      "beforeHeartbeatAtMs": 1792718999815.4,
+      "recoveredStartedAtMs": 1792719083988.398,
+      "finishedAtMs": 1792719086164.237,
+      "status": "SUCCEEDED",
+      "leaseChanged": true
+    },
+    {
+      "jobId": 7063,
+      "beforeStartedAtMs": 1792718999815.4,
+      "beforeHeartbeatAtMs": 1792718999815.4,
+      "recoveredStartedAtMs": 1792719083982.265,
+      "finishedAtMs": 1792719086124.542,
+      "status": "SUCCEEDED",
+      "leaseChanged": true
+    },
+    {
+      "jobId": 7071,
+      "beforeStartedAtMs": 1792718999815.4,
+      "beforeHeartbeatAtMs": 1792718999815.4,
+      "recoveredStartedAtMs": 1792719083998.43,
+      "finishedAtMs": 1792719086164.237,
+      "status": "SUCCEEDED",
+      "leaseChanged": true
+    }
+  ],
+  "missingJobs": 0,
+  "unfinished": 0,
+  "duplicateTurns": 0,
+  "savedTurns": 100,
+  "emptyAnswers": 0,
+  "apiAnswers": 100,
+  "repeatedExecutions": [
+    [
+      "7041",
+      2
+    ],
+    [
+      "7056",
+      2
+    ],
+    [
+      "7063",
+      2
+    ],
+    [
+      "7071",
+      2
+    ]
+  ],
+  "executionStarts": 104,
+  "replacementLlmRouteJobs": 100,
+  "llmRouteJobs": 100,
+  "duplicateCompletionLogs": 0,
+  "uniqueCompletionLogs": 100,
+  "apiProcessStartUnchanged": true,
+  "apiProbeCount": 103,
+  "apiProbeFailures": 0,
+  "apiPid": 35004,
+  "oldWorkerPid": 27916,
+  "replacementWorkerPid": 20820,
+  "redisPending": 0,
+  "timingsMs": {
+    "forcedExit": 116,
+    "restartStartup": 18446,
+    "killToReplacementReady": 24246,
+    "killToFirstInterruptedRestart": 83262.26489257812,
+    "killToFirstInterruptedAnswer": 85404.5419921875,
+    "killToAllAnswers": 85444.23706054688,
+    "restartToAllAnswers": 79644.23706054688,
+    "firstSubmissionToAllAnswers": 106321.23706054688
+  },
+  "answerSamples": [
+    {
+      "jobId": 7071,
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다.",
+      "status": "SUCCEEDED"
+    },
+    {
+      "jobId": 7056,
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다.",
+      "status": "SUCCEEDED"
+    },
+    {
+      "jobId": 7063,
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해야 합니다. 신분증을 지참하고 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다.",
+      "status": "SUCCEEDED"
+    }
+  ],
+  "passed": true
+}

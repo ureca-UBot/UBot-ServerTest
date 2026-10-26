@@ -1,0 +1,65 @@
+{
+  "runId": "retest-b-20261026",
+  "total": 3000,
+  "submitted": 3000,
+  "httpStatuses": {
+    "202": 3000
+  },
+  "transportErrors": {},
+  "connectionWarmupReady": 3000,
+  "uniqueJobIds": 3000,
+  "postResponseMs": {
+    "p50": 4305.0,
+    "p95": 9213.25,
+    "max": 16074
+  },
+  "postStartSpreadMs": 42,
+  "statuses": {
+    "SUCCEEDED": 2879,
+    "FAILED": 121
+  },
+  "outcomes": {
+    "ANSWERED": 2879,
+    "NORMAL_REJECTION": 117,
+    "SYSTEM_ERROR": 4
+  },
+  "normalRejections": {
+    "LLM-008": 5,
+    "CHAT-013": 54,
+    "CHAT-022": 52,
+    "LLM-006": 5,
+    "CHAT-021": 1
+  },
+  "systemErrors": {
+    "LLM-005": 4
+  },
+  "errors": {
+    "LLM-008": 5,
+    "CHAT-013": 54,
+    "CHAT-022": 52,
+    "LLM-005": 4,
+    "LLM-006": 5,
+    "CHAT-021": 1
+  },
+  "byProbe": {
+    "variant": {
+      "SUCCEEDED": 2596,
+      "FAILED": 104
+    },
+    "boundary": {
+      "SUCCEEDED": 283,
+      "FAILED": 17
+    }
+  },
+  "categories": 77,
+  "answerLength": {
+    "min": 18,
+    "median": 96,
+    "max": 663
+  },
+  "emptySuccessfulAnswers": 0,
+  "uniqueSuccessfulAnswers": 2274,
+  "genericDeferralAnswers": 561,
+  "containsGenericDeferral": 794,
+  "nonTerminalEnding": 9
+}

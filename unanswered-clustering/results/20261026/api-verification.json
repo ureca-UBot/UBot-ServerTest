@@ -1,0 +1,403 @@
+{
+  "verifiedAt": "2026-10-26T10:56:50.471Z",
+  "baseUrl": "https://u-bot.cloud/api",
+  "checksPassed": 8,
+  "pendingGroupsWithTwoOrMore": 88,
+  "observations": {
+    "emptyOriginalFragments": 8
+  },
+  "selectedGroup": {
+    "id": 42,
+    "representativeQuestion": "기본 제공량 뜻이 뭐예요?",
+    "topicName": "데이터/기본 제공량",
+    "suggestedCategoryId": null,
+    "questionCount": 40,
+    "relatedFaqId": 1763,
+    "resolvedFaqId": null,
+    "status": "PENDING",
+    "lastOccurredAt": "2026-10-26T19:18:43.446869",
+    "createdAt": "2026-10-25T19:20:47.442252",
+    "questions": [
+      {
+        "id": 2989,
+        "question": "고객센터에 묻기 전에 확인할게요.\n기본 제공량 넘게 썼다고 나와요",
+        "searchQuery": "기본 제공량을 넘게 썼다고 표시된 이유는 무엇인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1203,
+        "bestSimilarity": 0.9499840170154579,
+        "createdAt": "2026-10-26T19:18:43.446869"
+      },
+      {
+        "id": 2835,
+        "question": "처음 이용하는 상황이라 확인하고 싶어요.",
+        "searchQuery": "처음 이용하는 상황에서 LTE 무제한 요금제의 사용량 제한 조건은 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 99,
+        "bestSimilarity": 0.7729708091634043,
+        "createdAt": "2026-10-26T19:13:14.637277"
+      },
+      {
+        "id": 2834,
+        "question": "처음 이용하는 상황이라 확인하고 싶어요. 기본 인터넷은 기가급인데",
+        "searchQuery": "기본 인터넷 서비스가 기가급인 이유는 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 814,
+        "bestSimilarity": 0.7748997345626526,
+        "createdAt": "2026-10-26T19:13:11.918759"
+      },
+      {
+        "id": 2825,
+        "question": "",
+        "searchQuery": "노트북에 데이터를 공유할 때 필요한 설정이나 조건은 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 172,
+        "bestSimilarity": 0.7731794579732109,
+        "createdAt": "2026-10-26T19:13:03.815507"
+      },
+      {
+        "id": 2805,
+        "question": "",
+        "searchQuery": "이 문제는 어떤 장비나 네트워크 환경에서 발생하는가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 180,
+        "bestSimilarity": 0.7288116974346831,
+        "createdAt": "2026-10-26T19:12:38.103309"
+      },
+      {
+        "id": 2797,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.",
+        "searchQuery": "개인정보가 저장되는 과정에서 어떤 보안 조치가 적용되나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 166,
+        "bestSimilarity": 0.720380501724453,
+        "createdAt": "2026-10-26T19:12:27.113879"
+      },
+      {
+        "id": 2529,
+        "question": "처음 이용하는 상황이라 확인하고 싶어요.\n요금제별 테더링 한도",
+        "searchQuery": "요금제별 테더링 한도는 어떻게 되나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1122,
+        "bestSimilarity": 0.9536375036295514,
+        "createdAt": "2026-10-26T19:05:44.647516"
+      },
+      {
+        "id": 2464,
+        "question": "처음 이용하는 상황이라 확인하고 싶어요.",
+        "searchQuery": "처음 이용하는 상황에서 데이터가 빨리 소진되는 이유는 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1881,
+        "bestSimilarity": 0.7853147515466972,
+        "createdAt": "2026-10-26T19:04:36.558718"
+      },
+      {
+        "id": 2443,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n데이터 소진 후 속도 제한 얼마예요?",
+        "searchQuery": "데이터 소진 후 속도 제한은 얼마인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1129,
+        "bestSimilarity": 0.9970664381980896,
+        "createdAt": "2026-10-26T19:04:10.346462"
+      },
+      {
+        "id": 2390,
+        "question": "",
+        "searchQuery": "언락폰의 네트워크 지원 범위와 기존 통신 서비스의 호환성은 어떻게 되나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1605,
+        "bestSimilarity": 0.7739718191019246,
+        "createdAt": "2026-10-26T19:03:16.80145"
+      },
+      {
+        "id": 2299,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n사용 한도 초과 메시지",
+        "searchQuery": "사용 한도 초과 메시지의 내용은 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1363,
+        "bestSimilarity": 0.9383961595060747,
+        "createdAt": "2026-10-26T19:01:31.503811"
+      },
+      {
+        "id": 2243,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n태블릿 쉐어링 데이터 한도에 도달한 뒤 이용 상태가 궁금해요.",
+        "searchQuery": "태블릿 쉐어링 데이터 한도에 도달한 뒤 이용 상태는 어떻게 되나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 174,
+        "bestSimilarity": 0.888116843216609,
+        "createdAt": "2026-10-26T19:00:28.375733"
+      },
+      {
+        "id": 2209,
+        "question": "",
+        "searchQuery": "일반 유심을 사용할 경우, 서비스 제공 조건이나 연결 범위는 어떻게 되나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 236,
+        "bestSimilarity": 0.7308024110672784,
+        "createdAt": "2026-10-26T18:59:55.2631"
+      },
+      {
+        "id": 2167,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.\n공유 데이터를 태블릿이 얼마나 썼는지 확인할 수 있나요?",
+        "searchQuery": "공유 데이터를 태블릿이 얼마나 썼는지 확인할 수 있나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 173,
+        "bestSimilarity": 1,
+        "createdAt": "2026-10-26T18:59:11.899226"
+      },
+      {
+        "id": 2166,
+        "question": "갑자기 모바일 데이터 속도가 느려진 이유가 뭔가요?",
+        "searchQuery": "모바일 데이터 속도가 갑자기 느려진 이유는 무엇인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 18,
+        "bestSimilarity": 0.9969774482832836,
+        "createdAt": "2026-10-26T18:59:09.396277"
+      },
+      {
+        "id": 2164,
+        "question": "어느 기준을 따라야 할지 애매해서요.",
+        "searchQuery": "데이터 속도 저하를 판단할 때 어떤 기준을 사용해야 하나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1129,
+        "bestSimilarity": 0.7824213012237523,
+        "createdAt": "2026-10-26T18:59:09.274151"
+      },
+      {
+        "id": 2160,
+        "question": "소진 후 속도",
+        "searchQuery": "Ubot 데이터 9GB 요금제가 소진되면 속도는 어떻게 되나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1110,
+        "bestSimilarity": 0.9274172186851501,
+        "createdAt": "2026-10-26T18:59:03.277725"
+      },
+      {
+        "id": 2157,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.\n무제한 요금제 테더링 몇 기가",
+        "searchQuery": "무제한 요금제 테더링 서비스는 몇 기가로 제공되나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1122,
+        "bestSimilarity": 0.927848600850878,
+        "createdAt": "2026-10-26T18:58:59.686822"
+      },
+      {
+        "id": 2091,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n소진 후 최대 속도가 요금제마다 달라요?",
+        "searchQuery": "소진 후 최대 속도가 요금제마다 달라요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1129,
+        "bestSimilarity": 1,
+        "createdAt": "2026-10-26T18:57:56.151608"
+      },
+      {
+        "id": 2070,
+        "question": "데이터가 안 돼요",
+        "searchQuery": "데이터가 안 되는 이유는 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 202,
+        "bestSimilarity": 0.7770055532455444,
+        "createdAt": "2026-10-26T18:57:33.224847"
+      },
+      {
+        "id": 2027,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.",
+        "searchQuery": "데이터 이월이란 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1883,
+        "bestSimilarity": 0.9679302554088983,
+        "createdAt": "2026-10-26T18:56:45.826686"
+      },
+      {
+        "id": 1995,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.\n장애 보상 기준",
+        "searchQuery": "장애 보상 기준은 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1491,
+        "bestSimilarity": 0.9220353960990906,
+        "createdAt": "2026-10-26T18:56:11.667162"
+      },
+      {
+        "id": 1966,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n태블릿 쉐어링 데이터 한도에 도달한 뒤 이용 상태가 궁금해요.",
+        "searchQuery": "태블릿 쉐어링 데이터 한도에 도달한 뒤 이용 상태는 어떻게 되나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 174,
+        "bestSimilarity": 0.888116843216609,
+        "createdAt": "2026-10-26T18:51:02.634538"
+      },
+      {
+        "id": 1835,
+        "question": "",
+        "searchQuery": "데이터 이월이란 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1883,
+        "bestSimilarity": 0.9679302554088983,
+        "createdAt": "2026-10-26T18:48:35.785292"
+      },
+      {
+        "id": 1833,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.\n장애 보상 기준",
+        "searchQuery": "장애 보상 기준은 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1491,
+        "bestSimilarity": 0.9220353960990906,
+        "createdAt": "2026-10-26T18:48:32.5476"
+      },
+      {
+        "id": 1707,
+        "question": "",
+        "searchQuery": "일반 유심을 사용할 경우, 서비스 제공 조건이나 기능이 어떻게 달라지나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1201,
+        "bestSimilarity": 0.7254785895347595,
+        "createdAt": "2026-10-26T18:46:20.92802"
+      },
+      {
+        "id": 1701,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n소진 후 최대 속도가 요금제마다 달라요?",
+        "searchQuery": "소진 후 최대 속도가 요금제마다 달라요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1129,
+        "bestSimilarity": 0.9999990463256836,
+        "createdAt": "2026-10-26T18:46:13.793365"
+      },
+      {
+        "id": 1695,
+        "question": "어느 기준을 따라야 할지 애매해서요.",
+        "searchQuery": "데이터 속도 저하를 판단할 때 어떤 기준을 사용해야 하나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1129,
+        "bestSimilarity": 0.7824213012237523,
+        "createdAt": "2026-10-26T18:46:07.492427"
+      },
+      {
+        "id": 1655,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.\n무제한 요금제 테더링 몇 기가",
+        "searchQuery": "무제한 요금제 테더링 서비스는 몇 기가로 제공되나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1122,
+        "bestSimilarity": 0.927848600850878,
+        "createdAt": "2026-10-26T18:45:26.210392"
+      },
+      {
+        "id": 1482,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n데이터 소진 후 속도 제한 얼마예요?",
+        "searchQuery": "데이터 소진 후 속도 제한은 얼마인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1129,
+        "bestSimilarity": 0.9970664381980896,
+        "createdAt": "2026-10-26T18:42:16.050753"
+      },
+      {
+        "id": 1395,
+        "question": "",
+        "searchQuery": "데이터 이월이란 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1883,
+        "bestSimilarity": 0.9679302554088983,
+        "createdAt": "2026-10-26T18:17:06.378131"
+      },
+      {
+        "id": 1302,
+        "question": "안내를 읽었는데 다시 확인하고 싶어요.\n지금 태블릿에서 쓸 수 있는 데이터가 몇 GB인가요?",
+        "searchQuery": "지금 태블릿에서 쓸 수 있는 데이터는 몇 GB인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 110,
+        "bestSimilarity": 0.8410542857961147,
+        "createdAt": "2026-10-25T19:46:11.2738"
+      },
+      {
+        "id": 1265,
+        "question": "갑자기 모바일 데이터 속도가 느려진 이유가 뭔가요?",
+        "searchQuery": "모바일 데이터 속도가 갑자기 느려진 이유는 무엇인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 18,
+        "bestSimilarity": 0.9969774482832836,
+        "createdAt": "2026-10-25T19:45:27.391882"
+      },
+      {
+        "id": 1264,
+        "question": "어느 기준을 따라야 할지 애매해서요.",
+        "searchQuery": "데이터 속도 저하를 판단할 때 어떤 기준을 사용해야 하나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1129,
+        "bestSimilarity": 0.7824213012237523,
+        "createdAt": "2026-10-25T19:45:27.369819"
+      },
+      {
+        "id": 1222,
+        "question": "직접 처리하기 전에 알고 싶습니다.\n데이터 소진 후 속도 제한 얼마예요?",
+        "searchQuery": "데이터 소진 후 속도 제한은 얼마인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1129,
+        "bestSimilarity": 0.9970664381980896,
+        "createdAt": "2026-10-25T19:44:45.194599"
+      },
+      {
+        "id": 1023,
+        "question": "",
+        "searchQuery": "일반 유심을 사용할 경우, 서비스 제공 조건이나 연결 범위는 어떻게 되나요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 236,
+        "bestSimilarity": 0.7308024110672784,
+        "createdAt": "2026-10-25T19:40:53.921782"
+      },
+      {
+        "id": 573,
+        "question": "고객센터에 묻기 전에 확인할게요.\n기본 데이터를 다 사용했을 때 제 회선의 연결 속도가 궁금해요.",
+        "searchQuery": "기본 데이터를 다 사용했을 때 제 회선의 연결 속도는 어떻게 되나요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 19,
+        "bestSimilarity": 0.7925774578703979,
+        "createdAt": "2026-10-25T19:26:52.181096"
+      },
+      {
+        "id": 497,
+        "question": "처음 이용하는 상황이라 확인하고 싶어요. 기본 인터넷은 기가급인데",
+        "searchQuery": "기본 인터넷 서비스가 기가급인 이유는 무엇인가요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 814,
+        "bestSimilarity": 0.7748997345626526,
+        "createdAt": "2026-10-25T19:25:42.035701"
+      },
+      {
+        "id": 196,
+        "question": "고객센터에 묻기 전에 확인할게요.\n기본 제공량 넘게 썼다고 나와요",
+        "searchQuery": "기본 제공량을 넘게 썼다고 표시된 이유는 무엇인가요?",
+        "reason": "LLM_ABSTAIN",
+        "bestFaqId": 1203,
+        "bestSimilarity": 0.9499840170154579,
+        "createdAt": "2026-10-25T19:21:06.059776"
+      },
+      {
+        "id": 181,
+        "question": "고객센터에 묻기 전에 확인할게요.\n기본 제공량 뜻이 뭐예요?",
+        "searchQuery": "기본 제공량 뜻이 뭐예요?",
+        "reason": "INSUFFICIENT_FAQ",
+        "bestFaqId": 1763,
+        "bestSimilarity": 1,
+        "createdAt": "2026-10-25T19:20:47.442252"
+      }
+    ],
+    "reverifications": [
+      {
+        "questionId": 1302,
+        "faqId": 704,
+        "faqQuestion": "제 태블릿 회선 데이터가 얼마나 남았어요?",
+        "beforeSimilarity": 0.8410542857961147,
+        "afterSimilarity": 0.9992887377738953
+      },
+      {
+        "questionId": 573,
+        "faqId": 707,
+        "faqQuestion": "제 요금제는 데이터 다 쓰면 속도가 얼마로 떨어져요?",
+        "beforeSimilarity": 0.7925774578703979,
+        "afterSimilarity": 0.9375892877578735
+      }
+    ]
+  },
+  "access": {
+    "anonymous": 401,
+    "invalidMinCount": 400
+  }
+}

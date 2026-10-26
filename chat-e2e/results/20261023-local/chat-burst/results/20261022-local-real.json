@@ -1,0 +1,326 @@
+{
+  "runId": "local-real-1500-20261022",
+  "target": "http://127.0.0.1:18080",
+  "realLlm": true,
+  "realEmbedding": true,
+  "fixture": "Isolated synthetic FAQ corpus (3 FAQs); real vectors and default retrieval/guard logic",
+  "total": 1500,
+  "expected": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "actual": {
+    "forbidden": 300,
+    "threshold": 300,
+    "cache": 450,
+    "llm": 450
+  },
+  "passed": true,
+  "errors": {
+    "FW-003": 300,
+    "CHAT-013": 300
+  },
+  "httpStatuses": {
+    "202": 1200,
+    "400": 300
+  },
+  "transportErrors": {},
+  "mismatches": 0,
+  "startSpreadMs": 18,
+  "wallClockCompletionMs": 273094.205,
+  "llmMetrics": {
+    "answer": {
+      "calls": 452,
+      "totalSeconds": 792.197,
+      "meanMs": 1752.649
+    },
+    "judgment": {
+      "calls": 300,
+      "totalSeconds": 203.673,
+      "meanMs": 678.91
+    },
+    "chatAnswerSuccesses": 450,
+    "backgroundNamingCalls": 2,
+    "note": "answer counters include 450 chat-answer calls and 2 background unanswered-group naming calls, one after the chat workload finished. Their timing sum/mean is not the latency of the 450 chat answers alone."
+  },
+  "groups": {
+    "forbidden": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 61,
+        "p50Ms": 1262,
+        "p95Ms": 2537,
+        "p99Ms": 2674,
+        "maxMs": 2747,
+        "meanMs": 1254.057
+      },
+      "queue": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "execution": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "serverTotal": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      },
+      "endToEnd": {
+        "samples": 0,
+        "minMs": null,
+        "p50Ms": null,
+        "p95Ms": null,
+        "p99Ms": null,
+        "maxMs": null,
+        "meanMs": null
+      }
+    },
+    "threshold": {
+      "count": 300,
+      "submission": {
+        "samples": 300,
+        "minMs": 177,
+        "p50Ms": 1680,
+        "p95Ms": 2755,
+        "p99Ms": 2787,
+        "maxMs": 2789,
+        "meanMs": 1599.607
+      },
+      "queue": {
+        "samples": 300,
+        "minMs": 194.54,
+        "p50Ms": 146615.186,
+        "p95Ms": 260203.83,
+        "p99Ms": 267606.31,
+        "maxMs": 268689.637,
+        "meanMs": 142973.468
+      },
+      "execution": {
+        "samples": 300,
+        "minMs": 664.693,
+        "p50Ms": 743.715,
+        "p95Ms": 808.029,
+        "p99Ms": 931.528,
+        "maxMs": 1789.798,
+        "meanMs": 750.688
+      },
+      "serverTotal": {
+        "samples": 300,
+        "minMs": 1984.338,
+        "p50Ms": 147378.156,
+        "p95Ms": 260940.996,
+        "p99Ms": 268310.443,
+        "maxMs": 269405.039,
+        "meanMs": 143724.156
+      },
+      "endToEnd": {
+        "samples": 300,
+        "minMs": 2057.606,
+        "p50Ms": 148965.68,
+        "p95Ms": 263656.274,
+        "p99Ms": 271083.202,
+        "maxMs": 272184.427,
+        "meanMs": 145224.288
+      }
+    },
+    "cache": {
+      "count": 450,
+      "submission": {
+        "samples": 450,
+        "minMs": 109,
+        "p50Ms": 1441,
+        "p95Ms": 2757,
+        "p99Ms": 2782,
+        "maxMs": 2787,
+        "meanMs": 1481.256
+      },
+      "queue": {
+        "samples": 450,
+        "minMs": 209.679,
+        "p50Ms": 124065.366,
+        "p95Ms": 260569.102,
+        "p99Ms": 264902.341,
+        "maxMs": 268315.031,
+        "meanMs": 131793.794
+      },
+      "execution": {
+        "samples": 450,
+        "minMs": 30.107,
+        "p50Ms": 39.435,
+        "p95Ms": 53.085,
+        "p99Ms": 79.76,
+        "maxMs": 993.73,
+        "meanMs": 45.998
+      },
+      "serverTotal": {
+        "samples": 450,
+        "minMs": 1203.409,
+        "p50Ms": 124109.071,
+        "p95Ms": 260608.457,
+        "p99Ms": 264939.498,
+        "maxMs": 268353.932,
+        "meanMs": 131839.792
+      },
+      "endToEnd": {
+        "samples": 450,
+        "minMs": 1261.449,
+        "p50Ms": 125460.917,
+        "p95Ms": 263321.663,
+        "p99Ms": 267692.043,
+        "maxMs": 271126.353,
+        "meanMs": 133222.617
+      }
+    },
+    "llm": {
+      "count": 450,
+      "submission": {
+        "samples": 450,
+        "minMs": 77,
+        "p50Ms": 1584,
+        "p95Ms": 2731,
+        "p99Ms": 2785,
+        "maxMs": 2790,
+        "meanMs": 1518.38
+      },
+      "queue": {
+        "samples": 450,
+        "minMs": 201.299,
+        "p50Ms": 134483.849,
+        "p95Ms": 254202.151,
+        "p99Ms": 265742.757,
+        "maxMs": 268716.797,
+        "meanMs": 134468.914
+      },
+      "execution": {
+        "samples": 450,
+        "minMs": 1578.843,
+        "p50Ms": 1838.078,
+        "p95Ms": 1939.954,
+        "p99Ms": 2008.615,
+        "maxMs": 3415.518,
+        "meanMs": 1851.113
+      },
+      "serverTotal": {
+        "samples": 450,
+        "minMs": 3361.995,
+        "p50Ms": 136314.774,
+        "p95Ms": 256067.879,
+        "p99Ms": 267555.4,
+        "maxMs": 270295.64,
+        "meanMs": 136320.027
+      },
+      "endToEnd": {
+        "samples": 450,
+        "minMs": 3424.415,
+        "p50Ms": 137810.218,
+        "p95Ms": 258727.426,
+        "p99Ms": 270312.99,
+        "maxMs": 273077.205,
+        "meanMs": 137734.877
+      }
+    }
+  },
+  "notes": [
+    "Times use server DB finished_at, not polling observation.",
+    "End-to-end is POST start through the recorded server finished_at; network response delivery and UI rendering are excluded.",
+    "Execution includes real embedding, FAQ search, guards, judgment and answer-model work.",
+    "Client 1500-VU load generator, BE, DB, Redis and GPU models share the local machine.",
+    "Worker concurrency 4, queue expiry 10m, execution expiry 180s; FAQ semantic cache enabled.",
+    "No application source changes, threshold relaxation, output substitution, or fake vectors.",
+    "Each outcome repeats one question (four distinct inputs total), with three synthetic FAQs.",
+    "Warm model servers were already running. Per-VU TCP connections were warmed with separate health GETs.",
+    "The answer metric window also includes two real background naming calls; these are excluded from the 450 chat outcome count."
+  ],
+  "measurementStartedAt": "2026-10-22T14:25:27.360Z",
+  "measurementFinishedAt": "2026-10-22T14:30:00.454Z",
+  "hardware": {
+    "docker": "16 CPUs, 25159159808 bytes memory",
+    "gpu": "NVIDIA GeForce RTX 3060, 12288 MiB",
+    "javaVersion": "21.0.11",
+    "jvmHeap": "512m initial / 2g max",
+    "backendCommit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96"
+  },
+  "models": {
+    "--model": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16",
+    "--served-model-name": "ubot-chat",
+    "--max-model-len": "4096",
+    "--gpu-memory-utilization": "0.6"
+  },
+  "environment": {
+    "startedAt": "2026-10-22T14:22:17.8300381Z",
+    "port": 18080,
+    "models": "real local vLLM chat + embedding",
+    "workerConcurrency": 4,
+    "queueLimit": "10m",
+    "executionLimit": "180s",
+    "cacheEnabled": true,
+    "isolatedDatabase": true
+  },
+  "questions": [
+    {
+      "group": "forbidden",
+      "question": "씨발"
+    },
+    {
+      "group": "llm",
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?"
+    },
+    {
+      "group": "threshold",
+      "question": "우주정거장에서 키우는 감자 재배 보험의 보상 조건을 알려주세요"
+    },
+    {
+      "group": "cache",
+      "question": "통신요금 청구서를 이메일로 받으려면 어떻게 하나요?"
+    }
+  ],
+  "checks": {
+    "dbEvidenceRows": 1200,
+    "verifiedLlmAnswers": 450,
+    "nonemptyAnswerSamples": 3,
+    "duplicates": 0,
+    "invalidEvents": 0,
+    "pollErrors": {},
+    "k6ExitCode": 0,
+    "independentPostgresqlTimingCrosscheck": true
+  },
+  "answerSamples": [
+    {
+      "caseId": 4,
+      "jobId": 781,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 23,
+      "jobId": 541,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    },
+    {
+      "caseId": 24,
+      "jobId": 1010,
+      "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+      "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+    }
+  ]
+}

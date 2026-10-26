@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26",
+  "toolTests": {
+    "command": "node --test tools/perf/chat-burst/tests/model.test.mjs tools/perf/chat-burst/tests/pipeline.test.mjs tools/perf/vllm-crash/model.test.mjs tools/perf/redis-crash/analysis.test.mjs",
+    "tests": 19,
+    "passed": 19,
+    "failed": 0,
+    "scope": "local fixture HTTP server and k6; no AWS calls"
+  },
+  "datasetReproduction": {
+    "files": [
+      "run-1-questions.json",
+      "run-2-questions.json",
+      "manifest.json",
+      "preflight.json"
+    ],
+    "result": "byte-identical to recorded dataset"
+  }
+}

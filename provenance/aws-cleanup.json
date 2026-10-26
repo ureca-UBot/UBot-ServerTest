@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-26T20:24:33.7935085+09:00",
+  "existingServersStopped": 5,
+  "runningInstances": 0,
+  "spotAsg": {
+    "min": 0,
+    "max": 0,
+    "desired": 0,
+    "instances": 0
+  },
+  "temporaryLoadgenTerminated": true,
+  "temporaryBucketDeleted": true,
+  "temporarySecurityGroupDeleted": true,
+  "terraformFinalPlan": "No changes"
+}

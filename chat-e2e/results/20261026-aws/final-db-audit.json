@@ -1,0 +1,11 @@
+{
+  "expected": 6000,
+  "matchedJobs": 6000,
+  "uniqueJobs": 6000,
+  "ownerMismatches": 0,
+  "statusMismatches": 0,
+  "errorCodeMismatches": 0,
+  "successfulAnswers": 5666,
+  "answerHashMismatches": 0,
+  "nonFirstAttempts": 0
+}

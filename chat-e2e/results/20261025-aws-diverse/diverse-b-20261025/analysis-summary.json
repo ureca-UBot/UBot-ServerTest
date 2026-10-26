@@ -1,0 +1,42 @@
+{
+  "runId": "diverse-b-20261025",
+  "total": 3000,
+  "submitted": 3000,
+  "statuses": {
+    "SUCCEEDED": 2148,
+    "FAILED": 851,
+    "HTTP_0": 1
+  },
+  "errors": {
+    "CHAT-016": 511,
+    "LLM-003": 235,
+    "CHAT-013": 52,
+    "CHAT-022": 44,
+    "LLM-008": 3,
+    "LLM-004": 1,
+    "LLM-005": 2,
+    "LLM-006": 3
+  },
+  "byProbe": {
+    "variant": {
+      "SUCCEEDED": 1902,
+      "FAILED": 748
+    },
+    "boundary": {
+      "SUCCEEDED": 246,
+      "FAILED": 103,
+      "HTTP_0": 1
+    }
+  },
+  "categories": 77,
+  "answerLength": {
+    "min": 15,
+    "median": 66.0,
+    "max": 547
+  },
+  "emptySuccessfulAnswers": 0,
+  "uniqueSuccessfulAnswers": 1410,
+  "genericDeferralAnswers": 708,
+  "containsGenericDeferral": 841,
+  "nonTerminalEnding": 1
+}

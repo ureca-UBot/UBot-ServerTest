@@ -1,0 +1,39 @@
+{
+  "personalFilter": {
+    "personalQuestionVariants": 311,
+    "personalIntentVariants": 1785
+  },
+  "personalFaqIdsSelected": 0,
+  "personalQuestionMatches": 0,
+  "total": 6000,
+  "perRun": [
+    3000,
+    3000
+  ],
+  "probesPerRun": [
+    {
+      "variant": 2700,
+      "boundary": 300
+    },
+    {
+      "variant": 2700,
+      "boundary": 300
+    }
+  ],
+  "distinctCategories": 77,
+  "distinctFaqIds": 1498,
+  "activeFaqFilterApplied": true,
+  "liveFaqAnswerPatches": 76,
+  "excludedChangedQuestionFaqs": 4,
+  "faqReferenceFingerprint": "13c6458b3223d3fff1071d9c42b3af0a",
+  "exactOrNormalizedFaqMatches": 0,
+  "exactOrNormalizedIndexedVariantMatches": 0,
+  "crossRunDuplicates": 0,
+  "pilotCount": 100,
+  "pilotMainOverlaps": 100,
+  "maxPerFaq": 6,
+  "questionLengthRange": [
+    18,
+    67
+  ]
+}

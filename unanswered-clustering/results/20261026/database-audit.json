@@ -1,0 +1,77 @@
+{
+  "questions": 1165,
+  "groups": 87,
+  "duplicate_attempt_subquestions": 0,
+  "count_mismatches": 0,
+  "reasons": [
+    {
+      "reason": "LLM_ABSTAIN",
+      "count": 176
+    },
+    {
+      "reason": "INSUFFICIENT_FAQ",
+      "count": 988
+    },
+    {
+      "reason": "LLM_CONFLICT",
+      "count": 1
+    }
+  ],
+  "sampleGroups": [
+    {
+      "id": 26,
+      "topic_name": "초기 이용 회원 혜택",
+      "representative_question": "처음 이용하는 상황에서 VIP인지 어떻게 확인할 수 있나요?",
+      "question_count": 132,
+      "related_faq_id": 1350,
+      "status": "PENDING",
+      "own_questions": 52,
+      "actual_questions": 132,
+      "synthetic_questions": 132
+    },
+    {
+      "id": 28,
+      "topic_name": "매장 영업 시간 확인",
+      "representative_question": "토요일에 가족과 결합 할인 신청을 할 수 있는 매장이 있나요?",
+      "question_count": 118,
+      "related_faq_id": 77,
+      "status": "PENDING",
+      "own_questions": 52,
+      "actual_questions": 118,
+      "synthetic_questions": 118
+    },
+    {
+      "id": 42,
+      "topic_name": "데이터/기본 제공량",
+      "representative_question": "기본 제공량 뜻이 뭐예요?",
+      "question_count": 40,
+      "related_faq_id": 1763,
+      "status": "PENDING",
+      "own_questions": 22,
+      "actual_questions": 40,
+      "synthetic_questions": 40
+    },
+    {
+      "id": 53,
+      "topic_name": "FAQ 카테고리 구분 기준",
+      "representative_question": "관련된 항목이 비슷해 구분이 어렵습니다.",
+      "question_count": 40,
+      "related_faq_id": 511,
+      "status": "PENDING",
+      "own_questions": 17,
+      "actual_questions": 40,
+      "synthetic_questions": 40
+    },
+    {
+      "id": 59,
+      "topic_name": "와이파이/주파수 기술",
+      "representative_question": "Wi-Fi 7 뜻은 무엇인가요?",
+      "question_count": 37,
+      "related_faq_id": 1812,
+      "status": "PENDING",
+      "own_questions": 14,
+      "actual_questions": 37,
+      "synthetic_questions": 37
+    }
+  ]
+}

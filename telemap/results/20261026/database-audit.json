@@ -1,0 +1,551 @@
+{
+  "loadQuestions": {
+    "question_logs": 6904,
+    "registered_questions": 6474,
+    "clusters": 557,
+    "region_mismatches": 0,
+    "missing_regions": 0,
+    "duplicate_question_links": 0,
+    "regions": [
+      {
+        "question_region": "INCHEON",
+        "questions": 6904
+      }
+    ],
+    "profiles": [
+      {
+        "embedding_profile_id": 1,
+        "questions": 6474
+      }
+    ]
+  },
+  "alerts": [
+    {
+      "id": 48,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 통신 서비스 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:45:44.768964",
+      "snapshot_count": 20
+    },
+    {
+      "id": 49,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 챗봇 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:47:34.554285",
+      "snapshot_count": 20
+    },
+    {
+      "id": 50,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 Ubot 관련 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:48:23.135317",
+      "snapshot_count": 20
+    },
+    {
+      "id": 51,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 예약 관련 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:48:23.357274",
+      "snapshot_count": 20
+    },
+    {
+      "id": 52,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 유심 교체 관련 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:48:26.686426",
+      "snapshot_count": 20
+    },
+    {
+      "id": 53,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 통신 문제 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:48:35.343981",
+      "snapshot_count": 20
+    },
+    {
+      "id": 54,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 명의 변경 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:48:41.906126",
+      "snapshot_count": 20
+    },
+    {
+      "id": 55,
+      "region": "INCHEON",
+      "subject": "인천 지역 휴대폰 개통 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:48:59.805826",
+      "snapshot_count": 20
+    },
+    {
+      "id": 56,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 회선 해지 관련 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:49:12.605075",
+      "snapshot_count": 20
+    },
+    {
+      "id": 57,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 통신요금 자동이체 관련 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:49:25.41522",
+      "snapshot_count": 20
+    },
+    {
+      "id": 58,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 휴대폰 사용 제한 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:49:51.749864",
+      "snapshot_count": 20
+    },
+    {
+      "id": 59,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 통신 용어 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T18:50:10.739472",
+      "snapshot_count": 20
+    },
+    {
+      "id": 60,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 휴대폰 반납 및 교체 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:03:56.498819",
+      "snapshot_count": 20
+    },
+    {
+      "id": 61,
+      "region": "INCHEON",
+      "subject": "외국인 휴대폰 개통 가능 여부 인cheon",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:04:55.843361",
+      "snapshot_count": 20
+    },
+    {
+      "id": 62,
+      "region": "INCHEON",
+      "subject": "인천 지역 복지 할인 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:05:05.298514",
+      "snapshot_count": 20
+    },
+    {
+      "id": 63,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 통신 매장 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:08:49.21654",
+      "snapshot_count": 20
+    },
+    {
+      "id": 64,
+      "region": "INCHEON",
+      "subject": "인천에서 로밍 서비스 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:09:26.679728",
+      "snapshot_count": 20
+    },
+    {
+      "id": 65,
+      "region": "INCHEON",
+      "subject": "인천 지역 매장 위치 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:11:44.725923",
+      "snapshot_count": 20
+    },
+    {
+      "id": 66,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 유심 관련 문의 급증",
+      "question_count": 20,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:14:19.718958",
+      "snapshot_count": 20
+    },
+    {
+      "id": 67,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 선택약정 문의 급증",
+      "question_count": 12,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:27.189117",
+      "snapshot_count": 12
+    },
+    {
+      "id": 68,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 요금 납부 문의 급증",
+      "question_count": 11,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:29.44303",
+      "snapshot_count": 11
+    },
+    {
+      "id": 69,
+      "region": "INCHEON",
+      "subject": "인천에서 해외 출국 전 로밍 문의 급증",
+      "question_count": 16,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:34.178016",
+      "snapshot_count": 16
+    },
+    {
+      "id": 70,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 요금제 연령 기준 문의 급증",
+      "question_count": 13,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:34.339459",
+      "snapshot_count": 13
+    },
+    {
+      "id": 71,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 통화 관련 문의 급증",
+      "question_count": 12,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:35.715245",
+      "snapshot_count": 12
+    },
+    {
+      "id": 72,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 고객 문의 급증",
+      "question_count": 13,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:38.527102",
+      "snapshot_count": 13
+    },
+    {
+      "id": 73,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 비밀번호 관련 문의 급증",
+      "question_count": 15,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:42.806793",
+      "snapshot_count": 15
+    },
+    {
+      "id": 74,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 핫스팟 관련 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:43.935144",
+      "snapshot_count": 10
+    },
+    {
+      "id": 75,
+      "region": "INCHEON",
+      "subject": "인천 지역 가족 결합 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:44.074993",
+      "snapshot_count": 10
+    },
+    {
+      "id": 76,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 청소년 및 어르신 요금제 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:48.625116",
+      "snapshot_count": 10
+    },
+    {
+      "id": 77,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 듀얼번호 문의 급증",
+      "question_count": 13,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:51.835155",
+      "snapshot_count": 13
+    },
+    {
+      "id": 78,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 의심 문자 문의 급증",
+      "question_count": 11,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:18:56.102858",
+      "snapshot_count": 11
+    },
+    {
+      "id": 79,
+      "region": "INCHEON",
+      "subject": "인천 지역 휴대폰 분실 문의 급증",
+      "question_count": 14,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:03.443052",
+      "snapshot_count": 14
+    },
+    {
+      "id": 80,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 전화 차단 문의 급증",
+      "question_count": 14,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:03.731569",
+      "snapshot_count": 14
+    },
+    {
+      "id": 81,
+      "region": "INCHEON",
+      "subject": "인천 지역 통신 서비스 문의 급증",
+      "question_count": 13,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:10.383887",
+      "snapshot_count": 13
+    },
+    {
+      "id": 82,
+      "region": "INCHEON",
+      "subject": "인천 지역 태블릿 회선 문의 급증",
+      "question_count": 14,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:10.517337",
+      "snapshot_count": 14
+    },
+    {
+      "id": 83,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 유심 관련 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:14.409272",
+      "snapshot_count": 10
+    },
+    {
+      "id": 84,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 약정 관련 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:17.692672",
+      "snapshot_count": 10
+    },
+    {
+      "id": 85,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 멤버십 관련 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:24.293249",
+      "snapshot_count": 10
+    },
+    {
+      "id": 86,
+      "region": "INCHEON",
+      "subject": "인천 지역 선불폰 문의 급증",
+      "question_count": 12,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:27.69744",
+      "snapshot_count": 12
+    },
+    {
+      "id": 87,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 데이터 사용 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:29.906005",
+      "snapshot_count": 10
+    },
+    {
+      "id": 88,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 선택약정 할인 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:36.502166",
+      "snapshot_count": 10
+    },
+    {
+      "id": 89,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 휴대폰 배송 관련 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:45.165433",
+      "snapshot_count": 10
+    },
+    {
+      "id": 90,
+      "region": "INCHEON",
+      "subject": "인천에서 외국인 가입 문의 급증",
+      "question_count": 19,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:48.240693",
+      "snapshot_count": 19
+    },
+    {
+      "id": 91,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 모바일 데이터 차단 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:19:54.947935",
+      "snapshot_count": 10
+    },
+    {
+      "id": 92,
+      "region": "INCHEON",
+      "subject": "인천 지역 가족 결합 신청 문의 급증",
+      "question_count": 13,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:04.570087",
+      "snapshot_count": 13
+    },
+    {
+      "id": 93,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 알림 관련 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:07.323844",
+      "snapshot_count": 10
+    },
+    {
+      "id": 94,
+      "region": "INCHEON",
+      "subject": "인천 지역 통신요금 증빙 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:07.829133",
+      "snapshot_count": 10
+    },
+    {
+      "id": 95,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 비회원 알림 및 상담 문의 급증",
+      "question_count": 11,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:29.049312",
+      "snapshot_count": 11
+    },
+    {
+      "id": 96,
+      "region": "INCHEON",
+      "subject": "인천에서 차로 가기 좋은 매장 문의 급증",
+      "question_count": 15,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:31.441735",
+      "snapshot_count": 15
+    },
+    {
+      "id": 97,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 약정 기간 변경 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:35.39677",
+      "snapshot_count": 10
+    },
+    {
+      "id": 98,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 공시지원금 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:46.727666",
+      "snapshot_count": 10
+    },
+    {
+      "id": 99,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 문자 요금 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:46.92524",
+      "snapshot_count": 10
+    },
+    {
+      "id": 100,
+      "region": "INCHEON",
+      "subject": "인천에서 주차 가능한 통신사 매장 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:55.914505",
+      "snapshot_count": 10
+    },
+    {
+      "id": 101,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 제 상황에 맞는 안내 요청 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:20:58.948241",
+      "snapshot_count": 10
+    },
+    {
+      "id": 102,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 휴대폰 소액결제 관련 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:21:01.913425",
+      "snapshot_count": 10
+    },
+    {
+      "id": 103,
+      "region": "INCHEON",
+      "subject": "인천 지역 분실 신고 문의 급증",
+      "question_count": 12,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:21:02.286868",
+      "snapshot_count": 12
+    },
+    {
+      "id": 104,
+      "region": "INCHEON",
+      "subject": "인천 지역에서 고객 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:21:08.399097",
+      "snapshot_count": 10
+    },
+    {
+      "id": 105,
+      "region": "INCHEON",
+      "subject": "인천에서 중고폰 반납 문의 급증",
+      "question_count": 10,
+      "window_minutes": 10,
+      "created_at": "2026-10-26T19:21:27.66325",
+      "snapshot_count": 10
+    }
+  ],
+  "selectedSnapshotOwnerCheck": {
+    "alert_id": 41,
+    "snapshots": 20,
+    "synthetic_owners": 20
+  }
+}

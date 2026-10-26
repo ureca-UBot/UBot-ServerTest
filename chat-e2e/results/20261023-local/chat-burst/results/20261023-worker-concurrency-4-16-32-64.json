@@ -1,0 +1,296 @@
+{
+  "sources": {
+    "4": "20261022-local-real.json",
+    "16": "20261022-local-worker16.json",
+    "32": "20261022-local-worker32.json",
+    "64": "20261023-local-worker64.json"
+  },
+  "sameCasesAndOrder": true,
+  "sameDedicatedMembers": true,
+  "llmConcurrencyLimits": {
+    "4": 4,
+    "16": 16,
+    "32": 32,
+    "64": 64
+  },
+  "metrics": {
+    "totalCompletionMs": {
+      "valuesMs": {
+        "4": 273094.205,
+        "16": 133419.057,
+        "32": 118705.688,
+        "64": 111295.772
+      },
+      "worker64Vs4ReductionPercent": 59.25,
+      "worker64Vs16ReductionPercent": 16.58,
+      "worker64Vs32ReductionPercent": 6.24
+    },
+    "llmEndToEndP50Ms": {
+      "valuesMs": {
+        "4": 137810.218,
+        "16": 70660.589,
+        "32": 62542.932,
+        "64": 59576.715
+      },
+      "worker64Vs4ReductionPercent": 56.77,
+      "worker64Vs16ReductionPercent": 15.69,
+      "worker64Vs32ReductionPercent": 4.74
+    },
+    "llmEndToEndP95Ms": {
+      "valuesMs": {
+        "4": 258727.426,
+        "16": 128532.62,
+        "32": 116376.735,
+        "64": 110204.106
+      },
+      "worker64Vs4ReductionPercent": 57.41,
+      "worker64Vs16ReductionPercent": 14.26,
+      "worker64Vs32ReductionPercent": 5.3
+    },
+    "llmEndToEndMaxMs": {
+      "valuesMs": {
+        "4": 273077.205,
+        "16": 133388.057,
+        "32": 118677.688,
+        "64": 111265.772
+      },
+      "worker64Vs4ReductionPercent": 59.25,
+      "worker64Vs16ReductionPercent": 16.58,
+      "worker64Vs32ReductionPercent": 6.25
+    },
+    "llmQueueP95Ms": {
+      "valuesMs": {
+        "4": 254202.151,
+        "16": 121957.225,
+        "32": 106875.017,
+        "64": 99254.031
+      },
+      "worker64Vs4ReductionPercent": 60.95,
+      "worker64Vs16ReductionPercent": 18.62,
+      "worker64Vs32ReductionPercent": 7.13
+    },
+    "llmExecutionP95Ms": {
+      "valuesMs": {
+        "4": 1939.954,
+        "16": 3785.537,
+        "32": 6900.073,
+        "64": 13311.252
+      },
+      "worker64Vs4ReductionPercent": -586.16,
+      "worker64Vs16ReductionPercent": -251.63,
+      "worker64Vs32ReductionPercent": -92.91
+    },
+    "cacheEndToEndP95Ms": {
+      "valuesMs": {
+        "4": 263321.663,
+        "16": 125765.947,
+        "32": 111270.897,
+        "64": 100709.545
+      },
+      "worker64Vs4ReductionPercent": 61.75,
+      "worker64Vs16ReductionPercent": 19.92,
+      "worker64Vs32ReductionPercent": 9.49
+    },
+    "cacheExecutionP95Ms": {
+      "valuesMs": {
+        "4": 53.085,
+        "16": 65.102,
+        "32": 98.092,
+        "64": 752.211
+      },
+      "worker64Vs4ReductionPercent": -1316.99,
+      "worker64Vs16ReductionPercent": -1055.43,
+      "worker64Vs32ReductionPercent": -666.84
+    }
+  },
+  "outcomes": {
+    "4": {
+      "forbidden": 300,
+      "threshold": 300,
+      "cache": 450,
+      "llm": 450
+    },
+    "16": {
+      "forbidden": 300,
+      "threshold": 300,
+      "cache": 450,
+      "llm": 450
+    },
+    "32": {
+      "forbidden": 300,
+      "threshold": 300,
+      "cache": 450,
+      "llm": 450
+    },
+    "64": {
+      "forbidden": 300,
+      "threshold": 300,
+      "cache": 450,
+      "llm": 450
+    }
+  },
+  "reliability": {
+    "4": {
+      "passed": true,
+      "recorded": 1500,
+      "mismatches": 0,
+      "submissionErrors": 0,
+      "processingErrors": 0,
+      "unfinished": 0,
+      "notSent": 0,
+      "cancelled": 0,
+      "transportErrors": 0,
+      "timeouts": 0,
+      "httpTimeouts": 0,
+      "applicationTimeouts": 0,
+      "queueTimeouts": 0,
+      "workerTimeouts": 0,
+      "llmTimeouts": 0,
+      "embeddingTimeouts": 0,
+      "unclassifiedTransportTimeouts": 0,
+      "errorCodes": {
+        "FW-003": 300,
+        "CHAT-013": 300
+      },
+      "pollErrors": {},
+      "duplicates": 0,
+      "invalidEvents": 0,
+      "k6ExitCode": 0,
+      "modelRequestOutcomes": [
+        {
+          "kind": "answer",
+          "outcome": "success",
+          "count": 452
+        },
+        {
+          "kind": "judgment",
+          "outcome": "success",
+          "count": 300
+        }
+      ]
+    },
+    "16": {
+      "passed": true,
+      "recorded": 1500,
+      "mismatches": 0,
+      "submissionErrors": 0,
+      "processingErrors": 0,
+      "unfinished": 0,
+      "notSent": 0,
+      "cancelled": 0,
+      "transportErrors": 0,
+      "timeouts": 0,
+      "httpTimeouts": 0,
+      "applicationTimeouts": 0,
+      "queueTimeouts": 0,
+      "workerTimeouts": 0,
+      "llmTimeouts": 0,
+      "embeddingTimeouts": 0,
+      "unclassifiedTransportTimeouts": 0,
+      "errorCodes": {
+        "FW-003": 300,
+        "CHAT-013": 300
+      },
+      "pollErrors": {},
+      "duplicates": 0,
+      "invalidEvents": 0,
+      "k6ExitCode": 0,
+      "modelRequestOutcomes": [
+        {
+          "kind": "answer",
+          "outcome": "success",
+          "count": 450
+        },
+        {
+          "kind": "judgment",
+          "outcome": "success",
+          "count": 300
+        }
+      ]
+    },
+    "32": {
+      "passed": true,
+      "recorded": 1500,
+      "mismatches": 0,
+      "submissionErrors": 0,
+      "processingErrors": 0,
+      "unfinished": 0,
+      "notSent": 0,
+      "cancelled": 0,
+      "transportErrors": 0,
+      "timeouts": 0,
+      "httpTimeouts": 0,
+      "applicationTimeouts": 0,
+      "queueTimeouts": 0,
+      "workerTimeouts": 0,
+      "llmTimeouts": 0,
+      "embeddingTimeouts": 0,
+      "unclassifiedTransportTimeouts": 0,
+      "errorCodes": {
+        "FW-003": 300,
+        "CHAT-013": 300
+      },
+      "pollErrors": {},
+      "duplicates": 0,
+      "invalidEvents": 0,
+      "k6ExitCode": 0,
+      "modelRequestOutcomes": [
+        {
+          "kind": "answer",
+          "outcome": "success",
+          "count": 450
+        },
+        {
+          "kind": "judgment",
+          "outcome": "success",
+          "count": 300
+        }
+      ]
+    },
+    "64": {
+      "passed": true,
+      "recorded": 1500,
+      "mismatches": 0,
+      "submissionErrors": 0,
+      "processingErrors": 0,
+      "unfinished": 0,
+      "notSent": 0,
+      "cancelled": 0,
+      "transportErrors": 0,
+      "timeouts": 0,
+      "httpTimeouts": 0,
+      "applicationTimeouts": 0,
+      "queueTimeouts": 0,
+      "workerTimeouts": 0,
+      "llmTimeouts": 0,
+      "embeddingTimeouts": 0,
+      "unclassifiedTransportTimeouts": 0,
+      "errorCodes": {
+        "FW-003": 300,
+        "CHAT-013": 300
+      },
+      "pollErrors": {},
+      "duplicates": 0,
+      "invalidEvents": 0,
+      "k6ExitCode": 0,
+      "modelRequestOutcomes": [
+        {
+          "kind": "answer",
+          "outcome": "success",
+          "count": 451
+        },
+        {
+          "kind": "judgment",
+          "outcome": "success",
+          "count": 300
+        }
+      ]
+    }
+  },
+  "databasePeakConcurrentJobs": {
+    "4": 4,
+    "16": 16,
+    "32": 32,
+    "64": 64
+  }
+}

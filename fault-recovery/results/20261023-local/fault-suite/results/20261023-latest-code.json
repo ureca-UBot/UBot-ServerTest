@@ -1,0 +1,1395 @@
+{
+  "verifiedAt": "2026-10-23T01:49:30.492Z",
+  "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+  "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+  "runtimeSourceManifestSha256": "b33284f020a3aedcd75917220ad8f95cb249d718b3cdc965686d28ef72cac42f",
+  "runtimeCodeUnchangedDuringSuite": true,
+  "llmMocked": false,
+  "concurrency": 4,
+  "executionTimeoutMs": 180000,
+  "totalTimeoutMs": 600000,
+  "modelRetryBackoffMs": 5000,
+  "accepted": 400,
+  "succeeded": 400,
+  "passed": true,
+  "scenarios": [
+    {
+      "name": "worker",
+      "verifiedAt": "2026-10-23T01:31:34.996Z",
+      "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+      "counts": {
+        "accepted": 100,
+        "savedJobs": 100,
+        "missingJobs": 0,
+        "succeeded": 100,
+        "failed": 0,
+        "failedExcludingTimeouts": 0,
+        "timeouts": 0,
+        "cancelled": 0,
+        "unfinished": 0,
+        "savedAnswers": 100,
+        "duplicateAnswers": 0,
+        "failedWithAnswer": 0,
+        "successWithoutAnswer": 0,
+        "ownershipMismatches": 0,
+        "apiMismatches": 0,
+        "apiMissing": 0,
+        "errors": {},
+        "allOriginalJobsSucceeded": true
+      },
+      "apiDuringOutage": {
+        "count": 5,
+        "statuses": {
+          "200": 5
+        },
+        "p50Ms": null,
+        "p95Ms": null,
+        "maxMs": null,
+        "note": "워커 부재 중 5회 상태 응답 확인. 별도 지연 계측 없음."
+      },
+      "apiFinal": {
+        "responses": 100,
+        "http200": 100
+      },
+      "health": {
+        "count": 103,
+        "statuses": {
+          "200": 103
+        }
+      },
+      "inflightModelRequests": 4,
+      "executionStarts": 104,
+      "repeatedExecutions": [
+        [
+          "7041",
+          2
+        ],
+        [
+          "7056",
+          2
+        ],
+        [
+          "7063",
+          2
+        ],
+        [
+          "7071",
+          2
+        ]
+      ],
+      "manualRetryRequests": 0,
+      "modelRetryWaits": null,
+      "modelRetryDeadlinesUnchanged": null,
+      "redisPending": 0,
+      "timingsMs": {
+        "forcedExit": 116,
+        "restartStartup": 18446,
+        "killToReplacementReady": 24246,
+        "killToFirstInterruptedRestart": 83262.26489257812,
+        "killToFirstInterruptedAnswer": 85404.5419921875,
+        "killToAllAnswers": 85444.23706054688,
+        "restartToAllAnswers": 79644.23706054688,
+        "firstSubmissionToAllAnswers": 106321.23706054688
+      },
+      "recoveryDetails": {
+        "redisRepublishedBatches": [],
+        "heartbeatTakeovers": [],
+        "completionNotAcknowledged": [],
+        "longDatabaseRead": null,
+        "securityChecks": [],
+        "automaticReclaimedJobs": [
+          {
+            "jobId": 7041,
+            "beforeStartedAtMs": 1792718999815.4,
+            "beforeHeartbeatAtMs": 1792718999815.4,
+            "recoveredStartedAtMs": 1792719083993.639,
+            "finishedAtMs": 1792719086164.237,
+            "status": "SUCCEEDED",
+            "leaseChanged": true
+          },
+          {
+            "jobId": 7056,
+            "beforeStartedAtMs": 1792718999815.4,
+            "beforeHeartbeatAtMs": 1792718999815.4,
+            "recoveredStartedAtMs": 1792719083988.398,
+            "finishedAtMs": 1792719086164.237,
+            "status": "SUCCEEDED",
+            "leaseChanged": true
+          },
+          {
+            "jobId": 7063,
+            "beforeStartedAtMs": 1792718999815.4,
+            "beforeHeartbeatAtMs": 1792718999815.4,
+            "recoveredStartedAtMs": 1792719083982.265,
+            "finishedAtMs": 1792719086124.542,
+            "status": "SUCCEEDED",
+            "leaseChanged": true
+          },
+          {
+            "jobId": 7071,
+            "beforeStartedAtMs": 1792718999815.4,
+            "beforeHeartbeatAtMs": 1792718999815.4,
+            "recoveredStartedAtMs": 1792719083998.43,
+            "finishedAtMs": 1792719086164.237,
+            "status": "SUCCEEDED",
+            "leaseChanged": true
+          }
+        ]
+      },
+      "audit": {
+        "expectedJobs": 100,
+        "savedJobs": 100,
+        "uniqueJobs": 100,
+        "uniqueAttempts": 100,
+        "uniqueMembers": 100,
+        "uniqueConversations": 100,
+        "succeededJobs": 100,
+        "succeededAttempts": 100,
+        "oneAttemptOnly": 100,
+        "storedTurns": 100,
+        "ownershipMismatches": 0,
+        "answerMismatches": 0,
+        "duplicateTurns": 0,
+        "resultReferencesMatch": 100,
+        "clearedRequestContexts": 100,
+        "missingOrUnfinished": 0,
+        "globalOutstanding": 0,
+        "allAnswersFinishedAtMs": 1792719086164.237
+      },
+      "evidence": [
+        {
+          "file": "api-after.prom",
+          "sha256": "03e61820b0a5159f685439efc162ed3ddbd5066b1934bcbf3a6ae4eaaae27621"
+        },
+        {
+          "file": "api-before.prom",
+          "sha256": "3a7a675e9127a272164e9d88d30b3d9975f9875a1234a28ec1fcb14b5e185f26"
+        },
+        {
+          "file": "api-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "api-final.json",
+          "sha256": "982d7fe9e064f49601d756447a68d0c6420b6ede4946ee39c20e57ce174e349d"
+        },
+        {
+          "file": "api-health.json",
+          "sha256": "c2a19eb1ad5995bc0bf1413871942e7f37f7327b1260789168ffbb12e1c7b5ab"
+        },
+        {
+          "file": "api.log",
+          "sha256": "db84e48a9005eea904c70bc5d45ef77ac64ccaaf673d7a11469bcf9492ae4169"
+        },
+        {
+          "file": "cleanup.json",
+          "sha256": "bbb456650c3f779eaccff22094518f85742761defdca1bfd1a5623c018a3159f"
+        },
+        {
+          "file": "db-final.json",
+          "sha256": "8b1b98eac3c6de470d2ff7563c204bd80911f1790d4c51a5dd83a341b599f7de"
+        },
+        {
+          "file": "db-snapshots.json",
+          "sha256": "18bc69196025589c68840b8a51b723efa713f721edfa624be70d2535cf9b6a67"
+        },
+        {
+          "file": "environment.json",
+          "sha256": "38bceb71595084eac7bc0ea938da44611664735bb7f9d26badbf0361e5fbba76"
+        },
+        {
+          "file": "events.json",
+          "sha256": "4623c24b6613661d47ccbf11eb21126259f51c7bc6e099445f5b100eded3f9d7"
+        },
+        {
+          "file": "evidence.sql",
+          "sha256": "5f97064186828dc2d66c94e4da565272428a163d1880782e669bf4249ac5f9ae"
+        },
+        {
+          "file": "immediately-after-kill.json",
+          "sha256": "3b47273700e7202d8fe5740493541066e065b67bdbc385d94b12ffe2ecd9d849"
+        },
+        {
+          "file": "immediately-before-kill.json",
+          "sha256": "0cb0cd74faecbd743a88ed207b19884296007cf66dcd3a3c2e27d2eba62ae6ef"
+        },
+        {
+          "file": "independent-audit.json",
+          "sha256": "5c087d2554c86b8664b0a4170a74391faed7b054a7aa59239f30c16f12db4fb2"
+        },
+        {
+          "file": "independent-audit.sql",
+          "sha256": "00a0723eead0a132baec7613a970e045cc50b20aa810b33a3cc59071e8b50ff5"
+        },
+        {
+          "file": "redis-pending-final.json",
+          "sha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+        },
+        {
+          "file": "report.json",
+          "sha256": "88860f16feff9d4bd42f093b9c48112b5684358950dcf0c08a1e7a77543fc025"
+        },
+        {
+          "file": "submissions.json",
+          "sha256": "0a72326b619bef9128946e3bf1e6e7060961830dcdcea463bd74aa0a1f3b53f3"
+        },
+        {
+          "file": "vllm-after-kill.prom",
+          "sha256": "1d9ffae54d62f2ae67eac4380d52f00158041aedfa3a0a24b1e62b2f57887bd0"
+        },
+        {
+          "file": "vllm-after.prom",
+          "sha256": "e3a13dbaf24a067438606fac90d4dd8f473508a1c7197f10bc887287432bf430"
+        },
+        {
+          "file": "vllm-before-force-kill.prom",
+          "sha256": "9501496b0b5a87d39344bd8246147cb29cc4fc839582f558b804150b978df44b"
+        },
+        {
+          "file": "vllm-before.prom",
+          "sha256": "9af34d9c1e3e8e5af0231c27f394027c086ce97b17fcb4e6579986980b66b87c"
+        },
+        {
+          "file": "worker-after-crash-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "worker-after-crash.log",
+          "sha256": "a540e1962f0f73e5147aa2ef24fd87bc604c420ca26c7e50943c13ffbcdc5dcd"
+        },
+        {
+          "file": "worker-after.prom",
+          "sha256": "8c6cd488a009b6b2faf8292f3af63c3e93ac93a550cc26f4c5cb5f096ff4f879"
+        },
+        {
+          "file": "worker-before-crash-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "worker-before-crash.log",
+          "sha256": "e5adb3d0ad8de213e5fce13fb02631235849706cfdc7b44b530936abc525a831"
+        }
+      ],
+      "cleanup": {
+        "at": "2026-10-23T01:31:35.194Z",
+        "processes": [
+          {
+            "pid": 35004,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          },
+          {
+            "pid": 27916,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          },
+          {
+            "pid": 20820,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          }
+        ],
+        "testDataRetained": true
+      },
+      "passed": true
+    },
+    {
+      "name": "redis",
+      "verifiedAt": "2026-10-23T01:34:25.025Z",
+      "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+      "counts": {
+        "accepted": 100,
+        "savedJobs": 100,
+        "missingJobs": 0,
+        "succeeded": 100,
+        "failed": 0,
+        "failedExcludingTimeouts": 0,
+        "timeouts": 0,
+        "cancelled": 0,
+        "unfinished": 0,
+        "savedAnswers": 100,
+        "duplicateAnswers": 0,
+        "failedWithAnswer": 0,
+        "successWithoutAnswer": 0,
+        "ownershipMismatches": 0,
+        "apiMismatches": 0,
+        "apiMissing": 0,
+        "errors": {},
+        "allOriginalJobsSucceeded": true
+      },
+      "apiDuringOutage": {
+        "count": 20,
+        "statuses": {
+          "200": 20
+        },
+        "jobStatuses": {},
+        "clientFailures": 0,
+        "p50Ms": 229,
+        "p95Ms": 465,
+        "maxMs": 508
+      },
+      "apiFinal": {
+        "responses": 100,
+        "http200": 100
+      },
+      "health": {
+        "count": 76,
+        "statuses": {
+          "0": 5,
+          "200": 71
+        }
+      },
+      "inflightModelRequests": 4,
+      "executionStarts": 100,
+      "repeatedExecutions": [],
+      "manualRetryRequests": 0,
+      "modelRetryWaits": null,
+      "modelRetryDeadlinesUnchanged": null,
+      "redisPending": 0,
+      "timingsMs": {
+        "forcedExit": 85,
+        "redisUnavailable": 16651,
+        "restartStartup": 572,
+        "redisReadyToQueueResume": 2605.361083984375,
+        "killToQueueResume": 19341.361083984375,
+        "redisReadyToApiHealthy": 909,
+        "redisReadyToWorkerHealthy": 901,
+        "redisReadyToAllAnswers": 50203.31298828125,
+        "killToAllAnswers": 66939.31298828125,
+        "restartToAllAnswers": 50775.31298828125,
+        "firstSubmissionToAllAnswers": 89465.31298828125
+      },
+      "recoveryDetails": {
+        "redisRepublishedBatches": [
+          96
+        ],
+        "heartbeatTakeovers": [],
+        "completionNotAcknowledged": [],
+        "longDatabaseRead": null,
+        "securityChecks": [
+          {
+            "name": "owner",
+            "at": "2026-10-23T01:33:10.743Z",
+            "expectedStatus": 200,
+            "httpStatus": 200,
+            "completedAt": "2026-10-23T01:33:11.251Z",
+            "elapsedMs": 508
+          },
+          {
+            "name": "other-member",
+            "at": "2026-10-23T01:33:11.251Z",
+            "expectedStatus": 404,
+            "httpStatus": 404,
+            "completedAt": "2026-10-23T01:33:11.474Z",
+            "elapsedMs": 223
+          },
+          {
+            "name": "invalid-signature",
+            "at": "2026-10-23T01:33:11.474Z",
+            "expectedStatus": 401,
+            "httpStatus": 401,
+            "completedAt": "2026-10-23T01:33:11.494Z",
+            "elapsedMs": 20
+          }
+        ],
+        "automaticReclaimedJobs": [
+          {
+            "jobId": 7149,
+            "beforeStartedAtMs": 1792719187821.412,
+            "beforeHeartbeatAtMs": 1792719187821.412,
+            "finalStartedAtMs": 1792719187821.412,
+            "finishedAtMs": 1792719190419.063,
+            "status": "SUCCEEDED",
+            "leaseChanged": false
+          },
+          {
+            "jobId": 7152,
+            "beforeStartedAtMs": 1792719187821.412,
+            "beforeHeartbeatAtMs": 1792719187821.412,
+            "finalStartedAtMs": 1792719187821.412,
+            "finishedAtMs": 1792719190419.063,
+            "status": "SUCCEEDED",
+            "leaseChanged": false
+          },
+          {
+            "jobId": 7154,
+            "beforeStartedAtMs": 1792719187821.412,
+            "beforeHeartbeatAtMs": 1792719187821.412,
+            "finalStartedAtMs": 1792719187821.412,
+            "finishedAtMs": 1792719190419.063,
+            "status": "SUCCEEDED",
+            "leaseChanged": false
+          },
+          {
+            "jobId": 7171,
+            "beforeStartedAtMs": 1792719187821.412,
+            "beforeHeartbeatAtMs": 1792719187821.412,
+            "finalStartedAtMs": 1792719187821.412,
+            "finishedAtMs": 1792719190419.063,
+            "status": "SUCCEEDED",
+            "leaseChanged": false
+          }
+        ]
+      },
+      "audit": {
+        "expectedJobs": 100,
+        "savedJobs": 100,
+        "uniqueJobs": 100,
+        "uniqueAttempts": 100,
+        "uniqueMembers": 100,
+        "uniqueConversations": 100,
+        "succeededJobs": 100,
+        "succeededAttempts": 100,
+        "oneAttemptOnly": 100,
+        "storedTurns": 100,
+        "ownershipMismatches": 0,
+        "answerMismatches": 0,
+        "duplicateTurns": 0,
+        "resultReferencesMatch": 100,
+        "clearedRequestContexts": 100,
+        "missingOrUnfinished": 0,
+        "globalOutstanding": 0,
+        "allAnswersFinishedAtMs": 1792719256760.313
+      },
+      "evidence": [
+        {
+          "file": "api-after.prom",
+          "sha256": "264b2f75c6a7825319ca5b4e021126ca162760d6116c15645476613a4e15ee6f"
+        },
+        {
+          "file": "api-before.prom",
+          "sha256": "c60289bd891d71248574cdd6de612219f4209f69c31072101d6936c56d2e7624"
+        },
+        {
+          "file": "api-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "api-final.json",
+          "sha256": "8849a207346893513aea593c041965fae5e55ac8843abd22f2ad7cf341002102"
+        },
+        {
+          "file": "api-health.json",
+          "sha256": "4344f0e5dc17af62ea26c04fa0629cb5f8723a38fd3cc4dfe6c4d43eea1332bb"
+        },
+        {
+          "file": "api.log",
+          "sha256": "787832b77fe9bd4d0cc31a8680ce7df9d7c5f113ebee4cd9a0016c11d985e2bd"
+        },
+        {
+          "file": "before-redis-restart.json",
+          "sha256": "25589602bbd9ffa268f2489ec656ee5f294b25b5a69421a2c2524c4b6c421725"
+        },
+        {
+          "file": "cleanup.json",
+          "sha256": "17c1291003089173f441e0b1303fc5f7c52d92ba6921f6b5f98bfdd76cafb8d5"
+        },
+        {
+          "file": "db-final.json",
+          "sha256": "ba268dc8092fe5cd0105fae6c652a365de003eb442fc9c28cc1930e81e79eb6c"
+        },
+        {
+          "file": "db-snapshots.json",
+          "sha256": "c4aed7035e2382882f68087b3e567c7beb1116c917cacff9ce579b5aa727ab20"
+        },
+        {
+          "file": "environment.json",
+          "sha256": "0ed02a852e655c1295a2f3b89bf134742e0965b8b87526fab13f53bbff49ff79"
+        },
+        {
+          "file": "events.json",
+          "sha256": "d8d48e23a24fd990afdc2b3f27ccaa632553ddf8ec92682ce2896c061ca34ff1"
+        },
+        {
+          "file": "evidence.sql",
+          "sha256": "b7c3a3f7ac947e00dcb11a786fab4f340c9043277e83c56a9e39f7eb62093a14"
+        },
+        {
+          "file": "immediately-after-kill.json",
+          "sha256": "67216932e445c9b477d21cd4213913a014bf0e5fc945d0ec7331b0e090562dd3"
+        },
+        {
+          "file": "immediately-before-kill.json",
+          "sha256": "3051dd132ec8aa3edb4b01002ca010a343408805d993eccd135904efb7ddd3f4"
+        },
+        {
+          "file": "independent-audit.json",
+          "sha256": "56eb619964f442ed27d549e9a5999a9a99bbc4e404f0af0a50849300636e835d"
+        },
+        {
+          "file": "independent-audit.sql",
+          "sha256": "63c13aeceff8a4ab75b23c72c1e5e199e1270b8c9871bd49157c9c94c6d4cc71"
+        },
+        {
+          "file": "outage-access-checks.json",
+          "sha256": "8d692214c052174f29777062c3fb798b0efca442ce84777a075ae44658bb7491"
+        },
+        {
+          "file": "outage-job-reads.json",
+          "sha256": "d127c9ef3dde5a1d3d32f1ff0aed1bd7b3553d381a099cee3bbe352244f9381a"
+        },
+        {
+          "file": "redis-before-kill.json",
+          "sha256": "07ee90f17a98a517e90fe9cfb50bf90aeea224ec225951e367e8abe2bced8caa"
+        },
+        {
+          "file": "redis-immediately-after-restart.json",
+          "sha256": "785453d5a28c3dcffe7a58dc4a49c8e05bf7aab269ec8b379e10fe8df00b51e6"
+        },
+        {
+          "file": "redis-pending-final.json",
+          "sha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+        },
+        {
+          "file": "redis-restart.log",
+          "sha256": "8376731636cae68af67faf15dab50023f8bdd9892b640f87e20db0db11b9a4d1"
+        },
+        {
+          "file": "report.json",
+          "sha256": "e5e65da623ce190433f6f870d8687c58d5b498cd19f45216d2abf29cd4f73399"
+        },
+        {
+          "file": "submissions.json",
+          "sha256": "ef03323a49d33757fe1a67fc7221c6c7475c44c89470e1ba2d5503fb10bf9ddc"
+        },
+        {
+          "file": "vllm-after.prom",
+          "sha256": "32a6c14cbf53cdc5c7929384f26bb6ed1f0633ced505ebefd7d6b3c334cde73a"
+        },
+        {
+          "file": "vllm-before-force-kill.prom",
+          "sha256": "e1cdb3d089bb024d35e1f14fc8c2bd1d231e99043ca4f8196614e2849406c9ad"
+        },
+        {
+          "file": "vllm-before.prom",
+          "sha256": "48b9b5dd3d02b761ceccbc1e838612f8762fb5db3225b021eed3c1a2321b1ce7"
+        },
+        {
+          "file": "worker-after.prom",
+          "sha256": "c67d3489d6b3a27a37fffaf9507785526a30fc6205893e499c1d11263c94e6a6"
+        },
+        {
+          "file": "worker-before.prom",
+          "sha256": "ec5ab08b618b09964224a04aa0e521d0d4fe3b63fc808e5e62d41fc57a7dd3f2"
+        },
+        {
+          "file": "worker-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "worker-health.json",
+          "sha256": "7738501c83538d337e9caa2a4e71470669ec733611c954be3c8a961b5910c6a6"
+        },
+        {
+          "file": "worker.log",
+          "sha256": "9aadbc34873b34e38cced866e2e95fd0889ab312ede858630a2b523548e05208"
+        }
+      ],
+      "cleanup": {
+        "at": "2026-10-23T01:34:25.253Z",
+        "processes": [
+          {
+            "pid": 42036,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          },
+          {
+            "pid": 31280,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          }
+        ],
+        "testDataRetained": true
+      },
+      "passed": true
+    },
+    {
+      "name": "postgres",
+      "verifiedAt": "2026-10-23T01:37:07.559Z",
+      "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+      "counts": {
+        "accepted": 100,
+        "savedJobs": 100,
+        "missingJobs": 0,
+        "succeeded": 100,
+        "failed": 0,
+        "failedExcludingTimeouts": 0,
+        "timeouts": 0,
+        "cancelled": 0,
+        "unfinished": 0,
+        "savedAnswers": 100,
+        "duplicateAnswers": 0,
+        "failedWithAnswer": 0,
+        "successWithoutAnswer": 0,
+        "ownershipMismatches": 0,
+        "apiMismatches": 0,
+        "apiMissing": 0,
+        "errors": {},
+        "allOriginalJobsSucceeded": true
+      },
+      "apiDuringOutage": {
+        "count": 8,
+        "statuses": {
+          "503": 8
+        },
+        "jobStatuses": {},
+        "clientFailures": 0,
+        "p50Ms": 1512,
+        "p95Ms": 1554,
+        "maxMs": 1554
+      },
+      "apiFinal": {
+        "responses": 100,
+        "http200": 100
+      },
+      "health": {
+        "count": 87,
+        "statuses": {
+          "0": 6,
+          "200": 81
+        }
+      },
+      "inflightModelRequests": 4,
+      "executionStarts": 101,
+      "repeatedExecutions": [
+        [
+          "7270",
+          2
+        ]
+      ],
+      "manualRetryRequests": 0,
+      "modelRetryWaits": null,
+      "modelRetryDeadlinesUnchanged": null,
+      "redisPending": 0,
+      "timingsMs": {
+        "forcedExit": 107,
+        "databaseUnavailable": 17238,
+        "restartStartup": 1622,
+        "databaseReadyToQueueResume": 3345.3291015625,
+        "killToQueueResume": 20690.3291015625,
+        "databaseReadyToApiHealthy": 3725,
+        "databaseReadyToWorkerHealthy": 3355,
+        "databaseReadyToJobHealthy": 3783,
+        "databaseReadyToAllAnswers": 65201.427001953125,
+        "killToAllAnswers": 82546.42700195312,
+        "restartToAllAnswers": 66823.42700195312,
+        "firstSubmissionToAllAnswers": 104178.42700195312
+      },
+      "recoveryDetails": {
+        "redisRepublishedBatches": [],
+        "heartbeatTakeovers": [
+          7270
+        ],
+        "completionNotAcknowledged": [
+          7270
+        ],
+        "longDatabaseRead": {
+          "at": "2026-10-23T01:35:38.198Z",
+          "jobId": 7251,
+          "clientTimeoutMs": 45000,
+          "httpStatus": 503,
+          "errorCode": "CHAT-025",
+          "answerPresent": false,
+          "completedAt": "2026-10-23T01:35:39.727Z",
+          "elapsedMs": 1529
+        },
+        "securityChecks": [
+          {
+            "at": "2026-10-23T01:35:38.198Z",
+            "jobId": 7251,
+            "clientTimeoutMs": 2000,
+            "httpStatus": 401,
+            "errorCode": "JWT-004",
+            "answerPresent": false,
+            "completedAt": "2026-10-23T01:35:38.214Z",
+            "elapsedMs": 16,
+            "name": "invalid-signature",
+            "expectedStatus": 401
+          }
+        ],
+        "automaticReclaimedJobs": [
+          {
+            "jobId": 7252,
+            "beforeStartedAtMs": 1792719335340.515,
+            "beforeHeartbeatAtMs": 1792719335340.515,
+            "finalStartedAtMs": 1792719335340.515,
+            "finishedAtMs": 1792719358122.647,
+            "status": "SUCCEEDED",
+            "leaseChanged": false
+          },
+          {
+            "jobId": 7253,
+            "beforeStartedAtMs": 1792719335340.515,
+            "beforeHeartbeatAtMs": 1792719335340.515,
+            "finalStartedAtMs": 1792719335340.515,
+            "finishedAtMs": 1792719358088.015,
+            "status": "SUCCEEDED",
+            "leaseChanged": false
+          },
+          {
+            "jobId": 7270,
+            "beforeStartedAtMs": 1792719335340.515,
+            "beforeHeartbeatAtMs": 1792719335340.515,
+            "finalStartedAtMs": 1792719418278.817,
+            "finishedAtMs": 1792719419992.427,
+            "status": "SUCCEEDED",
+            "leaseChanged": true
+          },
+          {
+            "jobId": 7272,
+            "beforeStartedAtMs": 1792719335340.515,
+            "beforeHeartbeatAtMs": 1792719335340.515,
+            "finalStartedAtMs": 1792719335340.515,
+            "finishedAtMs": 1792719358088.015,
+            "status": "SUCCEEDED",
+            "leaseChanged": false
+          }
+        ]
+      },
+      "audit": {
+        "expectedJobs": 100,
+        "savedJobs": 100,
+        "uniqueJobs": 100,
+        "uniqueAttempts": 100,
+        "uniqueMembers": 100,
+        "uniqueConversations": 100,
+        "succeededJobs": 100,
+        "succeededAttempts": 100,
+        "oneAttemptOnly": 100,
+        "storedTurns": 100,
+        "ownershipMismatches": 0,
+        "answerMismatches": 0,
+        "duplicateTurns": 0,
+        "resultReferencesMatch": 100,
+        "clearedRequestContexts": 100,
+        "missingOrUnfinished": 0,
+        "globalOutstanding": 0,
+        "allAnswersFinishedAtMs": 1792719419992.427
+      },
+      "evidence": [
+        {
+          "file": "api-after.prom",
+          "sha256": "63a4608fbe9697a9b069ff48231293622417ffc21334b0bb0043dcc9cc0e4baa"
+        },
+        {
+          "file": "api-before.prom",
+          "sha256": "8493a09dedd70d34bccf7db94d8bda30c0af1d95202a668b7b6a3aa653abb1b6"
+        },
+        {
+          "file": "api-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "api-final.json",
+          "sha256": "3ca147a40710da1bb11f2f4a6ce89b900570fc8e6012831f7e483b6d8c84c5a9"
+        },
+        {
+          "file": "api-health.json",
+          "sha256": "3830cb88141ec45101d6300ba80a2cd6761d762e992e3ac652db74177ab20652"
+        },
+        {
+          "file": "api.log",
+          "sha256": "9a34f63d80d8906a7fd6d984053e7817c7cf4fcd7bd8261dbece541f950cdb13"
+        },
+        {
+          "file": "cleanup.json",
+          "sha256": "5e64a2dd67a7a0ca0a9da76902a2680f32ed26b1a6a5e295b16daed4cc5925fd"
+        },
+        {
+          "file": "database-after-restart.json",
+          "sha256": "fb7c50b73d85402186e0c7c4336c2c434d50efe45d0a48af3d1c9306b4d43924"
+        },
+        {
+          "file": "db-final.json",
+          "sha256": "2edeb2497ba9bd368f709dc3c7c74ec60be5c60456198718e4443998dc8f907d"
+        },
+        {
+          "file": "db-snapshots.json",
+          "sha256": "d1828324fa70170d471a5b3203fe3880d95786fa8d93a9ea986d3432b91f4191"
+        },
+        {
+          "file": "environment.json",
+          "sha256": "05670ce30559e7cb83c676a0c3673d5fe9b62627a547b6253e249a623860dca8"
+        },
+        {
+          "file": "events.json",
+          "sha256": "95a97251ee2107ba6dc04b621cf881cbe51c923e0ad527651bc06cabe925d7dd"
+        },
+        {
+          "file": "evidence.sql",
+          "sha256": "6f0395c6619f456c739f5abf79b62938d3b36d6186daca4ea0705b30a6093e3d"
+        },
+        {
+          "file": "immediately-after-database-ready.json",
+          "sha256": "fc692a583f212b2e9f51c46a4b2db24716c375798a51e50e16306f372bc41a88"
+        },
+        {
+          "file": "immediately-before-kill.json",
+          "sha256": "81c0d8263e182148a2584b54df8b07cd8d6619c78abcef0ef1c19160e392a3d4"
+        },
+        {
+          "file": "independent-audit.json",
+          "sha256": "d506324bc458433464056f91d5a004d82074a5bf831fa66fcb55e86740cadae2"
+        },
+        {
+          "file": "independent-audit.sql",
+          "sha256": "44907edbe07e050fe109f505e671cd032797634eb05b8ff63fa55bf3703141ea"
+        },
+        {
+          "file": "outage-invalid-token.json",
+          "sha256": "34b64c096a2ab914ada617ae734b0a3c83036c3606eaca344d3853688a7416b0"
+        },
+        {
+          "file": "outage-job-reads.json",
+          "sha256": "82384b81e165690771a64b9e67f5ed2188a92c1a6f6a4492148723535ff38062"
+        },
+        {
+          "file": "outage-long-read.json",
+          "sha256": "259246a10c7109d1dfbba6c74d2b63b4f5e6126888e38c266f5dac36fd00638f"
+        },
+        {
+          "file": "postgres-recovery.log",
+          "sha256": "d1930f20926fc02336a83628466cf0c2ed138d407f07570b69d2f28eeb070aba"
+        },
+        {
+          "file": "redis-after-database-restart.json",
+          "sha256": "9e13f34a9b70e42d754b7d01e8be6cba4567a238bcd0ffeb3e07c33140c8f853"
+        },
+        {
+          "file": "redis-before-kill.json",
+          "sha256": "d79abe5af0fa341f0a6c49f30f05cdef0c9c91fc26f21b284326861a22a633d1"
+        },
+        {
+          "file": "redis-during-database-outage.json",
+          "sha256": "a8790096ecfa8da0fc784b1a2a98a2311c76e680030731986b7eefe4cd2d51b2"
+        },
+        {
+          "file": "redis-pending-final.json",
+          "sha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+        },
+        {
+          "file": "report.json",
+          "sha256": "ed3713d1d49642cc4f784b0bf3b7503cdda6f7d9da96cd6b890fc4099f4ee480"
+        },
+        {
+          "file": "submissions.json",
+          "sha256": "1922906bef8da3cde27540e2579168b5b6f352741fe271942923a67945e4c849"
+        },
+        {
+          "file": "vllm-after.prom",
+          "sha256": "d3f2409e4b7743aa6d581c3b0915042c99fbe22f5630f6d8c9af8d6732b75c13"
+        },
+        {
+          "file": "vllm-before-force-kill.prom",
+          "sha256": "b5f6a3fac40b0dc7f4bb340dff2576fbbf542b6e1391deb7460ab6e056961fad"
+        },
+        {
+          "file": "vllm-before.prom",
+          "sha256": "c29222b91690cc125d575f62569495595c621e8747189bc732c0bb79d3de57a2"
+        },
+        {
+          "file": "worker-after.prom",
+          "sha256": "1787c8187e8e7d522dd1174b04e2a2d9700ac4b1098852d0737823e5bc9cdaee"
+        },
+        {
+          "file": "worker-before.prom",
+          "sha256": "263851b3f94b5527907219f7cdad61d53357fe72bc18df3e8aa3baa2454f6d48"
+        },
+        {
+          "file": "worker-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "worker-health.json",
+          "sha256": "0d79a7f233581e270e974060bdb676091171c3563c5b018bc5cc3123b47903b8"
+        },
+        {
+          "file": "worker.log",
+          "sha256": "c9957400045347a601daee999c95abec5654e53e5e2d3ceda2a2b1506297e773"
+        }
+      ],
+      "cleanup": {
+        "at": "2026-10-23T01:37:07.747Z",
+        "processes": [
+          {
+            "pid": 7932,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          },
+          {
+            "pid": 35772,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          }
+        ],
+        "testDataRetained": true
+      },
+      "passed": true
+    },
+    {
+      "name": "vllm",
+      "verifiedAt": "2026-10-23T01:48:27.035Z",
+      "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+      "counts": {
+        "accepted": 100,
+        "savedJobs": 100,
+        "missingJobs": 0,
+        "succeeded": 100,
+        "failed": 0,
+        "failedExcludingTimeouts": 0,
+        "timeouts": 0,
+        "cancelled": 0,
+        "unfinished": 0,
+        "savedAnswers": 100,
+        "duplicateAnswers": 0,
+        "failedWithAnswer": 0,
+        "successWithoutAnswer": 0,
+        "ownershipMismatches": 0,
+        "apiMismatches": 0,
+        "apiMissing": 0,
+        "errors": {},
+        "allOriginalJobsSucceeded": true
+      },
+      "apiDuringOutage": {
+        "count": 290,
+        "statuses": {
+          "200": 290
+        },
+        "jobStatuses": {
+          "QUEUED": 290
+        },
+        "clientFailures": 0,
+        "p50Ms": 24,
+        "p95Ms": 27,
+        "maxMs": 37
+      },
+      "apiFinal": {
+        "responses": 100,
+        "http200": 100
+      },
+      "health": {
+        "count": 153,
+        "statuses": {
+          "200": 153
+        }
+      },
+      "inflightModelRequests": 4,
+      "executionStarts": 100,
+      "repeatedExecutions": [],
+      "manualRetryRequests": 0,
+      "modelRetryWaits": 64,
+      "modelRetryDeadlinesUnchanged": true,
+      "redisPending": 0,
+      "timingsMs": {
+        "forcedExit": 459,
+        "modelUnavailable": 76488,
+        "restartToReady": 60621,
+        "killToOriginalAllTerminal": 131546.35400390625,
+        "firstSubmissionToOriginalAllTerminal": 153609.35400390625,
+        "readyToFirstAnswer": 6715.77001953125,
+        "readyToAllAnswers": 54599.35400390625,
+        "killToFirstAnswer": 83662.77001953125,
+        "killToAllAnswers": 131546.35400390625
+      },
+      "recoveryDetails": {
+        "redisRepublishedBatches": [],
+        "heartbeatTakeovers": [],
+        "completionNotAcknowledged": [],
+        "longDatabaseRead": null,
+        "securityChecks": [
+          {
+            "name": "invalid-signature",
+            "expectedStatus": 401,
+            "at": "2026-10-23T01:46:11.562Z",
+            "path": "/chat/jobs/7464",
+            "httpStatus": 401,
+            "apiCode": "JWT-004",
+            "completedAt": "2026-10-23T01:46:11.569Z",
+            "elapsedMs": 7
+          },
+          {
+            "name": "other-member",
+            "expectedStatus": 404,
+            "at": "2026-10-23T01:46:11.569Z",
+            "path": "/chat/jobs/7464",
+            "httpStatus": 404,
+            "apiCode": "CHAT-020",
+            "completedAt": "2026-10-23T01:46:11.601Z",
+            "elapsedMs": 32
+          }
+        ],
+        "automaticReclaimedJobs": [
+          {
+            "jobId": 7379,
+            "startedAtMs": 1792719968561.819,
+            "finalStartedAtMs": 1792719968561.819
+          },
+          {
+            "jobId": 7388,
+            "startedAtMs": 1792719968561.819,
+            "finalStartedAtMs": 1792719968561.819
+          },
+          {
+            "jobId": 7390,
+            "startedAtMs": 1792719968561.819,
+            "finalStartedAtMs": 1792719968561.819
+          },
+          {
+            "jobId": 7391,
+            "startedAtMs": 1792719968561.819,
+            "finalStartedAtMs": 1792719968561.819
+          }
+        ]
+      },
+      "audit": {
+        "expectedJobs": 100,
+        "savedJobs": 100,
+        "uniqueJobs": 100,
+        "uniqueAttempts": 100,
+        "uniqueMembers": 100,
+        "uniqueConversations": 100,
+        "succeededJobs": 100,
+        "succeededAttempts": 100,
+        "oneAttemptOnly": 100,
+        "storedTurns": 100,
+        "ownershipMismatches": 0,
+        "answerMismatches": 0,
+        "duplicateTurns": 0,
+        "resultReferencesMatch": 100,
+        "clearedRequestContexts": 100,
+        "missingOrUnfinished": 0,
+        "globalOutstanding": 0,
+        "allAnswersFinishedAtMs": 1792720101944.354
+      },
+      "evidence": [
+        {
+          "file": "api-after.prom",
+          "sha256": "8ae446d845abce51cbebc75c4755b6e89224f334eb7032a6c40a5a9231419cac"
+        },
+        {
+          "file": "api-before.prom",
+          "sha256": "ebbe3a08a6fea4f6d78430c9cb6c49527e0fdf1a532eaef723d24e0f99472692"
+        },
+        {
+          "file": "api-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "api-final.json",
+          "sha256": "3fddd0096321feec75a8910c8e7ee04a8e324334c769572db6fc51e1b59a8071"
+        },
+        {
+          "file": "api-health.json",
+          "sha256": "e3c6e8b3aad2d9f870f573429d7e0c3fcd9b3c11118de4e1ef8838231acdb3f1"
+        },
+        {
+          "file": "api-job-reads.json",
+          "sha256": "fc30d75861f9e1b33e783ac5e59cf69b1407dfb85d09311fa7e4a1131bd8625e"
+        },
+        {
+          "file": "api-original-final.json",
+          "sha256": "3fddd0096321feec75a8910c8e7ee04a8e324334c769572db6fc51e1b59a8071"
+        },
+        {
+          "file": "api.log",
+          "sha256": "555c23a707091c42c73ec34e89154291de5499cb332f139efad822bd1867c6c9"
+        },
+        {
+          "file": "cleanup.json",
+          "sha256": "c8d99986e48799465bbe59034f95052cd6d28f6ad48559a64abd64767a1081a6"
+        },
+        {
+          "file": "database-before-model-restart.json",
+          "sha256": "955e5f256d4309c2dc952f6899ed7e4afb5ff43a07994275fa285837ca97abc6"
+        },
+        {
+          "file": "db-final.json",
+          "sha256": "380706510507fa8615d8990281475258b37265e1676613cc7c9d90cb189973ab"
+        },
+        {
+          "file": "db-original-final.json",
+          "sha256": "380706510507fa8615d8990281475258b37265e1676613cc7c9d90cb189973ab"
+        },
+        {
+          "file": "db-snapshots.json",
+          "sha256": "6f2f01efb9a1ab08bd1fbf96909374418912a1033369b5eeecf9f70bfc711d17"
+        },
+        {
+          "file": "environment.json",
+          "sha256": "13155c00c634de4155f66cdb277320216c1d67cd346279598c144b02f0dac231"
+        },
+        {
+          "file": "events.json",
+          "sha256": "b0cbc8517df0f3e846e0f977ae066293f7892931aaf651d4355ef27e3b7bb6b4"
+        },
+        {
+          "file": "immediately-before-kill.json",
+          "sha256": "4c80067fb7f49099ef45ac44cc5cf33e4daa374c8c498f0c2101506b3beed7c8"
+        },
+        {
+          "file": "independent-audit.json",
+          "sha256": "21b19b4147b20c7d482ec513ef132306eb506f0d16e41d0b0a4c14aa9f7da0a7"
+        },
+        {
+          "file": "independent-audit.sql",
+          "sha256": "f0f5bcb2c48d7b29e8c83160ba94dd38937b619f47b52cab7e46bd546160eaa2"
+        },
+        {
+          "file": "model-health.json",
+          "sha256": "61631ce29af0691f5214cd85fc4e6f1d6670169c98aa55391bcf27e312fdf1ee"
+        },
+        {
+          "file": "model-restored.json",
+          "sha256": "615219519c0a757e7efe856012ef10af71f2ed3c9117af15ab5f0e05147b343d"
+        },
+        {
+          "file": "redis-pending-final.json",
+          "sha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+        },
+        {
+          "file": "report.json",
+          "sha256": "be1f14e007ad95a41e30cc4a291d3a615c97c2819b1920b4c856a9c9de49a39d"
+        },
+        {
+          "file": "security-checks.json",
+          "sha256": "af901b8d89e4923eab8031c91c4c5f9761ca7677305353214a200a7f9f025f15"
+        },
+        {
+          "file": "submissions.json",
+          "sha256": "6db345cece632842e6ad2bb5cf99d091768085df0caa8b1c01fd798b7f1e155b"
+        },
+        {
+          "file": "vllm-after-recovery.prom",
+          "sha256": "c79243f162e7163ba16f27aa1127e110a57baab8ba6f1e7eaec1d9b94d04020c"
+        },
+        {
+          "file": "vllm-before.prom",
+          "sha256": "3815192d4a3d9deb7a62b8498368d6df92020c31e409a00b2f22b5b776736ee2"
+        },
+        {
+          "file": "vllm-immediately-before-kill.prom",
+          "sha256": "a4080ea7b9cb7ae41da993076108a71e75144554eabf923af065fbd51dd3b36a"
+        },
+        {
+          "file": "vllm-ready.prom",
+          "sha256": "d49b227b18cf1e3841864aca7e80a2e8e75c70fa2efa1d2a43eed43db0a56f90"
+        },
+        {
+          "file": "vllm-restart.log",
+          "sha256": "ed2e5f53cd252948ff9a433a454d1a27f1978b72f54791d0f3afef3c77ef5652"
+        },
+        {
+          "file": "worker-after.prom",
+          "sha256": "5e480603f009bcf54e50031c361dbd72fcd12465111ec4c4b49c24d4a575ef05"
+        },
+        {
+          "file": "worker-before.prom",
+          "sha256": "66f9c30217c288019fa5a07ffdbc32aabcfd8d78ab009b431e266a3de3a3415b"
+        },
+        {
+          "file": "worker-error.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "worker.log",
+          "sha256": "c94b5fb94299278cda7302a3ec824199356cca21f1d03f16a5d895579f030172"
+        }
+      ],
+      "cleanup": {
+        "at": "2026-10-23T01:48:28.276Z",
+        "processes": [
+          {
+            "pid": 8072,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          },
+          {
+            "pid": 26500,
+            "exitCode": null,
+            "signal": "SIGKILL"
+          }
+        ],
+        "testDataRetained": true
+      },
+      "passed": true
+    }
+  ],
+  "infrastructureBefore": [
+    {
+      "name": "ubot-feat-200-postgres-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.157281079Z",
+      "image": "sha256:988437c700782f5cf6dc940a91e74a3449d8ca86dca8eb6eb8fe631c61878e07",
+      "id": "73ae97755c24de2e20da21c00dd7ba092daa33a77496e926206fac7227185d14",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-redis-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.151232478Z",
+      "image": "sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0",
+      "id": "c9c8c403fa6cb85a73a9c48698c468f1afb77c1b360b25a79d4cacec00b9232e",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-vllm-1",
+      "running": true,
+      "startedAt": "2026-10-23T01:16:50.606572935Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-vllm-embedding-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.170622612Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "d679566be87a7c7d6ef997a131f0a30aae597ca0a3ad6c8639a0d06734cdeecb",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-chat-burst-live-postgres-1",
+      "running": true,
+      "startedAt": "2026-10-23T01:28:58.133169468Z",
+      "image": "sha256:988437c700782f5cf6dc940a91e74a3449d8ca86dca8eb6eb8fe631c61878e07",
+      "id": "b14b76b348cd55842a6f7f4f95e542bbc599117256f772194aa7b109b1681621",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    },
+    {
+      "name": "ubot-chat-burst-live-redis-1",
+      "running": true,
+      "startedAt": "2026-10-23T01:28:57.945456779Z",
+      "image": "sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0",
+      "id": "e7e747b2d488e12e7b809550e720d41911928cf509e28c46c7c44afc5906bfe5",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    }
+  ],
+  "infrastructureAfter": [
+    {
+      "name": "ubot-feat-200-postgres-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.157281079Z",
+      "image": "sha256:988437c700782f5cf6dc940a91e74a3449d8ca86dca8eb6eb8fe631c61878e07",
+      "id": "73ae97755c24de2e20da21c00dd7ba092daa33a77496e926206fac7227185d14",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-redis-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.151232478Z",
+      "image": "sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0",
+      "id": "c9c8c403fa6cb85a73a9c48698c468f1afb77c1b360b25a79d4cacec00b9232e",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-vllm-1",
+      "running": true,
+      "startedAt": "2026-10-23T01:46:26.823630712Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-feat-200-vllm-embedding-1",
+      "running": true,
+      "startedAt": "2026-10-22T00:09:31.170622612Z",
+      "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+      "id": "d679566be87a7c7d6ef997a131f0a30aae597ca0a3ad6c8639a0d06734cdeecb",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "unless-stopped"
+      }
+    },
+    {
+      "name": "ubot-chat-burst-live-postgres-1",
+      "running": false,
+      "startedAt": "2026-10-23T01:35:53.259171158Z",
+      "image": "sha256:988437c700782f5cf6dc940a91e74a3449d8ca86dca8eb6eb8fe631c61878e07",
+      "id": "b14b76b348cd55842a6f7f4f95e542bbc599117256f772194aa7b109b1681621",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    },
+    {
+      "name": "ubot-chat-burst-live-redis-1",
+      "running": false,
+      "startedAt": "2026-10-23T01:33:26.084449203Z",
+      "image": "sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0",
+      "id": "e7e747b2d488e12e7b809550e720d41911928cf509e28c46c7c44afc5906bfe5",
+      "restartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    }
+  ],
+  "rawEvidenceDirectory": "D:\\finalproject\\feat-200\\UBot-BE\\build\\chat-burst-live\\final-suite-20261023",
+  "aggregationTests": {
+    "tests": 6,
+    "passed": 6,
+    "failures": 0,
+    "skipped": 0
+  },
+  "collectorSha256": "d2d5c7cebdb62897ce285e3b973314d31ea9d78606e5cab730e01d0e01962115",
+  "suiteMetadataEvidence": [
+    {
+      "file": "metadata-before.json",
+      "sha256": "dbed93365285b8e401c84ac89dcff5b0965410320bbd14bc5c1af5ccd014d524"
+    },
+    {
+      "file": "metadata-after.json",
+      "sha256": "7aa627fcca5260c4a9ad4970ee7f64229b119184308745275c1ad4dcd2927ab8"
+    },
+    {
+      "file": "infrastructure-cleanup.json",
+      "sha256": "73049fc96c10019afa66eb56347615870371731143066e992e3aa1e09a14a8aa"
+    },
+    {
+      "file": "audit.mjs",
+      "sha256": "2d9c54c35edc1e3709bb76e3a3fe463503327af5d8d532481cc905d6058fb846"
+    },
+    {
+      "file": "capture.mjs",
+      "sha256": "b4872fa35221aaf242d8d6ff41389fcd74188f90c5c36a8ff7dc58012e089d31"
+    },
+    {
+      "file": "finalize.mjs",
+      "sha256": "8be3df45af7c49005ac3fef4dd6ac1b0a028dcfb847e4801565b1a48b6844178"
+    },
+    {
+      "file": "aggregation-tests.json",
+      "sha256": "49bc0f61542800a687642d2f1e75cc964cc034c8016eaf393a99e65ec1113b84"
+    },
+    {
+      "file": "aggregation-tests.tap",
+      "sha256": "a99d4a8f1e6cb014d45f0707529980bc92b176fb2787e4b62d53f08a75de3766"
+    }
+  ]
+}

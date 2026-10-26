@@ -1,0 +1,55 @@
+{
+  "scenario": "vllm-process-crash-auto-retry",
+  "jarSha256": "c3c5e351679daafe035f977a8d446af31848206db0f1c310d4d8b43c12af3263",
+  "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+  "harnessSha256": "8a70d87bb6c0bc25c017a18875438a822ec245b8ae8f3a82e039f9d6f98925c4",
+  "modelSha256": "d93b073e76e4602a06948ef6c4cfadcabef5d8db209710e8bcd0a8873a322441",
+  "probeSha256": "3000558e0dc56aed5c4e8d7e5387fe80982c12966946d1f1f97bf9fee5ec873c",
+  "apiUrl": "http://127.0.0.1:18080",
+  "workerUrl": "http://127.0.0.1:18081",
+  "model": "ubot-feat-200-vllm-1",
+  "database": "ubot-chat-burst-live-postgres-1",
+  "redis": "ubot-chat-burst-live-redis-1",
+  "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+  "syntheticMembers": 100,
+  "concurrency": 4,
+  "heartbeatTimeoutMs": 60000,
+  "recoveryIntervalMs": 15000,
+  "reclaimIdleMs": 300000,
+  "queueTimeoutMs": 600000,
+  "executionTimeoutMs": 180000,
+  "totalTimeoutMs": 600000,
+  "modelRetryBackoffMs": 5000,
+  "manualRetryRequests": 0,
+  "downTargetMs": 15000,
+  "llmMocked": false,
+  "originalModel": {
+    "running": true,
+    "startedAt": "2026-10-23T01:16:50.606572935Z",
+    "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+    "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+    "restartPolicy": {
+      "Name": "unless-stopped",
+      "MaximumRetryCount": 0
+    }
+  },
+  "beforeDependencies": {
+    "databaseStartedAt": "2026-10-23T01:35:53.259171158Z",
+    "embeddingStartedAt": "2026-10-22T00:09:31.170622612Z",
+    "redisRunId": "0a42f7aa115971a894d70137080e9326f53152d4"
+  },
+  "models": [
+    [
+      {
+        "id": "ubot-chat",
+        "root": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16"
+      }
+    ],
+    [
+      {
+        "id": "ubot-embedding",
+        "root": "BAAI/bge-m3"
+      }
+    ]
+  ]
+}

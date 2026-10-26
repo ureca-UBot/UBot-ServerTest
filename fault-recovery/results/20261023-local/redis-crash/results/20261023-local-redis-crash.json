@@ -1,0 +1,661 @@
+{
+  "scenario": "local-redis-process-crash-100-real-llm",
+  "date": "2026-10-23",
+  "timezone": "Asia/Seoul",
+  "environment": {
+    "scenario": "redis-process-crash",
+    "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+    "jarSha256": "3bf9a883057892518e147697025a02406c7c8c2d7d8edc6b5770dd0797c8cc4b",
+    "harnessSha256": "861e14f19c813d2db0bdd20837e3a88a2f82bae6673657368cad69cbfe189649",
+    "apiUrl": "http://127.0.0.1:18080",
+    "workerUrl": "http://127.0.0.1:18081",
+    "models": [
+      [
+        {
+          "id": "ubot-chat",
+          "root": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16"
+        }
+      ],
+      [
+        {
+          "id": "ubot-embedding",
+          "root": "BAAI/bge-m3"
+        }
+      ]
+    ],
+    "fixture": {
+      "outstanding": 0,
+      "faqs": [
+        {
+          "id": 1,
+          "question": "통신요금 청구서를 이메일로 받으려면 어떻게 하나요?",
+          "cacheable": true
+        },
+        {
+          "id": 2,
+          "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+          "cacheable": false
+        },
+        {
+          "id": 3,
+          "question": "해외 로밍을 신청하는 방법을 알려주세요",
+          "cacheable": false
+        }
+      ]
+    },
+    "concurrency": 4,
+    "heartbeatTimeoutMs": 60000,
+    "recoveryIntervalMs": 15000,
+    "reclaimIdleMs": 300000,
+    "queueTimeoutMs": 600000,
+    "executionTimeoutMs": 180000,
+    "maxDeliveries": 3,
+    "syntheticMembers": 100,
+    "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+    "llmMocked": false,
+    "database": "ubot-chat-burst-live-postgres-1",
+    "redis": "ubot-chat-burst-live-redis-1",
+    "persistence": {
+      "appendonly": "no",
+      "save": "3600 1 300 100 60 10000"
+    },
+    "downMilliseconds": 15000,
+    "hardware": "RTX 3060 12 GiB; Docker 16 CPUs / ~25 GB; each JVM Xms512m / Xmx2g"
+  },
+  "result": {
+    "verifiedAt": "2026-10-22T23:34:50.454Z",
+    "accepted": 100,
+    "uniqueJobIds": 100,
+    "killRequestedAt": "2026-10-22T23:33:36.868Z",
+    "redisExitedAt": "2026-10-22T23:33:36.95449156Z",
+    "restartRequestedAt": "2026-10-22T23:33:52.959Z",
+    "redisReadyAt": "2026-10-22T23:33:53.524Z",
+    "inflightModelRequests": 4,
+    "inflightObservedAt": "2026-10-22T23:33:36.220Z",
+    "runningAtKill": 4,
+    "queuedAtKill": 96,
+    "succeededAtKill": 0,
+    "succeeded": 100,
+    "failed": [],
+    "inFlightOutcomes": [
+      {
+        "jobId": 6245,
+        "initialStartedAtMs": 1792712014675.871,
+        "finalStartedAtMs": 1792712014675.871,
+        "finishedAtMs": 1792712017390.62,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      },
+      {
+        "jobId": 6246,
+        "initialStartedAtMs": 1792712014675.871,
+        "finalStartedAtMs": 1792712014675.871,
+        "finishedAtMs": 1792712017390.62,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      },
+      {
+        "jobId": 6261,
+        "initialStartedAtMs": 1792712014675.871,
+        "finalStartedAtMs": 1792712014675.871,
+        "finishedAtMs": 1792712017390.62,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      },
+      {
+        "jobId": 6280,
+        "initialStartedAtMs": 1792712014675.871,
+        "finalStartedAtMs": 1792712014675.871,
+        "finishedAtMs": 1792712017390.62,
+        "status": "SUCCEEDED",
+        "leaseChanged": false
+      }
+    ],
+    "missingJobs": 0,
+    "unfinished": 0,
+    "duplicateTurns": 0,
+    "savedTurns": 100,
+    "emptyAnswers": 0,
+    "apiAnswers": 100,
+    "repeatedExecutions": [],
+    "executionStarts": 100,
+    "llmRouteJobs": 100,
+    "duplicateCompletionLogs": 0,
+    "uniqueCompletionLogs": 100,
+    "apiProcessStartUnchanged": true,
+    "workerProcessStartUnchanged": true,
+    "apiProbeCount": 74,
+    "apiProbeFailures": 6,
+    "workerProbeCount": 52,
+    "workerProbeFailures": 5,
+    "outageJobReads": [
+      {
+        "at": "2026-10-22T23:33:37.853Z",
+        "jobId": 6340,
+        "httpStatus": 0,
+        "status": "CLIENT_REQUEST_FAILED",
+        "completedAt": "2026-10-22T23:33:39.856Z",
+        "elapsedMs": 2003
+      },
+      {
+        "at": "2026-10-22T23:33:40.596Z",
+        "jobId": 6340,
+        "httpStatus": 0,
+        "status": "CLIENT_REQUEST_FAILED",
+        "completedAt": "2026-10-22T23:33:42.608Z",
+        "elapsedMs": 2012
+      },
+      {
+        "at": "2026-10-22T23:33:43.121Z",
+        "jobId": 6340,
+        "httpStatus": 0,
+        "status": "CLIENT_REQUEST_FAILED",
+        "completedAt": "2026-10-22T23:33:45.128Z",
+        "elapsedMs": 2007
+      },
+      {
+        "at": "2026-10-22T23:33:45.639Z",
+        "jobId": 6340,
+        "httpStatus": 0,
+        "status": "CLIENT_REQUEST_FAILED",
+        "completedAt": "2026-10-22T23:33:47.644Z",
+        "elapsedMs": 2005
+      },
+      {
+        "at": "2026-10-22T23:33:48.156Z",
+        "jobId": 6340,
+        "httpStatus": 0,
+        "status": "CLIENT_REQUEST_FAILED",
+        "completedAt": "2026-10-22T23:33:50.160Z",
+        "elapsedMs": 2004
+      },
+      {
+        "at": "2026-10-22T23:33:50.667Z",
+        "jobId": 6340,
+        "httpStatus": 0,
+        "status": "CLIENT_REQUEST_FAILED",
+        "completedAt": "2026-10-22T23:33:52.673Z",
+        "elapsedMs": 2006
+      }
+    ],
+    "apiPid": 35608,
+    "workerPid": 12436,
+    "redisBefore": {
+      "at": "2026-10-22T23:33:36.649Z",
+      "marksPresent": 100,
+      "messagesMatched": 100,
+      "streamLength": 200,
+      "runId": "0d973eaf76f0ab1622b0eec26ec76fea5be49e16",
+      "pending": [
+        4,
+        "1792711995824-0",
+        "1792711995826-0",
+        [
+          [
+            "worker",
+            "4"
+          ]
+        ]
+      ]
+    },
+    "redisAfterRestart": {
+      "at": "2026-10-22T23:33:53.936Z",
+      "marksPresent": 0,
+      "messagesMatched": 0,
+      "streamLength": 100,
+      "runId": "9a2f2b543e8830f18cfc50c4c9f7800b1c3f8d98",
+      "pending": [
+        0,
+        null,
+        null,
+        null
+      ]
+    },
+    "redisExitCode": 137,
+    "redisRunIdChanged": true,
+    "queuedAtKillIds": [
+      6241,
+      6242,
+      6243,
+      6244,
+      6247,
+      6248,
+      6249,
+      6250,
+      6251,
+      6252,
+      6253,
+      6254,
+      6255,
+      6256,
+      6257,
+      6258,
+      6259,
+      6260,
+      6262,
+      6263,
+      6264,
+      6265,
+      6266,
+      6267,
+      6268,
+      6269,
+      6270,
+      6271,
+      6272,
+      6273,
+      6274,
+      6275,
+      6276,
+      6277,
+      6278,
+      6279,
+      6281,
+      6282,
+      6283,
+      6284,
+      6285,
+      6286,
+      6287,
+      6288,
+      6289,
+      6290,
+      6291,
+      6292,
+      6293,
+      6294,
+      6295,
+      6296,
+      6297,
+      6298,
+      6299,
+      6300,
+      6301,
+      6302,
+      6303,
+      6304,
+      6305,
+      6306,
+      6307,
+      6308,
+      6309,
+      6310,
+      6311,
+      6312,
+      6313,
+      6314,
+      6315,
+      6316,
+      6317,
+      6318,
+      6319,
+      6320,
+      6321,
+      6322,
+      6323,
+      6324,
+      6325,
+      6326,
+      6327,
+      6328,
+      6329,
+      6330,
+      6331,
+      6332,
+      6333,
+      6334,
+      6335,
+      6336,
+      6337,
+      6338,
+      6339,
+      6340
+    ],
+    "completedWhileRedisUnavailable": 4,
+    "republishedBatchCounts": [
+      96
+    ],
+    "redisPending": 0,
+    "timingsMs": {
+      "forcedExit": 86,
+      "redisUnavailable": 16570,
+      "restartStartup": 565,
+      "redisReadyToQueueResume": 2844.44189453125,
+      "killToQueueResume": 19500.44189453125,
+      "redisReadyToApiHealthy": 2075,
+      "redisReadyToWorkerHealthy": 833,
+      "redisReadyToAllAnswers": 48954.302978515625,
+      "killToAllAnswers": 65610.30297851562,
+      "restartToAllAnswers": 49519.302978515625,
+      "firstSubmissionToAllAnswers": 87161.30297851562
+    },
+    "answerSamples": [
+      {
+        "jobId": 6280,
+        "status": "SUCCEEDED",
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다."
+      },
+      {
+        "jobId": 6245,
+        "status": "SUCCEEDED",
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다."
+      },
+      {
+        "jobId": 6261,
+        "status": "SUCCEEDED",
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해 주세요."
+      }
+    ],
+    "passed": true,
+    "faultState": {
+      "atMs": 1792712016868,
+      "snapshotAt": "2026-10-22T23:33:37.580Z",
+      "statuses": {
+        "QUEUED": 96,
+        "RUNNING": 4
+      },
+      "runningIds": [
+        6245,
+        6246,
+        6261,
+        6280
+      ],
+      "queuedIds": [
+        6241,
+        6242,
+        6243,
+        6244,
+        6247,
+        6248,
+        6249,
+        6250,
+        6251,
+        6252,
+        6253,
+        6254,
+        6255,
+        6256,
+        6257,
+        6258,
+        6259,
+        6260,
+        6262,
+        6263,
+        6264,
+        6265,
+        6266,
+        6267,
+        6268,
+        6269,
+        6270,
+        6271,
+        6272,
+        6273,
+        6274,
+        6275,
+        6276,
+        6277,
+        6278,
+        6279,
+        6281,
+        6282,
+        6283,
+        6284,
+        6285,
+        6286,
+        6287,
+        6288,
+        6289,
+        6290,
+        6291,
+        6292,
+        6293,
+        6294,
+        6295,
+        6296,
+        6297,
+        6298,
+        6299,
+        6300,
+        6301,
+        6302,
+        6303,
+        6304,
+        6305,
+        6306,
+        6307,
+        6308,
+        6309,
+        6310,
+        6311,
+        6312,
+        6313,
+        6314,
+        6315,
+        6316,
+        6317,
+        6318,
+        6319,
+        6320,
+        6321,
+        6322,
+        6323,
+        6324,
+        6325,
+        6326,
+        6327,
+        6328,
+        6329,
+        6330,
+        6331,
+        6332,
+        6333,
+        6334,
+        6335,
+        6336,
+        6337,
+        6338,
+        6339,
+        6340
+      ],
+      "completedIds": []
+    }
+  },
+  "independentAudit": {
+    "expectedJobs": 100,
+    "savedJobs": 100,
+    "uniqueJobs": 100,
+    "uniqueAttempts": 100,
+    "uniqueMembers": 100,
+    "uniqueConversations": 100,
+    "succeededJobs": 100,
+    "succeededAttempts": 100,
+    "oneAttemptOnly": 100,
+    "storedTurns": 100,
+    "ownershipMismatches": 0,
+    "answerMismatches": 0,
+    "duplicateTurns": 0,
+    "resultReferencesMatch": 100,
+    "clearedRequestContexts": 100,
+    "missingOrUnfinished": 0,
+    "globalOutstanding": 0,
+    "firstQueuedStartAtMs": 1792712036368.442,
+    "firstQueuedAnswerAtMs": 1792712038407.532,
+    "allAnswersFinishedAtMs": 1792712082478.303
+  },
+  "httpObservations": {
+    "apiHealthStatuses": {
+      "0": 6,
+      "200": 68
+    },
+    "workerHealthStatuses": {
+      "0": 5,
+      "200": 47
+    },
+    "outageJobStatuses": {
+      "0": 6
+    },
+    "clientTimeoutMs": 2000
+  },
+  "metricChecks": {
+    "workerSuccessfulLlmAnswers": 100,
+    "modelServerSuccessfulCalls": 100
+  },
+  "verification": {
+    "actualCrash": "PASS",
+    "independentSqlAndHttpContent": "100/100 MATCH",
+    "timingCrossCheck": "PASS",
+    "snapshotAnalysisTests": {
+      "passed": 2,
+      "failed": 0
+    }
+  },
+  "rawSnapshotCounts": {
+    "at": "2026-10-22T23:33:37.580Z",
+    "running": 0,
+    "succeeded": 4,
+    "note": "종료 후 약 0.7초 뒤 snapshot에는 실행 0·성공 4로 보인다. 집계 결과의 장애 시점 상태는 원본 started_at/finished_at으로 역산했다. 원본 report.json과 snapshot은 변경하지 않았다."
+  },
+  "runnerAfterMeasurement": {
+    "sha256": "5a0c238d5a7e2d6b221d53e04e4eabcff9a6d8283cea69c95babff74c2cb90bd",
+    "change": "snapshot 지연 동안 완료된 4건을 장애 당시 RUNNING으로 세도록 집계만 보정. 실제 실행 소스는 executed-runner.mjs와 environment의 SHA-256으로 보존했다.",
+    "analysisSha256": "36d300f52485106332c4665e2a192ffee4160bb8f9e8dafe5ae4650a0b550736"
+  },
+  "rawEvidenceDirectory": "build/chat-burst-live/redis-crash-100-20261023",
+  "evidence": [
+    {
+      "name": "environment.json",
+      "sha256": "73dbd4a02706714e48550b196549968cf254e7ee2fabde94a5bcbaaaa1e4b4b7"
+    },
+    {
+      "name": "events.json",
+      "sha256": "11cd022a8a133de61fab0e9d48dfbefaa8da3bf8344f7728a5881c33a2239030"
+    },
+    {
+      "name": "executed-runner.mjs",
+      "sha256": "861e14f19c813d2db0bdd20837e3a88a2f82bae6673657368cad69cbfe189649"
+    },
+    {
+      "name": "submissions.json",
+      "sha256": "66c66bd226db4ef4de0d8acb38f7ba753c87ab322a288b3a444e86f700911679"
+    },
+    {
+      "name": "immediately-before-kill.json",
+      "sha256": "57d6d0a5126e75c883cae0ebffd4e23070c2b037e759611f0e053432c23b1197"
+    },
+    {
+      "name": "immediately-after-kill.json",
+      "sha256": "2b5a9a987859ab96cbbd990d80a6cb599af46f79150eb6fe202e2d8eeed94b90"
+    },
+    {
+      "name": "redis-before-kill.json",
+      "sha256": "744738aa8da76177c56861ab1b17eaeb8430e90ce86127e6bb337edc9c819969"
+    },
+    {
+      "name": "before-redis-restart.json",
+      "sha256": "36f3737333f62e27b67c3293c2ea46cb670b1773440a8aa07a4493093268e43a"
+    },
+    {
+      "name": "redis-immediately-after-restart.json",
+      "sha256": "adafa13f5c489d670d758bb4c6a67467a1de03121e40ea4bb49fe55f3741c7b2"
+    },
+    {
+      "name": "api-final.json",
+      "sha256": "405800f1e482f610e3572c4f5b5bf18539b375d2aaa6a24ecf712c1da47e771a"
+    },
+    {
+      "name": "db-final.json",
+      "sha256": "f497dd96eb0fce9888ab2f829dc34f54d73ba13daa62e46701e86323c9737f0d"
+    },
+    {
+      "name": "api-health.json",
+      "sha256": "520bc9a25ecf549160dd68f897256c5772b57308b66ac59f7b5996ef6a85a0a3"
+    },
+    {
+      "name": "worker-health.json",
+      "sha256": "d3fcabed0f35462f709adcb99edd1cae0e4cc7a662de161d1657901962ef538d"
+    },
+    {
+      "name": "outage-job-reads.json",
+      "sha256": "58200e60640cdb9cefffec85f5ff30b4b2511d073285ed45ad3768b2cb5eb1da"
+    },
+    {
+      "name": "report.json",
+      "sha256": "1d7f9c5c72f3f6b101156b921396b94ad0679cc53ebb7bbcef93c26b04b72d90"
+    },
+    {
+      "name": "independent-audit.sql",
+      "sha256": "3ec411734395bd286485606560ddc24eb3cf030264601a6d3c6710776ff0c215"
+    },
+    {
+      "name": "independent-audit.json",
+      "sha256": "d97055b9be9c8900d687a3dbf206ed605920e3b973838d710f876dbf53c6649a"
+    },
+    {
+      "name": "worker-before.prom",
+      "sha256": "d900d77a4fdf5efb04186c777e5bbe6a7bb6d57e33a5b2d04da5034ca1da63c5"
+    },
+    {
+      "name": "worker-after.prom",
+      "sha256": "26daa4f2e2731fc97b6237d16b4bd5af349436bb25d633db069895018497f720"
+    },
+    {
+      "name": "api-before.prom",
+      "sha256": "2513cad507632f3cdf34babf6545753f679257316267b527e004122bcf9b4876"
+    },
+    {
+      "name": "api-after.prom",
+      "sha256": "db8bc4621ac5244dce9234a66db2df7921479147beeac702b49bcd2b1871d087"
+    },
+    {
+      "name": "vllm-before-force-kill.prom",
+      "sha256": "2f0523dc654287e552b5e437b7d32e57e3ebba7a3b4654a5a2fa7d7ca6dd439e"
+    },
+    {
+      "name": "cleanup.json",
+      "sha256": "26178974a234a0fdf9e38011b6a87845f73d567e0206c1fda18b0c72ea38ca11"
+    },
+    {
+      "name": "api.log",
+      "sha256": "e0ac5e1d193c3d6eba05cdbaa3a880de1e54b4e7bc5c5d1b52012d9b7511f8a0"
+    },
+    {
+      "name": "worker.log",
+      "sha256": "3c166bfbda5cc148ef14d6c8690f1127c499f6080ebba8efa53be5615fa69bdd"
+    },
+    {
+      "name": "infrastructure-cleanup.json",
+      "sha256": "4b8cd30c3f5392164c874ea4be880c08197b4f4d6314222ef08a3d3ddda704d6"
+    }
+  ],
+  "limitations": [
+    "단일 로컬 실행, 합성 회원 100명과 동일 비캐시 FAQ 질문, 공유 GPU 모델이다.",
+    "약 16.57초의 Redis 중단과 최근 Stream 데이터 유실을 검증했다. DB·모델·호스트는 종료하지 않았다.",
+    "2초 클라이언트 제한으로 관찰한 조회 실패이며 서버의 기본 Redis command timeout을 측정한 것은 아니다.",
+    "장기 장애, Redis 클러스터 failover, AOF/RDB 장애 조합, 인증 폐기 정보 유실은 별도 검증 대상이다."
+  ],
+  "infrastructureCleanup": {
+    "at": "2026-10-22T23:47:33.8240582Z",
+    "scenarioProcessesRemaining": 0,
+    "isolatedContainers": [
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-22T23:47:31.994933193Z"
+      },
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-22T23:47:31.996105212Z"
+      }
+    ],
+    "originalServicesAllRunning": true,
+    "originalServiceNames": [
+      "ubot-feat-200-postgres-1",
+      "ubot-feat-200-redis-1",
+      "ubot-feat-200-vllm-1",
+      "ubot-feat-200-vllm-embedding-1"
+    ],
+    "testDataRetained": true
+  }
+}

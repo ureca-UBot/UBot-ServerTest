@@ -1,0 +1,16 @@
+.local/
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.private.*
+credentials*.json
+*.tfstate*
+*.tfplan
+*.tar.gz
+*.log
+.generated/
+build/
+.generated-dataset/

@@ -1,0 +1,274 @@
+{
+  "verifiedAt": "2026-10-23T01:48:27.035Z",
+  "summary": {
+    "accepted": 100,
+    "savedJobs": 100,
+    "missingJobs": 0,
+    "succeeded": 100,
+    "failed": 0,
+    "failedExcludingTimeouts": 0,
+    "timeouts": 0,
+    "cancelled": 0,
+    "unfinished": 0,
+    "savedAnswers": 100,
+    "duplicateAnswers": 0,
+    "failedWithAnswer": 0,
+    "successWithoutAnswer": 0,
+    "ownershipMismatches": 0,
+    "apiMismatches": 0,
+    "apiMissing": 0,
+    "errors": {},
+    "allOriginalJobsSucceeded": true
+  },
+  "killRequestedAt": "2026-10-23T01:46:10.398Z",
+  "modelExitedAt": "2026-10-23T01:46:10.857545486Z",
+  "restartRequestedAt": "2026-10-23T01:46:26.724Z",
+  "modelReadyAt": "2026-10-23T01:47:27.345Z",
+  "beforeStatuses": {
+    "QUEUED": 96,
+    "RUNNING": 4
+  },
+  "modelRunning": 4,
+  "observedAt": "2026-10-23T01:46:10.392Z",
+  "apiPid": 8072,
+  "workerPid": 26500,
+  "originalModel": {
+    "running": true,
+    "startedAt": "2026-10-23T01:16:50.606572935Z",
+    "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+    "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+    "restartPolicy": {
+      "Name": "unless-stopped",
+      "MaximumRetryCount": 0
+    }
+  },
+  "afterModel": {
+    "running": true,
+    "startedAt": "2026-10-23T01:46:26.823630712Z",
+    "image": "sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3",
+    "id": "c48f2906cfac55cd73574c889183cfc9c308993f3b97e49582f56a623e4cec26",
+    "restartPolicy": {
+      "Name": "no",
+      "MaximumRetryCount": 0
+    }
+  },
+  "beforeDependencies": {
+    "databaseStartedAt": "2026-10-23T01:35:53.259171158Z",
+    "embeddingStartedAt": "2026-10-22T00:09:31.170622612Z",
+    "redisRunId": "0a42f7aa115971a894d70137080e9326f53152d4"
+  },
+  "afterDependencies": {
+    "databaseStartedAt": "2026-10-23T01:35:53.259171158Z",
+    "embeddingStartedAt": "2026-10-22T00:09:31.170622612Z",
+    "redisRunId": "0a42f7aa115971a894d70137080e9326f53152d4"
+  },
+  "processStartUnchanged": true,
+  "dependenciesUnchanged": true,
+  "modelRestartConfirmed": true,
+  "originalLlmRoutes": 100,
+  "originalExecutionStarts": 100,
+  "repeatedOriginalExecutions": [],
+  "manualRetryRequests": 0,
+  "retryWaits": 64,
+  "retryWaitJobIds": [
+    7379,
+    7390,
+    7388,
+    7391
+  ],
+  "userAttemptCountUnchanged": true,
+  "queuedAtKillIds": [
+    7370,
+    7371,
+    7372,
+    7373,
+    7374,
+    7375,
+    7376,
+    7377,
+    7378,
+    7380,
+    7381,
+    7382,
+    7383,
+    7384,
+    7385,
+    7386,
+    7387,
+    7389,
+    7392,
+    7393,
+    7394,
+    7395,
+    7396,
+    7397,
+    7398,
+    7399,
+    7400,
+    7401,
+    7402,
+    7403,
+    7404,
+    7405,
+    7406,
+    7407,
+    7408,
+    7409,
+    7410,
+    7411,
+    7412,
+    7413,
+    7414,
+    7415,
+    7416,
+    7417,
+    7418,
+    7419,
+    7420,
+    7421,
+    7422,
+    7423,
+    7424,
+    7425,
+    7426,
+    7427,
+    7428,
+    7429,
+    7430,
+    7431,
+    7432,
+    7433,
+    7434,
+    7435,
+    7436,
+    7437,
+    7438,
+    7439,
+    7440,
+    7441,
+    7442,
+    7443,
+    7444,
+    7445,
+    7446,
+    7447,
+    7448,
+    7449,
+    7450,
+    7451,
+    7452,
+    7453,
+    7454,
+    7455,
+    7456,
+    7457,
+    7458,
+    7459,
+    7460,
+    7461,
+    7462,
+    7463,
+    7464,
+    7465,
+    7466,
+    7467,
+    7468,
+    7469
+  ],
+  "inFlight": [
+    {
+      "jobId": 7379,
+      "startedAtMs": 1792719968561.819,
+      "finalStartedAtMs": 1792719968561.819
+    },
+    {
+      "jobId": 7388,
+      "startedAtMs": 1792719968561.819,
+      "finalStartedAtMs": 1792719968561.819
+    },
+    {
+      "jobId": 7390,
+      "startedAtMs": 1792719968561.819,
+      "finalStartedAtMs": 1792719968561.819
+    },
+    {
+      "jobId": 7391,
+      "startedAtMs": 1792719968561.819,
+      "finalStartedAtMs": 1792719968561.819
+    }
+  ],
+  "apiDuringModelUnavailable": {
+    "count": 290,
+    "statuses": {
+      "200": 290
+    },
+    "jobStatuses": {
+      "QUEUED": 290
+    },
+    "clientFailures": 0,
+    "p50Ms": 24,
+    "p95Ms": 27,
+    "maxMs": 37
+  },
+  "apiAll": {
+    "count": 594,
+    "statuses": {
+      "200": 594
+    },
+    "jobStatuses": {
+      "QUEUED": 496,
+      "RUNNING": 7,
+      "SUCCEEDED": 91
+    },
+    "clientFailures": 0,
+    "p50Ms": 24,
+    "p95Ms": 30,
+    "maxMs": 113
+  },
+  "apiHealth": {
+    "count": 153,
+    "statuses": {
+      "200": 153
+    },
+    "jobStatuses": {},
+    "clientFailures": 0,
+    "p50Ms": 21,
+    "p95Ms": 24,
+    "maxMs": 28
+  },
+  "securityChecks": [
+    {
+      "name": "invalid-signature",
+      "expectedStatus": 401,
+      "at": "2026-10-23T01:46:11.562Z",
+      "path": "/chat/jobs/7464",
+      "httpStatus": 401,
+      "apiCode": "JWT-004",
+      "completedAt": "2026-10-23T01:46:11.569Z",
+      "elapsedMs": 7
+    },
+    {
+      "name": "other-member",
+      "expectedStatus": 404,
+      "at": "2026-10-23T01:46:11.569Z",
+      "path": "/chat/jobs/7464",
+      "httpStatus": 404,
+      "apiCode": "CHAT-020",
+      "completedAt": "2026-10-23T01:46:11.601Z",
+      "elapsedMs": 32
+    }
+  ],
+  "redisPending": 0,
+  "timingsMs": {
+    "forcedExit": 459,
+    "modelUnavailable": 76488,
+    "restartToReady": 60621,
+    "killToOriginalAllTerminal": 131546.35400390625,
+    "firstSubmissionToOriginalAllTerminal": 153609.35400390625,
+    "readyToFirstAnswer": 6715.77001953125,
+    "readyToAllAnswers": 54599.35400390625,
+    "killToFirstAnswer": 83662.77001953125,
+    "killToAllAnswers": 131546.35400390625
+  },
+  "verificationPassed": true
+}

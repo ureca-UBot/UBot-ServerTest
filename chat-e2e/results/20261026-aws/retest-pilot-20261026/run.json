@@ -1,0 +1,10 @@
+{
+  "runId": "retest-pilot-20261026",
+  "plannedStartAt": 1793005391089,
+  "maxStartSpreadMs": 1000,
+  "warmConnections": false,
+  "httpTimeoutSeconds": 120,
+  "startedAt": "2026-10-26T09:02:41.089Z",
+  "exitCode": 0,
+  "finishedAt": "2026-10-26T09:03:12.803Z"
+}

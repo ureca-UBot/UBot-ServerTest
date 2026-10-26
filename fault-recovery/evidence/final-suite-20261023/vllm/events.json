@@ -1,0 +1,173 @@
+[
+  {
+    "type": "api-start-requested",
+    "at": "2026-10-23T01:45:26.136Z",
+    "pid": 8072
+  },
+  {
+    "type": "real-member-login-completed",
+    "at": "2026-10-23T01:45:48.334Z",
+    "count": 100
+  },
+  {
+    "type": "all-accepted-before-worker-start",
+    "at": "2026-10-23T01:45:49.308Z",
+    "count": 100
+  },
+  {
+    "type": "worker-start-requested",
+    "at": "2026-10-23T01:45:49.518Z",
+    "pid": 26500
+  },
+  {
+    "type": "vllm-force-killed",
+    "at": "2026-10-23T01:46:11.559Z",
+    "killRequestedAt": "2026-10-23T01:46:10.398Z",
+    "exitedAt": "2026-10-23T01:46:10.857545486Z",
+    "exitCode": 137,
+    "modelRunning": 4,
+    "observedAt": "2026-10-23T01:46:10.392Z",
+    "databaseStatuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    }
+  },
+  {
+    "type": "vllm-restart-requested",
+    "at": "2026-10-23T01:46:27.219Z",
+    "restartRequestedAt": "2026-10-23T01:46:26.724Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    }
+  },
+  {
+    "type": "model-startup-progress",
+    "at": "2026-10-23T01:46:27.462Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    },
+    "modelHttpStatus": 0
+  },
+  {
+    "type": "model-startup-progress",
+    "at": "2026-10-23T01:46:42.507Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    },
+    "modelHttpStatus": 0
+  },
+  {
+    "type": "model-startup-progress",
+    "at": "2026-10-23T01:46:57.574Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    },
+    "modelHttpStatus": 0
+  },
+  {
+    "type": "model-startup-progress",
+    "at": "2026-10-23T01:47:12.584Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    },
+    "modelHttpStatus": 0
+  },
+  {
+    "type": "vllm-ready",
+    "at": "2026-10-23T01:47:27.585Z",
+    "modelReadyAt": "2026-10-23T01:47:27.345Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    }
+  },
+  {
+    "type": "answer-recovery-progress",
+    "at": "2026-10-23T01:47:29.555Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    }
+  },
+  {
+    "type": "answer-recovery-progress",
+    "at": "2026-10-23T01:47:48.358Z",
+    "statuses": {
+      "QUEUED": 64,
+      "SUCCEEDED": 32,
+      "RUNNING": 4
+    }
+  },
+  {
+    "type": "answer-recovery-progress",
+    "at": "2026-10-23T01:48:07.154Z",
+    "statuses": {
+      "SUCCEEDED": 68,
+      "RUNNING": 4,
+      "QUEUED": 28
+    }
+  },
+  {
+    "type": "original-100-terminal",
+    "at": "2026-10-23T01:48:24.748Z",
+    "accepted": 100,
+    "savedJobs": 100,
+    "missingJobs": 0,
+    "succeeded": 100,
+    "failed": 0,
+    "failedExcludingTimeouts": 0,
+    "timeouts": 0,
+    "cancelled": 0,
+    "unfinished": 0,
+    "savedAnswers": 100,
+    "duplicateAnswers": 0,
+    "failedWithAnswer": 0,
+    "successWithoutAnswer": 0,
+    "ownershipMismatches": 0,
+    "apiMismatches": 0,
+    "apiMissing": 0,
+    "errors": {},
+    "allOriginalJobsSucceeded": true
+  },
+  {
+    "type": "verification-completed",
+    "at": "2026-10-23T01:48:27.043Z",
+    "verificationPassed": true,
+    "summary": {
+      "accepted": 100,
+      "savedJobs": 100,
+      "missingJobs": 0,
+      "succeeded": 100,
+      "failed": 0,
+      "failedExcludingTimeouts": 0,
+      "timeouts": 0,
+      "cancelled": 0,
+      "unfinished": 0,
+      "savedAnswers": 100,
+      "duplicateAnswers": 0,
+      "failedWithAnswer": 0,
+      "successWithoutAnswer": 0,
+      "ownershipMismatches": 0,
+      "apiMismatches": 0,
+      "apiMissing": 0,
+      "errors": {},
+      "allOriginalJobsSucceeded": true
+    },
+    "timingsMs": {
+      "forcedExit": 459,
+      "modelUnavailable": 76488,
+      "restartToReady": 60621,
+      "killToOriginalAllTerminal": 131546.35400390625,
+      "firstSubmissionToOriginalAllTerminal": 153609.35400390625,
+      "readyToFirstAnswer": 6715.77001953125,
+      "readyToAllAnswers": 54599.35400390625,
+      "killToFirstAnswer": 83662.77001953125,
+      "killToAllAnswers": 131546.35400390625
+    }
+  }
+]

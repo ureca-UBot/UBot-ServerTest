@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-10-26T10:56:50.898Z",
+  "baseUrl": "https://u-bot.cloud/api",
+  "checksPassed": 8,
+  "totalAlerts": 105,
+  "totalQuestions": 1773,
+  "regionSubjectGroups": 94,
+  "regions": {
+    "INCHEON": {
+      "alerts": 104,
+      "questions": 1753
+    },
+    "DAEJEON": {
+      "alerts": 1,
+      "questions": 20
+    }
+  },
+  "selectedDetail": {
+    "alertId": 105,
+    "region": "INCHEON",
+    "subject": "인천에서 중고폰 반납 문의 급증",
+    "questionCount": 10,
+    "windowMinutes": 10,
+    "snapshotIds": [
+      15993,
+      16400,
+      16803,
+      17064,
+      17212,
+      17635,
+      17728,
+      17807,
+      17964,
+      18541
+    ],
+    "createdAt": "2026-10-26T19:21:27.66325"
+  },
+  "access": {
+    "anonymous": 401,
+    "invalidSize": 400
+  }
+}

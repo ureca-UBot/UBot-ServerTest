@@ -1,0 +1,12 @@
+{
+  "baseCommit": "281f3be3",
+  "scope": "origin/develop plus 8 scoped configuration files; unrelated working changes excluded",
+  "command": "gradlew clean build --no-daemon",
+  "result": "BUILD SUCCESSFUL",
+  "duration": "11m 3s",
+  "suites": 309,
+  "tests": 5441,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 9
+}

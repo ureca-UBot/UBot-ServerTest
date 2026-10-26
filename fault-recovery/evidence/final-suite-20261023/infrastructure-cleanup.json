@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-23T01:49:28.512Z",
+  "testContainers": [
+    {
+      "name": "ubot-chat-burst-live-postgres-1",
+      "running": false,
+      "exitCode": 0
+    },
+    {
+      "name": "ubot-chat-burst-live-redis-1",
+      "running": false,
+      "exitCode": 0
+    }
+  ],
+  "testProcessesStopped": true,
+  "testApiPortsClosed": true,
+  "containersDeleted": false,
+  "dataVolumesRetained": true
+}

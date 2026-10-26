@@ -1,0 +1,345 @@
+{
+  "scenario": "local-worker-process-crash-100-real-llm",
+  "date": "2026-10-23",
+  "timezone": "Asia/Seoul",
+  "environment": {
+    "commit": "e43e15b272db00a076e90dc4b1f01d3a5f872a96",
+    "jarSha256": "3bf9a883057892518e147697025a02406c7c8c2d7d8edc6b5770dd0797c8cc4b",
+    "harnessSha256": "7d649e30555507877e60ddd2283b3365ccbf042d828cefab92e26877b873520b",
+    "apiUrl": "http://127.0.0.1:18080",
+    "workerUrl": "http://127.0.0.1:18081",
+    "models": [
+      [
+        {
+          "id": "ubot-chat",
+          "root": "RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16"
+        }
+      ],
+      [
+        {
+          "id": "ubot-embedding",
+          "root": "BAAI/bge-m3"
+        }
+      ]
+    ],
+    "fixture": {
+      "outstanding": 0,
+      "faqs": [
+        {
+          "id": 1,
+          "question": "통신요금 청구서를 이메일로 받으려면 어떻게 하나요?",
+          "cacheable": true
+        },
+        {
+          "id": 2,
+          "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+          "cacheable": false
+        },
+        {
+          "id": 3,
+          "question": "해외 로밍을 신청하는 방법을 알려주세요",
+          "cacheable": false
+        }
+      ]
+    },
+    "concurrency": 4,
+    "heartbeatTimeoutMs": 60000,
+    "recoveryIntervalMs": 15000,
+    "reclaimIdleMs": 300000,
+    "queueTimeoutMs": 600000,
+    "executionTimeoutMs": 180000,
+    "maxDeliveries": 3,
+    "syntheticMembers": 100,
+    "question": "분실한 유심을 재발급받으려면 어떻게 하나요?",
+    "llmMocked": false,
+    "database": "ubot-chat-burst-live-postgres-1",
+    "redis": "ubot-chat-burst-live-redis-1",
+    "hardware": "NVIDIA GeForce RTX 3060 12 GiB; Docker 16 CPUs / ~25 GB; each JVM Xms512m / Xmx2g"
+  },
+  "result": {
+    "verifiedAt": "2026-10-22T22:03:38.428Z",
+    "accepted": 100,
+    "uniqueJobIds": 100,
+    "killRequestedAt": "2026-10-22T22:02:21.934Z",
+    "processExitedAt": "2026-10-22T22:02:22.019Z",
+    "restartRequestedAt": "2026-10-22T22:02:27.648Z",
+    "workerReadyAt": "2026-10-22T22:02:42.705Z",
+    "inflightModelRequests": 4,
+    "inflightObservedAt": "2026-10-22T22:02:21.933Z",
+    "interrupted": 4,
+    "queuedAtKill": 96,
+    "succeededAtKill": 0,
+    "succeeded": 100,
+    "failed": [],
+    "recovered": [
+      {
+        "jobId": 6141,
+        "beforeStartedAtMs": 1792706540995.919,
+        "beforeHeartbeatAtMs": 1792706540995.919,
+        "recoveredStartedAtMs": 1792706607233.204,
+        "finishedAtMs": 1792706609139.448,
+        "status": "SUCCEEDED",
+        "leaseChanged": true
+      },
+      {
+        "jobId": 6147,
+        "beforeStartedAtMs": 1792706540995.919,
+        "beforeHeartbeatAtMs": 1792706540995.919,
+        "recoveredStartedAtMs": 1792706607217.005,
+        "finishedAtMs": 1792706609110.07,
+        "status": "SUCCEEDED",
+        "leaseChanged": true
+      },
+      {
+        "jobId": 6166,
+        "beforeStartedAtMs": 1792706540995.919,
+        "beforeHeartbeatAtMs": 1792706540995.919,
+        "recoveredStartedAtMs": 1792706607223.733,
+        "finishedAtMs": 1792706609139.448,
+        "status": "SUCCEEDED",
+        "leaseChanged": true
+      },
+      {
+        "jobId": 6169,
+        "beforeStartedAtMs": 1792706540995.919,
+        "beforeHeartbeatAtMs": 1792706540995.919,
+        "recoveredStartedAtMs": 1792706607228.47,
+        "finishedAtMs": 1792706609139.448,
+        "status": "SUCCEEDED",
+        "leaseChanged": true
+      }
+    ],
+    "missingJobs": 0,
+    "unfinished": 0,
+    "duplicateTurns": 0,
+    "savedTurns": 100,
+    "emptyAnswers": 0,
+    "apiAnswers": 100,
+    "repeatedExecutions": [
+      [
+        "6141",
+        2
+      ],
+      [
+        "6147",
+        2
+      ],
+      [
+        "6166",
+        2
+      ],
+      [
+        "6169",
+        2
+      ]
+    ],
+    "executionStarts": 104,
+    "replacementLlmRouteJobs": 100,
+    "llmRouteJobs": 100,
+    "duplicateCompletionLogs": 0,
+    "uniqueCompletionLogs": 100,
+    "apiProcessStartUnchanged": true,
+    "apiProbeCount": 85,
+    "apiProbeFailures": 0,
+    "apiPid": 30836,
+    "oldWorkerPid": 45016,
+    "replacementWorkerPid": 13060,
+    "redisPending": 0,
+    "timingsMs": {
+      "forcedExit": 85,
+      "restartStartup": 15057,
+      "killToReplacementReady": 20771,
+      "killToFirstInterruptedRestart": 65283.0048828125,
+      "killToFirstInterruptedAnswer": 67176.07006835938,
+      "killToAllAnswers": 67205.44799804688,
+      "restartToAllAnswers": 61491.447998046875,
+      "firstSubmissionToAllAnswers": 84103.44799804688
+    },
+    "answerSamples": [
+      {
+        "jobId": 6169,
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다.",
+        "status": "SUCCEEDED"
+      },
+      {
+        "jobId": 6166,
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다.",
+        "status": "SUCCEEDED"
+      },
+      {
+        "jobId": 6141,
+        "answer": "분실한 유심을 재발급받으려면 먼저 고객센터에서 회선을 일시 정지해 주고, 신분증을 지참하여 가까운 대리점에 방문하여 본인 확인 후 유심을 재발급받을 수 있습니다. 재발급 비용은 매장에서 확인해야 합니다.",
+        "status": "SUCCEEDED"
+      }
+    ],
+    "passed": true
+  },
+  "independentAudit": {
+    "expectedJobs": 100,
+    "savedJobs": 100,
+    "uniqueJobs": 100,
+    "uniqueAttempts": 100,
+    "uniqueMembers": 100,
+    "uniqueConversations": 100,
+    "succeededJobs": 100,
+    "succeededAttempts": 100,
+    "oneAttemptOnly": 100,
+    "storedTurns": 100,
+    "ownershipMismatches": 0,
+    "answerMismatches": 0,
+    "duplicateTurns": 0,
+    "resultReferencesMatch": 100,
+    "clearedRequestContexts": 100,
+    "missingOrUnfinished": 0,
+    "globalOutstanding": 0,
+    "firstRecoveredStartAtMs": 1792706607217.005,
+    "firstRecoveredAnswerAtMs": 1792706609110.07,
+    "allAnswersFinishedAtMs": 1792706609139.448
+  },
+  "metricChecks": {
+    "reclaimedByHeartbeat": 4,
+    "replacementWorkerSuccessfulLlmAnswers": 100,
+    "modelServerSuccessfulCalls": 100
+  },
+  "testVerification": {
+    "actualCrashScenario": "PASS",
+    "independentReadOnlyDatabaseAudit": "PASS",
+    "timingCrossCheck": "PASS",
+    "contentHashMatches": 100,
+    "inheritedToolRegressionTests": {
+      "command": "node --test tools/perf/chat-burst/tests/model.test.mjs tools/perf/chat-burst/tests/pipeline.test.mjs",
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 98184.8944,
+      "initialSandboxAttempt": {
+        "passed": 10,
+        "failed": 3,
+        "reason": "localhost socket 차단으로 pipeline 연결 실패. 승인된 재실행에서는 13개 전부 통과."
+      },
+      "note": "기존 도구의 모의 HTTP 회귀 테스트이며, 실제 모델로 실행한 100건 Worker 장애 검증과 별도다."
+    }
+  },
+  "rawEvidenceDirectory": "build/chat-burst-live/worker-crash-100-inflight-20261023",
+  "evidence": [
+    {
+      "name": "environment.json",
+      "sha256": "ef0c9b2f5803b5f844cbcb4b3067233b434818e1e875b4164703fcbee3c17615"
+    },
+    {
+      "name": "events.json",
+      "sha256": "f70751984decfeb3a26fe1663a31faa72136b2353cd010a304d11019957bbc9f"
+    },
+    {
+      "name": "submissions.json",
+      "sha256": "3aa41f2ab47447cdfa3032d26b3dfe4698c2e76aee1c96eb9ed3921000aae61e"
+    },
+    {
+      "name": "immediately-before-kill.json",
+      "sha256": "6141cc21fe0bd26ebf40747bef51b385894aa1f8bde31efd5a1c5ed744c9e0b3"
+    },
+    {
+      "name": "immediately-after-kill.json",
+      "sha256": "fd98fc61f638ec2f82ff220d9712418e81605cf4146688d6be52129562cf0678"
+    },
+    {
+      "name": "db-final.json",
+      "sha256": "4e33b5579b565cb5674a11c118bbc194e8f7f239d18f0b95a5d7100fd32d6d4d"
+    },
+    {
+      "name": "api-final.json",
+      "sha256": "107b232640b719578b40829b3f312b15d9bfe4246113d2594c994c85e1623156"
+    },
+    {
+      "name": "api-health.json",
+      "sha256": "33f226a7a9eba54368acb0ea27bd0e43382bed63694e44af0956c2ea0d3c1048"
+    },
+    {
+      "name": "report.json",
+      "sha256": "7551b404c5a7bec6d5de6d3017d36c8d79f00be487da11fd19e92343b111d634"
+    },
+    {
+      "name": "independent-audit.sql",
+      "sha256": "2b35efd7fb916bde014ca4a0f68314c7f3051cfa5c35cf81bc080c96a31a391c"
+    },
+    {
+      "name": "independent-audit.json",
+      "sha256": "3288644b871b3869ac92923a3da3829008441003594a549757515ba936b0800e"
+    },
+    {
+      "name": "vllm-before-force-kill.prom",
+      "sha256": "d9bf231ffd054e6a4a964df31ba433c288297bb593c72e93436446ec10298abd"
+    },
+    {
+      "name": "worker-after.prom",
+      "sha256": "fe12054101a773f76cfb3cf32f1f1409f51282ce55e7deea2cfe09234bfffdd0"
+    },
+    {
+      "name": "api-before.prom",
+      "sha256": "642b3d0b9290c52d99cbf9997f9b5d3e2c1f47e312f3822326955854cea43848"
+    },
+    {
+      "name": "api-after.prom",
+      "sha256": "fb49ece51d9965cf2201f1e14a08d9dae7153988ae8d00389c7911f5fad11305"
+    },
+    {
+      "name": "cleanup.json",
+      "sha256": "451f82f2ab6c22bc68855a38a6b257f46f40ef186cf2e6105c2e7e727421d9ef"
+    },
+    {
+      "name": "api.log",
+      "sha256": "209b7927100753dec05c30d1bb520038973f9c12c2ffcd2e1907667c452ccea4"
+    },
+    {
+      "name": "worker-before-crash.log",
+      "sha256": "13add8b23af935f697f82ed8fa31cd798b464c196b75a82683f6a962fdee7ca0"
+    },
+    {
+      "name": "worker-after-crash.log",
+      "sha256": "c49bdd0ed0df8cb6cf0540c8ec3d334a41ba18f0f3b05838ade247bd97e5d080"
+    },
+    {
+      "name": "infrastructure-cleanup.json",
+      "sha256": "326fada815a73a1dca6b849f72610a91c87c3fe6fad5810e18266f44f765953c"
+    }
+  ],
+  "preliminaryRun": {
+    "rawDirectory": "build/chat-burst-live/worker-crash-100-20261023",
+    "passed": true,
+    "succeeded": 100,
+    "interrupted": 4,
+    "duplicateTurns": 0,
+    "note": "GENERATING 단계만 보고 종료한 예비 실행. 모델 서버 실행 중 요청까지 확인하는 조건을 추가하여 본 실행을 별도로 진행함."
+  },
+  "limitations": [
+    "한 머신의 합성 회원 100명이 동일한 비캐시 FAQ 질문을 보낸 단일 본 실행이다.",
+    "API·Worker 프로세스 장애 격리를 확인하며 호스트/GPU/DB 장애는 주입하지 않았다.",
+    "DB 커밋 직후 ACK 전 종료, 중복 consumer, 네트워크 분할은 별도 검증 대상이다.",
+    "API health는 약 1초 간격 표본이며 모든 순간의 무중단을 증명하지 않는다.",
+    "중단된 모델 요청의 원격 취소 횟수나 과금 exactly-once를 보장하지 않는다."
+  ],
+  "infrastructureCleanup": {
+    "at": "2026-10-22T22:28:57.7184967Z",
+    "scenarioProcessesRemaining": 0,
+    "isolatedContainers": [
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-22T22:28:55.939560974Z"
+      },
+      {
+        "Running": false,
+        "ExitCode": 0,
+        "FinishedAt": "2026-10-22T22:28:55.946626709Z"
+      }
+    ],
+    "originalServicesAllRunning": true,
+    "originalServiceNames": [
+      "ubot-feat-200-postgres-1",
+      "ubot-feat-200-redis-1",
+      "ubot-feat-200-vllm-1",
+      "ubot-feat-200-vllm-embedding-1"
+    ],
+    "testDataRetained": true
+  }
+}

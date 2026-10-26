@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "runId": "load-pilot-20261025",
+  "baseUrl": "https://u-bot.cloud/api",
+  "expected": {
+    "forbidden": 2,
+    "threshold": 2,
+    "cache": 3,
+    "llm": 3
+  },
+  "actual": {
+    "forbidden": 2,
+    "threshold": 0,
+    "cache": 0,
+    "llm": 6,
+    "processing_error": 2
+  },
+  "errors": {
+    "FW-003": 2,
+    "CHAT-022": 2
+  },
+  "httpStatuses": {
+    "202": 8,
+    "400": 2
+  },
+  "transportErrors": {},
+  "matrix": {
+    "cache": {
+      "llm": 3
+    },
+    "llm": {
+      "llm": 3
+    },
+    "forbidden": {
+      "forbidden": 2
+    },
+    "threshold": {
+      "processing_error": 2
+    }
+  },
+  "total": 10,
+  "recorded": 10,
+  "mismatches": 5,
+  "duplicateCases": [],
+  "invalidEvents": [],
+  "startSpreadMs": 1,
+  "maxStartSpreadMs": 1000,
+  "submissionP50Ms": 665,
+  "submissionP95Ms": 669,
+  "passed": false,
+  "timingNote": "observedCompletionMs includes collector start delay and rate-limited polling; it is not server processing time.",
+  "rows": [
+    {
+      "caseId": 1,
+      "expected": "cache",
+      "actual": "llm",
+      "matched": false,
+      "httpStatus": 202,
+      "jobId": 192,
+      "errorCode": null,
+      "submissionMs": 665,
+      "observedCompletionMs": 10750
+    },
+    {
+      "caseId": 2,
+      "expected": "llm",
+      "actual": "llm",
+      "matched": true,
+      "httpStatus": 202,
+      "jobId": 187,
+      "errorCode": null,
+      "submissionMs": 669,
+      "observedCompletionMs": 9332
+    },
+    {
+      "caseId": 3,
+      "expected": "forbidden",
+      "actual": "forbidden",
+      "matched": true,
+      "httpStatus": 400,
+      "jobId": null,
+      "errorCode": null,
+      "submissionMs": 399,
+      "observedCompletionMs": null
+    },
+    {
+      "caseId": 4,
+      "expected": "forbidden",
+      "actual": "forbidden",
+      "matched": true,
+      "httpStatus": 400,
+      "jobId": null,
+      "errorCode": null,
+      "submissionMs": 398,
+      "observedCompletionMs": null
+    },
+    {
+      "caseId": 5,
+      "expected": "llm",
+      "actual": "llm",
+      "matched": true,
+      "httpStatus": 202,
+      "jobId": 186,
+      "errorCode": null,
+      "submissionMs": 667,
+      "observedCompletionMs": 10985
+    },
+    {
+      "caseId": 6,
+      "expected": "llm",
+      "actual": "llm",
+      "matched": true,
+      "httpStatus": 202,
+      "jobId": 189,
+      "errorCode": null,
+      "submissionMs": 667,
+      "observedCompletionMs": 11205
+    },
+    {
+      "caseId": 7,
+      "expected": "threshold",
+      "actual": "processing_error",
+      "matched": false,
+      "httpStatus": 202,
+      "jobId": 188,
+      "errorCode": "CHAT-022",
+      "submissionMs": 665,
+      "observedCompletionMs": 8766
+    },
+    {
+      "caseId": 8,
+      "expected": "cache",
+      "actual": "llm",
+      "matched": false,
+      "httpStatus": 202,
+      "jobId": 185,
+      "errorCode": null,
+      "submissionMs": 665,
+      "observedCompletionMs": 11067
+    },
+    {
+      "caseId": 9,
+      "expected": "cache",
+      "actual": "llm",
+      "matched": false,
+      "httpStatus": 202,
+      "jobId": 190,
+      "errorCode": null,
+      "submissionMs": 665,
+      "observedCompletionMs": 10902
+    },
+    {
+      "caseId": 10,
+      "expected": "threshold",
+      "actual": "processing_error",
+      "matched": false,
+      "httpStatus": 202,
+      "jobId": 191,
+      "errorCode": "CHAT-022",
+      "submissionMs": 668,
+      "observedCompletionMs": 9089
+    }
+  ],
+  "k6ExitCode": 0,
+  "warmConnections": false,
+  "invalidEventLines": 0,
+  "polling": {
+    "polls": 13,
+    "refreshes": 0,
+    "errors": {}
+  },
+  "serverTimings": {
+    "samples": 8,
+    "queueP95Ms": 999.552001953125,
+    "executionP95Ms": 7903.130859375,
+    "totalP95Ms": 8892.268798828125
+  }
+}

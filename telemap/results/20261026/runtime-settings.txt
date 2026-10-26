@@ -1,0 +1,8 @@
+{"container": "ubot-api-backend-1", "overrides": {}}
+{"container": "ubot-api-ai-worker-1", "overrides": {}}
+telemap:
+  window-minutes: ${TELEMAP_WINDOW_MINUTES:10}
+  count-threshold: ${TELEMAP_COUNT_THRESHOLD:10}
+  cluster-threshold: ${TELEMAP_CLUSTER_THRESHOLD:0.7}
+  cluster-minimum-age-minutes: ${TELEMAP_CLUSTER_MINIMUM_AGE_MINUTES:1440}
+  max-questions-for-subject: ${TELEMAP_MAX_QUESTIONS_FOR_SUBJECT:20}

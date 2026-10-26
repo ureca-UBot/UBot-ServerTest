@@ -1,0 +1,1190 @@
+[
+  {
+    "source": "UBot-BE/tools/perf/benchmarks.md",
+    "file": "tools/perf/benchmarks.md",
+    "sourceSha256": "2234f8107f7593b9545100d7ce45ce13b59c1f19129ebc2719020d148ea78e2b",
+    "publishedSha256": "231ddc5e09dad588042a201e4dff84e6aba38c51ea6a3ff33744748c6504343c"
+  },
+  {
+    "source": "UBot-BE/tools/perf/README.md",
+    "file": "tools/perf/README.md",
+    "sourceSha256": "b56168d59d8225bdf22604ae6ac46a04ec6fcb0ab7a8fb8f7fd96d28c6538861",
+    "publishedSha256": "afef1a975e8911b2fc38bf825753ab9e77722ecd850e6002d139204e7fd85623"
+  },
+  {
+    "source": "UBot-BE/tools/perf/chat-burst/burst.js",
+    "file": "tools/perf/chat-burst/burst.js",
+    "sourceSha256": "e5680411c75fc1bd6b078f3c2fa4b0c0ecc3093c8b71be81d599c168c6c2b59e",
+    "publishedSha256": "e5680411c75fc1bd6b078f3c2fa4b0c0ecc3093c8b71be81d599c168c6c2b59e"
+  },
+  {
+    "source": "UBot-BE/tools/perf/chat-burst/cli.mjs",
+    "file": "tools/perf/chat-burst/cli.mjs",
+    "sourceSha256": "c193370b8ffe5e488d31ba393311968e3aae036d4dd943239776594746beb606",
+    "publishedSha256": "c193370b8ffe5e488d31ba393311968e3aae036d4dd943239776594746beb606"
+  },
+  {
+    "source": "UBot-BE/tools/perf/chat-burst/model.mjs",
+    "file": "tools/perf/chat-burst/model.mjs",
+    "sourceSha256": "0812abeb97ae90a89068ac9efbb718c6fd990d1994b5e851df3bfa2c4894bc3e",
+    "publishedSha256": "0812abeb97ae90a89068ac9efbb718c6fd990d1994b5e851df3bfa2c4894bc3e"
+  },
+  {
+    "source": "UBot-BE/tools/perf/chat-burst/questions.example.json",
+    "file": "tools/perf/chat-burst/questions.example.json",
+    "sourceSha256": "b8bcd8ae64e914269c3fc39eb03067b15de8776b8d64ce3f26c65f0783aa3ef3",
+    "publishedSha256": "b8bcd8ae64e914269c3fc39eb03067b15de8776b8d64ce3f26c65f0783aa3ef3"
+  },
+  {
+    "source": "UBot-BE/tools/perf/chat-burst/README.md",
+    "file": "tools/perf/chat-burst/README.md",
+    "sourceSha256": "8d6addce2ee137fd7a208103d8853d96c75332cf5744284ce68554b1b0f17d58",
+    "publishedSha256": "b7b2b725825370c287074c804c513bfe6103662694ed383abe0aa9ba4a1f9987"
+  },
+  {
+    "source": "UBot-BE/tools/perf/fault-suite/collect.mjs",
+    "file": "tools/perf/fault-suite/collect.mjs",
+    "sourceSha256": "76ae175e044242802a074b5683e6244903a7af1df9513463dfc7445a218206ee",
+    "publishedSha256": "76ae175e044242802a074b5683e6244903a7af1df9513463dfc7445a218206ee"
+  },
+  {
+    "source": "UBot-BE/tools/perf/fault-suite/README.md",
+    "file": "tools/perf/fault-suite/README.md",
+    "sourceSha256": "025d104505dd60e44ee38bc2971a3f0f92281e24ccf6405ef81b2d57aaa4013d",
+    "publishedSha256": "4a4048b1f3b264751d25ba400d87c635064a6a62f0c753e3c13e9fd937d249ec"
+  },
+  {
+    "source": "UBot-BE/tools/perf/lib/harness.mjs",
+    "file": "tools/perf/lib/harness.mjs",
+    "sourceSha256": "99fa0eefd8a53f82ad2cddc14bb9ba8d209e39db421845e39673da3a64b0c81f",
+    "publishedSha256": "27c27dc8b58b5cd2f8cbeb5cdc9559f3b1a32ba67789db224bc849d4c579ff4e"
+  },
+  {
+    "source": "UBot-BE/tools/perf/postgres-crash/compare-query-fix.mjs",
+    "file": "tools/perf/postgres-crash/compare-query-fix.mjs",
+    "sourceSha256": "658a2fd14cb8e181bed5dbb3239e58d1ee7f186dc694431ebee0b5de3ef37d20",
+    "publishedSha256": "658a2fd14cb8e181bed5dbb3239e58d1ee7f186dc694431ebee0b5de3ef37d20"
+  },
+  {
+    "source": "UBot-BE/tools/perf/postgres-crash/job-query-probe.mjs",
+    "file": "tools/perf/postgres-crash/job-query-probe.mjs",
+    "sourceSha256": "61ce46d8befa5812d6063e112cf60fe3c1f31d2a0d2d403f50a5d929746a1213",
+    "publishedSha256": "61ce46d8befa5812d6063e112cf60fe3c1f31d2a0d2d403f50a5d929746a1213"
+  },
+  {
+    "source": "UBot-BE/tools/perf/postgres-crash/prepare-audit.mjs",
+    "file": "tools/perf/postgres-crash/prepare-audit.mjs",
+    "sourceSha256": "831e2ca7eb0e3a731bab2a6e35941e559c818f04ccea3b8dbcffd9d0d6d69f50",
+    "publishedSha256": "831e2ca7eb0e3a731bab2a6e35941e559c818f04ccea3b8dbcffd9d0d6d69f50"
+  },
+  {
+    "source": "UBot-BE/tools/perf/postgres-crash/README.md",
+    "file": "tools/perf/postgres-crash/README.md",
+    "sourceSha256": "13dd7ab038a2ff1d957dbe58155828db1fa236716dc63ff76a1f88bc0bcc3fb4",
+    "publishedSha256": "512f54554adbb3cdb9a1e7939c81fbadbb1d82806222fa3cf4d94e1da8a156de"
+  },
+  {
+    "source": "UBot-BE/tools/perf/postgres-crash/run.mjs",
+    "file": "tools/perf/postgres-crash/run.mjs",
+    "sourceSha256": "10fcd18e8b0f3dc3e5095bad323b2d9291795a09250c7dc795571d3797e1d1c6",
+    "publishedSha256": "9f20a3da5e77f12f094b1203367220249f66fd1fa1492c83acce9aefced878e3"
+  },
+  {
+    "source": "UBot-BE/tools/perf/redis-crash/analysis.mjs",
+    "file": "tools/perf/redis-crash/analysis.mjs",
+    "sourceSha256": "e8391e987d542b15734140fe1a8772c2348eda4ef9936eede654e3d02cc8df7b",
+    "publishedSha256": "e8391e987d542b15734140fe1a8772c2348eda4ef9936eede654e3d02cc8df7b"
+  },
+  {
+    "source": "UBot-BE/tools/perf/redis-crash/analysis.test.mjs",
+    "file": "tools/perf/redis-crash/analysis.test.mjs",
+    "sourceSha256": "ecbcb6682895755e5d826161dd8fb01c9ea78b4c579d662cbb6d41f1a9bd3027",
+    "publishedSha256": "ecbcb6682895755e5d826161dd8fb01c9ea78b4c579d662cbb6d41f1a9bd3027"
+  },
+  {
+    "source": "UBot-BE/tools/perf/redis-crash/README.md",
+    "file": "tools/perf/redis-crash/README.md",
+    "sourceSha256": "6f3ca5c69a1008e14e876ca65e2c3717bf5ee780cfba1e8ecd52322732d2a07c",
+    "publishedSha256": "064b6259d7ebb567139fd31e7d8e93f408e87f44ac6c8d4f34c32fcfbab33eec"
+  },
+  {
+    "source": "UBot-BE/tools/perf/redis-crash/run.mjs",
+    "file": "tools/perf/redis-crash/run.mjs",
+    "sourceSha256": "cfb2bbc0c94255e9f4c489adf20d57049e263251fff0860bf3e1109ce32a547f",
+    "publishedSha256": "54f050388beb883680f3141578564e70be66d6bf932495009e08cfe86e729588"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/archive.mjs",
+    "file": "tools/perf/vllm-crash/archive.mjs",
+    "sourceSha256": "27f5d92d9cf2e0697d6113fba8e5a848d542c70141439d8a8f717d9e07b3c709",
+    "publishedSha256": "27f5d92d9cf2e0697d6113fba8e5a848d542c70141439d8a8f717d9e07b3c709"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/compare-retry.mjs",
+    "file": "tools/perf/vllm-crash/compare-retry.mjs",
+    "sourceSha256": "aade1b6b423d321d66622d958435ab84abf1fb5337436e81fdba7d74614c35fd",
+    "publishedSha256": "aade1b6b423d321d66622d958435ab84abf1fb5337436e81fdba7d74614c35fd"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/model.mjs",
+    "file": "tools/perf/vllm-crash/model.mjs",
+    "sourceSha256": "d93b073e76e4602a06948ef6c4cfadcabef5d8db209710e8bcd0a8873a322441",
+    "publishedSha256": "d93b073e76e4602a06948ef6c4cfadcabef5d8db209710e8bcd0a8873a322441"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/model.test.mjs",
+    "file": "tools/perf/vllm-crash/model.test.mjs",
+    "sourceSha256": "3d9a402d5ddaffb48b1cb885043a87d2e989d556d3138ba2f47867c1839f9b37",
+    "publishedSha256": "3d9a402d5ddaffb48b1cb885043a87d2e989d556d3138ba2f47867c1839f9b37"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/prepare-audit.mjs",
+    "file": "tools/perf/vllm-crash/prepare-audit.mjs",
+    "sourceSha256": "511c41f086f3eeb9838c60c19bbe756c6472a18e3e31b60c26916937e01b8ab9",
+    "publishedSha256": "511c41f086f3eeb9838c60c19bbe756c6472a18e3e31b60c26916937e01b8ab9"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/probe.mjs",
+    "file": "tools/perf/vllm-crash/probe.mjs",
+    "sourceSha256": "3000558e0dc56aed5c4e8d7e5387fe80982c12966946d1f1f97bf9fee5ec873c",
+    "publishedSha256": "3000558e0dc56aed5c4e8d7e5387fe80982c12966946d1f1f97bf9fee5ec873c"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/README.md",
+    "file": "tools/perf/vllm-crash/README.md",
+    "sourceSha256": "41c02c50882fe6a12014919b5f201ed6a413de6473803829113606cee486a759",
+    "publishedSha256": "3032a89bf054ccb9fcd10aa455852d641cdb8c78944c0185f64cf344d2332c90"
+  },
+  {
+    "source": "UBot-BE/tools/perf/vllm-crash/run.mjs",
+    "file": "tools/perf/vllm-crash/run.mjs",
+    "sourceSha256": "3a8f915dbe15a0ef52dd2be9ab2f24e6c529bb60a06f37ffdf9ab254a0fc7b1a",
+    "publishedSha256": "3a8f915dbe15a0ef52dd2be9ab2f24e6c529bb60a06f37ffdf9ab254a0fc7b1a"
+  },
+  {
+    "source": "UBot-BE/tools/perf/worker-crash/README.md",
+    "file": "tools/perf/worker-crash/README.md",
+    "sourceSha256": "456a7d358e5f59753481e19ae29f184346eeda01aa770bd5f44824f83d47ae36",
+    "publishedSha256": "79575bbe8c760af0e03b359e7ece027f838eb472b7546445753696782ed0b020"
+  },
+  {
+    "source": "UBot-BE/tools/perf/worker-crash/run.mjs",
+    "file": "tools/perf/worker-crash/run.mjs",
+    "sourceSha256": "a0f9b1eba59cc408d18dae1725d8a9ac31e6afd2382c9731c721dbf8b9b4a74c",
+    "publishedSha256": "8f6e772f6c01aa12010ac928249ae4c0d0cb00891938a3aee39d606775a927d0"
+  },
+  {
+    "source": "UBot-BE/tools/perf/chat-burst/tests/model.test.mjs",
+    "file": "tools/perf/chat-burst/tests/model.test.mjs",
+    "sourceSha256": "820cdbd7255ea24fdd8a269282529f4907ac4c0c7f4a41000abead93b0eb167b",
+    "publishedSha256": "820cdbd7255ea24fdd8a269282529f4907ac4c0c7f4a41000abead93b0eb167b"
+  },
+  {
+    "source": "UBot-BE/tools/perf/chat-burst/tests/pipeline.test.mjs",
+    "file": "tools/perf/chat-burst/tests/pipeline.test.mjs",
+    "sourceSha256": "0df593466613f29fd670359dde01a2684926bafd22254a039ebc5bf499d45674",
+    "publishedSha256": "0df593466613f29fd670359dde01a2684926bafd22254a039ebc5bf499d45674"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/verification-20261022.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/verification-20261022.json",
+    "sourceSha256": "eb47dbdb228d3ac3af0526a473bbe8548f5c6e296372732d9173c18feebb0d60",
+    "publishedSha256": "eb47dbdb228d3ac3af0526a473bbe8548f5c6e296372732d9173c18feebb0d60"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-local-real.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-local-real.json",
+    "sourceSha256": "666b370bea867cd15f5132a744211c5ffa41fb7ec0ed6c4b5aca6a333ef1b894",
+    "publishedSha256": "666b370bea867cd15f5132a744211c5ffa41fb7ec0ed6c4b5aca6a333ef1b894"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-local-real.md",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-local-real.md",
+    "sourceSha256": "1c3ee48a714bfacc2249096fb7a195cdc06cecc01914fa339c1396b33f2bb21a",
+    "publishedSha256": "1c3ee48a714bfacc2249096fb7a195cdc06cecc01914fa339c1396b33f2bb21a"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-local-worker16.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-local-worker16.json",
+    "sourceSha256": "b515716298657546b9440d0a4d358ac06c71d8a3205825e8ae93cf8f5a4541f9",
+    "publishedSha256": "b515716298657546b9440d0a4d358ac06c71d8a3205825e8ae93cf8f5a4541f9"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-local-worker32.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-local-worker32.json",
+    "sourceSha256": "03f044e6037873895d1167a7be98c9a45137dc6e8785b1e95608b8e86ab68a5a",
+    "publishedSha256": "03f044e6037873895d1167a7be98c9a45137dc6e8785b1e95608b8e86ab68a5a"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-worker-concurrency-4-16-32.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-worker-concurrency-4-16-32.json",
+    "sourceSha256": "2e2b60d8eae6dd634b683ebddb208b5411c948a8639692621a73721c3061429c",
+    "publishedSha256": "2e2b60d8eae6dd634b683ebddb208b5411c948a8639692621a73721c3061429c"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-worker-concurrency-4-16-32.md",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-worker-concurrency-4-16-32.md",
+    "sourceSha256": "a352fcdcbf05c05adf9c31173a91bee9bb14df51915556026243d79d0affed28",
+    "publishedSha256": "a352fcdcbf05c05adf9c31173a91bee9bb14df51915556026243d79d0affed28"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-worker-concurrency-comparison.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-worker-concurrency-comparison.json",
+    "sourceSha256": "21743337ec591fdff0f0907f59dd2602dbb88e26b6c7ae8832774823c22171c0",
+    "publishedSha256": "21743337ec591fdff0f0907f59dd2602dbb88e26b6c7ae8832774823c22171c0"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261022-worker-concurrency-comparison.md",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261022-worker-concurrency-comparison.md",
+    "sourceSha256": "c78adeb4031ceffbe6e083da6792769529262d80cd09c4ef1fbe2edf27a76724",
+    "publishedSha256": "c78adeb4031ceffbe6e083da6792769529262d80cd09c4ef1fbe2edf27a76724"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-cloud-pilot.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-cloud-pilot.json",
+    "sourceSha256": "bd5f540b4b2b844af14bea1f8bba637b1b51afe24c4e565610917c2534e8b6db",
+    "publishedSha256": "bd5f540b4b2b844af14bea1f8bba637b1b51afe24c4e565610917c2534e8b6db"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-cloud-pilot.md",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-cloud-pilot.md",
+    "sourceSha256": "4f430104c3c2cf4e334eb6e6c6820918c8f6a8faba13f82f653cb4878ed5c6d7",
+    "publishedSha256": "4f430104c3c2cf4e334eb6e6c6820918c8f6a8faba13f82f653cb4878ed5c6d7"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-local-worker128.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-local-worker128.json",
+    "sourceSha256": "e29b982cedc21390014386cb4e033f4fec7e18e19aa559c0e3fc72ab7b5380f6",
+    "publishedSha256": "e29b982cedc21390014386cb4e033f4fec7e18e19aa559c0e3fc72ab7b5380f6"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-local-worker64.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-local-worker64.json",
+    "sourceSha256": "cdd81ac8dd5c61e51f22052f5f6f94f2c59bf74ef597a9f2b98170d8e24eba20",
+    "publishedSha256": "cdd81ac8dd5c61e51f22052f5f6f94f2c59bf74ef597a9f2b98170d8e24eba20"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-worker-concurrency-4-16-32-64-128.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-worker-concurrency-4-16-32-64-128.json",
+    "sourceSha256": "ae7bf1ed8613227d1259437ce5fae530d6f4e618b649f03e2271ef04dff94f07",
+    "publishedSha256": "ae7bf1ed8613227d1259437ce5fae530d6f4e618b649f03e2271ef04dff94f07"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-worker-concurrency-4-16-32-64-128.md",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-worker-concurrency-4-16-32-64-128.md",
+    "sourceSha256": "d1d489c81b96e01fc012270fa2bcbeed410e13df21c98b2227a8aa8ca3b63d39",
+    "publishedSha256": "d1d489c81b96e01fc012270fa2bcbeed410e13df21c98b2227a8aa8ca3b63d39"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-worker-concurrency-4-16-32-64.json",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-worker-concurrency-4-16-32-64.json",
+    "sourceSha256": "cd2d9b2afaf964dd82df8d353b3ece320ab7baf735c52334eaa32a51325fa840",
+    "publishedSha256": "cd2d9b2afaf964dd82df8d353b3ece320ab7baf735c52334eaa32a51325fa840"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/chat-burst/results/20261023-worker-concurrency-4-16-32-64.md",
+    "file": "chat-e2e/results/20261023-local/chat-burst/results/20261023-worker-concurrency-4-16-32-64.md",
+    "sourceSha256": "3049d45a213957f70a53b8eb5e5c389a48c561aa4fa5ecb53846b7be47b16d4b",
+    "publishedSha256": "3049d45a213957f70a53b8eb5e5c389a48c561aa4fa5ecb53846b7be47b16d4b"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/fault-suite/results/20261023-latest-code.json",
+    "file": "fault-recovery/results/20261023-local/fault-suite/results/20261023-latest-code.json",
+    "sourceSha256": "ac2d4bf22b0cdf3930f4172759aa1a825b6c354ab622808c6667ef352b40eb8c",
+    "publishedSha256": "ac2d4bf22b0cdf3930f4172759aa1a825b6c354ab622808c6667ef352b40eb8c"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/fault-suite/results/20261023-latest-code.md",
+    "file": "fault-recovery/results/20261023-local/fault-suite/results/20261023-latest-code.md",
+    "sourceSha256": "7c9e25ad4d45d0a0d4ac872619846dd0d17af0d0f9b2f9448a946ea30e6f93d6",
+    "publishedSha256": "7c9e25ad4d45d0a0d4ac872619846dd0d17af0d0f9b2f9448a946ea30e6f93d6"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/postgres-crash/results/20261023-local-postgres-crash.json",
+    "file": "fault-recovery/results/20261023-local/postgres-crash/results/20261023-local-postgres-crash.json",
+    "sourceSha256": "83e69b1ff1a89e6231dfc09519b0d7892365cfb5e63f3049e312d6b0006efc0e",
+    "publishedSha256": "83e69b1ff1a89e6231dfc09519b0d7892365cfb5e63f3049e312d6b0006efc0e"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/postgres-crash/results/20261023-local-postgres-crash.md",
+    "file": "fault-recovery/results/20261023-local/postgres-crash/results/20261023-local-postgres-crash.md",
+    "sourceSha256": "ce98da9d7b0b104cbc284501ec9256c1310a399f905e26a834671503c8f1e38e",
+    "publishedSha256": "ce98da9d7b0b104cbc284501ec9256c1310a399f905e26a834671503c8f1e38e"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/postgres-crash/results/20261023-postgres-query-fix-comparison.json",
+    "file": "fault-recovery/results/20261023-local/postgres-crash/results/20261023-postgres-query-fix-comparison.json",
+    "sourceSha256": "c7cf8d8e774f7e1f41f18246aaae0368a9ee9b3189acbbbd350edf27e5777946",
+    "publishedSha256": "c7cf8d8e774f7e1f41f18246aaae0368a9ee9b3189acbbbd350edf27e5777946"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/postgres-crash/results/20261023-postgres-query-fix-comparison.md",
+    "file": "fault-recovery/results/20261023-local/postgres-crash/results/20261023-postgres-query-fix-comparison.md",
+    "sourceSha256": "657c0f5175dc562ef99aa02a01d57d5f5823a9c28b903106e42d8b85e7db2b7f",
+    "publishedSha256": "657c0f5175dc562ef99aa02a01d57d5f5823a9c28b903106e42d8b85e7db2b7f"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/redis-crash/results/20261023-local-redis-crash.json",
+    "file": "fault-recovery/results/20261023-local/redis-crash/results/20261023-local-redis-crash.json",
+    "sourceSha256": "9f25a4a8c038c1b07bbc4e8a9f310c320ba1ca5ece3835fea59cb82d2f0e77e0",
+    "publishedSha256": "9f25a4a8c038c1b07bbc4e8a9f310c320ba1ca5ece3835fea59cb82d2f0e77e0"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/redis-crash/results/20261023-local-redis-crash.md",
+    "file": "fault-recovery/results/20261023-local/redis-crash/results/20261023-local-redis-crash.md",
+    "sourceSha256": "bffdbe9a203505adbe32a1cd0f0b7767caf14441b1591688610f700ebba231ad",
+    "publishedSha256": "bffdbe9a203505adbe32a1cd0f0b7767caf14441b1591688610f700ebba231ad"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/redis-crash/results/20261023-redis-query-fix-comparison.json",
+    "file": "fault-recovery/results/20261023-local/redis-crash/results/20261023-redis-query-fix-comparison.json",
+    "sourceSha256": "7297b03a5bde76118468f6973fad14cf5f1280357f6d60ee895e36358df32bf4",
+    "publishedSha256": "7297b03a5bde76118468f6973fad14cf5f1280357f6d60ee895e36358df32bf4"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/redis-crash/results/20261023-redis-query-fix-comparison.md",
+    "file": "fault-recovery/results/20261023-local/redis-crash/results/20261023-redis-query-fix-comparison.md",
+    "sourceSha256": "7f9db95047d6cac6881ae877d794483942260449f68e8ff78c91b1a84cb55a21",
+    "publishedSha256": "7f9db95047d6cac6881ae877d794483942260449f68e8ff78c91b1a84cb55a21"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/vllm-crash/results/20261023-local-vllm-crash.json",
+    "file": "fault-recovery/results/20261023-local/vllm-crash/results/20261023-local-vllm-crash.json",
+    "sourceSha256": "0b740139f1a3fcc658cd4736a0a4f9af36614d1cb07df16ae03a8686627691c3",
+    "publishedSha256": "0b740139f1a3fcc658cd4736a0a4f9af36614d1cb07df16ae03a8686627691c3"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/vllm-crash/results/20261023-local-vllm-crash.md",
+    "file": "fault-recovery/results/20261023-local/vllm-crash/results/20261023-local-vllm-crash.md",
+    "sourceSha256": "d2ef6699e798aed94be8a2f4bc0bc1147a36041a0c4ec3aba4335af888caeb6f",
+    "publishedSha256": "d2ef6699e798aed94be8a2f4bc0bc1147a36041a0c4ec3aba4335af888caeb6f"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/vllm-crash/results/20261023-vllm-retry-comparison.json",
+    "file": "fault-recovery/results/20261023-local/vllm-crash/results/20261023-vllm-retry-comparison.json",
+    "sourceSha256": "de7b31601da8bfcfe50868b69530c1baa4c04e16f52709fda0a070bffba1e94e",
+    "publishedSha256": "de7b31601da8bfcfe50868b69530c1baa4c04e16f52709fda0a070bffba1e94e"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/vllm-crash/results/20261023-vllm-retry-comparison.md",
+    "file": "fault-recovery/results/20261023-local/vllm-crash/results/20261023-vllm-retry-comparison.md",
+    "sourceSha256": "d5122859aefad4da27767d4411155a859429abdd8c68afaed3f9c6544ed79dde",
+    "publishedSha256": "d5122859aefad4da27767d4411155a859429abdd8c68afaed3f9c6544ed79dde"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/worker-crash/results/20261023-local-worker-crash.json",
+    "file": "fault-recovery/results/20261023-local/worker-crash/results/20261023-local-worker-crash.json",
+    "sourceSha256": "d49fbc30bc180507fe4910d747fc733879f7a93a914917a816c9ea855c94c57f",
+    "publishedSha256": "d49fbc30bc180507fe4910d747fc733879f7a93a914917a816c9ea855c94c57f"
+  },
+  {
+    "source": "UBot_테스트_결과_보관/원문/tools/perf/worker-crash/results/20261023-local-worker-crash.md",
+    "file": "fault-recovery/results/20261023-local/worker-crash/results/20261023-local-worker-crash.md",
+    "sourceSha256": "587662580f7e9b27c490d45fc1fa85a6278554dd8dbe8530d837f5ceb3e438f9",
+    "publishedSha256": "587662580f7e9b27c490d45fc1fa85a6278554dd8dbe8530d837f5ceb3e438f9"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/tool/burst.js",
+    "file": "chat-e2e/tools/k6/burst.js",
+    "sourceSha256": "58b83077e5e9d61a5f0bf59bc4ba07958efcfd3cfa682d8a9a6999498e5b1449",
+    "publishedSha256": "58b83077e5e9d61a5f0bf59bc4ba07958efcfd3cfa682d8a9a6999498e5b1449"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/tool/cli.mjs",
+    "file": "chat-e2e/tools/k6/cli.mjs",
+    "sourceSha256": "252ef90659a8981e4792af41ebb6d6529d3c0a8ede44acfcf3f1b09ab82503b5",
+    "publishedSha256": "252ef90659a8981e4792af41ebb6d6529d3c0a8ede44acfcf3f1b09ab82503b5"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/tool/model.mjs",
+    "file": "chat-e2e/tools/k6/model.mjs",
+    "sourceSha256": "5256f5d8ab52f1a3cc852cc62848314a0e497dee949eeb60c7c3c151f96ab527",
+    "publishedSha256": "5256f5d8ab52f1a3cc852cc62848314a0e497dee949eeb60c7c3c151f96ab527"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/analyze_run.py",
+    "file": "chat-e2e/tools/analyze_run.py",
+    "sourceSha256": "d62ebc683e6914b18a65a1d346052d70d469a3b509132a975d10cbfc021032ce",
+    "publishedSha256": "d62ebc683e6914b18a65a1d346052d70d469a3b509132a975d10cbfc021032ce"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/build_dataset.py",
+    "file": "chat-e2e/tools/build_dataset.py",
+    "sourceSha256": "70176867b5920dda29afe216a0a3fddfdd507f3e84b8e5c53e6a9ae216768549",
+    "publishedSha256": "0e70df4df45559e52996a578effb6aecaf26d9990760f7e8ff8951c037975a86"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/build_db_audit.py",
+    "file": "chat-e2e/tools/build_db_audit.py",
+    "sourceSha256": "a899bc924a76f76bfcb7f765c4752cc4f8f37e5c69d806bacf88b0ae51b85283",
+    "publishedSha256": "a899bc924a76f76bfcb7f765c4752cc4f8f37e5c69d806bacf88b0ae51b85283"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/final-db-summary.sh",
+    "file": "chat-e2e/tools/final-db-summary.sh",
+    "sourceSha256": "a2e70d2092bfdde8fbcbfc32d974d834b5abfec4cf4b77e0c0e9bca5bf321a04",
+    "publishedSha256": "a2e70d2092bfdde8fbcbfc32d974d834b5abfec4cf4b77e0c0e9bca5bf321a04"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/manifest.json",
+    "file": "chat-e2e/datasets/20261026/manifest.json",
+    "sourceSha256": "b9caecc00dad244f37df971f126cbf1cce18122181b67bb93c54d38d95eb1313",
+    "publishedSha256": "3933e74c43229f8dbf183254266bc8b77991d09cbdb24907c2139ecff4965593"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/preflight.json",
+    "file": "chat-e2e/datasets/20261026/preflight.json",
+    "sourceSha256": "f62d8c87d23bdc73387b710e4a64d5a5559a3629fbebce2f61f8ba1563344ed1",
+    "publishedSha256": "eb02d1f1b4436cb10bfa65aac18fb53476f7980a8655281cb5106136d78499ef"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/run-1-questions.json",
+    "file": "chat-e2e/datasets/20261026/run-1-questions.json",
+    "sourceSha256": "33dec9a6683aed5c9a188bc82bf9c58e00666a378d5ff9f6eb90ea102f162e7e",
+    "publishedSha256": "42fc921b8650e75abef56d63a37c48bb9e2eabe48676489c1d4b2b0ee34c44d1"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/run-2-questions.json",
+    "file": "chat-e2e/datasets/20261026/run-2-questions.json",
+    "sourceSha256": "a034c3cdb5b3584cdbea188ea57258417a7381123635eebbc1fa9cdaff866d03",
+    "publishedSha256": "ce071b6252239672017e016c599d575c2b40fc4a3a3e35b4b64c25588e291420"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/pilot-100-questions.json",
+    "file": "chat-e2e/datasets/20261026/pilot-100-questions.json",
+    "sourceSha256": "cf699f21c499840ffd4bfe1b000e05361657b4769434aba2a4dd39f84e09473f",
+    "publishedSha256": "3538c25d2e982d96f50535ae1faf00a4e099dfbc303b3a905283e358cbccf9f1"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-pilot-20261026/plan.json",
+    "file": "chat-e2e/results/20261026-aws/retest-pilot-20261026/plan.json",
+    "sourceSha256": "180f2ccd072e18a43023f777baf7d1ec53ae3505ba4dbda60de1fa34ca29e362",
+    "publishedSha256": "180f2ccd072e18a43023f777baf7d1ec53ae3505ba4dbda60de1fa34ca29e362"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-pilot-20261026/jobs.json",
+    "file": "chat-e2e/results/20261026-aws/retest-pilot-20261026/jobs.json",
+    "sourceSha256": "0750e78e0572f9c79084858e6929b465258eff8057b8942681228e3ab5ef9665",
+    "publishedSha256": "0750e78e0572f9c79084858e6929b465258eff8057b8942681228e3ab5ef9665"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-pilot-20261026/submissions.ndjson",
+    "file": "chat-e2e/results/20261026-aws/retest-pilot-20261026/submissions.ndjson",
+    "sourceSha256": "9d852d3acb59b5b04595f3ab1ec46b23fa836b68cbfb35473d4330d80cd28699",
+    "publishedSha256": "9d852d3acb59b5b04595f3ab1ec46b23fa836b68cbfb35473d4330d80cd28699"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-pilot-20261026/run.json",
+    "file": "chat-e2e/results/20261026-aws/retest-pilot-20261026/run.json",
+    "sourceSha256": "ecdad8f398f1bf3cb906ea45f4e48e6c789ff6e5a8dbf49015a404a680bf9429",
+    "publishedSha256": "ecdad8f398f1bf3cb906ea45f4e48e6c789ff6e5a8dbf49015a404a680bf9429"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-pilot-20261026/k6-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-pilot-20261026/k6-summary.json",
+    "sourceSha256": "ede45da59bde355827594bf642d2b00293b70b34e9058cf17313f1ed63006d2c",
+    "publishedSha256": "ede45da59bde355827594bf642d2b00293b70b34e9058cf17313f1ed63006d2c"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-pilot-20261026/analysis-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-pilot-20261026/analysis-summary.json",
+    "sourceSha256": "54d18c4ac9a7632e95914a4147c6155ea3be035f13193cdb7659e6c01673547e",
+    "publishedSha256": "24e2b1de6bcddda6a868232e8bbf963fb6a61b6dfb4e49763b5e17f3162db2c3"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-pilot-20261026/analysis-rows.json",
+    "file": "chat-e2e/results/20261026-aws/retest-pilot-20261026/analysis-rows.json",
+    "sourceSha256": "0d84943f212c667ae9dd51fee3cd53c4fd4103f7de7fe1a3b33752d74d01ffa2",
+    "publishedSha256": "6114d8a5144be67fe245bc9e63cb71a4bc338a46a6725eb9da8e78cd0f38bb61"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a-20261026/plan.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a-20261026/plan.json",
+    "sourceSha256": "2feff67a09a55cac5603b2e247de4c810692dfbd74bc3076ccfbe8327b947549",
+    "publishedSha256": "2feff67a09a55cac5603b2e247de4c810692dfbd74bc3076ccfbe8327b947549"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a-20261026/jobs.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a-20261026/jobs.json",
+    "sourceSha256": "112176ce6aeb2b1830bd723051481b38228e1d2594527b4a21db9769237869d3",
+    "publishedSha256": "112176ce6aeb2b1830bd723051481b38228e1d2594527b4a21db9769237869d3"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a-20261026/submissions.ndjson",
+    "file": "chat-e2e/results/20261026-aws/retest-a-20261026/submissions.ndjson",
+    "sourceSha256": "2894994f11680b8820eb39bc0dd948a423c9414390065336bc5fa595b8fe2f80",
+    "publishedSha256": "2894994f11680b8820eb39bc0dd948a423c9414390065336bc5fa595b8fe2f80"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a-20261026/run.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a-20261026/run.json",
+    "sourceSha256": "c653dc24b2351fecfd062e248d8569dd191d25bb7ebca6c2ec7a2ea153fde6c3",
+    "publishedSha256": "c653dc24b2351fecfd062e248d8569dd191d25bb7ebca6c2ec7a2ea153fde6c3"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a-20261026/k6-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a-20261026/k6-summary.json",
+    "sourceSha256": "8f460f1c5003bc663759b977e3c59b21f002914859786b5b143a88d7191ae772",
+    "publishedSha256": "8f460f1c5003bc663759b977e3c59b21f002914859786b5b143a88d7191ae772"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a-20261026/analysis-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a-20261026/analysis-summary.json",
+    "sourceSha256": "1068c9a8a01445ae1ab04f0ece27e8f57c1ef65199c56b82792aeb7dffbb8b0f",
+    "publishedSha256": "23be9fb377865c8dbe7eb43032f1304b44c33abac6ec5cbe4f0c5c8efd8af2d5"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a-20261026/analysis-rows.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a-20261026/analysis-rows.json",
+    "sourceSha256": "7384f2b8d04fe8069848d4ebea4a2d78940cd00791572a861930058975571b3f",
+    "publishedSha256": "01c85b8c5b2b487312c983f70f713cff82b0920c6a5225ccc99e342f73021ce8"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a2-20261026/plan.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a2-20261026/plan.json",
+    "sourceSha256": "45f57b983effb4d6aef3f11803c93cd94de7bc26fd321c79c175c19b1cabdd82",
+    "publishedSha256": "45f57b983effb4d6aef3f11803c93cd94de7bc26fd321c79c175c19b1cabdd82"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a2-20261026/jobs.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a2-20261026/jobs.json",
+    "sourceSha256": "a4a4a1f8ca6ef7005ab19f855fc51ef085216bb78b01cda9ded08997398cf4db",
+    "publishedSha256": "a4a4a1f8ca6ef7005ab19f855fc51ef085216bb78b01cda9ded08997398cf4db"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a2-20261026/submissions.ndjson",
+    "file": "chat-e2e/results/20261026-aws/retest-a2-20261026/submissions.ndjson",
+    "sourceSha256": "bf1b69fb9d46cda6aecd21b78bf4a831e1081be13747d8d37dac179c50e63403",
+    "publishedSha256": "bf1b69fb9d46cda6aecd21b78bf4a831e1081be13747d8d37dac179c50e63403"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a2-20261026/run.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a2-20261026/run.json",
+    "sourceSha256": "1f96fbb00105dd147790e48c314c65c77cc257a0b4873137fc8ffbc520196868",
+    "publishedSha256": "1f96fbb00105dd147790e48c314c65c77cc257a0b4873137fc8ffbc520196868"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a2-20261026/k6-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a2-20261026/k6-summary.json",
+    "sourceSha256": "8fd2bb18fcae1c4ec7721eb51c47416a44a8e3768d300c5edd617eed00a6eb09",
+    "publishedSha256": "8fd2bb18fcae1c4ec7721eb51c47416a44a8e3768d300c5edd617eed00a6eb09"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a2-20261026/analysis-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a2-20261026/analysis-summary.json",
+    "sourceSha256": "d7d7ac11dd16ee2fc152f59d8fd728532d77decd836275ca15e91898ea148d2d",
+    "publishedSha256": "186e63ef80b3ecf0dde8c309ec72dbaa051254f6dbf2b85b2667c01d4a1d5543"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a2-20261026/analysis-rows.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a2-20261026/analysis-rows.json",
+    "sourceSha256": "955c125596e3e3bfd03b7b6b5c0b3c9848217392e62957a05132f6c49241a311",
+    "publishedSha256": "ad1f5e90d6470da99596c2a6607457219220d0f5d295992ac87ecf86a86bd29f"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a3-20261026/plan.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a3-20261026/plan.json",
+    "sourceSha256": "0174ca7aa6aa95fe6b1757873c8e679405c67cc79853ec49d969a41c0606b779",
+    "publishedSha256": "0174ca7aa6aa95fe6b1757873c8e679405c67cc79853ec49d969a41c0606b779"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a3-20261026/jobs.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a3-20261026/jobs.json",
+    "sourceSha256": "3a13a2a67fcf304039f9366b4489e8c094479d3407d9d0006e1afa7d101a57c7",
+    "publishedSha256": "3a13a2a67fcf304039f9366b4489e8c094479d3407d9d0006e1afa7d101a57c7"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a3-20261026/submissions.ndjson",
+    "file": "chat-e2e/results/20261026-aws/retest-a3-20261026/submissions.ndjson",
+    "sourceSha256": "81407e16bbff8d64c34a0f50cd6c87553930338dd0a2bf0ee0297ab55e43d4cd",
+    "publishedSha256": "81407e16bbff8d64c34a0f50cd6c87553930338dd0a2bf0ee0297ab55e43d4cd"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a3-20261026/run.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a3-20261026/run.json",
+    "sourceSha256": "919d05dcfece3da624a6b29af3e640becf684fb56403bcab18465a5e37f66c22",
+    "publishedSha256": "919d05dcfece3da624a6b29af3e640becf684fb56403bcab18465a5e37f66c22"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a3-20261026/k6-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a3-20261026/k6-summary.json",
+    "sourceSha256": "7f33e5c58b2a2247768edc6a891d01541ff6b986f84467ff1d2f2833398d7cf4",
+    "publishedSha256": "7f33e5c58b2a2247768edc6a891d01541ff6b986f84467ff1d2f2833398d7cf4"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a3-20261026/analysis-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a3-20261026/analysis-summary.json",
+    "sourceSha256": "0ca8eec404c3875fbcc0097b9bcc4e39074116e9436944b58af2fd38e750d9e9",
+    "publishedSha256": "b23ab529525403c69d850bf655a26728dff05fdc701f711a73d4fdc50fdc35a8"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-a3-20261026/analysis-rows.json",
+    "file": "chat-e2e/results/20261026-aws/retest-a3-20261026/analysis-rows.json",
+    "sourceSha256": "a3b10a3fb60e4ad8b6ea2e7c288e7f4a0807215fcd972fc2f3047112f6e17e44",
+    "publishedSha256": "8c8a7a131e071f87e5fbd146e645a34e099b8af40e8d04836c3ba9d7e1b092e9"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-b-20261026/plan.json",
+    "file": "chat-e2e/results/20261026-aws/retest-b-20261026/plan.json",
+    "sourceSha256": "587132d80dbf804cdb9c3babb0a3b92068686821f0c6b26df7d75aa5ccd1f87b",
+    "publishedSha256": "587132d80dbf804cdb9c3babb0a3b92068686821f0c6b26df7d75aa5ccd1f87b"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-b-20261026/jobs.json",
+    "file": "chat-e2e/results/20261026-aws/retest-b-20261026/jobs.json",
+    "sourceSha256": "b1da2ac4f258924ba0dd3500dd9f2506b29df2afee7514bd443b6efd24d568da",
+    "publishedSha256": "b1da2ac4f258924ba0dd3500dd9f2506b29df2afee7514bd443b6efd24d568da"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-b-20261026/submissions.ndjson",
+    "file": "chat-e2e/results/20261026-aws/retest-b-20261026/submissions.ndjson",
+    "sourceSha256": "1f42d998b92188aa49bc1d302c26e6ba642982173ddab67d6d3a7b4e7137f584",
+    "publishedSha256": "1f42d998b92188aa49bc1d302c26e6ba642982173ddab67d6d3a7b4e7137f584"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-b-20261026/run.json",
+    "file": "chat-e2e/results/20261026-aws/retest-b-20261026/run.json",
+    "sourceSha256": "9a5a28bda206af785b1558e323c7283725c795c32e76dd6349cd76d72ff86e4e",
+    "publishedSha256": "9a5a28bda206af785b1558e323c7283725c795c32e76dd6349cd76d72ff86e4e"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-b-20261026/k6-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-b-20261026/k6-summary.json",
+    "sourceSha256": "c2f0288118d50c1b85c4c82f5a9db0ca583237b1e4c38b592b874f741576a93d",
+    "publishedSha256": "c2f0288118d50c1b85c4c82f5a9db0ca583237b1e4c38b592b874f741576a93d"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-b-20261026/analysis-summary.json",
+    "file": "chat-e2e/results/20261026-aws/retest-b-20261026/analysis-summary.json",
+    "sourceSha256": "4359f392fbc356d0d0506ed13353a8d6cd48ed5f054c4309bc6cff858f56ded9",
+    "publishedSha256": "752f43fe12b28829d2d1c66d7c48b909305bd940c7f58d9c674571ab60c116c9"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/runtime/retest-b-20261026/analysis-rows.json",
+    "file": "chat-e2e/results/20261026-aws/retest-b-20261026/analysis-rows.json",
+    "sourceSha256": "9d8ed55ce418aca680a553194de3821ecf339a660feb0101371a6e88aeb2d0d6",
+    "publishedSha256": "5e5421a4759ace3a8accc93e27dccc2c8f97bed845771fbdecde87bf70e7f5f4"
+  },
+  {
+    "source": "_handoff/aws-20261025/diverse-burst-6000/runtime/diverse-a-20261025/analysis-summary.json",
+    "file": "chat-e2e/results/20261025-aws-diverse/diverse-a-20261025/analysis-summary.json",
+    "sourceSha256": "4e4d0650fef673f97253c6ab404f3a5decbc5529acd4ccf8e6db2ad1160a7525",
+    "publishedSha256": "663dbe8ac8b3a058d2c95e7cffd34e8cfeb3db3242319a1151543ffc70406f28"
+  },
+  {
+    "source": "_handoff/aws-20261025/diverse-burst-6000/runtime/diverse-b-20261025/analysis-summary.json",
+    "file": "chat-e2e/results/20261025-aws-diverse/diverse-b-20261025/analysis-summary.json",
+    "sourceSha256": "dc7e354993181056bb088bbc875301f835b5682794e7f14191b1c78b45dd7021",
+    "publishedSha256": "76e4ca8a51192f3281c4083c433eb2fb77bb9fbb6bc90d2c7cfe631551aa55da"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/답변_품질_검토.md",
+    "file": "chat-e2e/results/20261025-aws-repeated/답변_품질_검토.md",
+    "sourceSha256": "ea12f6ed31751397a32f0c07074e95b8d6171f3c7656b1b8d1e762c9e25036e7",
+    "publishedSha256": "ea12f6ed31751397a32f0c07074e95b8d6171f3c7656b1b8d1e762c9e25036e7"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load-pilot-20261025/db-evidence.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load-pilot-20261025/db-evidence.json",
+    "sourceSha256": "8be5499b97d5451c528a66092066386271533122319754b9c92c90ac647e14af",
+    "publishedSha256": "8be5499b97d5451c528a66092066386271533122319754b9c92c90ac647e14af"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load-pilot-20261025/k6-summary.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load-pilot-20261025/k6-summary.json",
+    "sourceSha256": "2f55edbb7f14f2b074ee44f0560114019ffcd63e0ee0f700a00a830ce6f8e482",
+    "publishedSha256": "2f55edbb7f14f2b074ee44f0560114019ffcd63e0ee0f700a00a830ce6f8e482"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load-pilot-20261025/plan.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load-pilot-20261025/plan.json",
+    "sourceSha256": "5b650a6261f3e84267abeebe1809fa57c4a6488e2a2c15b78c0bdba4f906c63c",
+    "publishedSha256": "5b650a6261f3e84267abeebe1809fa57c4a6488e2a2c15b78c0bdba4f906c63c"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load-pilot-20261025/report.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load-pilot-20261025/report.json",
+    "sourceSha256": "fab46d0b09f89bd5b3a28acdab356d81c5268cb0cf0850354a54c223509d461f",
+    "publishedSha256": "fab46d0b09f89bd5b3a28acdab356d81c5268cb0cf0850354a54c223509d461f"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load-pilot-20261025/report.md",
+    "file": "chat-e2e/results/20261025-aws-repeated/load-pilot-20261025/report.md",
+    "sourceSha256": "39e517b97aea2d9920a4cd1984b1be1e66082fd3306804349d91c50d4a20e4f1",
+    "publishedSha256": "39e517b97aea2d9920a4cd1984b1be1e66082fd3306804349d91c50d4a20e4f1"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-20261025/db-evidence.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-20261025/db-evidence.json",
+    "sourceSha256": "96aa37489b5e73aeb81808a3e03046ddc7283cad09354ba10431460bc462c716",
+    "publishedSha256": "96aa37489b5e73aeb81808a3e03046ddc7283cad09354ba10431460bc462c716"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-20261025/k6-summary.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-20261025/k6-summary.json",
+    "sourceSha256": "2c3a14c8d920009fe92595f71bbc73b512381236a9c7dc6f74870fdc83eb90f2",
+    "publishedSha256": "2c3a14c8d920009fe92595f71bbc73b512381236a9c7dc6f74870fdc83eb90f2"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-20261025/plan.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-20261025/plan.json",
+    "sourceSha256": "615f366b77824b20fb7b23b27f7ffbb4ee8cbc40bbc83b3cc101f4ccc7d0b98b",
+    "publishedSha256": "615f366b77824b20fb7b23b27f7ffbb4ee8cbc40bbc83b3cc101f4ccc7d0b98b"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-20261025/report.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-20261025/report.json",
+    "sourceSha256": "79022f4da84d25e2ed2f5ae57f74db3be6b2b9dcaf3dfdc3610f0a88082790a3",
+    "publishedSha256": "79022f4da84d25e2ed2f5ae57f74db3be6b2b9dcaf3dfdc3610f0a88082790a3"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-20261025/report.md",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-20261025/report.md",
+    "sourceSha256": "3d431c76e0f4bf2ef0e5772708d57459e7e83832d8b276a4321545ec56841381",
+    "publishedSha256": "3d431c76e0f4bf2ef0e5772708d57459e7e83832d8b276a4321545ec56841381"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-ec2-20261025/db-evidence.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-ec2-20261025/db-evidence.json",
+    "sourceSha256": "c775db731da52f31679c87c0eba6a7bbaf416a8686093c583b07ffeef077ec0a",
+    "publishedSha256": "c775db731da52f31679c87c0eba6a7bbaf416a8686093c583b07ffeef077ec0a"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-ec2-20261025/k6-summary.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-ec2-20261025/k6-summary.json",
+    "sourceSha256": "3ba7a9e41b884ac8be9aad2a1412c321a925845667e2dec9a5009964fc787f28",
+    "publishedSha256": "3ba7a9e41b884ac8be9aad2a1412c321a925845667e2dec9a5009964fc787f28"
+  },
+  {
+    "source": "_handoff/aws-20261025/load-test-artifacts-20261026/repeated-3000/load3000-ec2-20261025/plan.json",
+    "file": "chat-e2e/results/20261025-aws-repeated/load3000-ec2-20261025/plan.json",
+    "sourceSha256": "aa92eaf691928801964ac20f57dd83f8eaa8e9903891b26d9a8f531f7c7cfd5a",
+    "publishedSha256": "aa92eaf691928801964ac20f57dd83f8eaa8e9903891b26d9a8f531f7c7cfd5a"
+  },
+  {
+    "source": "UBot-BE/tools/deploy/render-alert-config.sh",
+    "file": "discord-alerts/tools/deploy/render-alert-config.sh",
+    "sourceSha256": "bae42c8da10b2edca049d925e955733f6051d29b93f6e8bc472f88ef2735fef5",
+    "publishedSha256": "bae42c8da10b2edca049d925e955733f6051d29b93f6e8bc472f88ef2735fef5"
+  },
+  {
+    "source": "UBot-BE/tools/deploy/tests/render-alert-config-test.sh",
+    "file": "discord-alerts/tools/deploy/tests/render-alert-config-test.sh",
+    "sourceSha256": "6881be3161817c10676a355d24c233b4245740d3a24dffbd61ee50dea1d6db6f",
+    "publishedSha256": "6881be3161817c10676a355d24c233b4245740d3a24dffbd61ee50dea1d6db6f"
+  },
+  {
+    "source": "UBot-BE/infra/prometheus/rules/ubot-alerts.yml.template",
+    "file": "discord-alerts/infra/prometheus/rules/ubot-alerts.yml.template",
+    "sourceSha256": "f7be6bbc994bc9539f824131bd021c6c16e4909615369a0304c77f9da5665e5e",
+    "publishedSha256": "755aa7a6b57755645c5380b9c1f3c8352a7302d09b4a96c1e65682f171779249"
+  },
+  {
+    "source": "UBot-BE/infra/alertmanager/alertmanager.yml.template",
+    "file": "discord-alerts/infra/alertmanager/alertmanager.yml.template",
+    "sourceSha256": "b176221bab3bceabf1593dbc531b11c66fd3a8a1c83a18c718cf37de438fb374",
+    "publishedSha256": "72e21f9245fa945d845560993591cb42a95c3c57727b4bd9d851c17a2dda9650"
+  },
+  {
+    "source": "UBot-BE/docs/how-to/alerting.md",
+    "file": "discord-alerts/operations.md",
+    "sourceSha256": "e030fe823120baa0becc8a6da8bcfbf64fabd6cf2b71ca1461d0e70a5d833ad9",
+    "publishedSha256": "dde7e21b518e6c9ffa86b76305df54ac027f1237ffbb0470bfffb70b67a309cb"
+  },
+  {
+    "source": "UBot-BE/docs/evidence/fault-recovery-20261023.md",
+    "file": "fault-recovery/results/20261023-local/summary.md",
+    "sourceSha256": "0798c1757b7a8b8cfb4d57d89e139cb8fbbe23ace186a879647ace0eb23ecb86",
+    "publishedSha256": "df3576593b479e775bf9a75d82a36719ccc9f48a3f0c0b420ef1733eba7be2d4"
+  },
+  {
+    "source": "UBot-BE/tools/perf/run-vector-search-benchmark.ps1",
+    "file": "tools/perf/run-vector-search-benchmark.ps1",
+    "sourceSha256": "3c2ee3dde8b1f64afad17591964017534de4810449328d0db238f19f5a0b9669",
+    "publishedSha256": "90e144444acccdf7e4601836230e60f99e06671a42c2fdc096b4e8503846633e"
+  },
+  {
+    "source": "UBot-BE/tools/perf/unanswered_outbox_perf.py",
+    "file": "tools/perf/unanswered_outbox_perf.py",
+    "sourceSha256": "1892dd7f7e015412500bf49066683b7507d33cf8edb46d100ba3f69432fe4583",
+    "publishedSha256": "2951f3dc1794b20ace019be0b3e2025e948a1b1b31c21bad6d693f05736e5d00"
+  },
+  {
+    "source": "UBot-BE/src/test/java/com/ubot/chat/controller/ChatBurstToolsIntegrationTest.java",
+    "file": "tools/backend-fixtures/ChatBurstToolsIntegrationTest.java",
+    "sourceSha256": "893eedb33bc5676c2688e59533368196e2fbc48f4e29c28d1bc7c328816d278a",
+    "publishedSha256": "893eedb33bc5676c2688e59533368196e2fbc48f4e29c28d1bc7c328816d278a"
+  },
+  {
+    "source": "UBot-BE/src/test/java/com/ubot/embedding/VectorSearchBenchmarkTest.java",
+    "file": "tools/backend-fixtures/VectorSearchBenchmarkTest.java",
+    "sourceSha256": "e9996dade76633610eb988ef72d52e293636840da1bebaf9a59482f7ca6efe15",
+    "publishedSha256": "e9996dade76633610eb988ef72d52e293636840da1bebaf9a59482f7ca6efe15"
+  },
+  {
+    "source": "UBot-BE/tools/perf/lib/harness.mjs",
+    "file": "provenance/originals/harness.mjs",
+    "sourceSha256": "99fa0eefd8a53f82ad2cddc14bb9ba8d209e39db421845e39673da3a64b0c81f",
+    "publishedSha256": "99fa0eefd8a53f82ad2cddc14bb9ba8d209e39db421845e39673da3a64b0c81f"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/build_dataset.py",
+    "file": "provenance/originals/build_dataset.py",
+    "sourceSha256": "70176867b5920dda29afe216a0a3fddfdd507f3e84b8e5c53e6a9ae216768549",
+    "publishedSha256": "70176867b5920dda29afe216a0a3fddfdd507f3e84b8e5c53e6a9ae216768549"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/metadata-before.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/metadata-before.json",
+    "sourceSha256": "dbed93365285b8e401c84ac89dcff5b0965410320bbd14bc5c1af5ccd014d524",
+    "publishedSha256": "dbed93365285b8e401c84ac89dcff5b0965410320bbd14bc5c1af5ccd014d524"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/metadata-after.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/metadata-after.json",
+    "sourceSha256": "7aa627fcca5260c4a9ad4970ee7f64229b119184308745275c1ad4dcd2927ab8",
+    "publishedSha256": "7aa627fcca5260c4a9ad4970ee7f64229b119184308745275c1ad4dcd2927ab8"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/aggregation-tests.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/aggregation-tests.json",
+    "sourceSha256": "49bc0f61542800a687642d2f1e75cc964cc034c8016eaf393a99e65ec1113b84",
+    "publishedSha256": "49bc0f61542800a687642d2f1e75cc964cc034c8016eaf393a99e65ec1113b84"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/infrastructure-cleanup.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/infrastructure-cleanup.json",
+    "sourceSha256": "73049fc96c10019afa66eb56347615870371731143066e992e3aa1e09a14a8aa",
+    "publishedSha256": "73049fc96c10019afa66eb56347615870371731143066e992e3aa1e09a14a8aa"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/report.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/report.json",
+    "sourceSha256": "88860f16feff9d4bd42f093b9c48112b5684358950dcf0c08a1e7a77543fc025",
+    "publishedSha256": "88860f16feff9d4bd42f093b9c48112b5684358950dcf0c08a1e7a77543fc025"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/environment.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/environment.json",
+    "sourceSha256": "38bceb71595084eac7bc0ea938da44611664735bb7f9d26badbf0361e5fbba76",
+    "publishedSha256": "38bceb71595084eac7bc0ea938da44611664735bb7f9d26badbf0361e5fbba76"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/submissions.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/submissions.json",
+    "sourceSha256": "0a72326b619bef9128946e3bf1e6e7060961830dcdcea463bd74aa0a1f3b53f3",
+    "publishedSha256": "0a72326b619bef9128946e3bf1e6e7060961830dcdcea463bd74aa0a1f3b53f3"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/api-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/api-final.json",
+    "sourceSha256": "982d7fe9e064f49601d756447a68d0c6420b6ede4946ee39c20e57ce174e349d",
+    "publishedSha256": "982d7fe9e064f49601d756447a68d0c6420b6ede4946ee39c20e57ce174e349d"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/db-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/db-final.json",
+    "sourceSha256": "8b1b98eac3c6de470d2ff7563c204bd80911f1790d4c51a5dd83a341b599f7de",
+    "publishedSha256": "8b1b98eac3c6de470d2ff7563c204bd80911f1790d4c51a5dd83a341b599f7de"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/independent-audit.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/independent-audit.json",
+    "sourceSha256": "5c087d2554c86b8664b0a4170a74391faed7b054a7aa59239f30c16f12db4fb2",
+    "publishedSha256": "5c087d2554c86b8664b0a4170a74391faed7b054a7aa59239f30c16f12db4fb2"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/independent-audit.sql",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/independent-audit.sql",
+    "sourceSha256": "00a0723eead0a132baec7613a970e045cc50b20aa810b33a3cc59071e8b50ff5",
+    "publishedSha256": "00a0723eead0a132baec7613a970e045cc50b20aa810b33a3cc59071e8b50ff5"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/events.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/events.json",
+    "sourceSha256": "4623c24b6613661d47ccbf11eb21126259f51c7bc6e099445f5b100eded3f9d7",
+    "publishedSha256": "4623c24b6613661d47ccbf11eb21126259f51c7bc6e099445f5b100eded3f9d7"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/cleanup.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/cleanup.json",
+    "sourceSha256": "bbb456650c3f779eaccff22094518f85742761defdca1bfd1a5623c018a3159f",
+    "publishedSha256": "bbb456650c3f779eaccff22094518f85742761defdca1bfd1a5623c018a3159f"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/immediately-before-kill.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/immediately-before-kill.json",
+    "sourceSha256": "0cb0cd74faecbd743a88ed207b19884296007cf66dcd3a3c2e27d2eba62ae6ef",
+    "publishedSha256": "0cb0cd74faecbd743a88ed207b19884296007cf66dcd3a3c2e27d2eba62ae6ef"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/api-health.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/api-health.json",
+    "sourceSha256": "c2a19eb1ad5995bc0bf1413871942e7f37f7327b1260789168ffbb12e1c7b5ab",
+    "publishedSha256": "c2a19eb1ad5995bc0bf1413871942e7f37f7327b1260789168ffbb12e1c7b5ab"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/worker/redis-pending-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/worker/redis-pending-final.json",
+    "sourceSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca",
+    "publishedSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/report.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/report.json",
+    "sourceSha256": "e5e65da623ce190433f6f870d8687c58d5b498cd19f45216d2abf29cd4f73399",
+    "publishedSha256": "e5e65da623ce190433f6f870d8687c58d5b498cd19f45216d2abf29cd4f73399"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/environment.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/environment.json",
+    "sourceSha256": "0ed02a852e655c1295a2f3b89bf134742e0965b8b87526fab13f53bbff49ff79",
+    "publishedSha256": "0ed02a852e655c1295a2f3b89bf134742e0965b8b87526fab13f53bbff49ff79"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/submissions.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/submissions.json",
+    "sourceSha256": "ef03323a49d33757fe1a67fc7221c6c7475c44c89470e1ba2d5503fb10bf9ddc",
+    "publishedSha256": "ef03323a49d33757fe1a67fc7221c6c7475c44c89470e1ba2d5503fb10bf9ddc"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/api-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/api-final.json",
+    "sourceSha256": "8849a207346893513aea593c041965fae5e55ac8843abd22f2ad7cf341002102",
+    "publishedSha256": "8849a207346893513aea593c041965fae5e55ac8843abd22f2ad7cf341002102"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/db-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/db-final.json",
+    "sourceSha256": "ba268dc8092fe5cd0105fae6c652a365de003eb442fc9c28cc1930e81e79eb6c",
+    "publishedSha256": "ba268dc8092fe5cd0105fae6c652a365de003eb442fc9c28cc1930e81e79eb6c"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/independent-audit.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/independent-audit.json",
+    "sourceSha256": "56eb619964f442ed27d549e9a5999a9a99bbc4e404f0af0a50849300636e835d",
+    "publishedSha256": "56eb619964f442ed27d549e9a5999a9a99bbc4e404f0af0a50849300636e835d"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/independent-audit.sql",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/independent-audit.sql",
+    "sourceSha256": "63c13aeceff8a4ab75b23c72c1e5e199e1270b8c9871bd49157c9c94c6d4cc71",
+    "publishedSha256": "63c13aeceff8a4ab75b23c72c1e5e199e1270b8c9871bd49157c9c94c6d4cc71"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/events.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/events.json",
+    "sourceSha256": "d8d48e23a24fd990afdc2b3f27ccaa632553ddf8ec92682ce2896c061ca34ff1",
+    "publishedSha256": "d8d48e23a24fd990afdc2b3f27ccaa632553ddf8ec92682ce2896c061ca34ff1"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/cleanup.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/cleanup.json",
+    "sourceSha256": "17c1291003089173f441e0b1303fc5f7c52d92ba6921f6b5f98bfdd76cafb8d5",
+    "publishedSha256": "17c1291003089173f441e0b1303fc5f7c52d92ba6921f6b5f98bfdd76cafb8d5"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/immediately-before-kill.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/immediately-before-kill.json",
+    "sourceSha256": "3051dd132ec8aa3edb4b01002ca010a343408805d993eccd135904efb7ddd3f4",
+    "publishedSha256": "3051dd132ec8aa3edb4b01002ca010a343408805d993eccd135904efb7ddd3f4"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/api-health.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/api-health.json",
+    "sourceSha256": "4344f0e5dc17af62ea26c04fa0629cb5f8723a38fd3cc4dfe6c4d43eea1332bb",
+    "publishedSha256": "4344f0e5dc17af62ea26c04fa0629cb5f8723a38fd3cc4dfe6c4d43eea1332bb"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/redis/redis-pending-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/redis/redis-pending-final.json",
+    "sourceSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca",
+    "publishedSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/report.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/report.json",
+    "sourceSha256": "ed3713d1d49642cc4f784b0bf3b7503cdda6f7d9da96cd6b890fc4099f4ee480",
+    "publishedSha256": "ed3713d1d49642cc4f784b0bf3b7503cdda6f7d9da96cd6b890fc4099f4ee480"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/environment.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/environment.json",
+    "sourceSha256": "05670ce30559e7cb83c676a0c3673d5fe9b62627a547b6253e249a623860dca8",
+    "publishedSha256": "05670ce30559e7cb83c676a0c3673d5fe9b62627a547b6253e249a623860dca8"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/submissions.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/submissions.json",
+    "sourceSha256": "1922906bef8da3cde27540e2579168b5b6f352741fe271942923a67945e4c849",
+    "publishedSha256": "1922906bef8da3cde27540e2579168b5b6f352741fe271942923a67945e4c849"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/api-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/api-final.json",
+    "sourceSha256": "3ca147a40710da1bb11f2f4a6ce89b900570fc8e6012831f7e483b6d8c84c5a9",
+    "publishedSha256": "3ca147a40710da1bb11f2f4a6ce89b900570fc8e6012831f7e483b6d8c84c5a9"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/db-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/db-final.json",
+    "sourceSha256": "2edeb2497ba9bd368f709dc3c7c74ec60be5c60456198718e4443998dc8f907d",
+    "publishedSha256": "2edeb2497ba9bd368f709dc3c7c74ec60be5c60456198718e4443998dc8f907d"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/independent-audit.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/independent-audit.json",
+    "sourceSha256": "d506324bc458433464056f91d5a004d82074a5bf831fa66fcb55e86740cadae2",
+    "publishedSha256": "d506324bc458433464056f91d5a004d82074a5bf831fa66fcb55e86740cadae2"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/independent-audit.sql",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/independent-audit.sql",
+    "sourceSha256": "44907edbe07e050fe109f505e671cd032797634eb05b8ff63fa55bf3703141ea",
+    "publishedSha256": "44907edbe07e050fe109f505e671cd032797634eb05b8ff63fa55bf3703141ea"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/events.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/events.json",
+    "sourceSha256": "95a97251ee2107ba6dc04b621cf881cbe51c923e0ad527651bc06cabe925d7dd",
+    "publishedSha256": "95a97251ee2107ba6dc04b621cf881cbe51c923e0ad527651bc06cabe925d7dd"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/cleanup.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/cleanup.json",
+    "sourceSha256": "5e64a2dd67a7a0ca0a9da76902a2680f32ed26b1a6a5e295b16daed4cc5925fd",
+    "publishedSha256": "5e64a2dd67a7a0ca0a9da76902a2680f32ed26b1a6a5e295b16daed4cc5925fd"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/immediately-before-kill.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/immediately-before-kill.json",
+    "sourceSha256": "81c0d8263e182148a2584b54df8b07cd8d6619c78abcef0ef1c19160e392a3d4",
+    "publishedSha256": "81c0d8263e182148a2584b54df8b07cd8d6619c78abcef0ef1c19160e392a3d4"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/api-health.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/api-health.json",
+    "sourceSha256": "3830cb88141ec45101d6300ba80a2cd6761d762e992e3ac652db74177ab20652",
+    "publishedSha256": "3830cb88141ec45101d6300ba80a2cd6761d762e992e3ac652db74177ab20652"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/postgres/redis-pending-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/postgres/redis-pending-final.json",
+    "sourceSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca",
+    "publishedSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/report.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/report.json",
+    "sourceSha256": "be1f14e007ad95a41e30cc4a291d3a615c97c2819b1920b4c856a9c9de49a39d",
+    "publishedSha256": "be1f14e007ad95a41e30cc4a291d3a615c97c2819b1920b4c856a9c9de49a39d"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/environment.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/environment.json",
+    "sourceSha256": "13155c00c634de4155f66cdb277320216c1d67cd346279598c144b02f0dac231",
+    "publishedSha256": "13155c00c634de4155f66cdb277320216c1d67cd346279598c144b02f0dac231"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/submissions.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/submissions.json",
+    "sourceSha256": "6db345cece632842e6ad2bb5cf99d091768085df0caa8b1c01fd798b7f1e155b",
+    "publishedSha256": "6db345cece632842e6ad2bb5cf99d091768085df0caa8b1c01fd798b7f1e155b"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/api-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/api-final.json",
+    "sourceSha256": "3fddd0096321feec75a8910c8e7ee04a8e324334c769572db6fc51e1b59a8071",
+    "publishedSha256": "3fddd0096321feec75a8910c8e7ee04a8e324334c769572db6fc51e1b59a8071"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/db-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/db-final.json",
+    "sourceSha256": "380706510507fa8615d8990281475258b37265e1676613cc7c9d90cb189973ab",
+    "publishedSha256": "380706510507fa8615d8990281475258b37265e1676613cc7c9d90cb189973ab"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/independent-audit.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/independent-audit.json",
+    "sourceSha256": "21b19b4147b20c7d482ec513ef132306eb506f0d16e41d0b0a4c14aa9f7da0a7",
+    "publishedSha256": "21b19b4147b20c7d482ec513ef132306eb506f0d16e41d0b0a4c14aa9f7da0a7"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/independent-audit.sql",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/independent-audit.sql",
+    "sourceSha256": "f0f5bcb2c48d7b29e8c83160ba94dd38937b619f47b52cab7e46bd546160eaa2",
+    "publishedSha256": "f0f5bcb2c48d7b29e8c83160ba94dd38937b619f47b52cab7e46bd546160eaa2"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/events.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/events.json",
+    "sourceSha256": "b0cbc8517df0f3e846e0f977ae066293f7892931aaf651d4355ef27e3b7bb6b4",
+    "publishedSha256": "b0cbc8517df0f3e846e0f977ae066293f7892931aaf651d4355ef27e3b7bb6b4"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/cleanup.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/cleanup.json",
+    "sourceSha256": "c8d99986e48799465bbe59034f95052cd6d28f6ad48559a64abd64767a1081a6",
+    "publishedSha256": "c8d99986e48799465bbe59034f95052cd6d28f6ad48559a64abd64767a1081a6"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/immediately-before-kill.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/immediately-before-kill.json",
+    "sourceSha256": "4c80067fb7f49099ef45ac44cc5cf33e4daa374c8c498f0c2101506b3beed7c8",
+    "publishedSha256": "4c80067fb7f49099ef45ac44cc5cf33e4daa374c8c498f0c2101506b3beed7c8"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/api-health.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/api-health.json",
+    "sourceSha256": "e3c6e8b3aad2d9f870f573429d7e0c3fcd9b3c11118de4e1ef8838231acdb3f1",
+    "publishedSha256": "e3c6e8b3aad2d9f870f573429d7e0c3fcd9b3c11118de4e1ef8838231acdb3f1"
+  },
+  {
+    "source": "UBot-BE/build/chat-burst-live/final-suite-20261023/vllm/redis-pending-final.json",
+    "file": "fault-recovery/evidence/final-suite-20261023/vllm/redis-pending-final.json",
+    "sourceSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca",
+    "publishedSha256": "579aa380bebe47658ba0def9a896470e6faa2ba71075e5af151229cb166e1fca"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/live-faq-metadata.json",
+    "file": "chat-e2e/datasets/20261026/live-faq-metadata.json",
+    "sourceSha256": "b5bed98e17e0591ad1cf2ae02e7a05bd748494ea396393d9a8b3d6a121f6d5e5",
+    "publishedSha256": "b5bed98e17e0591ad1cf2ae02e7a05bd748494ea396393d9a8b3d6a121f6d5e5"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/live-faq-patches.json",
+    "file": "chat-e2e/datasets/20261026/live-faq-patches.json",
+    "sourceSha256": "fbcffd86613ff6b9cbfd39c4dd223745247fef6bab706d3174dfff3a4618ce99",
+    "publishedSha256": "65da1df7483b8cc8ac1a3ffecb512506aae0c4ae600aa077325daf6bc2c0944f"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/active-faq-ids.json",
+    "file": "chat-e2e/datasets/20261026/active-faq-ids.json",
+    "sourceSha256": "e8e3740f1c2e6b2d23310203743163c68dbce4d44929621ef5335b639d7e0669",
+    "publishedSha256": "e8e3740f1c2e6b2d23310203743163c68dbce4d44929621ef5335b639d7e0669"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/faq-preflight.sql",
+    "file": "chat-e2e/datasets/20261026/faq-preflight.sql",
+    "sourceSha256": "f210879ee10be0869a99014598bbf37431b452090ff8165859aba8e0db0d158f",
+    "publishedSha256": "ae40c3e71968050e1c5809ccd9eab55d9ea2d691e790939928505e27230a3440"
+  },
+  {
+    "source": "UBot-BE/build/chat-retest-20261026/dataset/faq-compare.sql",
+    "file": "chat-e2e/datasets/20261026/faq-compare.sql",
+    "sourceSha256": "2ad875999876d3335ea94c124cb565f55bfcc47f36955fce33d7230a437e0418",
+    "publishedSha256": "3c0cb769bebff82fa23b7042a187ddebd746ed35685f0fdcf65934d22a8ae94d"
+  },
+  {
+    "source": "UBot-BE/tools/faq-db/seed/baseline/baseline-faqs.csv",
+    "file": "chat-e2e/datasets/20261026/seed/baseline-faqs.csv",
+    "sourceSha256": "d98f13a3f2502a3004e4a427ac27371e2a7cd207baa277d70970d4f43a55060f",
+    "publishedSha256": "6de1c809d423778b2be41f4e740f78875c436793ef7107384620f993446b7cbb"
+  },
+  {
+    "source": "UBot-BE/tools/faq-db/seed/baseline/baseline-faq-variants.csv",
+    "file": "chat-e2e/datasets/20261026/seed/baseline-faq-variants.csv",
+    "sourceSha256": "e6fd43e870c2cbb6bcdc19a17df3dc4c484480d24ccaf71d7aec84054db942e9",
+    "publishedSha256": "44ca90ea0188090c56ccd734a2684b73ad19c89f106c87a970add30393152d2c"
+  }
+]

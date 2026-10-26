@@ -1,0 +1,53 @@
+{
+  "runId": "retest-a-20261026",
+  "total": 3000,
+  "submitted": 3000,
+  "statuses": {
+    "SUCCEEDED": 444,
+    "HTTP_502": 2499,
+    "FAILED": 57
+  },
+  "outcomes": {
+    "ANSWERED": 444,
+    "SYSTEM_ERROR": 2531,
+    "NORMAL_REJECTION": 25
+  },
+  "normalRejections": {
+    "CHAT-013": 22,
+    "CHAT-022": 3
+  },
+  "systemErrors": {
+    "HTTP_502": 2499,
+    "LLM-003": 31,
+    "LLM-006": 1
+  },
+  "errors": {
+    "LLM-003": 31,
+    "CHAT-013": 22,
+    "CHAT-022": 3,
+    "LLM-006": 1
+  },
+  "byProbe": {
+    "variant": {
+      "SUCCEEDED": 410,
+      "HTTP_502": 2242,
+      "FAILED": 48
+    },
+    "boundary": {
+      "HTTP_502": 257,
+      "SUCCEEDED": 34,
+      "FAILED": 9
+    }
+  },
+  "categories": 77,
+  "answerLength": {
+    "min": 21,
+    "median": 82.0,
+    "max": 403
+  },
+  "emptySuccessfulAnswers": 0,
+  "uniqueSuccessfulAnswers": 382,
+  "genericDeferralAnswers": 55,
+  "containsGenericDeferral": 78,
+  "nonTerminalEnding": 0
+}

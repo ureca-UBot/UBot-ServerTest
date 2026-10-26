@@ -1,0 +1,162 @@
+[
+  {
+    "type": "api-start-requested",
+    "at": "2026-10-23T01:34:53.262Z",
+    "pid": 7932
+  },
+  {
+    "type": "api-ready",
+    "at": "2026-10-23T01:35:13.524Z",
+    "pid": 7932
+  },
+  {
+    "type": "real-member-login-completed",
+    "at": "2026-10-23T01:35:15.813Z",
+    "count": 100
+  },
+  {
+    "type": "all-accepted-before-worker-start",
+    "at": "2026-10-23T01:35:16.723Z",
+    "count": 100,
+    "statuses": {
+      "QUEUED": 100
+    }
+  },
+  {
+    "type": "worker-start-requested",
+    "at": "2026-10-23T01:35:16.740Z",
+    "pid": 35772
+  },
+  {
+    "type": "postgres-force-killed",
+    "at": "2026-10-23T01:35:38.116Z",
+    "container": "ubot-chat-burst-live-postgres-1",
+    "killRequestedAt": "2026-10-23T01:35:37.446Z",
+    "exited": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 137,
+      "Error": "",
+      "StartedAt": "2026-10-23T01:28:58.133169468Z",
+      "FinishedAt": "2026-10-23T01:35:37.553837692Z",
+      "Health": {
+        "Status": "unhealthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-23T01:35:28.039335697Z",
+            "End": "2026-10-23T01:35:28.094697243Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-23T01:35:30.095926731Z",
+            "End": "2026-10-23T01:35:30.150621932Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-23T01:35:32.151514636Z",
+            "End": "2026-10-23T01:35:32.210239279Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-23T01:35:34.211488001Z",
+            "End": "2026-10-23T01:35:34.271850667Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-23T01:35:36.273151747Z",
+            "End": "2026-10-23T01:35:36.333396394Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          }
+        ]
+      }
+    },
+    "running": 4,
+    "inflightModelRequests": 4,
+    "inflightObservedAt": "2026-10-23T01:35:37.444Z",
+    "queued": 96,
+    "succeeded": 0
+  },
+  {
+    "type": "postgres-restarted",
+    "at": "2026-10-23T01:35:56.019Z",
+    "restartRequestedAt": "2026-10-23T01:35:53.169Z",
+    "databaseReadyAt": "2026-10-23T01:35:54.791Z",
+    "redisPending": 5
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:35:56.258Z",
+    "statuses": {
+      "QUEUED": 96,
+      "RUNNING": 4
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:36:11.438Z",
+    "statuses": {
+      "RUNNING": 5,
+      "QUEUED": 68,
+      "SUCCEEDED": 27
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:36:26.565Z",
+    "statuses": {
+      "SUCCEEDED": 59,
+      "RUNNING": 5,
+      "QUEUED": 36
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:36:41.717Z",
+    "statuses": {
+      "SUCCEEDED": 87,
+      "RUNNING": 5,
+      "QUEUED": 8
+    }
+  },
+  {
+    "type": "recovery-progress",
+    "at": "2026-10-23T01:36:57.874Z",
+    "statuses": {
+      "SUCCEEDED": 99,
+      "RUNNING": 1
+    }
+  },
+  {
+    "type": "verification-completed",
+    "at": "2026-10-23T01:37:07.562Z",
+    "passed": true,
+    "succeeded": 100,
+    "runningAtKill": 4,
+    "duplicateTurns": 0,
+    "timingsMs": {
+      "forcedExit": 107,
+      "databaseUnavailable": 17238,
+      "restartStartup": 1622,
+      "databaseReadyToQueueResume": 3345.3291015625,
+      "killToQueueResume": 20690.3291015625,
+      "databaseReadyToApiHealthy": 3725,
+      "databaseReadyToWorkerHealthy": 3355,
+      "databaseReadyToJobHealthy": 3783,
+      "databaseReadyToAllAnswers": 65201.427001953125,
+      "killToAllAnswers": 82546.42700195312,
+      "restartToAllAnswers": 66823.42700195312,
+      "firstSubmissionToAllAnswers": 104178.42700195312
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "verifiedAt": "2026-10-26T10:54:02.730Z",
+  "baseUrl": "https://u-bot.cloud/api",
+  "checksPassed": 8,
+  "totalAlerts": 105,
+  "totalQuestions": 1773,
+  "regionSubjectGroups": 94,
+  "regions": {
+    "INCHEON": {
+      "alerts": 104,
+      "questions": 1753
+    },
+    "DAEJEON": {
+      "alerts": 1,
+      "questions": 20
+    }
+  },
+  "selectedDetail": {
+    "alertId": 41,
+    "region": "INCHEON",
+    "subject": "인천 지역에서 로밍 관련 문의 급증",
+    "questionCount": 20,
+    "windowMinutes": 10,
+    "snapshotIds": [
+      5540,
+      5708,
+      5811,
+      5857,
+      5876,
+      6009,
+      6172,
+      6205,
+      6224,
+      6276,
+      6365,
+      6415,
+      6454,
+      6625,
+      6642,
+      6711,
+      6862,
+      6889,
+      6922,
+      6928
+    ],
+    "createdAt": "2026-10-25T19:42:29.17785"
+  },
+  "access": {
+    "anonymous": 401,
+    "invalidSize": 400
+  }
+}

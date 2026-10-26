@@ -1,0 +1,10 @@
+{
+  "runId": "retest-b-20261026",
+  "plannedStartAt": 1793009266052,
+  "maxStartSpreadMs": 1000,
+  "warmConnections": true,
+  "httpTimeoutSeconds": 300,
+  "startedAt": "2026-10-26T10:06:46.052Z",
+  "exitCode": 0,
+  "finishedAt": "2026-10-26T10:08:02.220Z"
+}
