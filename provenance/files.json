@@ -813,13 +813,13 @@
     "source": "UBot-BE/src/test/java/com/ubot/chat/controller/ChatBurstToolsIntegrationTest.java",
     "file": "tools/backend-fixtures/ChatBurstToolsIntegrationTest.java",
     "sourceSha256": "893eedb33bc5676c2688e59533368196e2fbc48f4e29c28d1bc7c328816d278a",
-    "publishedSha256": "893eedb33bc5676c2688e59533368196e2fbc48f4e29c28d1bc7c328816d278a"
+    "publishedSha256": "6057aa80b218729081a7f83055de0b45a9b329f5565c50cc54b7e932f755e4b6"
   },
   {
     "source": "UBot-BE/src/test/java/com/ubot/embedding/VectorSearchBenchmarkTest.java",
     "file": "tools/backend-fixtures/VectorSearchBenchmarkTest.java",
     "sourceSha256": "e9996dade76633610eb988ef72d52e293636840da1bebaf9a59482f7ca6efe15",
-    "publishedSha256": "e9996dade76633610eb988ef72d52e293636840da1bebaf9a59482f7ca6efe15"
+    "publishedSha256": "d9a23acf2120943ed3ee594ddd3a8a4b7435018021ec62976c4d39f187dcfeb2"
   },
   {
     "source": "UBot-BE/tools/perf/lib/harness.mjs",
